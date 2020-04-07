@@ -63,6 +63,16 @@ namespace IE322_App_KAU.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap IE_LOGO4_19112019 {
+            get {
+                object obj = ResourceManager.GetObject("IE LOGO4_19112019", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Machine {
             get {
                 object obj = ResourceManager.GetObject("Machine", resourceCulture);

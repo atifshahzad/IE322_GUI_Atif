@@ -42,10 +42,19 @@
             this.btnPic2 = new System.Windows.Forms.Button();
             this.grpLogin = new System.Windows.Forms.GroupBox();
             this.LnkForgot = new System.Windows.Forms.LinkLabel();
+            this.BtnAbout = new System.Windows.Forms.Button();
             this.btnTimer = new System.Windows.Forms.Button();
             this.btnDraw = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.BtnMongoDB = new System.Windows.Forms.Button();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.BtnDecision = new System.Windows.Forms.Button();
+            this.BtnIteration = new System.Windows.Forms.Button();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.BtnStrings = new System.Windows.Forms.Button();
+            this.BtnOperators = new System.Windows.Forms.Button();
+            this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.BtnClasses = new System.Windows.Forms.Button();
+            this.BtnMethods = new System.Windows.Forms.Button();
             this.BtnArray = new System.Windows.Forms.Button();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.btnArduino = new System.Windows.Forms.Button();
@@ -53,6 +62,7 @@
             this.BtnManufCell = new System.Windows.Forms.Button();
             this.BtnRoboticCell = new System.Windows.Forms.Button();
             this.BtnABC = new System.Windows.Forms.Button();
+            this.BtnMongoDB = new System.Windows.Forms.Button();
             this.btnJohari = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.BtnTalk = new System.Windows.Forms.Button();
@@ -63,20 +73,14 @@
             this.btnSelfieApp = new System.Windows.Forms.Button();
             this.btnGroupieApp = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.BtnAbout = new System.Windows.Forms.Button();
             this.StsMain = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.BtnOperators = new System.Windows.Forms.Button();
-            this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.BtnDecision = new System.Windows.Forms.Button();
-            this.BtnIteration = new System.Windows.Forms.Button();
-            this.BtnMethods = new System.Windows.Forms.Button();
-            this.BtnClasses = new System.Windows.Forms.Button();
-            this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.BtnStrings = new System.Windows.Forms.Button();
+            this.picLogo_IE = new System.Windows.Forms.PictureBox();
             this.grpLogin.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.groupBox8.SuspendLayout();
+            this.groupBox6.SuspendLayout();
+            this.groupBox10.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.Exams.SuspendLayout();
             this.groupBox5.SuspendLayout();
@@ -84,9 +88,7 @@
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.StsMain.SuspendLayout();
-            this.groupBox6.SuspendLayout();
-            this.groupBox8.SuspendLayout();
-            this.groupBox10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo_IE)).BeginInit();
             this.SuspendLayout();
             // 
             // btnRadio
@@ -239,6 +241,17 @@
             this.LnkForgot.Text = "Forgot password?";
             this.LnkForgot.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LnkForgot_LinkClicked);
             // 
+            // BtnAbout
+            // 
+            this.BtnAbout.BackColor = System.Drawing.Color.SkyBlue;
+            this.BtnAbout.Location = new System.Drawing.Point(10, 98);
+            this.BtnAbout.Name = "BtnAbout";
+            this.BtnAbout.Size = new System.Drawing.Size(75, 23);
+            this.BtnAbout.TabIndex = 11;
+            this.BtnAbout.Text = "About";
+            this.BtnAbout.UseVisualStyleBackColor = false;
+            this.BtnAbout.Click += new System.EventHandler(this.BtnAbout_Click);
+            // 
             // btnTimer
             // 
             this.btnTimer.Location = new System.Drawing.Point(93, 18);
@@ -278,15 +291,98 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // BtnMongoDB
+            // groupBox8
             // 
-            this.BtnMongoDB.Location = new System.Drawing.Point(5, 204);
-            this.BtnMongoDB.Name = "BtnMongoDB";
-            this.BtnMongoDB.Size = new System.Drawing.Size(149, 38);
-            this.BtnMongoDB.TabIndex = 30;
-            this.BtnMongoDB.Text = "MongoDB";
-            this.BtnMongoDB.UseVisualStyleBackColor = true;
-            this.BtnMongoDB.Click += new System.EventHandler(this.BtnMongoDB_Click);
+            this.groupBox8.Controls.Add(this.BtnDecision);
+            this.groupBox8.Controls.Add(this.BtnIteration);
+            this.groupBox8.Location = new System.Drawing.Point(387, 283);
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.Size = new System.Drawing.Size(167, 91);
+            this.groupBox8.TabIndex = 29;
+            this.groupBox8.TabStop = false;
+            this.groupBox8.Text = "Decision & Iteration";
+            // 
+            // BtnDecision
+            // 
+            this.BtnDecision.Location = new System.Drawing.Point(6, 19);
+            this.BtnDecision.Name = "BtnDecision";
+            this.BtnDecision.Size = new System.Drawing.Size(148, 27);
+            this.BtnDecision.TabIndex = 0;
+            this.BtnDecision.Text = "Decision";
+            this.BtnDecision.UseVisualStyleBackColor = true;
+            this.BtnDecision.Click += new System.EventHandler(this.BtnDecision_Click);
+            // 
+            // BtnIteration
+            // 
+            this.BtnIteration.Location = new System.Drawing.Point(6, 52);
+            this.BtnIteration.Name = "BtnIteration";
+            this.BtnIteration.Size = new System.Drawing.Size(152, 27);
+            this.BtnIteration.TabIndex = 0;
+            this.BtnIteration.Text = "Iteration";
+            this.BtnIteration.UseVisualStyleBackColor = true;
+            this.BtnIteration.Click += new System.EventHandler(this.BtnIteration_Click);
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.BtnStrings);
+            this.groupBox6.Controls.Add(this.BtnOperators);
+            this.groupBox6.Location = new System.Drawing.Point(199, 276);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(177, 95);
+            this.groupBox6.TabIndex = 29;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Operators";
+            // 
+            // BtnStrings
+            // 
+            this.BtnStrings.Location = new System.Drawing.Point(10, 53);
+            this.BtnStrings.Name = "BtnStrings";
+            this.BtnStrings.Size = new System.Drawing.Size(145, 27);
+            this.BtnStrings.TabIndex = 33;
+            this.BtnStrings.Text = "Strings";
+            this.BtnStrings.UseVisualStyleBackColor = true;
+            this.BtnStrings.Click += new System.EventHandler(this.BtnStrings_Click);
+            // 
+            // BtnOperators
+            // 
+            this.BtnOperators.Location = new System.Drawing.Point(10, 20);
+            this.BtnOperators.Name = "BtnOperators";
+            this.BtnOperators.Size = new System.Drawing.Size(145, 27);
+            this.BtnOperators.TabIndex = 0;
+            this.BtnOperators.Text = "Operators";
+            this.BtnOperators.UseVisualStyleBackColor = true;
+            this.BtnOperators.Click += new System.EventHandler(this.BtnOperators_Click);
+            // 
+            // groupBox10
+            // 
+            this.groupBox10.Controls.Add(this.BtnClasses);
+            this.groupBox10.Controls.Add(this.BtnMethods);
+            this.groupBox10.Location = new System.Drawing.Point(392, 199);
+            this.groupBox10.Name = "groupBox10";
+            this.groupBox10.Size = new System.Drawing.Size(162, 78);
+            this.groupBox10.TabIndex = 32;
+            this.groupBox10.TabStop = false;
+            this.groupBox10.Text = "Object Oriented";
+            // 
+            // BtnClasses
+            // 
+            this.BtnClasses.Location = new System.Drawing.Point(6, 41);
+            this.BtnClasses.Name = "BtnClasses";
+            this.BtnClasses.Size = new System.Drawing.Size(147, 23);
+            this.BtnClasses.TabIndex = 31;
+            this.BtnClasses.Text = "Classes";
+            this.BtnClasses.UseVisualStyleBackColor = true;
+            this.BtnClasses.Click += new System.EventHandler(this.BtnClasses_Click);
+            // 
+            // BtnMethods
+            // 
+            this.BtnMethods.Location = new System.Drawing.Point(6, 17);
+            this.BtnMethods.Name = "BtnMethods";
+            this.BtnMethods.Size = new System.Drawing.Size(147, 23);
+            this.BtnMethods.TabIndex = 30;
+            this.BtnMethods.Text = "Methods";
+            this.BtnMethods.UseVisualStyleBackColor = true;
+            this.BtnMethods.Click += new System.EventHandler(this.BtnMethods_Click);
             // 
             // BtnArray
             // 
@@ -367,6 +463,16 @@
             this.BtnABC.Text = "ABC Analysis";
             this.BtnABC.UseVisualStyleBackColor = true;
             this.BtnABC.Click += new System.EventHandler(this.btnJohari_Click);
+            // 
+            // BtnMongoDB
+            // 
+            this.BtnMongoDB.Location = new System.Drawing.Point(5, 204);
+            this.BtnMongoDB.Name = "BtnMongoDB";
+            this.BtnMongoDB.Size = new System.Drawing.Size(149, 38);
+            this.BtnMongoDB.TabIndex = 30;
+            this.BtnMongoDB.Text = "MongoDB";
+            this.BtnMongoDB.UseVisualStyleBackColor = true;
+            this.BtnMongoDB.Click += new System.EventHandler(this.BtnMongoDB_Click);
             // 
             // btnJohari
             // 
@@ -491,17 +597,6 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Basic Controls";
             // 
-            // BtnAbout
-            // 
-            this.BtnAbout.BackColor = System.Drawing.Color.SkyBlue;
-            this.BtnAbout.Location = new System.Drawing.Point(10, 98);
-            this.BtnAbout.Name = "BtnAbout";
-            this.BtnAbout.Size = new System.Drawing.Size(75, 23);
-            this.BtnAbout.TabIndex = 11;
-            this.BtnAbout.Text = "About";
-            this.BtnAbout.UseVisualStyleBackColor = false;
-            this.BtnAbout.Click += new System.EventHandler(this.BtnAbout_Click);
-            // 
             // StsMain
             // 
             this.StsMain.ImageScalingSize = new System.Drawing.Size(20, 20);
@@ -519,104 +614,22 @@
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(118, 17);
             this.toolStripStatusLabel1.Text = "toolStripStatusLabel1";
             // 
-            // groupBox6
+            // picLogo_IE
             // 
-            this.groupBox6.Controls.Add(this.BtnStrings);
-            this.groupBox6.Controls.Add(this.BtnOperators);
-            this.groupBox6.Location = new System.Drawing.Point(199, 276);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(177, 95);
-            this.groupBox6.TabIndex = 29;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Operators";
-            // 
-            // BtnOperators
-            // 
-            this.BtnOperators.Location = new System.Drawing.Point(10, 20);
-            this.BtnOperators.Name = "BtnOperators";
-            this.BtnOperators.Size = new System.Drawing.Size(145, 27);
-            this.BtnOperators.TabIndex = 0;
-            this.BtnOperators.Text = "Operators";
-            this.BtnOperators.UseVisualStyleBackColor = true;
-            this.BtnOperators.Click += new System.EventHandler(this.BtnOperators_Click);
-            // 
-            // groupBox8
-            // 
-            this.groupBox8.Controls.Add(this.BtnDecision);
-            this.groupBox8.Controls.Add(this.BtnIteration);
-            this.groupBox8.Location = new System.Drawing.Point(387, 283);
-            this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(167, 91);
-            this.groupBox8.TabIndex = 29;
-            this.groupBox8.TabStop = false;
-            this.groupBox8.Text = "Decision & Iteration";
-            // 
-            // BtnDecision
-            // 
-            this.BtnDecision.Location = new System.Drawing.Point(6, 19);
-            this.BtnDecision.Name = "BtnDecision";
-            this.BtnDecision.Size = new System.Drawing.Size(148, 27);
-            this.BtnDecision.TabIndex = 0;
-            this.BtnDecision.Text = "Decision";
-            this.BtnDecision.UseVisualStyleBackColor = true;
-            this.BtnDecision.Click += new System.EventHandler(this.BtnDecision_Click);
-            // 
-            // BtnIteration
-            // 
-            this.BtnIteration.Location = new System.Drawing.Point(6, 52);
-            this.BtnIteration.Name = "BtnIteration";
-            this.BtnIteration.Size = new System.Drawing.Size(152, 27);
-            this.BtnIteration.TabIndex = 0;
-            this.BtnIteration.Text = "Iteration";
-            this.BtnIteration.UseVisualStyleBackColor = true;
-            this.BtnIteration.Click += new System.EventHandler(this.BtnIteration_Click);
-            // 
-            // BtnMethods
-            // 
-            this.BtnMethods.Location = new System.Drawing.Point(6, 17);
-            this.BtnMethods.Name = "BtnMethods";
-            this.BtnMethods.Size = new System.Drawing.Size(147, 23);
-            this.BtnMethods.TabIndex = 30;
-            this.BtnMethods.Text = "Methods";
-            this.BtnMethods.UseVisualStyleBackColor = true;
-            this.BtnMethods.Click += new System.EventHandler(this.BtnMethods_Click);
-            // 
-            // BtnClasses
-            // 
-            this.BtnClasses.Location = new System.Drawing.Point(6, 41);
-            this.BtnClasses.Name = "BtnClasses";
-            this.BtnClasses.Size = new System.Drawing.Size(147, 23);
-            this.BtnClasses.TabIndex = 31;
-            this.BtnClasses.Text = "Classes";
-            this.BtnClasses.UseVisualStyleBackColor = true;
-            this.BtnClasses.Click += new System.EventHandler(this.BtnClasses_Click);
-            // 
-            // groupBox10
-            // 
-            this.groupBox10.Controls.Add(this.BtnClasses);
-            this.groupBox10.Controls.Add(this.BtnMethods);
-            this.groupBox10.Location = new System.Drawing.Point(392, 199);
-            this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(162, 78);
-            this.groupBox10.TabIndex = 32;
-            this.groupBox10.TabStop = false;
-            this.groupBox10.Text = "Object Oriented";
-            // 
-            // BtnStrings
-            // 
-            this.BtnStrings.Location = new System.Drawing.Point(10, 53);
-            this.BtnStrings.Name = "BtnStrings";
-            this.BtnStrings.Size = new System.Drawing.Size(145, 27);
-            this.BtnStrings.TabIndex = 33;
-            this.BtnStrings.Text = "Strings";
-            this.BtnStrings.UseVisualStyleBackColor = true;
-            this.BtnStrings.Click += new System.EventHandler(this.BtnStrings_Click);
+            this.picLogo_IE.Image = global::IE322_App_KAU.Properties.Resources.IE_LOGO4_19112019;
+            this.picLogo_IE.Location = new System.Drawing.Point(24, 161);
+            this.picLogo_IE.Name = "picLogo_IE";
+            this.picLogo_IE.Size = new System.Drawing.Size(149, 137);
+            this.picLogo_IE.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picLogo_IE.TabIndex = 17;
+            this.picLogo_IE.TabStop = false;
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(762, 415);
+            this.Controls.Add(this.picLogo_IE);
             this.Controls.Add(this.StsMain);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.grpLogin);
@@ -627,6 +640,9 @@
             this.grpLogin.ResumeLayout(false);
             this.grpLogin.PerformLayout();
             this.groupBox1.ResumeLayout(false);
+            this.groupBox8.ResumeLayout(false);
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox10.ResumeLayout(false);
             this.groupBox7.ResumeLayout(false);
             this.Exams.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
@@ -635,9 +651,7 @@
             this.groupBox2.ResumeLayout(false);
             this.StsMain.ResumeLayout(false);
             this.StsMain.PerformLayout();
-            this.groupBox6.ResumeLayout(false);
-            this.groupBox8.ResumeLayout(false);
-            this.groupBox10.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo_IE)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -692,5 +706,6 @@
         private System.Windows.Forms.Button BtnMongoDB;
         private System.Windows.Forms.GroupBox groupBox10;
         private System.Windows.Forms.Button BtnStrings;
+        private System.Windows.Forms.PictureBox picLogo_IE;
     }
 }
