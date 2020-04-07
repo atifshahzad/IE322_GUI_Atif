@@ -1,0 +1,437 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E781C8EC-FE75-48F5-824E-040CA71EE0FC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>IE322_App_KAU</RootNamespace>
+    <AssemblyName>IE322_App_KAU</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <StartupObject>IE322_App_KAU.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Crc32C.NET, Version=1.0.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Crc32C.NET.1.0.5.0\lib\net20\Crc32C.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="DnsClient, Version=1.2.0.0, Culture=neutral, PublicKeyToken=4574bb5573c51424, processorArchitecture=MSIL">
+      <HintPath>..\packages\DnsClient.1.2.0\lib\net45\DnsClient.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Bson, Version=2.10.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MongoDB.Bson.2.10.2\lib\net452\MongoDB.Bson.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver, Version=2.10.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MongoDB.Driver.2.10.2\lib\net452\MongoDB.Driver.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver.Core, Version=2.10.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MongoDB.Driver.Core.2.10.2\lib\net452\MongoDB.Driver.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Libmongocrypt, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MongoDB.Libmongocrypt.1.0.0\lib\net452\MongoDB.Libmongocrypt.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpCompress, Version=0.23.0.0, Culture=neutral, PublicKeyToken=afb0a02973931d96, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpCompress.0.23.0\lib\net45\SharpCompress.dll</HintPath>
+    </Reference>
+    <Reference Include="Snappy.NET, Version=1.1.1.8, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Snappy.NET.1.1.1.8\lib\net45\Snappy.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.4.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Car.cs" />
+    <Compile Include="frmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAbout.Designer.cs">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmABC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmABC.Designer.cs">
+      <DependentUpon>frmABC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmArduino.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmArduino.Designer.cs">
+      <DependentUpon>frmArduino.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmArray.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmArray.designer.cs">
+      <DependentUpon>frmArray.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmClasses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClasses.Designer.cs">
+      <DependentUpon>frmClasses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCombo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCombo.Designer.cs">
+      <DependentUpon>frmCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDecision.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDecision.Designer.cs">
+      <DependentUpon>frmDecision.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmJohari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmJohari.Designer.cs">
+      <DependentUpon>frmJohari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDraw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDraw.Designer.cs">
+      <DependentUpon>frmDraw.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMethods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMethods.Designer.cs">
+      <DependentUpon>frmMethods.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMongoDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMongoDB.Designer.cs">
+      <DependentUpon>frmMongoDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOperators.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOperators.Designer.cs">
+      <DependentUpon>frmOperators.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRandom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRandom.Designer.cs">
+      <DependentUpon>frmRandom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRadio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRadio.Designer.cs">
+      <DependentUpon>frmRadio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCheck.Designer.cs">
+      <DependentUpon>frmCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPic01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPic01.Designer.cs">
+      <DependentUpon>frmPic01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPic02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPic02.Designer.cs">
+      <DependentUpon>frmPic02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form7.Designer.cs">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProgress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProgress.Designer.cs">
+      <DependentUpon>frmProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStrings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStrings.Designer.cs">
+      <DependentUpon>frmStrings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTimer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTimer.Designer.cs">
+      <DependentUpon>frmTimer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGroupie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGroupie.Designer.cs">
+      <DependentUpon>frmGroupie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManufSys.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManufSys.Designer.cs">
+      <DependentUpon>frmManufSys.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRandomCombo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRandomCombo.Designer.cs">
+      <DependentUpon>frmRandomCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRoboticCell.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRoboticCell.Designer.cs">
+      <DependentUpon>frmRoboticCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelfie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelfie.Designer.cs">
+      <DependentUpon>frmSelfie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTalk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTalk.Designer.cs">
+      <DependentUpon>frmTalk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lang\arab.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>arab.resx</DependentUpon>
+    </Compile>
+    <Compile Include="lang\eng.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>eng.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Truck.cs" />
+    <EmbeddedResource Include="frmAbout.resx">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmABC.resx">
+      <DependentUpon>frmABC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmArduino.resx">
+      <DependentUpon>frmArduino.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmArray.resx">
+      <DependentUpon>frmArray.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClasses.resx">
+      <DependentUpon>frmClasses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCombo.resx">
+      <DependentUpon>frmCombo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDecision.resx">
+      <DependentUpon>frmDecision.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmJohari.resx">
+      <DependentUpon>frmJohari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDraw.resx">
+      <DependentUpon>frmDraw.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMethods.resx">
+      <DependentUpon>frmMethods.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMongoDB.resx">
+      <DependentUpon>frmMongoDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOperators.resx">
+      <DependentUpon>frmOperators.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRandom.resx">
+      <DependentUpon>frmRandom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRadio.resx">
+      <DependentUpon>frmRadio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCheck.resx">
+      <DependentUpon>frmCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPic01.resx">
+      <DependentUpon>frmPic01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPic02.resx">
+      <DependentUpon>frmPic02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form7.resx">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProgress.resx">
+      <DependentUpon>frmProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStrings.resx">
+      <DependentUpon>frmStrings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTimer.resx">
+      <DependentUpon>frmTimer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGroupie.resx">
+      <DependentUpon>frmGroupie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManufSys.resx">
+      <DependentUpon>frmManufSys.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRandomCombo.resx">
+      <DependentUpon>frmRandomCombo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRoboticCell.resx">
+      <DependentUpon>frmRoboticCell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelfie.resx">
+      <DependentUpon>frmSelfie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTalk.resx">
+      <DependentUpon>frmTalk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lang\arab.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>arab.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lang\eng.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>eng.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="res\A.jpg" />
+    <EmbeddedResource Include="res\B.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="res\foot_ball.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="res\back.jpg" />
+    <EmbeddedResource Include="res\front.png" />
+    <EmbeddedResource Include="res\left.jpg" />
+    <EmbeddedResource Include="res\me.png" />
+    <EmbeddedResource Include="res\right.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\Machine.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\MongoDB.Libmongocrypt.1.0.0\build\MongoDB.Libmongocrypt.targets" Condition="Exists('..\packages\MongoDB.Libmongocrypt.1.0.0\build\MongoDB.Libmongocrypt.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\MongoDB.Libmongocrypt.1.0.0\build\MongoDB.Libmongocrypt.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MongoDB.Libmongocrypt.1.0.0\build\MongoDB.Libmongocrypt.targets'))" />
+  </Target>
+</Project>
