@@ -340,5 +340,11 @@ namespace IE322_App_KAU
             frmStrings frm = new frmStrings();      
             frm.ShowDialog();
         }
+
+        private void BtnCollections_Click(object sender, EventArgs e)
+        {
+            frmCollections frm = new frmCollections();
+            frm.ShowDialog();
+        }
     }
 }

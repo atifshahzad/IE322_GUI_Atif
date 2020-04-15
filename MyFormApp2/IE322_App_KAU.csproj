@@ -130,6 +130,12 @@
     <Compile Include="frmClasses.Designer.cs">
       <DependentUpon>frmClasses.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCollections.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCollections.Designer.cs">
+      <DependentUpon>frmCollections.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCombo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -295,6 +301,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmClasses.resx">
       <DependentUpon>frmClasses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCollections.resx">
+      <DependentUpon>frmCollections.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCombo.resx">
       <DependentUpon>frmCombo.cs</DependentUpon>

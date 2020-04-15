@@ -76,6 +76,7 @@
             this.StsMain = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.picLogo_IE = new System.Windows.Forms.PictureBox();
+            this.BtnCollections = new System.Windows.Forms.Button();
             this.grpLogin.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox8.SuspendLayout();
@@ -274,6 +275,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.BtnCollections);
             this.groupBox1.Controls.Add(this.groupBox8);
             this.groupBox1.Controls.Add(this.groupBox6);
             this.groupBox1.Controls.Add(this.groupBox10);
@@ -388,7 +390,7 @@
             // 
             this.BtnArray.Location = new System.Drawing.Point(392, 98);
             this.BtnArray.Name = "BtnArray";
-            this.BtnArray.Size = new System.Drawing.Size(149, 84);
+            this.BtnArray.Size = new System.Drawing.Size(149, 39);
             this.BtnArray.TabIndex = 29;
             this.BtnArray.Text = "Arrays";
             this.BtnArray.UseVisualStyleBackColor = true;
@@ -624,6 +626,16 @@
             this.picLogo_IE.TabIndex = 17;
             this.picLogo_IE.TabStop = false;
             // 
+            // BtnCollections
+            // 
+            this.BtnCollections.Location = new System.Drawing.Point(393, 148);
+            this.BtnCollections.Name = "BtnCollections";
+            this.BtnCollections.Size = new System.Drawing.Size(149, 39);
+            this.BtnCollections.TabIndex = 33;
+            this.BtnCollections.Text = "Collections";
+            this.BtnCollections.UseVisualStyleBackColor = true;
+            this.BtnCollections.Click += new System.EventHandler(this.BtnCollections_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -707,5 +719,6 @@
         private System.Windows.Forms.GroupBox groupBox10;
         private System.Windows.Forms.Button BtnStrings;
         private System.Windows.Forms.PictureBox picLogo_IE;
+        private System.Windows.Forms.Button BtnCollections;
     }
 }
