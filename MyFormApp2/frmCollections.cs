@@ -33,7 +33,6 @@ namespace IE322_App_KAU
         {
             myList = new ArrayList(5); // capacity of 5 is optional, default is 4
             LstDisplay.Items.Clear();
-
                      
 
             LblCount.Text    = "Count: "    + myList.Count.ToString();
@@ -193,10 +192,7 @@ namespace IE322_App_KAU
         {
             LstDisplay.Items.Clear();
 
-            myQueue = new Queue(5); // capacity of 5 is optional, default is 4
-
-
-
+            myQueue = new Queue(5);  // capacity of 5 is optional, default is 4
 
             LblCount.Text = "Count: " + myQueue.Count.ToString();
             LblCapacity.Text = "Capacity:  NA";

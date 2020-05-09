@@ -46,6 +46,7 @@
             this.btnTimer = new System.Windows.Forms.Button();
             this.btnDraw = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.BtnCollections = new System.Windows.Forms.Button();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.BtnDecision = new System.Windows.Forms.Button();
             this.BtnIteration = new System.Windows.Forms.Button();
@@ -76,7 +77,7 @@
             this.StsMain = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.picLogo_IE = new System.Windows.Forms.PictureBox();
-            this.BtnCollections = new System.Windows.Forms.Button();
+            this.BtnSystem = new System.Windows.Forms.Button();
             this.grpLogin.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox8.SuspendLayout();
@@ -293,6 +294,16 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+            // BtnCollections
+            // 
+            this.BtnCollections.Location = new System.Drawing.Point(393, 148);
+            this.BtnCollections.Name = "BtnCollections";
+            this.BtnCollections.Size = new System.Drawing.Size(149, 39);
+            this.BtnCollections.TabIndex = 33;
+            this.BtnCollections.Text = "Collections";
+            this.BtnCollections.UseVisualStyleBackColor = true;
+            this.BtnCollections.Click += new System.EventHandler(this.BtnCollections_Click);
+            // 
             // groupBox8
             // 
             this.groupBox8.Controls.Add(this.BtnDecision);
@@ -488,6 +499,7 @@
             // 
             // groupBox5
             // 
+            this.groupBox5.Controls.Add(this.BtnSystem);
             this.groupBox5.Controls.Add(this.btnDraw);
             this.groupBox5.Controls.Add(this.BtnTalk);
             this.groupBox5.ForeColor = System.Drawing.SystemColors.ActiveCaption;
@@ -626,15 +638,15 @@
             this.picLogo_IE.TabIndex = 17;
             this.picLogo_IE.TabStop = false;
             // 
-            // BtnCollections
+            // BtnSystem
             // 
-            this.BtnCollections.Location = new System.Drawing.Point(393, 148);
-            this.BtnCollections.Name = "BtnCollections";
-            this.BtnCollections.Size = new System.Drawing.Size(149, 39);
-            this.BtnCollections.TabIndex = 33;
-            this.BtnCollections.Text = "Collections";
-            this.BtnCollections.UseVisualStyleBackColor = true;
-            this.BtnCollections.Click += new System.EventHandler(this.BtnCollections_Click);
+            this.BtnSystem.Location = new System.Drawing.Point(54, 48);
+            this.BtnSystem.Name = "BtnSystem";
+            this.BtnSystem.Size = new System.Drawing.Size(75, 23);
+            this.BtnSystem.TabIndex = 23;
+            this.BtnSystem.Text = "System";
+            this.BtnSystem.UseVisualStyleBackColor = true;
+            this.BtnSystem.Click += new System.EventHandler(this.BtnSystem_Click);
             // 
             // frmMain
             // 
@@ -720,5 +732,6 @@
         private System.Windows.Forms.Button BtnStrings;
         private System.Windows.Forms.PictureBox picLogo_IE;
         private System.Windows.Forms.Button BtnCollections;
+        private System.Windows.Forms.Button BtnSystem;
     }
 }
