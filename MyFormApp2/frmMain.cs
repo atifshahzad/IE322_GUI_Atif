@@ -12,7 +12,7 @@ namespace IE322_App_KAU
         string myPassword = "";// "1234"; //password
         bool loggedIn = false;
         
-        int attempt = 1;
+        int ThisAttempt = 1;
         int MaxAttempts = 3;
 
 
@@ -104,16 +104,17 @@ namespace IE322_App_KAU
         private void btnLogin_Click(object sender, EventArgs e)
         {
 
+                       
             if (! loggedIn)
             {
 
-                while (attempt <= MaxAttempts)
+                while (ThisAttempt <= MaxAttempts)
                 {
                     if (txtUser.Text != username)
                     {
                         // username is incorrect
-                        MessageBox.Show("Invalid username, " + (MaxAttempts - attempt) + " attempts remaining");
-                        attempt++;
+                        MessageBox.Show("Invalid username, " + (MaxAttempts - ThisAttempt) + " attempts remaining");
+                        ThisAttempt++;
                         return;
                     }
                     else
@@ -122,14 +123,14 @@ namespace IE322_App_KAU
                         if (txtPassword.Text != myPassword)
                         {
                             // Incorrect password
-                            attempt++;
-                            MessageBox.Show("Incorrect password," + (MaxAttempts - attempt) + " attempts remaining");
+                            ThisAttempt++;
+                            MessageBox.Show("Incorrect password," + (MaxAttempts - ThisAttempt) + " attempts remaining");
                             return;
                         }
                         else
                         {
                             //Both are correct
-                            attempt = 1; // reset the number of attempts
+                            ThisAttempt = 1; // reset the number of attempts
                             loggedIn = true;
                            // MessageBox.Show("Hi " + username + ", your login successful", "Welcome!!");                          
                            

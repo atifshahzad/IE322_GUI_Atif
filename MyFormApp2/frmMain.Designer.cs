@@ -66,6 +66,7 @@
             this.BtnMongoDB = new System.Windows.Forms.Button();
             this.btnJohari = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.BtnSystem = new System.Windows.Forms.Button();
             this.BtnTalk = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.btnRandom = new System.Windows.Forms.Button();
@@ -77,7 +78,6 @@
             this.StsMain = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.picLogo_IE = new System.Windows.Forms.PictureBox();
-            this.BtnSystem = new System.Windows.Forms.Button();
             this.grpLogin.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox8.SuspendLayout();
@@ -512,6 +512,16 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Draw and Talk";
             // 
+            // BtnSystem
+            // 
+            this.BtnSystem.Location = new System.Drawing.Point(54, 48);
+            this.BtnSystem.Name = "BtnSystem";
+            this.BtnSystem.Size = new System.Drawing.Size(75, 23);
+            this.BtnSystem.TabIndex = 23;
+            this.BtnSystem.Text = "System";
+            this.BtnSystem.UseVisualStyleBackColor = true;
+            this.BtnSystem.Click += new System.EventHandler(this.BtnSystem_Click);
+            // 
             // BtnTalk
             // 
             this.BtnTalk.Location = new System.Drawing.Point(98, 20);
@@ -637,16 +647,6 @@
             this.picLogo_IE.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picLogo_IE.TabIndex = 17;
             this.picLogo_IE.TabStop = false;
-            // 
-            // BtnSystem
-            // 
-            this.BtnSystem.Location = new System.Drawing.Point(54, 48);
-            this.BtnSystem.Name = "BtnSystem";
-            this.BtnSystem.Size = new System.Drawing.Size(75, 23);
-            this.BtnSystem.TabIndex = 23;
-            this.BtnSystem.Text = "System";
-            this.BtnSystem.UseVisualStyleBackColor = true;
-            this.BtnSystem.Click += new System.EventHandler(this.BtnSystem_Click);
             // 
             // frmMain
             // 
