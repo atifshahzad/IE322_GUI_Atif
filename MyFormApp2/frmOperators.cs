@@ -25,8 +25,17 @@ namespace IE322_App_KAU
 
         private void BtnLogical_Click(object sender, EventArgs e)
         {
+            p = chkP.Checked;
+
+            q = chkQ.Checked;
+
+            r = chkR.Checked;
+
+            s = chkS.Checked;
 
             LblRes.Text = "";
+            LblRes.Text = LblRes.Text + "\n\n" + "p is: " + p;
+            LblRes.Text = LblRes.Text + "\n\n" + "q is: " + q;
             LblRes.Text = LblRes.Text + "\n\n" + "NOT p is: "+ !p;
             LblRes.Text = LblRes.Text + "\n\n" + "NOT q is: "+ !q;
 
@@ -104,6 +113,7 @@ namespace IE322_App_KAU
 
         private void BtnSolveQuad_Click(object sender, EventArgs e)
         {
+            
             a = Convert.ToDouble(txtP.Text);
 
             b = Convert.ToDouble(txtQ.Text);
@@ -112,10 +122,13 @@ namespace IE322_App_KAU
 
 
             double Disc = Math.Pow(b, 2) - 4 * a * c;
+            
+            
             // Formula
-            res = (-b + Math.Sqrt(Disc)) / (2 * a);
-            res2 = (-b - Math.Sqrt(Disc)) / (2 * a);
+            res = (-b + Math.Sqrt(Disc)) / (2 * a); // x1
+            res2 = (-b - Math.Sqrt(Disc)) / (2 * a); //x2
 
+            //Display results
             LblRes.Text = "x1:\t" + Convert.ToString(res);
             LblRes.Text = LblRes.Text + "\n\n" + "x2:\t" + Convert.ToString(res2);
         }

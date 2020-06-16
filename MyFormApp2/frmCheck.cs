@@ -40,6 +40,8 @@ namespace IE322_App_KAU
                 msg = msg + " " + chkBrownie.Text;
             }
 
+
+
             if (msg.Length > 0)
             {
                 MessageBox.Show(msg + " selected ");
@@ -56,7 +58,7 @@ namespace IE322_App_KAU
         private void btnBack_Click(object sender, EventArgs e)
         {
 
-            this.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.DialogResult = DialogResult.OK;
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
