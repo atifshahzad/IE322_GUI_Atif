@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="IE322_App_KAU.BasicInfo" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAECQAQAAAQAAAACAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BasicInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IE322_App_KAU.Car" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAACAAAAQAAIAAAgAAAAAA=</HashCode>
+      <FileName>Car.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IE322_App_KAU.Form7" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACABAAAAAACAAYACgAAAAABABAAAAAAAAAA=</HashCode>
+      <FileName>Form7.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IE322_App_KAU.frmABC" Collapsed="true">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAQQAAACCAAAJAAAACEggECAAAAAAEAAAABAIBAEAA=</HashCode>
+      <FileName>frmABC.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IE322_App_KAU.frmAbout" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kIAAAAgAACAgCAUAAACAAAADAAAAEIAAAAAAAAAAAAA=</HashCode>
+      <FileName>frmAbout.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IE322_App_KAU.frmArduino" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAICBCAIAAAQAACAAIEOAAAAAAJAAAAAACAAAAA=</HashCode>
+      <FileName>frmArduino.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IE322_App_KAU.frmArray" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAUEEABEDD0AAAAAJACEAAACAAAbAMAAAWARAAAAACA=</HashCode>
+      <FileName>frmArray.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IE322_App_KAU.frmCheck" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAACQACgAAAAAQACAAIACAAABAABAAAAgAQAAAAA=</HashCode>
+      <FileName>frmCheck.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IE322_App_KAU.frmClasses" Collapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wAAAAAQAEOEAAAAAQACAQIGCAAAAgABAgCgAAAAAAEA=</HashCode>
+      <FileName>frmClasses.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IE322_App_KAU.frmCollections" Collapsed="true">
+    <Position X="9.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAABAGgCGKQgpiAACASAAAECoEEIEqABACGQAgkgARA=</HashCode>
+      <FileName>frmCollections.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IE322_App_KAU.frmCombo" Collapsed="true">
+    <Position X="11" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAACAgAAACAgCAAIgCABwEAEBAAAAEAAAAAE4=</HashCode>
+      <FileName>frmCombo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IE322_App_KAU.frmDecision" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAABCAIABABACCABJIHCAEAAEBAACAAAAAAAgA=</HashCode>
+      <FileName>frmDecision.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IE322_App_KAU.frmDraw" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAgAGAAAAAAAACAAYACEgIoAABAAFAEAECAAgA=</HashCode>
+      <FileName>frmDraw.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IE322_App_KAU.frmGroupie" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAABAQAEmBAABCwMACAIAACACAQAAAAAAA0AAAAACg=</HashCode>
+      <FileName>frmGroupie.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IE322_App_KAU.frmJohari" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AFAAAABACSAFBAQAAASBCBACCAEXBAAAACgAARYJQQE=</HashCode>
+      <FileName>frmJohari.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IE322_App_KAU.frmMain" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>eBmQobBkpSQBMQSMkIOAwAGXoEBOCSjgUCSQMCL0hQg=</HashCode>
+      <FileName>frmMain.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IE322_App_KAU.frmManufSys" Collapsed="true">
+    <Position X="9.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IDAEABCxEGAUIFgAACDCCIAGIIBAEADAACAAYYAGAQI=</HashCode>
+      <FileName>frmManufSys.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IE322_App_KAU.frmMethods" Collapsed="true">
+    <Position X="11" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAASgAghAAAAiDAJIGEAAAAABgoSAAACAAgQI=</HashCode>
+      <FileName>frmMethods.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IE322_App_KAU.frmMongoDB" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABCAAACAAAAAAAICAAICCAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>frmMongoDB.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IE322_App_KAU.frmOperators" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>qAAACAgJECACAJAgAQKEAogCAAAAAODpBej3FyAgAAA=</HashCode>
+      <FileName>frmOperators.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IE322_App_KAU.frmPic01" Collapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAGIAAAAECAAAAAAAACAIYACgkIAAABAACAIAAAIAAA=</HashCode>
+      <FileName>frmPic01.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IE322_App_KAU.frmPic02" Collapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAECAAAAAAAACAIYACgAAAAABAJAAIAAAAAAA=</HashCode>
+      <FileName>frmPic02.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IE322_App_KAU.Form8" Collapsed="true">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABBAAAQEGAAAAAAAASAAIACAAAAAAhAAAAAAAAAgAA=</HashCode>
+      <FileName>frmProgress.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IE322_App_KAU.frmRadio" Collapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEABIAIASACBAQAAICgBoACCAAAAIBAACAAAIIAAAI=</HashCode>
+      <FileName>frmRadio.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IE322_App_KAU.frmRandom" Collapsed="true">
+    <Position X="9.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACgAABAAAACAAIICAAAAgABAAAAgAACAAAA=</HashCode>
+      <FileName>frmRandom.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IE322_App_KAU.frmRandomCombo" Collapsed="true">
+    <Position X="11" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAQAAAATBAEBQAAACAAAEGiAABAAAMACAAAIAGQAA=</HashCode>
+      <FileName>frmRandomCombo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IE322_App_KAU.frmRoboticCell" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAACCAAAAAAACAAAACIAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>frmRoboticCell.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IE322_App_KAU.frmSelfie" Collapsed="true">
+    <Position X="2.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAECAAgBAAAACAIAECAQAAAAACAAAwAgAAAAA=</HashCode>
+      <FileName>frmSelfie.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IE322_App_KAU.frmStrings" Collapsed="true">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAQAGABAzAAAAAAEAiAgIACANAhAARAAIBAAAAJAAA=</HashCode>
+      <FileName>frmStrings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IE322_App_KAU.frmSystem" Collapsed="true">
+    <Position X="5.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAACCAAAACAAJACAAAAAEBAACAAAAgAgAA=</HashCode>
+      <FileName>frmSystem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IE322_App_KAU.frmTalk" Collapsed="true">
+    <Position X="7.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAICAAAAgAAAGACIACAAAAQABAAACEAAgAAIE=</HashCode>
+      <FileName>frmTalk.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IE322_App_KAU.frmTimer" Collapsed="true">
+    <Position X="9.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gUIFAACABSAAIAAAwiCAQYAiAAAgEQRIACAABAEEAAA=</HashCode>
+      <FileName>frmTimer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IE322_App_KAU.Program" Collapsed="true">
+    <Position X="11" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IE322_App_KAU.Truck" Collapsed="true">
+    <Position X="4" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Truck.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IE322_App_KAU.lang.arab" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAASAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IE322_App_KAU.lang.eng" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IE322_App_KAU.Properties.Resources" Collapsed="true">
+    <Position X="0.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAEAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IE322_App_KAU.Properties.Settings" Collapsed="true">
+    <Position X="2.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -55,7 +55,7 @@
             this.BtnIfElseifElse.Name = "BtnIfElseifElse";
             this.BtnIfElseifElse.Size = new System.Drawing.Size(101, 44);
             this.BtnIfElseifElse.TabIndex = 0;
-            this.BtnIfElseifElse.Text = "if..elseif..else Compare";
+            this.BtnIfElseifElse.Text = "if..elseif..else Compare a and b";
             this.BtnIfElseifElse.UseVisualStyleBackColor = true;
             this.BtnIfElseifElse.Click += new System.EventHandler(this.BtnIfElseifElse_Click);
             // 
