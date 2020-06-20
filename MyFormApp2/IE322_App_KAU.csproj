@@ -53,6 +53,9 @@
     <StartupObject>IE322_App_KAU.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Control.Draggable, Version=1.0.5049.269, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Control.Draggable.1.0.5049.269\lib\net35-Client\Control.Draggable.dll</HintPath>
+    </Reference>
     <Reference Include="Crc32C.NET, Version=1.0.5.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Crc32C.NET.1.0.5.0\lib\net20\Crc32C.NET.dll</HintPath>
     </Reference>
@@ -151,6 +154,12 @@
     </Compile>
     <Compile Include="frmDecision.Designer.cs">
       <DependentUpon>frmDecision.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEvents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEvents.Designer.cs">
+      <DependentUpon>frmEvents.cs</DependentUpon>
     </Compile>
     <Compile Include="frmJohari.cs">
       <SubType>Form</SubType>
@@ -320,6 +329,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmDecision.resx">
       <DependentUpon>frmDecision.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEvents.resx">
+      <DependentUpon>frmEvents.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmJohari.resx">
       <DependentUpon>frmJohari.cs</DependentUpon>

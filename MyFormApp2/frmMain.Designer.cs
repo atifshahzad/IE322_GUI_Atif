@@ -46,6 +46,7 @@
             this.btnTimer = new System.Windows.Forms.Button();
             this.btnDraw = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.BtnEvents = new System.Windows.Forms.Button();
             this.BtnCollections = new System.Windows.Forms.Button();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.BtnDecision = new System.Windows.Forms.Button();
@@ -276,6 +277,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.BtnEvents);
             this.groupBox1.Controls.Add(this.BtnCollections);
             this.groupBox1.Controls.Add(this.groupBox8);
             this.groupBox1.Controls.Add(this.groupBox6);
@@ -294,11 +296,21 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+            // BtnEvents
+            // 
+            this.BtnEvents.Location = new System.Drawing.Point(424, 166);
+            this.BtnEvents.Name = "BtnEvents";
+            this.BtnEvents.Size = new System.Drawing.Size(81, 23);
+            this.BtnEvents.TabIndex = 34;
+            this.BtnEvents.Text = "Events";
+            this.BtnEvents.UseVisualStyleBackColor = true;
+            this.BtnEvents.Click += new System.EventHandler(this.BtnEvents_Click);
+            // 
             // BtnCollections
             // 
-            this.BtnCollections.Location = new System.Drawing.Point(393, 148);
+            this.BtnCollections.Location = new System.Drawing.Point(424, 132);
             this.BtnCollections.Name = "BtnCollections";
-            this.BtnCollections.Size = new System.Drawing.Size(149, 39);
+            this.BtnCollections.Size = new System.Drawing.Size(81, 23);
             this.BtnCollections.TabIndex = 33;
             this.BtnCollections.Text = "Collections";
             this.BtnCollections.UseVisualStyleBackColor = true;
@@ -399,9 +411,9 @@
             // 
             // BtnArray
             // 
-            this.BtnArray.Location = new System.Drawing.Point(392, 98);
+            this.BtnArray.Location = new System.Drawing.Point(424, 98);
             this.BtnArray.Name = "BtnArray";
-            this.BtnArray.Size = new System.Drawing.Size(149, 39);
+            this.BtnArray.Size = new System.Drawing.Size(81, 23);
             this.BtnArray.TabIndex = 29;
             this.BtnArray.Text = "Arrays";
             this.BtnArray.UseVisualStyleBackColor = true;
@@ -733,5 +745,6 @@
         private System.Windows.Forms.PictureBox picLogo_IE;
         private System.Windows.Forms.Button BtnCollections;
         private System.Windows.Forms.Button BtnSystem;
+        private System.Windows.Forms.Button BtnEvents;
     }
 }
