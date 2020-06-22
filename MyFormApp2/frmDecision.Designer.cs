@@ -240,6 +240,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "frmDecision";
             this.Text = "frmDecision";
+            this.Load += new System.EventHandler(this.frmDecision_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

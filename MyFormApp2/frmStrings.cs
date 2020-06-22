@@ -156,5 +156,10 @@ namespace IE322_App_KAU
                 RtbStrings.Text = $"{result}";
             }
         }
+
+        private void BtnSimpleString_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

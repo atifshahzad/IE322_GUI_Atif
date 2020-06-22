@@ -167,6 +167,12 @@
     <Compile Include="frmJohari.Designer.cs">
       <DependentUpon>frmJohari.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmLoops.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoops.Designer.cs">
+      <DependentUpon>frmLoops.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -335,6 +341,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmJohari.resx">
       <DependentUpon>frmJohari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoops.resx">
+      <DependentUpon>frmLoops.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>

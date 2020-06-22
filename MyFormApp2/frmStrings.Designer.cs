@@ -62,6 +62,7 @@
             this.BtnSimpleString.TabIndex = 8;
             this.BtnSimpleString.Text = "button1";
             this.BtnSimpleString.UseVisualStyleBackColor = true;
+            this.BtnSimpleString.Click += new System.EventHandler(this.BtnSimpleString_Click);
             // 
             // BtnFormattedString
             // 

@@ -79,6 +79,7 @@
             this.StsMain = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.picLogo_IE = new System.Windows.Forms.PictureBox();
+            this.BtnDataTypes = new System.Windows.Forms.Button();
             this.grpLogin.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox8.SuspendLayout();
@@ -349,6 +350,7 @@
             // 
             // groupBox6
             // 
+            this.groupBox6.Controls.Add(this.BtnDataTypes);
             this.groupBox6.Controls.Add(this.BtnStrings);
             this.groupBox6.Controls.Add(this.BtnOperators);
             this.groupBox6.Location = new System.Drawing.Point(199, 276);
@@ -360,7 +362,7 @@
             // 
             // BtnStrings
             // 
-            this.BtnStrings.Location = new System.Drawing.Point(10, 53);
+            this.BtnStrings.Location = new System.Drawing.Point(10, 69);
             this.BtnStrings.Name = "BtnStrings";
             this.BtnStrings.Size = new System.Drawing.Size(145, 27);
             this.BtnStrings.TabIndex = 33;
@@ -370,7 +372,7 @@
             // 
             // BtnOperators
             // 
-            this.BtnOperators.Location = new System.Drawing.Point(10, 20);
+            this.BtnOperators.Location = new System.Drawing.Point(10, 42);
             this.BtnOperators.Name = "BtnOperators";
             this.BtnOperators.Size = new System.Drawing.Size(145, 27);
             this.BtnOperators.TabIndex = 0;
@@ -660,6 +662,16 @@
             this.picLogo_IE.TabIndex = 17;
             this.picLogo_IE.TabStop = false;
             // 
+            // BtnDataTypes
+            // 
+            this.BtnDataTypes.Location = new System.Drawing.Point(10, 15);
+            this.BtnDataTypes.Name = "BtnDataTypes";
+            this.BtnDataTypes.Size = new System.Drawing.Size(145, 27);
+            this.BtnDataTypes.TabIndex = 34;
+            this.BtnDataTypes.Text = "Data Types";
+            this.BtnDataTypes.UseVisualStyleBackColor = true;
+            this.BtnDataTypes.Click += new System.EventHandler(this.BtnDataTypes_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -746,5 +758,6 @@
         private System.Windows.Forms.Button BtnCollections;
         private System.Windows.Forms.Button BtnSystem;
         private System.Windows.Forms.Button BtnEvents;
+        private System.Windows.Forms.Button BtnDataTypes;
     }
 }

@@ -298,7 +298,8 @@ namespace IE322_App_KAU
 
         private void BtnIteration_Click(object sender, EventArgs e)
         {
-           
+            frmLoops frm = new frmLoops();
+            frm.ShowDialog();
         }
 
         private void BtnOperators_Click(object sender, EventArgs e)
@@ -361,6 +362,11 @@ namespace IE322_App_KAU
         {
             frmEvents frm = new frmEvents();
             frm.Show();
+        }
+
+        private void BtnDataTypes_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

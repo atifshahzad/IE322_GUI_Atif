@@ -147,5 +147,12 @@ namespace IE322_App_KAU
         {
             this.DialogResult = DialogResult.OK;
         }
+
+       
+
+        private void frmDecision_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
