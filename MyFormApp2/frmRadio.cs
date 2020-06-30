@@ -4,31 +4,31 @@ using System.Windows.Forms;
 
 namespace IE322_App_KAU
 {
-    
+
 
     public partial class frmRadio : Form
     {
 
-        
+
         public frmRadio()
         {
             InitializeComponent();
-          
+
         }
-        
+
 
         public frmRadio(string title, string txt)
         {
-            InitializeComponent();          
-            
+            InitializeComponent();
+
         }
 
         private void Form2_Load(object sender, EventArgs e)
         {
-           // rdoBlue.Checked = true;
+            // rdoBlue.Checked = true;
         }
 
-        
+
 
         private void btnBack_Click(object sender, EventArgs e)
         {
@@ -60,7 +60,7 @@ namespace IE322_App_KAU
 
         private void rdoRed_CheckedChanged(object sender, EventArgs e)
         {
-            
+
             if (rdoRed.Checked == true)
                 rdoRed.ForeColor = Color.FromArgb(255, 0, 0); // http://www.flounder.com/csharp_color_table.htm
             else
@@ -77,7 +77,7 @@ namespace IE322_App_KAU
 
         private void rdoBlue_CheckedChanged(object sender, EventArgs e)
         {
-           if (rdoBlue.Checked == true)
+            if (rdoBlue.Checked == true)
                 rdoBlue.ForeColor = Color.FromName("blue");
             else
                 rdoBlue.ForeColor = Color.FromArgb(0, 0, 0);

@@ -1,11 +1,8 @@
 ﻿using System;
-
-
-using System.Windows.Forms;
-
+using System.Drawing;
 using System.IO; //for stream object
 using System.Reflection; // for assembly
-using System.Drawing;
+using System.Windows.Forms;
 
 namespace IE322_App_KAU
 {
@@ -56,18 +53,18 @@ namespace IE322_App_KAU
         {
             if (TxtID.Text == "")
             {
-                MessageBox.Show("Please enter your ID"); 
+                MessageBox.Show("Please enter your ID");
             }
             else
             {
                 CmbGroupie.Items.Add(TxtID.Text);
                 PicMe.Image = Image.FromStream(_imageStreamMe);
-                
+
             }
-               
+
         }
 
-       
+
 
         private void BtnExit_Click(object sender, EventArgs e)
         {
@@ -109,7 +106,7 @@ namespace IE322_App_KAU
             {
                 CmbGroupie.Items.Add(TxtID.Text);
                 PicRight.Image = Image.FromStream(_imageStreamRight);
-              
+
             }
         }
 
@@ -142,7 +139,7 @@ namespace IE322_App_KAU
             else if (TxtID.Text == "1234567")
             {
                 MessageBox.Show("Can't be Me again");
-            }           
+            }
             else
             {
                 CmbGroupie.Items.Add(TxtID.Text);

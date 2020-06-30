@@ -6,11 +6,11 @@ namespace IE322_App_KAU
 {
     public partial class frmCheck : Form
     {
-        
+
         public frmCheck()
         {
             InitializeComponent();
-           
+
         }
 
         private void Form3_Load(object sender, EventArgs e)
@@ -18,8 +18,8 @@ namespace IE322_App_KAU
 
         }
 
-      
-        
+
+
 
         private void btnShow_Click(object sender, EventArgs e)
         {
@@ -50,7 +50,7 @@ namespace IE322_App_KAU
             {
                 MessageBox.Show("Nothing selected");
             }
-           
+
         }
 
 

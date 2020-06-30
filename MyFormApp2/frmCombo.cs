@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace IE322_App_KAU
@@ -31,8 +24,8 @@ namespace IE322_App_KAU
 
         private void BtnShowSelected1_Click(object sender, EventArgs e)
         {   //Using Method1
-            
-            MessageBox.Show(CmbDays.Text);      
+
+            MessageBox.Show(CmbDays.Text);
 
         }
 
@@ -40,16 +33,16 @@ namespace IE322_App_KAU
         {
             //Method2
             string itemText = CmbDays.GetItemText(CmbDays.SelectedItem);
-            MessageBox.Show(itemText);            
+            MessageBox.Show(itemText);
         }
 
         private void BtnShowSelected3_Click(object sender, EventArgs e)
         {
             //Method3
 
-            var item= CmbDays.SelectedItem;
-            if(item !=null)
-            MessageBox.Show(item.ToString()); // if item is Null, an error will occour 
+            var item = CmbDays.SelectedItem;
+            if (item != null)
+                MessageBox.Show(item.ToString()); // if item is Null, an error will occour 
         }
 
         private void btnRemoveByIndex_Click(object sender, EventArgs e)
@@ -61,7 +54,7 @@ namespace IE322_App_KAU
 
         private void btnRemoveByName_Click(object sender, EventArgs e)
         {
-           //remove item by giving a specified item by name.
+            //remove item by giving a specified item by name.
             CmbDays.Items.Remove("Friday");
         }
 
@@ -83,13 +76,13 @@ namespace IE322_App_KAU
             }
             else
             {
-                MessageBox.Show("Cant remove last item"); 
+                MessageBox.Show("Cant remove last item");
             }
         }
 
         private void cmbDays_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void BtnRemove2ndLast_Click(object sender, EventArgs e)

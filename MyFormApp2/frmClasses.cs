@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace IE322_App_KAU
@@ -15,11 +8,11 @@ namespace IE322_App_KAU
         Car MyCar = new Car();
         Car HisCar = new Car();
 
-       Truck MyTruck = new Truck();
+        Truck MyTruck = new Truck();
 
         BankAccount AliAccount = new BankAccount();
         BankAccount MariaAccount = new BankAccount();
-        
+
 
 
         public frmClasses()
@@ -33,19 +26,19 @@ namespace IE322_App_KAU
         }
 
         private void BtnStartHisCar_Click(object sender, EventArgs e)
-        {        
-          
-            HisCar.Start();  
-           
+        {
 
-           
+            HisCar.Start();
+
+
+
 
         }
 
         private void BtnAccMyCar_Click(object sender, EventArgs e)
         {
             MyCar.Accelerate(30);
-           MessageBox.Show(Convert.ToString(MyCar.speed));
+            MessageBox.Show(Convert.ToString(MyCar.speed));
         }
 
         private void BtnStopHisCar_Click(object sender, EventArgs e)
@@ -60,7 +53,7 @@ namespace IE322_App_KAU
 
         private void BtnStartMyTruck_Click(object sender, EventArgs e)
         {
-          //  BtnStartMyTruck.Start();
+            //  BtnStartMyTruck.Start();
         }
 
         private void btnBack_Click(object sender, EventArgs e)
@@ -70,13 +63,13 @@ namespace IE322_App_KAU
 
         private void BtnWithDraw_Click(object sender, EventArgs e)
         {
-           
-            
+
+
         }
 
         private void frmClasses_Load(object sender, EventArgs e)
         {
-            
+
             TxtBalance.Text = AliAccount.CheckBalance().ToString();
             TxtBalanceMaria.Text = MariaAccount.CheckBalance().ToString();
         }
@@ -149,31 +142,49 @@ namespace IE322_App_KAU
 
         private void BtnTransferToMaria_Click(object sender, EventArgs e)
         {
-            if (AliAccount.Transfer(MariaAccount, Convert.ToDouble(TxtAmount.Text)))
+            try
             {
-                TxtBalance.Text = AliAccount.CheckBalance().ToString();
-                TxtBalanceMaria.Text = MariaAccount.CheckBalance().ToString();
+                if (AliAccount.Transfer(MariaAccount, Convert.ToDouble(TxtAmount.Text)))
+                {
+                    TxtBalance.Text = AliAccount.CheckBalance().ToString();
+                    TxtBalanceMaria.Text = MariaAccount.CheckBalance().ToString();
+                }
+                else
+                {
+                    MessageBox.Show("Transfer failed.");
+                }
             }
-            else
+            catch (Exception)
             {
-                MessageBox.Show("Transfer failed.");
+                MessageBox.Show("Enter valid amount, please");
+                return;
             }
+            
         }
 
         private void BtnTransferToAli_Click(object sender, EventArgs e)
         {
-            if (MariaAccount.Transfer(AliAccount, Convert.ToDouble(TxtAmountMaria.Text)))
+            try
             {
-                TxtBalance.Text = AliAccount.CheckBalance().ToString();
-                TxtBalanceMaria.Text = MariaAccount.CheckBalance().ToString();
+                if (MariaAccount.Transfer(AliAccount, Convert.ToDouble(TxtAmountMaria.Text)))
+                {
+                    TxtBalance.Text = AliAccount.CheckBalance().ToString();
+                    TxtBalanceMaria.Text = MariaAccount.CheckBalance().ToString();
+                }
+                else
+                {
+                    MessageBox.Show("Transfer failed.");
+                }
             }
-            else            
+            catch (Exception)
             {
-                MessageBox.Show("Transfer failed.");
+                MessageBox.Show("Enter valid amount, please");
+                return;
             }
-                
-                
-                
+            
+
+
+
         }
     }
 }

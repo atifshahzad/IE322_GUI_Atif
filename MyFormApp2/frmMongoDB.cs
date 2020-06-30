@@ -1,14 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
+﻿using MongoDB.Driver;
+using System;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-
-using MongoDB.Driver;
 
 namespace IE322_App_KAU
 {
@@ -31,10 +24,10 @@ namespace IE322_App_KAU
             var dbList = dbClient.ListDatabases().ToList();
 
 
-            LblDispaly.Text="The list of databases on this server is: ";
+            LblDispaly.Text = "The list of databases on this server is: ";
             foreach (var db in dbList)
             {
-                LblDispaly.Text = LblDispaly.Text + "\n" + db ;
+                LblDispaly.Text = LblDispaly.Text + "\n" + db;
             }
         }
 

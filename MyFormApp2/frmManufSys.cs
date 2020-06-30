@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace IE322_App_KAU
@@ -22,7 +16,7 @@ namespace IE322_App_KAU
         public frmManufSys()
         {
             InitializeComponent();
-            
+
             //Default Values
 
             TmrArrival.Enabled = false;
@@ -33,24 +27,24 @@ namespace IE322_App_KAU
 
             TrkTBA.Value = 2;
             TrkMinST.Value = 1;
-            TrkMaxST.Value = TrkMinST.Value+2;
+            TrkMaxST.Value = TrkMinST.Value + 2;
 
             TmrArrival.Interval = TrkTBA.Value * MyTimeScale;
             TmrCNC01.Interval = 999999;// six digit
 
             RdoStatusCNC01.Checked = false; // Machine is IDLE
-            
+
 
         }
 
         private void frmManufSys_Load(object sender, EventArgs e)
         {
-        
+
         }
 
         private void TrkTBA_Scroll(object sender, EventArgs e)
         {
-           
+
         }
 
         private void BtnSimulate_Click(object sender, EventArgs e)
@@ -70,7 +64,7 @@ namespace IE322_App_KAU
 
             TmrArrival.Stop();
             TmrCNC01.Stop();
-            
+
             CmbWaitingArea01.Items.Clear();
             PartsArrived = 0;
             PartsDelivered = 0;
@@ -95,8 +89,8 @@ namespace IE322_App_KAU
                 TmrCNC01.Interval = ServiceTimeAtCNC01 * MyTimeScale;
             }
             else
-            { 
-            CmbWaitingArea01.Items.Add(ServiceTimeAtCNC01);
+            {
+                CmbWaitingArea01.Items.Add(ServiceTimeAtCNC01);
             }
 
             //Update Status
@@ -144,16 +138,16 @@ namespace IE322_App_KAU
             else
             { // Machine was Busy, 
 
-                
+
             }
             //Update Status
             TxTPartsInCombo.Text = Convert.ToString(CmbWaitingArea01.Items.Count);
-             
+
         }
 
         private void TrkMinST_Scroll(object sender, EventArgs e)
         {
-            if (TrkMinST.Value> TrkMaxST.Value)
+            if (TrkMinST.Value > TrkMaxST.Value)
             {
                 TrkMinST.Value = TrkMaxST.Value;
             }
@@ -179,7 +173,7 @@ namespace IE322_App_KAU
 
         private void PnlStatus_Paint(object sender, PaintEventArgs e)
         {
-            
+
         }
 
         private void RdoStatusCNC01_CheckedChanged(object sender, EventArgs e)

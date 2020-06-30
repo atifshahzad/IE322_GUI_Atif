@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace IE322_App_KAU
+﻿namespace IE322_App_KAU
 {
     class BankAccount
     {
@@ -21,7 +15,7 @@ namespace IE322_App_KAU
             {
                 return false;
             }
-            
+
         }
 
 
@@ -32,7 +26,7 @@ namespace IE322_App_KAU
                 Balance -= n;
                 return true;
             }
-            else 
+            else
             {
                 return false;
             }
@@ -45,7 +39,7 @@ namespace IE322_App_KAU
         }
         public bool Transfer(BankAccount ToAccount, double Amount)
         {
-            
+
             if (this.Withdraw(Amount))
             {
                 ToAccount.Deposit(Amount);
@@ -53,10 +47,10 @@ namespace IE322_App_KAU
             }
             else
             {
-                return false;                
+                return false;
             }
 
-           
+
         }
     }
 }

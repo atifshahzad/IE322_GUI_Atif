@@ -1,18 +1,15 @@
 ﻿using System;
-
 using System.Drawing;
-
-using System.Windows.Forms;
-
 using System.IO;             //for stream object
 using System.Reflection;     // for assembly
+using System.Windows.Forms;
 
 namespace IE322_App_KAU
 {
     public partial class frmPic02 : Form
     {
         Assembly _assembly;
-        Stream _imageStream;        
+        Stream _imageStream;
 
 
         public frmPic02()
@@ -26,7 +23,7 @@ namespace IE322_App_KAU
         {
             try
             {
-               
+
                 picTry.Image = Image.FromStream(_imageStream);
 
             }
@@ -44,12 +41,12 @@ namespace IE322_App_KAU
 
         private void Form6_Load(object sender, EventArgs e)
         {
-           
-                _assembly = Assembly.GetExecutingAssembly();
-                _imageStream = _assembly.GetManifestResourceStream("IE322_App_KAU.res.A.jpg");
 
-           
-            
+            _assembly = Assembly.GetExecutingAssembly();
+            _imageStream = _assembly.GetManifestResourceStream("IE322_App_KAU.res.A.jpg");
+
+
+
         }
 
         private void picTry_Click(object sender, EventArgs e)

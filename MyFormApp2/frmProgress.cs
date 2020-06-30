@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace IE322_App_KAU
@@ -15,7 +8,7 @@ namespace IE322_App_KAU
         public Form8()
         {
             InitializeComponent();
-           
+
         }
 
         private void btnShowProgress_Click(object sender, EventArgs e)
@@ -27,7 +20,7 @@ namespace IE322_App_KAU
 
             for (i = progressBar1.Minimum; i <= progressBar1.Maximum; i++)
             {
-                progressBar1.Value = i;                
+                progressBar1.Value = i;
 
             }
         }
@@ -58,7 +51,7 @@ namespace IE322_App_KAU
 
         private void progressBar2_Click(object sender, EventArgs e)
         {
-            
+
         }
     }
 }

@@ -1,7 +1,6 @@
 ﻿using System;
-
-using System.Windows.Forms;
 using System.Speech.Synthesis; // Add it from Project -> Add Reference
+using System.Windows.Forms;
 namespace IE322_App_KAU
 {
     public partial class frmTalk : Form
@@ -18,16 +17,16 @@ namespace IE322_App_KAU
         public frmTalk()
         {
             InitializeComponent();
-            
-            
+
+
             He.SelectVoiceByHints(VoiceGender.Male, VoiceAge.Senior);
             She.SelectVoiceByHints(VoiceGender.Female);
             You.SelectVoiceByHints(VoiceGender.Male, VoiceAge.Teen);
-                      
+
 
             He.Volume = 100; // min=0 and max= 100
             He.Rate = 4; // min=-10 and max =10
-            
+
             She.Volume = 70;
             She.Rate = 1;
 

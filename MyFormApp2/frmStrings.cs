@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace IE322_App_KAU
@@ -123,17 +116,17 @@ namespace IE322_App_KAU
             // Display header
             var header = String.Format("{0,-12}{1,8}{2,12}{1,8}{2,12}{3,14}\n",
                                           "City", "Year", "Population", "Change (%)");
-           
+
             var output = "";
             foreach (var city in cities)
             {
-                output = output + "\n"+ String.Format("{0,-12}{1,8:yyyy}{2,12:N0}{3,8:yyyy}{4,12:N0}{5,14:P1}",
+                output = output + "\n" + String.Format("{0,-12}{1,8:yyyy}{2,12:N0}{3,8:yyyy}{4,12:N0}{5,14:P1}",
                                        city.Item1, city.Item2, city.Item3, city.Item4, city.Item5,
                                        (city.Item5 - city.Item3) / (double)city.Item3);
-                
+
             }
 
-            string FinalTable= header + "\n" + output;
+            string FinalTable = header + "\n" + output;
             RtbStrings.Text = $"{FinalTable}";
 
             // The example displays the following output:

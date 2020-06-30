@@ -10,9 +10,9 @@ namespace IE322_App_KAU
     {
         string username = "";//"Atif"; //username
         string myPassword = "";//"1234"; //password
-        
+
         bool loggedIn = false;
-        
+
         int ThisAttempt = 1;
         int MaxAttempts = 3;
 
@@ -176,7 +176,7 @@ namespace IE322_App_KAU
             this.DialogResult = DialogResult.OK;
         }
 
-        
+
 
         private void btnRandom_Click(object sender, EventArgs e)
         {
@@ -312,7 +312,7 @@ namespace IE322_App_KAU
         private void BtnDecision_Click(object sender, EventArgs e)
         {
             frmDecision frm = new frmDecision();
-            frm.ShowDialog();            
+            frm.ShowDialog();
 
         }
 
@@ -342,7 +342,7 @@ namespace IE322_App_KAU
 
         private void BtnStrings_Click(object sender, EventArgs e)
         {
-            frmStrings frm = new frmStrings();      
+            frmStrings frm = new frmStrings();
             frm.ShowDialog();
         }
 

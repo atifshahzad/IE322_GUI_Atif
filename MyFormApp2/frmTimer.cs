@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace IE322_App_KAU
@@ -16,15 +10,15 @@ namespace IE322_App_KAU
         Random rnd = new Random();
 
         public frmTimer()
-            
+
         {
             InitializeComponent();
-            
+
         }
 
         private void btnLoadImage_Click(object sender, EventArgs e)
         {
-           
+
         }
 
         private void btnBack_Click(object sender, EventArgs e)
@@ -59,7 +53,7 @@ namespace IE322_App_KAU
             second = second + tmrTry.Interval / 1000;//in seconds
             prgTry.Value += tmrTry.Interval / 100;// 100 is tmrTry.Max
 
-           
+
             if (second >= 10)
             {
                 tmrTry.Stop();
@@ -80,10 +74,10 @@ namespace IE322_App_KAU
         private void TmrShowMsg_Tick(object sender, EventArgs e)
         {
             RdoTry.Checked = !(RdoTry.Checked);
-            
+
 
         }
-           
+
         private void BtnTimerShowMsgStop_Click(object sender, EventArgs e)
         {
             TmrShowMsg.Stop();
@@ -98,7 +92,7 @@ namespace IE322_App_KAU
 
         private void Timer3_Tick(object sender, EventArgs e)
         {
-            
+
             BtnToggleTimer3.BackColor = Color.FromArgb(rnd.Next(0, 255), rnd.Next(0, 255), rnd.Next(0, 255));
         }
 

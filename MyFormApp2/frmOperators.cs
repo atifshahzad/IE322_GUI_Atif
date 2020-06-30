@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace IE322_App_KAU
@@ -13,7 +6,7 @@ namespace IE322_App_KAU
     public partial class frmOperators : Form
     {
         double a, b, c, w, x, y, z;
-        double res,res2;
+        double res, res2;
         bool ra;
 
         bool p, q, r, s;
@@ -36,43 +29,43 @@ namespace IE322_App_KAU
             LblRes.Text = "";
             LblRes.Text = LblRes.Text + "\n\n" + "p is: " + p;
             LblRes.Text = LblRes.Text + "\n\n" + "q is: " + q;
-            LblRes.Text = LblRes.Text + "\n\n" + "NOT p is: "+ !p;
-            LblRes.Text = LblRes.Text + "\n\n" + "NOT q is: "+ !q;
+            LblRes.Text = LblRes.Text + "\n\n" + "NOT p is: " + !p;
+            LblRes.Text = LblRes.Text + "\n\n" + "NOT q is: " + !q;
 
             LblRes.Text = LblRes.Text + "\n\n" + "p AND q is: " + (p && q);
-            LblRes.Text = LblRes.Text + "\n\n" + "p OR q is: "+ (p || q);
-            LblRes.Text = LblRes.Text + "\n\n" + "p XOR q is: "+( p ^ q);
+            LblRes.Text = LblRes.Text + "\n\n" + "p OR q is: " + (p || q);
+            LblRes.Text = LblRes.Text + "\n\n" + "p XOR q is: " + (p ^ q);
 
-            LblRes.Text = LblRes.Text + "\n\n" + "NOT p AND NOT q is: "+ (!p && !q);
+            LblRes.Text = LblRes.Text + "\n\n" + "NOT p AND NOT q is: " + (!p && !q);
 
-            LblRes.Text = LblRes.Text + "\n\n" + "p AND q OR r is: "+ (p && q || r);
-            LblRes.Text = LblRes.Text + "\n\n" + "p OR q AND r is: "+( p || q && r);
+            LblRes.Text = LblRes.Text + "\n\n" + "p AND q OR r is: " + (p && q || r);
+            LblRes.Text = LblRes.Text + "\n\n" + "p OR q AND r is: " + (p || q && r);
 
-            LblRes.Text = LblRes.Text + "\n\n" + "p AND q AND r is: "+ (p && q && r);
-            LblRes.Text = LblRes.Text + "\n\n" + "p OR q OR r is: "+ (p || q || r);
+            LblRes.Text = LblRes.Text + "\n\n" + "p AND q AND r is: " + (p && q && r);
+            LblRes.Text = LblRes.Text + "\n\n" + "p OR q OR r is: " + (p || q || r);
 
-            LblRes.Text = LblRes.Text + "\n\n" + "p XOR q XOR r is: "+ (p ^ q ^ r);
-            LblRes.Text = LblRes.Text + "\n\n" + "p AND q XOR r is: "+ (p && q ^ r);
-            LblRes.Text = LblRes.Text + "\n\n" + "p XOR q XOR r is: "+ (p ^ q ^ r);
+            LblRes.Text = LblRes.Text + "\n\n" + "p XOR q XOR r is: " + (p ^ q ^ r);
+            LblRes.Text = LblRes.Text + "\n\n" + "p AND q XOR r is: " + (p && q ^ r);
+            LblRes.Text = LblRes.Text + "\n\n" + "p XOR q XOR r is: " + (p ^ q ^ r);
 
-            LblRes.Text = LblRes.Text + "\n\n" + "p AND q OR r OR s is: "+ ( p && q || r || s);
-            LblRes.Text = LblRes.Text + "\n\n" + "p OR q OR r OR s is: " + ( p || q || r || s);
-            LblRes.Text = LblRes.Text + "\n\n" + "p AND q OR r OR NOT s is: " + ( p && q || r || !s);
+            LblRes.Text = LblRes.Text + "\n\n" + "p AND q OR r OR s is: " + (p && q || r || s);
+            LblRes.Text = LblRes.Text + "\n\n" + "p OR q OR r OR s is: " + (p || q || r || s);
+            LblRes.Text = LblRes.Text + "\n\n" + "p AND q OR r OR NOT s is: " + (p && q || r || !s);
 
-            LblRes.Text = LblRes.Text + "\n\n" + "p AND q AND r AND s is: " + ( p && q && r && s);
+            LblRes.Text = LblRes.Text + "\n\n" + "p AND q AND r AND s is: " + (p && q && r && s);
 
-            LblRes.Text = LblRes.Text + "\n\n" + "(p AND q) OR (r AND s) is: " + ( (p && q) || (r && s));
-            LblRes.Text = LblRes.Text + "\n\n" + "p AND q OR r AND s is: " + ( p && q || r && s);
+            LblRes.Text = LblRes.Text + "\n\n" + "(p AND q) OR (r AND s) is: " + ((p && q) || (r && s));
+            LblRes.Text = LblRes.Text + "\n\n" + "p AND q OR r AND s is: " + (p && q || r && s);
 
 
-            LblRes.Text = LblRes.Text + "\n\n" + "p OR q AND r AND s is:" + ( p || q && r && s);
-            LblRes.Text = LblRes.Text + "\n\n" + "p AND q ^ r AND s is: " + ( p && q ^ r && s);
-            LblRes.Text = LblRes.Text + "\n\n" + "NOT p AND q AND r AND s is: " + ( !p && q && r && s);
-            LblRes.Text = LblRes.Text + "\n\n" + "p AND q AND r OR s is: " + ( p && q && r || s);
-            LblRes.Text = LblRes.Text + "\n\n" + "p AND NOT q AND NOT r AND NOT s is: " + ( p && !q && !r && !s);
-            LblRes.Text = LblRes.Text + "\n\n" + "NOT p AND q AND r AND s is: " + ( p && q && r && s);
-            LblRes.Text = LblRes.Text + "\n\n" + "p XOR q AND r AND s is: " + ( p ^ q && r && s);
-            LblRes.Text = LblRes.Text + "\n\n" + "p AND NOT q XOR r AND s is: " + ( p && !q ^ r && s);
+            LblRes.Text = LblRes.Text + "\n\n" + "p OR q AND r AND s is:" + (p || q && r && s);
+            LblRes.Text = LblRes.Text + "\n\n" + "p AND q ^ r AND s is: " + (p && q ^ r && s);
+            LblRes.Text = LblRes.Text + "\n\n" + "NOT p AND q AND r AND s is: " + (!p && q && r && s);
+            LblRes.Text = LblRes.Text + "\n\n" + "p AND q AND r OR s is: " + (p && q && r || s);
+            LblRes.Text = LblRes.Text + "\n\n" + "p AND NOT q AND NOT r AND NOT s is: " + (p && !q && !r && !s);
+            LblRes.Text = LblRes.Text + "\n\n" + "NOT p AND q AND r AND s is: " + (p && q && r && s);
+            LblRes.Text = LblRes.Text + "\n\n" + "p XOR q AND r AND s is: " + (p ^ q && r && s);
+            LblRes.Text = LblRes.Text + "\n\n" + "p AND NOT q XOR r AND s is: " + (p && !q ^ r && s);
         }
 
         private void BtnCompoundAssignment_Click(object sender, EventArgs e)
@@ -113,7 +106,7 @@ namespace IE322_App_KAU
 
         private void BtnSolveQuad_Click(object sender, EventArgs e)
         {
-            
+
             a = Convert.ToDouble(txtP.Text);
 
             b = Convert.ToDouble(txtQ.Text);
@@ -122,8 +115,8 @@ namespace IE322_App_KAU
 
 
             double Disc = Math.Pow(b, 2) - 4 * a * c;
-            
-            
+
+
             // Formula
             res = (-b + Math.Sqrt(Disc)) / (2 * a); // x1
             res2 = (-b - Math.Sqrt(Disc)) / (2 * a); //x2
@@ -147,12 +140,12 @@ namespace IE322_App_KAU
             //prefix
             y = ++x;
             txtX.Text = Convert.ToString(x);
-            txtY.Text = Convert.ToString(y);         
-            
+            txtY.Text = Convert.ToString(y);
+
 
         }
 
-        
+
 
         private void BtnSolve_Click(object sender, EventArgs e)
         {
@@ -174,7 +167,7 @@ namespace IE322_App_KAU
 
                 res = a * c % b + w / (x - y);
 
-            LblRes.Text= "a * c % b + w / (x - y): " + Convert.ToString(res);
+                LblRes.Text = "a * c % b + w / (x - y): " + Convert.ToString(res);
 
 
                 res = (z * z) + x / y;

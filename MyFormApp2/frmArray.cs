@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace IE322_App_KAU
@@ -16,7 +10,7 @@ namespace IE322_App_KAU
 
         //1D Arrays
 
-        Int32[] iArray1=new Int32[5];//Declaration & Definition
+        Int32[] iArray1 = new Int32[5];//Declaration & Definition
         Int32[] iArray2 = new Int32[5]; //Declaration and Definition 
         Int32[] iArray3 = new Int32[5] { 21, 22, 23, 24, 25 };//RECOMMENDED WAY:Declaration, Definition & Initialization
         Int32[] iArray4 = new Int32[] { 11, 12, 13, 14, 15 }; //Declaration, Definition & Initialization (can omit size value only if initialization)           
@@ -37,10 +31,10 @@ namespace IE322_App_KAU
         //Array to be filled with Random numbers
         Random rnd = new Random();
         int[] b = new int[500];
-            
-       
 
-    public frmArray()
+
+
+        public frmArray()
         {
             InitializeComponent();
         }
@@ -55,8 +49,8 @@ namespace IE322_App_KAU
             lblDisplay.Text = "1D Array named iArray3 using for Loop";
             for (Int32 i = 0; i < 5; i++)
             {
-                lblDisplay.Text= lblDisplay.Text+"\n"+Convert.ToString(iArray3[i]);
-                
+                lblDisplay.Text = lblDisplay.Text + "\n" + Convert.ToString(iArray3[i]);
+
             }
         }
 
@@ -67,7 +61,7 @@ namespace IE322_App_KAU
             foreach (Int32 j in iArray5)
             {
                 lblDisplay.Text = lblDisplay.Text + "\n" + Convert.ToString(j);
-               
+
             }
         }
 
@@ -81,7 +75,7 @@ namespace IE322_App_KAU
                 for (int j = 1; j < 3; j++)
                 {
                     lblDisplay.Text = lblDisplay.Text + "    " + Convert.ToString(iArray32[i - 1, j - 1]);
-                   
+
                 }
             }
         }
@@ -108,7 +102,7 @@ namespace IE322_App_KAU
             lblDisplay.Text = lblDisplay.Text + "\n" + "Number of Columns of iArray23 is:" + iArray32.GetLength(1);//second dimension
 
 
-            
+
 
         }
 
@@ -128,9 +122,9 @@ namespace IE322_App_KAU
             lblDisplay.Text = lblDisplay.Text + "\n" + "Max of Random Array  b is:" + b.Max();
             lblDisplay.Text = lblDisplay.Text + "\n" + "Sum of Random Array  b is:" + b.Sum();
             lblDisplay.Text = lblDisplay.Text + "\n" + "Average of Random Array b is:" + b.Average();
-            
+
         }
-                
+
 
         private void BtnModifyAnArray_Click(object sender, EventArgs e)
         {
@@ -199,7 +193,7 @@ namespace IE322_App_KAU
 
             //1D Arrays
 
-            
+
             Int32[] iArray3 = { 21, 22, 23, 24, 25 };//RECOMMENDED WAY:Declaration, Definition & Initialization
             Int32[] iArray4 = new Int32[] { 11, 12, 13, 14, 15 }; //Declaration, Definition & Initialization (can omit size value only if initialization)           
             Int32[] iArray5 = { 31, 32, 33, 34, 35 };//Declaration, Definition & Initialization (can omit new keyword only if initialization) 

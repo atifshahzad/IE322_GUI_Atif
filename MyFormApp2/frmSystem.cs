@@ -1,16 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Newtonsoft.Json;
+using System;
 using System.Windows.Forms;
-
-
-
-using Newtonsoft.Json;
 
 namespace IE322_App_KAU
 {
@@ -44,9 +34,9 @@ namespace IE322_App_KAU
                 WindowsFolder = Environment.SystemDirectory,
                 LogicalDrives = Environment.GetLogicalDrives()
             };
-            string json = JsonConvert.SerializeObject(myInfo,Formatting.Indented);
-            
-            LblInfo.Text=json;
+            string json = JsonConvert.SerializeObject(myInfo, Formatting.Indented);
+
+            LblInfo.Text = json;
         }
     }
 }

@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace IE322_App_KAU
@@ -30,11 +24,11 @@ namespace IE322_App_KAU
         private void btnLoadImage_Click(object sender, EventArgs e)
         {
 
-            
-            
+
+
             graphicsObj.DrawLine(myPen, 20, 20, 200, 210);
 
-            
+
 
 
         }
@@ -52,7 +46,7 @@ namespace IE322_App_KAU
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+
             Rectangle myRectangle = new Rectangle(20, 20, 250, 200);
 
             graphicsObj.DrawRectangle(myPen, myRectangle);
@@ -60,7 +54,7 @@ namespace IE322_App_KAU
 
         private void btnDrawCircle_Click(object sender, EventArgs e)
         {
-            
+
             myPen.Color = System.Drawing.Color.RoyalBlue;
             Rectangle myRectangle = new Rectangle(40, 40, 250, 200);
             graphicsObj.DrawEllipse(myPen, myRectangle);
@@ -68,8 +62,8 @@ namespace IE322_App_KAU
 
         private void Form10_Paint(object sender, PaintEventArgs e)
         {
-           
-            
+
+
             Rectangle myRectangle = new Rectangle(20, 20, 250, 200);
             graphicsObj.DrawEllipse(myPen, myRectangle);
         }
@@ -78,18 +72,18 @@ namespace IE322_App_KAU
         {
             Point coordinates = Cursor.Position;
             MessageBox.Show("Coordinates are: " + coordinates);
-            
+
         }
 
         private void pnlTry_Click(object sender, EventArgs e)
         {
-           
-            
-            
-          // Point coordinates = Cursor.Position;// Relative to screen
+
+
+
+            // Point coordinates = Cursor.Position;// Relative to screen
             Point coordinates = pnlTry.PointToClient(Cursor.Position); //relative to Panel control
             graphicsObj2.DrawLine(myPen, 0, 0, coordinates.X, coordinates.Y);
-            
+
         }
 
         private void pnlTry_Paint(object sender, PaintEventArgs e)

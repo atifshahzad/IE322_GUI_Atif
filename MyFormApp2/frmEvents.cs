@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace IE322_App_KAU
@@ -19,7 +13,7 @@ namespace IE322_App_KAU
 
         private void frmEvents_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void BtnClickEvents_Click(object sender, EventArgs e)
@@ -51,11 +45,11 @@ namespace IE322_App_KAU
         }
 
         private void ChkDrag_CheckedChanged(object sender, EventArgs e)
-        {           
-                ControlExtension.Draggable(BtnDrag, ChkDrag.Checked);
-                ControlExtension.Draggable(ChkDrag, ChkDrag.Checked);
-                ControlExtension.Draggable(LblDrag, ChkDrag.Checked);
-            
+        {
+            ControlExtension.Draggable(BtnDrag, ChkDrag.Checked);
+            ControlExtension.Draggable(ChkDrag, ChkDrag.Checked);
+            ControlExtension.Draggable(LblDrag, ChkDrag.Checked);
+
         }
 
         private void BtnReset_Click(object sender, EventArgs e)

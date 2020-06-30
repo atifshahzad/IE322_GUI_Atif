@@ -1,11 +1,8 @@
 ﻿using System;
-
 using System.Drawing;
-
-using System.Windows.Forms;
-
 using System.IO; //for stream object
 using System.Reflection; // for assembly
+using System.Windows.Forms;
 
 namespace IE322_App_KAU
 {
@@ -23,7 +20,7 @@ namespace IE322_App_KAU
 
         private void BtnAdd_Click(object sender, EventArgs e)
         {
-            CmbSelfie.Items.Add(TxtID.Text);          
+            CmbSelfie.Items.Add(TxtID.Text);
 
 
         }
@@ -36,11 +33,11 @@ namespace IE322_App_KAU
         private void CmbSelfie_SelectedIndexChanged(object sender, EventArgs e)
         {
 
-            if (CmbSelfie.Text=="1234567")
+            if (CmbSelfie.Text == "1234567")
             {
                 PicSelfie.Image = Image.FromStream(_imageStream);
             }
-            else 
+            else
             {
                 PicSelfie.Image = null;
             }

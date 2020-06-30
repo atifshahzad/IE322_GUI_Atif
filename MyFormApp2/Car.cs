@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace IE322_App_KAU
@@ -29,13 +25,13 @@ namespace IE322_App_KAU
         {
             speed = speed + increase;
             MessageBox.Show("Car has been accelerated by " + increase);
-            
+
         }
 
         public void Deccelerate(int decrease)
         {
             speed = speed - decrease;
-            MessageBox.Show("Car has been accelerated by " + decrease);           
+            MessageBox.Show("Car has been accelerated by " + decrease);
 
         }
 

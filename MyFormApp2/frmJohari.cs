@@ -6,8 +6,8 @@ namespace IE322_App_KAU
 {
     public partial class frmJohari : Form
     {
-       int MAX_ALLOWED=8;
-        private string[] attributesArray=new string[55]; // Declaring array of CheckBox
+        int MAX_ALLOWED = 8;
+        private string[] attributesArray = new string[55]; // Declaring array of CheckBox
         private System.Windows.Forms.CheckBox[] chkArray; // Declaring array of CheckBox
 
         public frmJohari()
@@ -64,7 +64,7 @@ namespace IE322_App_KAU
                 chkArray[n].Text = "chk_" + chkArray[n].Tag.ToString();
 
                 // Positioning checkboxes
-                if (yPos > grpControl.Height-10) // Adjust buttons in one column
+                if (yPos > grpControl.Height - 10) // Adjust buttons in one column
                 {
                     yPos = 16;
                     xPos = xPos + chkArray[n].Width + 8;
@@ -100,7 +100,7 @@ namespace IE322_App_KAU
             {
                 cmb.Items.Add(item.Text);
             }
-            
+
         }
 
         //===================== Function for Check Array ======================
@@ -113,7 +113,7 @@ namespace IE322_App_KAU
             {
                 if (((CheckBox)sender).Checked)
                 {
-                   
+
 
                     if (cmbMeByMe.Items.Count == MAX_ALLOWED)
                     {
@@ -128,7 +128,7 @@ namespace IE322_App_KAU
 
 
                     }
-                    
+
 
                 }
                 else
@@ -143,31 +143,31 @@ namespace IE322_App_KAU
             }
             else //rdoYou
             {
-               
-                    if (((CheckBox)sender).Checked)
+
+                if (((CheckBox)sender).Checked)
+                {
+
+
+                    if (cmbMeByYou.Items.Count == MAX_ALLOWED)
                     {
+                        MessageBox.Show("Maximum of " + MAX_ALLOWED + "attributes allowed.");
 
-
-                        if (cmbMeByYou.Items.Count == MAX_ALLOWED)
-                        {
-                            MessageBox.Show("Maximum of " + MAX_ALLOWED + "attributes allowed.");
-
-                        }
-                        else
-                        {
-                            cmbMeNotByYou.Items.Remove(attribute);
-                            cmbMeByYou.Items.Add(attribute);
+                    }
+                    else
+                    {
+                        cmbMeNotByYou.Items.Remove(attribute);
+                        cmbMeByYou.Items.Add(attribute);
                         (((CheckBox)sender).ForeColor) = Color.FromName("Magenta");
 
 
                     }
 
-                    }
-                    else
-                    {
+                }
+                else
+                {
 
-                        cmbMeByYou.Items.Remove(attribute);
-                        cmbMeNotByYou.Items.Add(attribute);
+                    cmbMeByYou.Items.Remove(attribute);
+                    cmbMeNotByYou.Items.Add(attribute);
                     (((CheckBox)sender).ForeColor) = Color.FromName("Black");
 
                 }
@@ -204,7 +204,7 @@ namespace IE322_App_KAU
         private void btnAnalyze_Click(object sender, EventArgs e)
         {
             int index;
-            for (int i=0;i< cmbMeByMe.Items.Count;i++)
+            for (int i = 0; i < cmbMeByMe.Items.Count; i++)
             {
                 index = cmbMeNotByMe.Items.IndexOf(cmbMeByMe.Items[i]);
                 if (index == 0)
@@ -214,13 +214,13 @@ namespace IE322_App_KAU
                 else
                 {//Not found so in Facade 
                     cmbFacade.Items.Add(cmbMeByMe.Items[i]);
-                }                
+                }
             }
 
             index = 0;
             for (int i = 0; i < cmbMeNotByMe.Items.Count; i++)
             {
-                
+
 
                 index = cmbMeByYou.Items.IndexOf(cmbMeNotByMe.Items[i]);
                 if (index == 0)
@@ -233,7 +233,7 @@ namespace IE322_App_KAU
                 }
             }
 
-            lblArena.Text=cmbArena.Items.Count.ToString()+ " in ARENA";
+            lblArena.Text = cmbArena.Items.Count.ToString() + " in ARENA";
             lblFacade.Text = cmbFacade.Items.Count.ToString() + " in FACADE";
             lblBlind.Text = cmbBlind.Items.Count.ToString() + " in BLIND";
             lblMystery.Text = cmbMystery.Items.Count.ToString() + " in MYSTERY";

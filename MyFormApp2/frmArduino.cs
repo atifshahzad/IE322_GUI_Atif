@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace IE322_App_KAU
@@ -14,8 +7,8 @@ namespace IE322_App_KAU
     {
         public frmArduino()
         {
-            InitializeComponent();            
-            
+            InitializeComponent();
+
         }
 
         private void PortWrite(string message)
@@ -30,7 +23,7 @@ namespace IE322_App_KAU
         {
             try
             {
-                
+
                 srpArduino.Write("1");
             }
             catch (Exception)
@@ -38,7 +31,7 @@ namespace IE322_App_KAU
 
                 throw;
             }
-           
+
         }
 
         private void btnOFF_Click(object sender, EventArgs e)
@@ -64,8 +57,8 @@ namespace IE322_App_KAU
 
         private void btnOpenConnection_Click(object sender, EventArgs e)
         {
-                   
-            
+
+
             /*if (srpArduino == null)
             {
                 //Change the portname according to your computer
@@ -75,20 +68,20 @@ namespace IE322_App_KAU
             */
 
             if (!srpArduino.IsOpen) // if not already open
-            { 
-                try
             {
-                
+                try
+                {
+
                     srpArduino.Open();
                     btnCloseConnection.Enabled = !btnCloseConnection.Enabled;
                     btnOpenConnection.Enabled = !btnOpenConnection.Enabled;
 
                 }
-            catch (Exception)
-            {
+                catch (Exception)
+                {
 
                     MessageBox.Show("Could not connect, some error");
-            }
+                }
             }
         }
 
@@ -104,7 +97,7 @@ namespace IE322_App_KAU
                     btnCloseConnection.Enabled = !btnCloseConnection.Enabled;
                     btnOpenConnection.Enabled = !btnOpenConnection.Enabled;
                 }
-                
+
             }
             catch (Exception)
             {

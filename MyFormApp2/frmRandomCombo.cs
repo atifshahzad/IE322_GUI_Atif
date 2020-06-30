@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace IE322_App_KAU
@@ -22,7 +15,7 @@ namespace IE322_App_KAU
             cmbRandom.ResetText();      //Resets the Text 
             cmbRandom.Items.Clear();    //Removes all items from Combo
             Random r = new Random();
-            for (int i = 0; i < r.Next(1, 51) ; i++)
+            for (int i = 0; i < r.Next(1, 51); i++)
             {
                 cmbRandom.Items.Add(r.Next(100, 999));
             }
@@ -30,7 +23,7 @@ namespace IE322_App_KAU
 
         private void btnReset_Click(object sender, EventArgs e)
         {
-            
+
             cmbRandom.ResetText();
             cmbRandom.Items.Clear();
             rdoLess.Checked = false;
@@ -39,15 +32,15 @@ namespace IE322_App_KAU
 
         private void cmbRandom_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
-            if (Convert.ToInt32(cmbRandom.Text)>499)
-            { 
+
+            if (Convert.ToInt32(cmbRandom.Text) > 499)
+            {
                 rdoGreater.Checked = true;
             }
             else
             {
                 rdoLess.Checked = true;
-            } 
+            }
 
         }
 
@@ -62,7 +55,7 @@ namespace IE322_App_KAU
             cmbRandom2.ResetText();
             cmbRandom2.Items.Clear();
             Random r = new Random();
-            for (int i = 0; i < r.Next(2, 9)-1; i++)
+            for (int i = 0; i < r.Next(2, 9) - 1; i++)
             {
                 cmbRandom2.Items.Add(r.Next(10, 99));
             }

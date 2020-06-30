@@ -1,14 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
 using System.Collections; // Required for this 
+using System.Windows.Forms;
 
 namespace IE322_App_KAU
 {
@@ -33,9 +25,9 @@ namespace IE322_App_KAU
         {
             myList = new ArrayList(5); // capacity of 5 is optional, default is 4
             LstDisplay.Items.Clear();
-                     
 
-            LblCount.Text    = "Count: "    + myList.Count.ToString();
+
+            LblCount.Text = "Count: " + myList.Count.ToString();
             LblCapacity.Text = "Capacity: " + myList.Capacity.ToString();
 
             foreach (object item in myList)
@@ -43,7 +35,7 @@ namespace IE322_App_KAU
                 LstDisplay.Items.Add(item);
             }
 
-           
+
 
         }
 
@@ -97,7 +89,7 @@ namespace IE322_App_KAU
 
         private void BtnAdd_Click(object sender, EventArgs e)
         {
-           
+
             myList.Add("IE255");
             myList.Add("IE256");
             myList.Add("IE321");
@@ -137,7 +129,7 @@ namespace IE322_App_KAU
             LstDisplay.Items.Clear();
 
             myStack = new Stack(5); // capacity of 5 is optional, default is 4
-           
+
 
 
 
@@ -146,7 +138,7 @@ namespace IE322_App_KAU
 
             foreach (object item in myStack)
             {
-                LstDisplay.Items.Add(item); 
+                LstDisplay.Items.Add(item);
             }
         }
 
@@ -158,7 +150,7 @@ namespace IE322_App_KAU
             myStack.Push("IE322");
             myStack.Push("IE323");
             myStack.Push("IE422");
-           
+
 
             LblCount.Text = "Count: " + myStack.Count.ToString();
             LblCapacity.Text = "Capacity:  NA";
@@ -227,7 +219,7 @@ namespace IE322_App_KAU
             LstDisplay.Items.Clear();
 
             myQueue.Dequeue();
-            
+
             LblCount.Text = "Count: " + myQueue.Count.ToString();
             LblCapacity.Text = "Capacity:  NA";
 
@@ -246,12 +238,12 @@ namespace IE322_App_KAU
         {
             LstDisplay.Items.Clear();
 
-            myHasht.Add("IE255","Eco"); // Key value pair where key must be unique
-            myHasht.Add("IE256","EM");
-            myHasht.Add("IE321","Comp");
-            myHasht.Add("IE322","C#");
-            myHasht.Add("IE323","DB");
-            myHasht.Add("IE422","Sim");
+            myHasht.Add("IE255", "Eco"); // Key value pair where key must be unique
+            myHasht.Add("IE256", "EM");
+            myHasht.Add("IE321", "Comp");
+            myHasht.Add("IE322", "C#");
+            myHasht.Add("IE323", "DB");
+            myHasht.Add("IE422", "Sim");
 
 
             LblCount.Text = "Count: " + myHasht.Count.ToString();
@@ -259,7 +251,7 @@ namespace IE322_App_KAU
 
             foreach (DictionaryEntry item in myHasht)
             {
-                LstDisplay.Items.Add(item.Key + " : " + item.Value );
+                LstDisplay.Items.Add(item.Key + " : " + item.Value);
             }
         }
 

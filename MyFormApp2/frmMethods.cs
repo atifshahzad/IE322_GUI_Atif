@@ -23,9 +23,9 @@ namespace IE322_App_KAU
         }
 
 
-    // *****************  For Calcultor Operations **************************
+        // *****************  For Calcultor Operations **************************
         private void BtnCalculate_Click(object sender, EventArgs e)
-        {         
+        {
             try
             {
                 a = Convert.ToDouble(TxtA.Text);
@@ -37,24 +37,24 @@ namespace IE322_App_KAU
                 MessageBox.Show("Enter valid numbers");
                 return;
             }
-            
+
 
             MessageBox.Show("Sum of a and b is " + Add(a, b) +
                "" + "\nDifference of a and b is " + Subtract(a, b) +
                "" + "\nProduct of a and b is " + Multiply(a, b) +
                "" + "\nDividing  a by b is " + Divide(a, b) +
                "" + "\nRemainder of a and b is " + Rem(a, b)
-              ,"Result" );               
+              , "Result");
         }
 
-       // Following are different calculation Methods
-       // Add has two input parameters named as a and b.
+        // Following are different calculation Methods
+        // Add has two input parameters named as a and b.
 
         private double Add(double a, double b)
         {                 // body of the method Add starts here
             return a + b;
         }                 //body of the method Add ends here
-        
+
         private double Subtract(double a, double b)
         {
             return a - b;
@@ -74,7 +74,7 @@ namespace IE322_App_KAU
             return a % b;
         }
 
-    // ****************** Following are Methods related to ATM operations  **************
+        // ****************** Following are Methods related to ATM operations  **************
 
         private void Deposit(double n)
         {
@@ -82,16 +82,16 @@ namespace IE322_App_KAU
         }
         private void Withdraw(double n)
         {
-            if (Balance>=n)
+            if (Balance >= n)
             {
                 Balance -= n;
-            }            
+            }
         }
 
         private void BtnDeposit_Click(object sender, EventArgs e)
-        {          
+        {
             try
-            {                
+            {
                 Deposit(Convert.ToDouble(TxtAmount.Text));// Now deposit some amount
                 MessageBox.Show("Amount to be deposited is: " + TxtAmount.Text);
             }
@@ -105,9 +105,9 @@ namespace IE322_App_KAU
 
         private void BtnWithdraw_Click(object sender, EventArgs e)
         {
-           try
+            try
             {
-               
+
                 Withdraw(Convert.ToDouble(TxtAmount.Text));//Now Withdraw some amount
                 MessageBox.Show("Amount to be withdrawn is: " + TxtAmount.Text);
             }
@@ -117,13 +117,13 @@ namespace IE322_App_KAU
                 MessageBox.Show("Enter valid amount, please");
                 return;
             }
-           
+
             TxtBalance.Text = Balance.ToString();
         }
 
         private void BtnCheckBalance_Click(object sender, EventArgs e)
         {
-            
+
             MessageBox.Show("Your current Balance is: " + CheckBalance());
         }
 
@@ -132,8 +132,8 @@ namespace IE322_App_KAU
             return (Balance);
         }
 
-//******************************************************************
-//**********************************************************************
+        //******************************************************************
+        //**********************************************************************
 
 
         private void BtnPrintSign_Click(object sender, EventArgs e)
@@ -141,7 +141,7 @@ namespace IE322_App_KAU
             try
             {
                 a = Convert.ToDouble(TxtNumber.Text);
-                
+
             }
             catch (Exception)
             {
@@ -181,7 +181,7 @@ namespace IE322_App_KAU
                 return;
             }
 
-            MessageBox.Show(PrintMax(a,b));
+            MessageBox.Show(PrintMax(a, b));
         }
         string PrintMax(double number1, double number2)
         {
@@ -194,7 +194,7 @@ namespace IE322_App_KAU
             return "Larger number is: " + max;
         }
 
-        
+
 
         private void btnBack_Click(object sender, EventArgs e)
         {
