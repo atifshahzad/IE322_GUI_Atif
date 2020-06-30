@@ -312,7 +312,8 @@ namespace IE322_App_KAU
         private void BtnDecision_Click(object sender, EventArgs e)
         {
             frmDecision frm = new frmDecision();
-            frm.ShowDialog();
+            frm.ShowDialog();            
+
         }
 
         private void BtnMethods_Click(object sender, EventArgs e)

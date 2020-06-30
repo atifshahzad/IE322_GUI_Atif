@@ -23,14 +23,9 @@ namespace IE322_App_KAU
         }
 
 
-
+    // *****************  For Calcultor Operations **************************
         private void BtnCalculate_Click(object sender, EventArgs e)
-        {
-                
-            
-            
-            
-            
+        {         
             try
             {
                 a = Convert.ToDouble(TxtA.Text);
@@ -79,7 +74,7 @@ namespace IE322_App_KAU
             return a % b;
         }
 
-// Following are Methods related to ATM operations
+    // ****************** Following are Methods related to ATM operations  **************
 
         private void Deposit(double n)
         {
@@ -90,36 +85,27 @@ namespace IE322_App_KAU
             if (Balance>=n)
             {
                 Balance -= n;
-            }
-            
+            }            
         }
 
         private void BtnDeposit_Click(object sender, EventArgs e)
         {          
-            
-
             try
-            {
-                
+            {                
                 Deposit(Convert.ToDouble(TxtAmount.Text));// Now deposit some amount
                 MessageBox.Show("Amount to be deposited is: " + TxtAmount.Text);
             }
             catch (Exception)
             {
-
                 MessageBox.Show("Enter valid amount, please");
                 return;
             }
-
-
             TxtBalance.Text = Balance.ToString();
         }
 
         private void BtnWithdraw_Click(object sender, EventArgs e)
         {
-            
-
-            try
+           try
             {
                
                 Withdraw(Convert.ToDouble(TxtAmount.Text));//Now Withdraw some amount

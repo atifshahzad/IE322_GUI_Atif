@@ -15,7 +15,7 @@ namespace IE322_App_KAU
         public void Start()
         {
             MessageBox.Show("Car has been started");
-            speed = speed + 10;
+            speed = speed + 5;
 
         }
         public void Stop()
@@ -29,6 +29,14 @@ namespace IE322_App_KAU
         {
             speed = speed + increase;
             MessageBox.Show("Car has been accelerated by " + increase);
+            
+        }
+
+        public void Deccelerate(int decrease)
+        {
+            speed = speed - decrease;
+            MessageBox.Show("Car has been accelerated by " + decrease);           
+
         }
 
 
