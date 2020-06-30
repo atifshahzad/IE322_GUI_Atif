@@ -155,7 +155,6 @@ namespace IE322_App_KAU
                 TxtBalanceMaria.Text = MariaAccount.CheckBalance().ToString();
             }
             else
-
             {
                 MessageBox.Show("Transfer failed.");
             }
@@ -167,10 +166,8 @@ namespace IE322_App_KAU
             {
                 TxtBalance.Text = AliAccount.CheckBalance().ToString();
                 TxtBalanceMaria.Text = MariaAccount.CheckBalance().ToString();
-
             }
-            else 
-            
+            else            
             {
                 MessageBox.Show("Transfer failed.");
             }
