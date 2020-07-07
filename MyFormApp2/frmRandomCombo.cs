@@ -93,7 +93,10 @@ namespace IE322_App_KAU
 
         private void frmRandomCombo_Load(object sender, EventArgs e)
         {
-
+            rdoGreater.Enabled = false;
+            rdoGreater2.Enabled = false;
+            rdoLess.Enabled = false;
+            rdoLess2.Enabled = false;
         }
     }
 }
