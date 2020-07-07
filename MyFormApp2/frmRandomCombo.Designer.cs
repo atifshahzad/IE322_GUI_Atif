@@ -48,10 +48,10 @@
             // 
             // btnReset
             // 
-            this.btnReset.Location = new System.Drawing.Point(152, 167);
-            this.btnReset.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnReset.Location = new System.Drawing.Point(114, 136);
+            this.btnReset.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(95, 33);
+            this.btnReset.Size = new System.Drawing.Size(71, 27);
             this.btnReset.TabIndex = 4;
             this.btnReset.Text = "Reset";
             this.btnReset.UseVisualStyleBackColor = true;
@@ -59,10 +59,10 @@
             // 
             // BtnBack
             // 
-            this.BtnBack.Location = new System.Drawing.Point(476, 374);
-            this.BtnBack.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BtnBack.Location = new System.Drawing.Point(416, 307);
+            this.BtnBack.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnBack.Name = "BtnBack";
-            this.BtnBack.Size = new System.Drawing.Size(79, 27);
+            this.BtnBack.Size = new System.Drawing.Size(59, 22);
             this.BtnBack.TabIndex = 5;
             this.BtnBack.Text = "Back";
             this.BtnBack.UseVisualStyleBackColor = true;
@@ -75,11 +75,11 @@
             this.groupBox1.Controls.Add(this.btnReset);
             this.groupBox1.Controls.Add(this.BtnGenerate);
             this.groupBox1.Controls.Add(this.cmbRandom);
-            this.groupBox1.Location = new System.Drawing.Point(29, 43);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Location = new System.Drawing.Point(22, 35);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(288, 242);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(216, 197);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Quiz03_AAF19";
@@ -87,10 +87,10 @@
             // rdoGreater
             // 
             this.rdoGreater.AutoSize = true;
-            this.rdoGreater.Location = new System.Drawing.Point(141, 126);
-            this.rdoGreater.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rdoGreater.Location = new System.Drawing.Point(106, 102);
+            this.rdoGreater.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rdoGreater.Name = "rdoGreater";
-            this.rdoGreater.Size = new System.Drawing.Size(138, 21);
+            this.rdoGreater.Size = new System.Drawing.Size(105, 17);
             this.rdoGreater.TabIndex = 7;
             this.rdoGreater.TabStop = true;
             this.rdoGreater.Text = "Greater than 500";
@@ -99,10 +99,10 @@
             // rdoLess
             // 
             this.rdoLess.AutoSize = true;
-            this.rdoLess.Location = new System.Drawing.Point(139, 98);
-            this.rdoLess.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rdoLess.Location = new System.Drawing.Point(104, 80);
+            this.rdoLess.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rdoLess.Name = "rdoLess";
-            this.rdoLess.Size = new System.Drawing.Size(119, 21);
+            this.rdoLess.Size = new System.Drawing.Size(92, 17);
             this.rdoLess.TabIndex = 6;
             this.rdoLess.TabStop = true;
             this.rdoLess.Text = "Less than 500";
@@ -111,10 +111,10 @@
             // 
             // BtnGenerate
             // 
-            this.BtnGenerate.Location = new System.Drawing.Point(141, 43);
-            this.BtnGenerate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BtnGenerate.Location = new System.Drawing.Point(106, 35);
+            this.BtnGenerate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnGenerate.Name = "BtnGenerate";
-            this.BtnGenerate.Size = new System.Drawing.Size(119, 36);
+            this.BtnGenerate.Size = new System.Drawing.Size(89, 29);
             this.BtnGenerate.TabIndex = 5;
             this.BtnGenerate.Text = "Generate";
             this.BtnGenerate.UseVisualStyleBackColor = true;
@@ -123,10 +123,10 @@
             // cmbRandom
             // 
             this.cmbRandom.FormattingEnabled = true;
-            this.cmbRandom.Location = new System.Drawing.Point(5, 43);
-            this.cmbRandom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmbRandom.Location = new System.Drawing.Point(4, 35);
+            this.cmbRandom.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbRandom.Name = "cmbRandom";
-            this.cmbRandom.Size = new System.Drawing.Size(121, 24);
+            this.cmbRandom.Size = new System.Drawing.Size(92, 21);
             this.cmbRandom.TabIndex = 4;
             this.cmbRandom.SelectedIndexChanged += new System.EventHandler(this.cmbRandom_SelectedIndexChanged);
             // 
@@ -138,11 +138,11 @@
             this.groupBox2.Controls.Add(this.btnReset2);
             this.groupBox2.Controls.Add(this.BtnGenerate2);
             this.groupBox2.Controls.Add(this.cmbRandom2);
-            this.groupBox2.Location = new System.Drawing.Point(345, 43);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox2.Location = new System.Drawing.Point(259, 35);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox2.Size = new System.Drawing.Size(288, 242);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Size = new System.Drawing.Size(216, 197);
             this.groupBox2.TabIndex = 8;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Quiz03_EAF19";
@@ -150,19 +150,20 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(5, 84);
+            this.label1.Location = new System.Drawing.Point(4, 68);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 17);
+            this.label1.Size = new System.Drawing.Size(38, 13);
             this.label1.TabIndex = 8;
             this.label1.Text = "Count:";
             // 
             // rdoGreater2
             // 
             this.rdoGreater2.AutoSize = true;
-            this.rdoGreater2.Location = new System.Drawing.Point(141, 126);
-            this.rdoGreater2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rdoGreater2.Location = new System.Drawing.Point(106, 102);
+            this.rdoGreater2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rdoGreater2.Name = "rdoGreater2";
-            this.rdoGreater2.Size = new System.Drawing.Size(130, 21);
+            this.rdoGreater2.Size = new System.Drawing.Size(99, 17);
             this.rdoGreater2.TabIndex = 7;
             this.rdoGreater2.TabStop = true;
             this.rdoGreater2.Text = "Greater than 50";
@@ -171,10 +172,10 @@
             // rdoLess2
             // 
             this.rdoLess2.AutoSize = true;
-            this.rdoLess2.Location = new System.Drawing.Point(139, 98);
-            this.rdoLess2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rdoLess2.Location = new System.Drawing.Point(104, 80);
+            this.rdoLess2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rdoLess2.Name = "rdoLess2";
-            this.rdoLess2.Size = new System.Drawing.Size(111, 21);
+            this.rdoLess2.Size = new System.Drawing.Size(86, 17);
             this.rdoLess2.TabIndex = 6;
             this.rdoLess2.TabStop = true;
             this.rdoLess2.Text = "Less than 50";
@@ -182,10 +183,10 @@
             // 
             // btnReset2
             // 
-            this.btnReset2.Location = new System.Drawing.Point(152, 167);
-            this.btnReset2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnReset2.Location = new System.Drawing.Point(114, 136);
+            this.btnReset2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnReset2.Name = "btnReset2";
-            this.btnReset2.Size = new System.Drawing.Size(95, 33);
+            this.btnReset2.Size = new System.Drawing.Size(71, 27);
             this.btnReset2.TabIndex = 4;
             this.btnReset2.Text = "Reset";
             this.btnReset2.UseVisualStyleBackColor = true;
@@ -193,10 +194,10 @@
             // 
             // BtnGenerate2
             // 
-            this.BtnGenerate2.Location = new System.Drawing.Point(141, 43);
-            this.BtnGenerate2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BtnGenerate2.Location = new System.Drawing.Point(106, 35);
+            this.BtnGenerate2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnGenerate2.Name = "BtnGenerate2";
-            this.BtnGenerate2.Size = new System.Drawing.Size(119, 36);
+            this.BtnGenerate2.Size = new System.Drawing.Size(89, 29);
             this.BtnGenerate2.TabIndex = 5;
             this.BtnGenerate2.Text = "Generate";
             this.BtnGenerate2.UseVisualStyleBackColor = true;
@@ -205,22 +206,22 @@
             // cmbRandom2
             // 
             this.cmbRandom2.FormattingEnabled = true;
-            this.cmbRandom2.Location = new System.Drawing.Point(5, 43);
-            this.cmbRandom2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmbRandom2.Location = new System.Drawing.Point(4, 35);
+            this.cmbRandom2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbRandom2.Name = "cmbRandom2";
-            this.cmbRandom2.Size = new System.Drawing.Size(121, 24);
+            this.cmbRandom2.Size = new System.Drawing.Size(92, 21);
             this.cmbRandom2.TabIndex = 4;
             this.cmbRandom2.SelectedIndexChanged += new System.EventHandler(this.cmbRandom2_SelectedIndexChanged);
             // 
             // frmRandomCombo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(665, 450);
+            this.ClientSize = new System.Drawing.Size(496, 366);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.BtnBack);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmRandomCombo";
             this.Text = "frmRandomCombo";
             this.Load += new System.EventHandler(this.frmRandomCombo_Load);
