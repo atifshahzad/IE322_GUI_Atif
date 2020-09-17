@@ -80,19 +80,10 @@ namespace IE322_App_KAU
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void BtnDisplayPropertiesMethods2D_Click(object sender, EventArgs e)
         {
             lblDisplay.Text = "Some Methods and Properties:";
-
-            // Some methods of Array
-            lblDisplay.Text = lblDisplay.Text + "\n" + "Min of iArray5 is:" + iArray5.Min();
-            lblDisplay.Text = lblDisplay.Text + "\n" + "Max of iArray5 is:" + iArray5.Max();
-            lblDisplay.Text = lblDisplay.Text + "\n" + "Sum of iArray5 is:" + iArray5.Sum();
-
-            // Some properties of Array
-            lblDisplay.Text = lblDisplay.Text + "\n" + "Rank of iArray5 is:" + iArray5.Rank;   // Dimensions
-            lblDisplay.Text = lblDisplay.Text + "\n" + "Length of iArray5 is:" + iArray5.Length;// size           
-
+            
 
             lblDisplay.Text = lblDisplay.Text + "\n" + "Rank of iArray23 is:" + iArray32.Rank;   // Dimensions
             lblDisplay.Text = lblDisplay.Text + "\n" + "Length of iArray23 is:" + iArray32.Length;// Length: Total number of elements in all dimensions
@@ -106,7 +97,7 @@ namespace IE322_App_KAU
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void BtnDisplayRandomList_Click(object sender, EventArgs e)
         {
 
             lblDisplay.Text = "Some Methods and Properties of Random Array b :";
@@ -216,6 +207,36 @@ namespace IE322_App_KAU
 
 
 
+
+        }
+
+        private void BtnQuestion02_2D_Click(object sender, EventArgs e)
+        {
+            int[,] d = { { 1, 2, 1 }, { 1, 2, 1 }, { 2, 0, 1 } };
+            for (int j = 1; j < d.GetLength(1); j++)
+            {
+                int total = 0;
+                for (int i = j; i < d.GetLength(0); i++)
+                {
+                    total = total + d[i, j];
+                }
+                lblDisplay.Text = "Answer is " + Convert.ToString(total);
+            }
+
+        }
+
+        private void BtnDisplayPropertiesMethods1D_Click(object sender, EventArgs e)
+        {
+            lblDisplay.Text = "Some Methods and Properties:";
+
+            // Some methods of Array
+            lblDisplay.Text = lblDisplay.Text + "\n" + "Min of iArray5 is:" + iArray5.Min();
+            lblDisplay.Text = lblDisplay.Text + "\n" + "Max of iArray5 is:" + iArray5.Max();
+            lblDisplay.Text = lblDisplay.Text + "\n" + "Sum of iArray5 is:" + iArray5.Sum();
+
+            // Some properties of Array
+            lblDisplay.Text = lblDisplay.Text + "\n" + "Rank of iArray5 is:" + iArray5.Rank;   // Dimensions
+            lblDisplay.Text = lblDisplay.Text + "\n" + "Length of iArray5 is:" + iArray5.Length;// size           
 
         }
     }// end frmArray
