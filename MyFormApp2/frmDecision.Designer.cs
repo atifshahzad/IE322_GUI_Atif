@@ -67,7 +67,7 @@
             this.BtnSolveSwitch.TabIndex = 1;
             this.BtnSolveSwitch.Text = "Solve";
             this.BtnSolveSwitch.UseVisualStyleBackColor = true;
-            this.BtnSolveSwitch.Click += new System.EventHandler(this.BtnAnimalType_Click);
+            this.BtnSolveSwitch.Click += new System.EventHandler(this.BtnSwitchMathCalc_Click);
             // 
             // groupBox1
             // 

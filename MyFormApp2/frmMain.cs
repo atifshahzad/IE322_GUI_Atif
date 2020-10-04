@@ -88,10 +88,6 @@ namespace IE322_App_KAU
                     }
                 }
             }
-
-
-
-
         } //end login Button
 
 
