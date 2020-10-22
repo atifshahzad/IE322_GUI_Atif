@@ -145,7 +145,7 @@ namespace IE322_App_KAU
 
         private void frmDecision_Load(object sender, EventArgs e)
         {
-
+            this.CenterToScreen();
         }
     }
 }

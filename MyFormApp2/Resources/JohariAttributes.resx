@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="attribute1" xml:space="preserve">
+    <value>able</value>
+  </data>
+  <data name="attribute10" xml:space="preserve">
+    <value>sentimental</value>
+  </data>
+  <data name="attribute11" xml:space="preserve">
+    <value>tense</value>
+  </data>
+  <data name="attribute12" xml:space="preserve">
+    <value>accepting</value>
+  </data>
+  <data name="attribute13" xml:space="preserve">
+    <value>caring</value>
+  </data>
+  <data name="attribute14" xml:space="preserve">
+    <value>dependable</value>
+  </data>
+  <data name="attribute15" xml:space="preserve">
+    <value>giving</value>
+  </data>
+  <data name="attribute16" xml:space="preserve">
+    <value>ingenious</value>
+  </data>
+  <data name="attribute17" xml:space="preserve">
+    <value>logical</value>
+  </data>
+  <data name="attribute18" xml:space="preserve">
+    <value>observant</value>
+  </data>
+  <data name="attribute19" xml:space="preserve">
+    <value>quiet</value>
+  </data>
+  <data name="attribute2" xml:space="preserve">
+    <value>calm</value>
+  </data>
+  <data name="attribute20" xml:space="preserve">
+    <value>searching</value>
+  </data>
+  <data name="attribute21" xml:space="preserve">
+    <value>shy</value>
+  </data>
+  <data name="attribute22" xml:space="preserve">
+    <value>trustworthy</value>
+  </data>
+  <data name="attribute23" xml:space="preserve">
+    <value>adaptable</value>
+  </data>
+  <data name="attribute24" xml:space="preserve">
+    <value>cheerful</value>
+  </data>
+  <data name="attribute25" xml:space="preserve">
+    <value>dignified</value>
+  </data>
+  <data name="attribute26" xml:space="preserve">
+    <value>happy</value>
+  </data>
+  <data name="attribute27" xml:space="preserve">
+    <value>intelligent</value>
+  </data>
+  <data name="attribute28" xml:space="preserve">
+    <value>loving</value>
+  </data>
+  <data name="attribute29" xml:space="preserve">
+    <value>organised</value>
+  </data>
+  <data name="attribute3" xml:space="preserve">
+    <value>confident</value>
+  </data>
+  <data name="attribute30" xml:space="preserve">
+    <value>reflective</value>
+  </data>
+  <data name="attribute31" xml:space="preserve">
+    <value>self-assertive</value>
+  </data>
+  <data name="attribute32" xml:space="preserve">
+    <value>silly</value>
+  </data>
+  <data name="attribute33" xml:space="preserve">
+    <value>warm</value>
+  </data>
+  <data name="attribute34" xml:space="preserve">
+    <value>adaptable</value>
+  </data>
+  <data name="attribute35" xml:space="preserve">
+    <value>cheerful</value>
+  </data>
+  <data name="attribute36" xml:space="preserve">
+    <value>dignified</value>
+  </data>
+  <data name="attribute37" xml:space="preserve">
+    <value>happy</value>
+  </data>
+  <data name="attribute38" xml:space="preserve">
+    <value>intelligent</value>
+  </data>
+  <data name="attribute39" xml:space="preserve">
+    <value>loving</value>
+  </data>
+  <data name="attribute4" xml:space="preserve">
+    <value>friendly</value>
+  </data>
+  <data name="attribute40" xml:space="preserve">
+    <value>organised</value>
+  </data>
+  <data name="attribute41" xml:space="preserve">
+    <value>reflective</value>
+  </data>
+  <data name="attribute42" xml:space="preserve">
+    <value>self-assertive</value>
+  </data>
+  <data name="attribute43" xml:space="preserve">
+    <value>silly</value>
+  </data>
+  <data name="attribute44" xml:space="preserve">
+    <value>warm</value>
+  </data>
+  <data name="attribute45" xml:space="preserve">
+    <value>bold</value>
+  </data>
+  <data name="attribute46" xml:space="preserve">
+    <value>clever</value>
+  </data>
+  <data name="attribute47" xml:space="preserve">
+    <value>energetic</value>
+  </data>
+  <data name="attribute48" xml:space="preserve">
+    <value>helpful</value>
+  </data>
+  <data name="attribute49" xml:space="preserve">
+    <value>introverted</value>
+  </data>
+  <data name="attribute5" xml:space="preserve">
+    <value>independent</value>
+  </data>
+  <data name="attribute50" xml:space="preserve">
+    <value>mature</value>
+  </data>
+  <data name="attribute51" xml:space="preserve">
+    <value>patient</value>
+  </data>
+  <data name="attribute52" xml:space="preserve">
+    <value>relaxed</value>
+  </data>
+  <data name="attribute53" xml:space="preserve">
+    <value>self-conscious</value>
+  </data>
+  <data name="attribute54" xml:space="preserve">
+    <value>spontaneous</value>
+  </data>
+  <data name="attribute55" xml:space="preserve">
+    <value>wise</value>
+  </data>
+  <data name="attribute56" xml:space="preserve">
+    <value>brave</value>
+  </data>
+  <data name="attribute57" xml:space="preserve">
+    <value>complex</value>
+  </data>
+  <data name="attribute58" xml:space="preserve">
+    <value>extroverted</value>
+  </data>
+  <data name="attribute59" xml:space="preserve">
+    <value>idealistic</value>
+  </data>
+  <data name="attribute6" xml:space="preserve">
+    <value>knowledgeable</value>
+  </data>
+  <data name="attribute60" xml:space="preserve">
+    <value>kind</value>
+  </data>
+  <data name="attribute61" xml:space="preserve">
+    <value>modest</value>
+  </data>
+  <data name="attribute62" xml:space="preserve">
+    <value>powerful</value>
+  </data>
+  <data name="attribute63" xml:space="preserve">
+    <value>religious</value>
+  </data>
+  <data name="attribute64" xml:space="preserve">
+    <value>sensible</value>
+  </data>
+  <data name="attribute65" xml:space="preserve">
+    <value>sympathetic</value>
+  </data>
+  <data name="attribute66" xml:space="preserve">
+    <value>witty</value>
+  </data>
+  <data name="attribute7" xml:space="preserve">
+    <value>nervous</value>
+  </data>
+  <data name="attribute8" xml:space="preserve">
+    <value>proud</value>
+  </data>
+  <data name="attribute9" xml:space="preserve">
+    <value>responsive</value>
+  </data>
+</root>

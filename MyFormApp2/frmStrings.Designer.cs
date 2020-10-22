@@ -60,7 +60,7 @@
             this.BtnSimpleString.Name = "BtnSimpleString";
             this.BtnSimpleString.Size = new System.Drawing.Size(113, 44);
             this.BtnSimpleString.TabIndex = 8;
-            this.BtnSimpleString.Text = "button1";
+            this.BtnSimpleString.Text = "Simple String";
             this.BtnSimpleString.UseVisualStyleBackColor = true;
             this.BtnSimpleString.Click += new System.EventHandler(this.BtnSimpleString_Click);
             // 
@@ -70,7 +70,7 @@
             this.BtnFormattedString.Name = "BtnFormattedString";
             this.BtnFormattedString.Size = new System.Drawing.Size(113, 44);
             this.BtnFormattedString.TabIndex = 8;
-            this.BtnFormattedString.Text = "button1";
+            this.BtnFormattedString.Text = "Formatted String2";
             this.BtnFormattedString.UseVisualStyleBackColor = true;
             this.BtnFormattedString.Click += new System.EventHandler(this.BtnFormattedString_Click);
             // 
@@ -80,7 +80,7 @@
             this.BtnFormattedStrings2.Name = "BtnFormattedStrings2";
             this.BtnFormattedStrings2.Size = new System.Drawing.Size(113, 44);
             this.BtnFormattedStrings2.TabIndex = 8;
-            this.BtnFormattedStrings2.Text = "button1";
+            this.BtnFormattedStrings2.Text = "Formatted String 2";
             this.BtnFormattedStrings2.UseVisualStyleBackColor = true;
             this.BtnFormattedStrings2.Click += new System.EventHandler(this.BtnFormattedStrings2_Click);
             // 
@@ -90,7 +90,7 @@
             this.BtnFormattedString3.Name = "BtnFormattedString3";
             this.BtnFormattedString3.Size = new System.Drawing.Size(113, 44);
             this.BtnFormattedString3.TabIndex = 8;
-            this.BtnFormattedString3.Text = "button1";
+            this.BtnFormattedString3.Text = "Formatted String 3";
             this.BtnFormattedString3.UseVisualStyleBackColor = true;
             this.BtnFormattedString3.Click += new System.EventHandler(this.BtnFormattedString3_Click);
             // 
@@ -100,7 +100,7 @@
             this.BtnStringSpacing.Name = "BtnStringSpacing";
             this.BtnStringSpacing.Size = new System.Drawing.Size(113, 44);
             this.BtnStringSpacing.TabIndex = 8;
-            this.BtnStringSpacing.Text = "button1";
+            this.BtnStringSpacing.Text = "String Spacing";
             this.BtnStringSpacing.UseVisualStyleBackColor = true;
             this.BtnStringSpacing.Click += new System.EventHandler(this.BtnStringSpacing_Click);
             // 
@@ -110,7 +110,7 @@
             this.BtnStringLeftAllign.Name = "BtnStringLeftAllign";
             this.BtnStringLeftAllign.Size = new System.Drawing.Size(113, 44);
             this.BtnStringLeftAllign.TabIndex = 8;
-            this.BtnStringLeftAllign.Text = "button1";
+            this.BtnStringLeftAllign.Text = "String Left Allign";
             this.BtnStringLeftAllign.UseVisualStyleBackColor = true;
             this.BtnStringLeftAllign.Click += new System.EventHandler(this.BtnStringLeftAllign_Click);
             // 
@@ -148,7 +148,7 @@
             this.BtnDigitsAfterDecimal.Name = "BtnDigitsAfterDecimal";
             this.BtnDigitsAfterDecimal.Size = new System.Drawing.Size(113, 44);
             this.BtnDigitsAfterDecimal.TabIndex = 8;
-            this.BtnDigitsAfterDecimal.Text = "button1";
+            this.BtnDigitsAfterDecimal.Text = "Digits After Decimal";
             this.BtnDigitsAfterDecimal.UseVisualStyleBackColor = true;
             this.BtnDigitsAfterDecimal.Click += new System.EventHandler(this.BtnDigitsAfterDecimal_Click);
             // 
@@ -160,6 +160,7 @@
             this.button4.TabIndex = 8;
             this.button4.Text = "button1";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 

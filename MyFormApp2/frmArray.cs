@@ -41,7 +41,7 @@ namespace IE322_App_KAU
 
         private void frmArray_Load(object sender, EventArgs e)
         {
-
+            this.CenterToScreen();
         }
 
         private void BtnDisplay1DForLoop_Click(object sender, EventArgs e)

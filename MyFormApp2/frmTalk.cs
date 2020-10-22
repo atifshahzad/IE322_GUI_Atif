@@ -35,7 +35,7 @@ namespace IE322_App_KAU
 
         private void frmTalk_Load(object sender, EventArgs e)
         {
-
+            this.CenterToScreen();
         }
 
         private void BtnAli_Click(object sender, EventArgs e)
@@ -57,7 +57,7 @@ namespace IE322_App_KAU
         {
             He.Speak("Hello Mr. " + yourName + ", How do you do?");
 
-            You.SpeakAsync("Hi Mr. " + HisName + " and Miss " + HerName);
+            You.SpeakAsync("Hi Mr. " + HisName + " and Miss " + HerName); // The methods return immediately without waiting for the content of the SpeakAsync object to finish speaking. Use SpeakAsync if your application needs to perform tasks while speaking, for example highlight text, paint animation, monitor controls, or other tasks.
             You.Speak("I am quite fine and currently in the class of Computer Applications in Industrial Engineering");
             You.Speak("This is very easy course");
             You.Speak("because I don't look for the bonus marks only");

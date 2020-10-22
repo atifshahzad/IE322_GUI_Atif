@@ -1,19 +1,22 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
+using System.Resources;
 
 namespace IE322_App_KAU
 {
     public partial class frmJohari : Form
     {
         int MAX_ALLOWED = 8;
-        private string[] attributesArray = new string[55]; // Declaring array of CheckBox
+        private string[] attributesArray = new string[56]; // Declaring array of CheckBox
         private System.Windows.Forms.CheckBox[] chkArray; // Declaring array of CheckBox
 
         public frmJohari()
         {
             InitializeComponent();
 
+            LoadAttributes();
+/*
             attributesArray[0] = "able";
             attributesArray[1] = "calm";
             attributesArray[2] = "confident";
@@ -24,20 +27,8 @@ namespace IE322_App_KAU
             attributesArray[7] = "proud";
             attributesArray[8] = "responsive";
             attributesArray[9] = "sentimental";
-
             attributesArray[10] = "tense";
-
-
-
-
-
-
-
-
-
-
-
-
+*/
             CreateCheckBoxes();
             AddAllAttrib2Combo(this.cmbMeNotByMe);
             AddAllAttrib2Combo(this.cmbMeNotByYou);
@@ -61,8 +52,9 @@ namespace IE322_App_KAU
                 chkArray[n].Tag = n;
                 chkArray[n].Width = 72;
                 chkArray[n].Height = 24;
-                chkArray[n].Text = "chk_" + chkArray[n].Tag.ToString();
 
+                //chkArray[n].Text = attributesArray[n-1];///  "chk_" + chkArray[n].Tag.ToString();
+                chkArray[n].Text = "chk_" + chkArray[n].Tag.ToString();
                 // Positioning checkboxes
                 if (yPos > grpControl.Height - 10) // Adjust buttons in one column
                 {
@@ -257,6 +249,23 @@ namespace IE322_App_KAU
                 item.Checked = false;
                 item.ForeColor = Color.FromName("Black");
             }
+        }
+
+        private bool LoadAttributes()
+        {
+            string resxFile = "D:\\IE322_ALL\\_IE322_S20\\20180404\\MyFormApp2\\MyFormApp2\\Resources\\JohariAttributes.resx";
+        
+            using (ResXResourceSet resXSet = new ResXResourceSet(resxFile))
+            {
+
+                for (int i = 0; i < 56; i++)
+                {
+                    attributesArray[i] = resXSet.GetString("Attribute" + i.ToString());
+                }
+
+            }
+
+            return true;
         }
     }
 }

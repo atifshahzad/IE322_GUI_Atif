@@ -31,9 +31,9 @@
             this.BtnBack = new System.Windows.Forms.Button();
             this.BtnClickEvents = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.LblDrag = new System.Windows.Forms.Label();
             this.ChkDrag = new System.Windows.Forms.CheckBox();
             this.BtnDrag = new System.Windows.Forms.Button();
-            this.LblDrag = new System.Windows.Forms.Label();
             this.BtnReset = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -59,6 +59,7 @@
             this.BtnClickEvents.Click += new System.EventHandler(this.BtnClickEvents_Click);
             this.BtnClickEvents.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BtnClickEvents_MouseDown);
             this.BtnClickEvents.MouseEnter += new System.EventHandler(this.BtnClickEvents_MouseEnter);
+            this.BtnClickEvents.MouseLeave += new System.EventHandler(this.BtnClickEvents_MouseLeave);
             this.BtnClickEvents.MouseHover += new System.EventHandler(this.BtnClickEvents_MouseHover);
             this.BtnClickEvents.MouseUp += new System.Windows.Forms.MouseEventHandler(this.BtnClickEvents_MouseUp);
             // 
@@ -73,6 +74,15 @@
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Draggable";
+            // 
+            // LblDrag
+            // 
+            this.LblDrag.AutoSize = true;
+            this.LblDrag.Location = new System.Drawing.Point(6, 213);
+            this.LblDrag.Name = "LblDrag";
+            this.LblDrag.Size = new System.Drawing.Size(174, 13);
+            this.LblDrag.TabIndex = 2;
+            this.LblDrag.Text = "To make these controls draggable, ";
             // 
             // ChkDrag
             // 
@@ -93,15 +103,6 @@
             this.BtnDrag.TabIndex = 0;
             this.BtnDrag.Text = " Drag Me";
             this.BtnDrag.UseVisualStyleBackColor = true;
-            // 
-            // LblDrag
-            // 
-            this.LblDrag.AutoSize = true;
-            this.LblDrag.Location = new System.Drawing.Point(6, 213);
-            this.LblDrag.Name = "LblDrag";
-            this.LblDrag.Size = new System.Drawing.Size(174, 13);
-            this.LblDrag.TabIndex = 2;
-            this.LblDrag.Text = "To make these controls draggable, ";
             // 
             // BtnReset
             // 

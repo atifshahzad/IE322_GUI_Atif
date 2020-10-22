@@ -13,7 +13,8 @@ namespace IE322_App_KAU
 
         private void frmEvents_Load(object sender, EventArgs e)
         {
-
+            this.CenterToScreen();
+            
         }
 
         private void BtnClickEvents_Click(object sender, EventArgs e)
@@ -69,6 +70,13 @@ namespace IE322_App_KAU
         private void BtnBack_Click(object sender, EventArgs e)
         {
             this.DialogResult = DialogResult.OK;
+            this.Dispose();            
+        }
+
+        private void BtnClickEvents_MouseLeave(object sender, EventArgs e)
+        {
+            BtnClickEvents.Text = "MouseLeave Event occurred";
+            BtnClickEvents.BackColor = Color.Red;
         }
     }
 }

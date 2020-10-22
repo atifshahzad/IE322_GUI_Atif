@@ -23,8 +23,8 @@ namespace IE322_App_KAU
 
         private void btnShow_Click(object sender, EventArgs e)
         {
-            string msg = "";
 
+            string msg = "";
             if (chkCoffee.Checked == true)
             {
                 msg = chkCoffee.Text;

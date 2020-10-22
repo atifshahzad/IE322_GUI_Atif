@@ -30,7 +30,7 @@ namespace IE322_App_KAU
             rdoGreater.Checked = false;
         }
 
-        private void cmbRandom_SelectedIndexChanged(object sender, EventArgs e)
+        private void cmbRandom_dialog(object sender, EventArgs e)
         {
 
             if (Convert.ToInt32(cmbRandom.Text) > 499)
@@ -97,6 +97,31 @@ namespace IE322_App_KAU
             rdoGreater2.Enabled = false;
             rdoLess.Enabled = false;
             rdoLess2.Enabled = false;
+        }
+
+        private void Problem1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string path = @"D:\IE322_ALL\_IE322_S20\20180404\MyFormApp2\MyFormApp2\Resources\S2018_QUIZ03--EA.pdf";
+                System.Diagnostics.Process.Start("IExplore.exe", path);
+            }
+            catch
+            {
+
+            }
+        }
+
+        private void cmbRandom_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (Convert.ToInt32(cmbRandom.Text) > 499)
+            {
+                rdoGreater.Checked = true;
+            }
+            else
+            {
+                rdoLess.Checked = true;
+            }
         }
     }
 }

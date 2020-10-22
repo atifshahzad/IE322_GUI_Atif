@@ -312,6 +312,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\JohariAttributes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JohariAttributes.resx</DependentUpon>
+    </Compile>
     <Compile Include="Truck.cs" />
     <EmbeddedResource Include="frmAbout.resx">
       <DependentUpon>frmAbout.cs</DependentUpon>
@@ -443,6 +448,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Resources\JohariAttributes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>JohariAttributes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="res\A.jpg" />
     <EmbeddedResource Include="res\B.jpg" />
   </ItemGroup>

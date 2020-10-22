@@ -165,10 +165,11 @@
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Button BtnShowSelected1;
         private System.Windows.Forms.Button BtnShowSelected2;
+        private System.Windows.Forms.Button BtnShowSelected3;
         private System.Windows.Forms.Button BtnRemoveByIndex;
         private System.Windows.Forms.Button BtnRemoveByName;
         private System.Windows.Forms.Button BtnRemoveLast;
         private System.Windows.Forms.Button BtnRemove2ndLast;
-        private System.Windows.Forms.Button BtnShowSelected3;
+        
     }
 }

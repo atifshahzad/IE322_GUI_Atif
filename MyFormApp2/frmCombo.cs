@@ -76,7 +76,7 @@ namespace IE322_App_KAU
             }
             else
             {
-                MessageBox.Show("Cant remove last item");
+                MessageBox.Show("Can't remove last item");
             }
         }
 
