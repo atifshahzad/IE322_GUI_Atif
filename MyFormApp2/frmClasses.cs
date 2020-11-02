@@ -27,12 +27,7 @@ namespace IE322_App_KAU
 
         private void BtnStartHisCar_Click(object sender, EventArgs e)
         {
-
             HisCar.Start();
-
-
-
-
         }
 
         private void BtnAccMyCar_Click(object sender, EventArgs e)
@@ -61,15 +56,8 @@ namespace IE322_App_KAU
             this.DialogResult = DialogResult.OK;
         }
 
-        private void BtnWithDraw_Click(object sender, EventArgs e)
-        {
-
-
-        }
-
         private void frmClasses_Load(object sender, EventArgs e)
         {
-
             TxtBalance.Text = AliAccount.CheckBalance().ToString();
             TxtBalanceMaria.Text = MariaAccount.CheckBalance().ToString();
         }
@@ -180,8 +168,7 @@ namespace IE322_App_KAU
             {
                 MessageBox.Show("Enter valid amount, please");
                 return;
-            }
-            
+            }        
 
 
 

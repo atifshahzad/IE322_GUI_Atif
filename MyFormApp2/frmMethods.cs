@@ -92,7 +92,7 @@ namespace IE322_App_KAU
         {
             try
             {
-                Deposit(Convert.ToDouble(TxtAmount.Text));// Now deposit some amount
+				Deposit(Convert.ToDouble(TxtAmount.Text));// Now deposit some amount
                 MessageBox.Show("Amount to be deposited is: " + TxtAmount.Text);
             }
             catch (Exception)
