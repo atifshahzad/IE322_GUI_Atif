@@ -15,9 +15,7 @@
             {
                 return false;
             }
-
         }
-
 
         public bool Withdraw(double n)
         {
@@ -32,14 +30,12 @@
             }
         }
 
-
         public double CheckBalance()
         {
             return (Balance);
         }
         public bool Transfer(BankAccount ToAccount, double Amount)
         {
-
             if (this.Withdraw(Amount))
             {
                 ToAccount.Deposit(Amount);
@@ -49,8 +45,6 @@
             {
                 return false;
             }
-
-
         }
     }
 }
