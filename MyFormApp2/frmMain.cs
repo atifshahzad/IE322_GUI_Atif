@@ -8,8 +8,8 @@ namespace IE322_App_KAU
 {
     public partial class frmMain : Form
     {
-        string username = "";//"Atif"; //username
-        string myPassword = "";//"1234"; //password
+        string username = "";      //"Atif"; //username
+        string myPassword = "";    //"1234"; //password
 
         bool loggedIn = false;
 
@@ -25,7 +25,6 @@ namespace IE322_App_KAU
         {
             if (!loggedIn)
             {
-
                 while (ThisAttempt <= MaxAttempts)
                 {
                     if (txtUser.Text != username)
