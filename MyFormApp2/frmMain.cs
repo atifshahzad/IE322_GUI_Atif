@@ -39,9 +39,9 @@ namespace IE322_App_KAU
                         // so check password			
                         if (txtPassword.Text != myPassword)
                         {
-                            // Incorrect password
-                            ThisAttempt++;
+                            // Incorrect password                            
                             MessageBox.Show("Incorrect password," + (MaxAttempts - ThisAttempt) + " attempts remaining");
+                            ThisAttempt++;
                             return;
                         }
                         else
