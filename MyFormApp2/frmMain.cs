@@ -364,5 +364,10 @@ namespace IE322_App_KAU
         {
 
         }
+
+        private void StsMain_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
     }
 }

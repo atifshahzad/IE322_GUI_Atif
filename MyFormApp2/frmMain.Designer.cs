@@ -46,7 +46,8 @@
             this.btnTimer = new System.Windows.Forms.Button();
             this.btnDraw = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.BtnEvents = new System.Windows.Forms.Button();
+            this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.BtnArray = new System.Windows.Forms.Button();
             this.BtnCollections = new System.Windows.Forms.Button();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.BtnDecision = new System.Windows.Forms.Button();
@@ -56,9 +57,9 @@
             this.BtnStrings = new System.Windows.Forms.Button();
             this.BtnOperators = new System.Windows.Forms.Button();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.BtnEvents = new System.Windows.Forms.Button();
             this.BtnClasses = new System.Windows.Forms.Button();
             this.BtnMethods = new System.Windows.Forms.Button();
-            this.BtnArray = new System.Windows.Forms.Button();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.btnArduino = new System.Windows.Forms.Button();
             this.Exams = new System.Windows.Forms.GroupBox();
@@ -80,9 +81,10 @@
             this.StsMain = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.picLogo_IE = new System.Windows.Forms.PictureBox();
-            this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.grpLogin.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.groupBox9.SuspendLayout();
             this.groupBox8.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.groupBox10.SuspendLayout();
@@ -94,7 +96,6 @@
             this.groupBox2.SuspendLayout();
             this.StsMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo_IE)).BeginInit();
-            this.groupBox9.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnRadio
@@ -297,15 +298,26 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // BtnEvents
+            // groupBox9
             // 
-            this.BtnEvents.Location = new System.Drawing.Point(6, 69);
-            this.BtnEvents.Name = "BtnEvents";
-            this.BtnEvents.Size = new System.Drawing.Size(147, 23);
-            this.BtnEvents.TabIndex = 34;
-            this.BtnEvents.Text = "Events";
-            this.BtnEvents.UseVisualStyleBackColor = true;
-            this.BtnEvents.Click += new System.EventHandler(this.BtnEvents_Click);
+            this.groupBox9.Controls.Add(this.BtnArray);
+            this.groupBox9.Controls.Add(this.BtnCollections);
+            this.groupBox9.Location = new System.Drawing.Point(492, 96);
+            this.groupBox9.Name = "groupBox9";
+            this.groupBox9.Size = new System.Drawing.Size(167, 75);
+            this.groupBox9.TabIndex = 34;
+            this.groupBox9.TabStop = false;
+            this.groupBox9.Text = "Data Structures";
+            // 
+            // BtnArray
+            // 
+            this.BtnArray.Location = new System.Drawing.Point(6, 18);
+            this.BtnArray.Name = "BtnArray";
+            this.BtnArray.Size = new System.Drawing.Size(147, 23);
+            this.BtnArray.TabIndex = 29;
+            this.BtnArray.Text = "Arrays";
+            this.BtnArray.UseVisualStyleBackColor = true;
+            this.BtnArray.Click += new System.EventHandler(this.BtnArray_Click);
             // 
             // BtnCollections
             // 
@@ -402,6 +414,16 @@
             this.groupBox10.TabStop = false;
             this.groupBox10.Text = "Object Oriented";
             // 
+            // BtnEvents
+            // 
+            this.BtnEvents.Location = new System.Drawing.Point(6, 69);
+            this.BtnEvents.Name = "BtnEvents";
+            this.BtnEvents.Size = new System.Drawing.Size(147, 23);
+            this.BtnEvents.TabIndex = 34;
+            this.BtnEvents.Text = "Events";
+            this.BtnEvents.UseVisualStyleBackColor = true;
+            this.BtnEvents.Click += new System.EventHandler(this.BtnEvents_Click);
+            // 
             // BtnClasses
             // 
             this.BtnClasses.Location = new System.Drawing.Point(6, 43);
@@ -421,16 +443,6 @@
             this.BtnMethods.Text = "Methods";
             this.BtnMethods.UseVisualStyleBackColor = true;
             this.BtnMethods.Click += new System.EventHandler(this.BtnMethods_Click);
-            // 
-            // BtnArray
-            // 
-            this.BtnArray.Location = new System.Drawing.Point(6, 18);
-            this.BtnArray.Name = "BtnArray";
-            this.BtnArray.Size = new System.Drawing.Size(147, 23);
-            this.BtnArray.TabIndex = 29;
-            this.BtnArray.Text = "Arrays";
-            this.BtnArray.UseVisualStyleBackColor = true;
-            this.BtnArray.Click += new System.EventHandler(this.BtnArray_Click);
             // 
             // groupBox7
             // 
@@ -656,6 +668,7 @@
             this.StsMain.Size = new System.Drawing.Size(871, 22);
             this.StsMain.TabIndex = 16;
             this.StsMain.Text = "Dr. Atif Shahzad";
+            this.StsMain.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.StsMain_ItemClicked);
             // 
             // toolStripStatusLabel1
             // 
@@ -673,22 +686,20 @@
             this.picLogo_IE.TabIndex = 17;
             this.picLogo_IE.TabStop = false;
             // 
-            // groupBox9
+            // statusStrip1
             // 
-            this.groupBox9.Controls.Add(this.BtnArray);
-            this.groupBox9.Controls.Add(this.BtnCollections);
-            this.groupBox9.Location = new System.Drawing.Point(492, 96);
-            this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(167, 75);
-            this.groupBox9.TabIndex = 34;
-            this.groupBox9.TabStop = false;
-            this.groupBox9.Text = "Data Structures";
+            this.statusStrip1.Location = new System.Drawing.Point(0, 393);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(871, 22);
+            this.statusStrip1.TabIndex = 18;
+            this.statusStrip1.Text = "statusStrip1";
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(871, 437);
+            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.picLogo_IE);
             this.Controls.Add(this.StsMain);
             this.Controls.Add(this.groupBox1);
@@ -700,6 +711,7 @@
             this.grpLogin.ResumeLayout(false);
             this.grpLogin.PerformLayout();
             this.groupBox1.ResumeLayout(false);
+            this.groupBox9.ResumeLayout(false);
             this.groupBox8.ResumeLayout(false);
             this.groupBox6.ResumeLayout(false);
             this.groupBox10.ResumeLayout(false);
@@ -712,7 +724,6 @@
             this.StsMain.ResumeLayout(false);
             this.StsMain.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo_IE)).EndInit();
-            this.groupBox9.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -773,5 +784,6 @@
         private System.Windows.Forms.Button BtnEvents;
         private System.Windows.Forms.Button BtnDataTypes;
         private System.Windows.Forms.GroupBox groupBox9;
+        private System.Windows.Forms.StatusStrip statusStrip1;
     }
 }
