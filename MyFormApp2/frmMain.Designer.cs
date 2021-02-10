@@ -81,7 +81,6 @@
             this.StsMain = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.picLogo_IE = new System.Windows.Forms.PictureBox();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.grpLogin.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox9.SuspendLayout();
@@ -657,6 +656,7 @@
             this.groupBox2.TabIndex = 23;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Basic Controls";
+            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // StsMain
             // 
@@ -686,20 +686,11 @@
             this.picLogo_IE.TabIndex = 17;
             this.picLogo_IE.TabStop = false;
             // 
-            // statusStrip1
-            // 
-            this.statusStrip1.Location = new System.Drawing.Point(0, 393);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(871, 22);
-            this.statusStrip1.TabIndex = 18;
-            this.statusStrip1.Text = "statusStrip1";
-            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(871, 437);
-            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.picLogo_IE);
             this.Controls.Add(this.StsMain);
             this.Controls.Add(this.groupBox1);
@@ -784,6 +775,5 @@
         private System.Windows.Forms.Button BtnEvents;
         private System.Windows.Forms.Button BtnDataTypes;
         private System.Windows.Forms.GroupBox groupBox9;
-        private System.Windows.Forms.StatusStrip statusStrip1;
     }
 }

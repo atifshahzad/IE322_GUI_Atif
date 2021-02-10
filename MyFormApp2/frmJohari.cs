@@ -253,16 +253,13 @@ namespace IE322_App_KAU
 
         private bool LoadAttributes()
         {
-            string resxFile = "D:\\IE322_ALL\\_IE322_S20\\20180404\\MyFormApp2\\MyFormApp2\\Resources\\JohariAttributes.resx";
-        
+            string resxFile = "D:\\IE322_ALL\\20180404\\MyFormApp2\\MyFormApp2\\Resources\\JohariAttributes.resx";
+      
             using (ResXResourceSet resXSet = new ResXResourceSet(resxFile))
             {
-
                 for (int i = 0; i < 56; i++)
-                {
-                    attributesArray[i] = resXSet.GetString("Attribute" + i.ToString());
+                {attributesArray[i] = resXSet.GetString("Attribute" + i.ToString());
                 }
-
             }
 
             return true;
