@@ -26,7 +26,9 @@ namespace IE322_App_KAU
         // *****************  For Calcultor Operations **************************
         private void BtnCalculate_Click(object sender, EventArgs e)
         {
-            try
+
+            
+           try
             {
                 a = Convert.ToDouble(TxtA.Text);
                 b = Convert.ToDouble(TxtB.Text);
@@ -194,7 +196,11 @@ namespace IE322_App_KAU
             return "Larger number is: " + max;
         }
 
-
+        private void BtnAdd54_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(Add(5, 4).ToString());
+            
+        }
 
         private void btnBack_Click(object sender, EventArgs e)
         {

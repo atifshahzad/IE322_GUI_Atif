@@ -35,6 +35,9 @@
             this.TxtB = new System.Windows.Forms.TextBox();
             this.TxtA = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.TxtBalance = new System.Windows.Forms.TextBox();
+            this.TxtAmount = new System.Windows.Forms.TextBox();
             this.BtnCheckBalance = new System.Windows.Forms.Button();
             this.BtnWithdraw = new System.Windows.Forms.Button();
             this.BtnDeposit = new System.Windows.Forms.Button();
@@ -44,9 +47,7 @@
             this.BtnPrintSign = new System.Windows.Forms.Button();
             this.TxtNumber = new System.Windows.Forms.TextBox();
             this.BtnPrintMax = new System.Windows.Forms.Button();
-            this.TxtAmount = new System.Windows.Forms.TextBox();
-            this.TxtBalance = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.BtnAdd54 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -122,6 +123,29 @@
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "IE Bank";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(6, 22);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(86, 13);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Current Balance:";
+            // 
+            // TxtBalance
+            // 
+            this.TxtBalance.Location = new System.Drawing.Point(120, 19);
+            this.TxtBalance.Name = "TxtBalance";
+            this.TxtBalance.Size = new System.Drawing.Size(100, 20);
+            this.TxtBalance.TabIndex = 2;
+            // 
+            // TxtAmount
+            // 
+            this.TxtAmount.Location = new System.Drawing.Point(28, 90);
+            this.TxtAmount.Name = "TxtAmount";
+            this.TxtAmount.Size = new System.Drawing.Size(100, 20);
+            this.TxtAmount.TabIndex = 2;
             // 
             // BtnCheckBalance
             // 
@@ -211,34 +235,22 @@
             this.BtnPrintMax.UseVisualStyleBackColor = true;
             this.BtnPrintMax.Click += new System.EventHandler(this.BtnPrintMax_Click);
             // 
-            // TxtAmount
+            // BtnAdd54
             // 
-            this.TxtAmount.Location = new System.Drawing.Point(28, 90);
-            this.TxtAmount.Name = "TxtAmount";
-            this.TxtAmount.Size = new System.Drawing.Size(100, 20);
-            this.TxtAmount.TabIndex = 2;
-            // 
-            // TxtBalance
-            // 
-            this.TxtBalance.Location = new System.Drawing.Point(120, 19);
-            this.TxtBalance.Name = "TxtBalance";
-            this.TxtBalance.Size = new System.Drawing.Size(100, 20);
-            this.TxtBalance.TabIndex = 2;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 22);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(86, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Current Balance:";
+            this.BtnAdd54.Location = new System.Drawing.Point(234, 223);
+            this.BtnAdd54.Name = "BtnAdd54";
+            this.BtnAdd54.Size = new System.Drawing.Size(75, 23);
+            this.BtnAdd54.TabIndex = 4;
+            this.BtnAdd54.Text = "Add 5+4";
+            this.BtnAdd54.UseVisualStyleBackColor = true;
+            this.BtnAdd54.Click += new System.EventHandler(this.BtnAdd54_Click);
             // 
             // frmMethods
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.BtnAdd54);
             this.Controls.Add(this.BtnPrintMax);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.btnBack);
@@ -278,5 +290,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox TxtBalance;
         private System.Windows.Forms.TextBox TxtAmount;
+        private System.Windows.Forms.Button BtnAdd54;
     }
 }
