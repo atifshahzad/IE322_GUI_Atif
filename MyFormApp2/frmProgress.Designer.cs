@@ -35,6 +35,11 @@
             this.lblMin = new System.Windows.Forms.Label();
             this.lblMax = new System.Windows.Forms.Label();
             this.lblVal1 = new System.Windows.Forms.Label();
+            this.BtnReset = new System.Windows.Forms.Button();
+            this.TrkMin = new System.Windows.Forms.TrackBar();
+            this.TrkMax = new System.Windows.Forms.TrackBar();
+            ((System.ComponentModel.ISupportInitialize)(this.TrkMin)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TrkMax)).BeginInit();
             this.SuspendLayout();
             // 
             // btnBack
@@ -99,11 +104,38 @@
             this.lblVal1.Size = new System.Drawing.Size(0, 13);
             this.lblVal1.TabIndex = 11;
             // 
+            // BtnReset
+            // 
+            this.BtnReset.Location = new System.Drawing.Point(109, 12);
+            this.BtnReset.Name = "BtnReset";
+            this.BtnReset.Size = new System.Drawing.Size(74, 45);
+            this.BtnReset.TabIndex = 12;
+            this.BtnReset.Text = "Reset";
+            this.BtnReset.UseVisualStyleBackColor = true;
+            this.BtnReset.Click += new System.EventHandler(this.BtnReset_Click);
+            // 
+            // TrkMin
+            // 
+            this.TrkMin.Location = new System.Drawing.Point(420, 52);
+            this.TrkMin.Name = "TrkMin";
+            this.TrkMin.Size = new System.Drawing.Size(242, 45);
+            this.TrkMin.TabIndex = 13;
+            // 
+            // TrkMax
+            // 
+            this.TrkMax.Location = new System.Drawing.Point(420, 87);
+            this.TrkMax.Name = "TrkMax";
+            this.TrkMax.Size = new System.Drawing.Size(242, 45);
+            this.TrkMax.TabIndex = 14;
+            // 
             // Form8
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(367, 265);
+            this.ClientSize = new System.Drawing.Size(767, 295);
+            this.Controls.Add(this.TrkMax);
+            this.Controls.Add(this.TrkMin);
+            this.Controls.Add(this.BtnReset);
             this.Controls.Add(this.lblVal1);
             this.Controls.Add(this.lblMax);
             this.Controls.Add(this.lblMin);
@@ -114,6 +146,8 @@
             this.Name = "Form8";
             this.Text = "Form8";
             this.Load += new System.EventHandler(this.Form8_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.TrkMin)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TrkMax)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -127,5 +161,8 @@
         private System.Windows.Forms.Label lblMin;
         private System.Windows.Forms.Label lblMax;
         private System.Windows.Forms.Label lblVal1;
+        private System.Windows.Forms.Button BtnReset;
+        private System.Windows.Forms.TrackBar TrkMin;
+        private System.Windows.Forms.TrackBar TrkMax;
     }
 }

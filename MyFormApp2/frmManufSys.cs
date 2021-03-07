@@ -195,5 +195,10 @@ namespace IE322_App_KAU
         {
 
         }
+
+        private void groupBox3_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -26,21 +26,20 @@ namespace IE322_App_KAU
         // *****************  For Calcultor Operations **************************
         private void BtnCalculate_Click(object sender, EventArgs e)
         {
-
             
-           try
-            {
-                a = Convert.ToDouble(TxtA.Text);
-                b = Convert.ToDouble(TxtB.Text);
-            }
-            catch (Exception)
-            {
+             try
+               {
+                   a = Convert.ToDouble(TxtA.Text);
+                   b = Convert.ToDouble(TxtB.Text);
+               }
+               catch (Exception)
+               {
 
-                MessageBox.Show("Enter valid numbers");
-                return;
-            }
+                   MessageBox.Show("Enter valid numbers");
+                   return;
+               }
 
-
+               
             MessageBox.Show("Sum of a and b is " + Add(a, b) +
                "" + "\nDifference of a and b is " + Subtract(a, b) +
                "" + "\nProduct of a and b is " + Multiply(a, b) +

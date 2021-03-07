@@ -9,14 +9,24 @@ namespace IE322_App_KAU
         {
             InitializeComponent();
 
+            TrkMin.Minimum = 0;
+            TrkMin.Maximum = 10000;
+
+
+            TrkMax.Minimum = TrkMin.Value+200;
+            TrkMax.Maximum = TrkMin.Value+TrkMin.Maximum;
+
+            progressBar1.Step = 5;
+
         }
 
         private void btnShowProgress_Click(object sender, EventArgs e)
         {
-            int i;
 
-            progressBar1.Minimum = 0;
-            progressBar1.Maximum = 200;
+            progressBar1.Minimum = TrkMin.Value;
+            progressBar1.Maximum = TrkMax.Value;
+
+            int i;            
 
             for (i = progressBar1.Minimum; i <= progressBar1.Maximum; i++)
             {
@@ -35,7 +45,7 @@ namespace IE322_App_KAU
             int i;
 
             progressBar2.Minimum = progressBar1.Value;
-            progressBar2.Maximum = progressBar2.Minimum + 200;
+            progressBar2.Maximum = progressBar2.Minimum + 2000;
 
             for (i = progressBar2.Minimum; i <= progressBar2.Maximum; i++)
             {
@@ -52,6 +62,13 @@ namespace IE322_App_KAU
         private void progressBar2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void BtnReset_Click(object sender, EventArgs e)
+        {
+            progressBar1.Minimum = 0;
+            progressBar1.Maximum = 200;
+            progressBar1.Step = 1;
         }
     }
 }

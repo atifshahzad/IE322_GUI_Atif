@@ -115,7 +115,7 @@ namespace IE322_App_KAU
 
 
             double Disc = Math.Pow(b, 2) - 4 * a * c;
-
+           
 
             // Formula
             res = (-b + Math.Sqrt(Disc)) / (2 * a); // x1
