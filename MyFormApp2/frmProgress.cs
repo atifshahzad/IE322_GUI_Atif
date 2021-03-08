@@ -3,35 +3,29 @@ using System.Windows.Forms;
 
 namespace IE322_App_KAU
 {
-    public partial class Form8 : Form
+    public partial class frmProgress : Form
     {
-        public Form8()
+        public frmProgress()
         {
             InitializeComponent();
-
-            TrkMin.Minimum = 0;
-            TrkMin.Maximum = 10000;
-
-
-            TrkMax.Minimum = TrkMin.Value+200;
-            TrkMax.Maximum = TrkMin.Value+TrkMin.Maximum;
-
-            progressBar1.Step = 5;
+            ResetValues();
 
         }
 
         private void btnShowProgress_Click(object sender, EventArgs e)
         {
 
-            progressBar1.Minimum = TrkMin.Value;
-            progressBar1.Maximum = TrkMax.Value;
+            Pgb1.Minimum = TrkMin.Value;
+            Pgb1.Maximum = TrkMax.Value;
 
             int i;            
 
-            for (i = progressBar1.Minimum; i <= progressBar1.Maximum; i++)
+            for (i = Pgb1.Minimum; i <= Pgb1.Maximum; i++)
             {
-                progressBar1.Value = i;
-
+                Pgb1.Value = i;
+                lblVal1.Text = "Val:" + Pgb1.Value.ToString();
+                //Task.Delay(100).Wait();
+                //await System.Windows.Threading.Dispatcher.Yield();
             }
         }
 
@@ -44,12 +38,12 @@ namespace IE322_App_KAU
         {
             int i;
 
-            progressBar2.Minimum = progressBar1.Value;
-            progressBar2.Maximum = progressBar2.Minimum + 2000;
+            Pgb2.Minimum = Pgb1.Value;
+            Pgb2.Maximum = Pgb2.Minimum + 2000;
 
-            for (i = progressBar2.Minimum; i <= progressBar2.Maximum; i++)
+            for (i = Pgb2.Minimum; i <= Pgb2.Maximum; i++)
             {
-                progressBar2.Value = i;
+                Pgb2.Value = i;
 
             }
         }
@@ -66,9 +60,26 @@ namespace IE322_App_KAU
 
         private void BtnReset_Click(object sender, EventArgs e)
         {
-            progressBar1.Minimum = 0;
-            progressBar1.Maximum = 200;
-            progressBar1.Step = 1;
+            ResetValues();
         }
+
+        private void ResetValues()
+        {
+            TrkMin.Minimum = 0;
+            TrkMin.Maximum = 10000;
+            TrkMin.Value = 100;
+
+            TrkMax.Minimum = TrkMin.Value + 200;
+            TrkMax.Maximum = TrkMin.Value + TrkMin.Maximum;
+            TrkMax.Value = TrkMin.Value + 2000;
+
+            Pgb1.Step = 5;
+
+            lblMin.Text = "Min:" + Pgb1.Minimum.ToString();
+            lblMax.Text = "Max:" + Pgb1.Maximum.ToString();
+            lblVal1.Text = "Val:" + Pgb1.Value.ToString();
+        }    
+
+
     }
 }

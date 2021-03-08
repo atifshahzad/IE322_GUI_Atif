@@ -148,7 +148,7 @@ namespace IE322_App_KAU
 
         private void btnProg_Click(object sender, EventArgs e)
         {
-            Form8 frm = new Form8();
+            frmProgress frm = new frmProgress();
             frm.ShowDialog();
             //to close the form
             this.DialogResult = DialogResult.OK;
