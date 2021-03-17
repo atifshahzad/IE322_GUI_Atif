@@ -59,7 +59,7 @@ namespace IE322_App_KAU
             {
                 cmbRandom2.Items.Add(r.Next(10, 99));
             }
-            label1.Text = Convert.ToString(cmbRandom2.Items.Count);
+            LblCount2.Text = Convert.ToString(cmbRandom2.Items.Count);
         }
 
         private void cmbRandom2_SelectedIndexChanged(object sender, EventArgs e)
@@ -82,7 +82,7 @@ namespace IE322_App_KAU
             cmbRandom2.Items.Clear();
             rdoLess2.Checked = false;
             rdoGreater2.Checked = false;
-            label1.Text = Convert.ToString(cmbRandom2.Items.Count);
+            LblCount2.Text = Convert.ToString(cmbRandom2.Items.Count);
 
         }
 

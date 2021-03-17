@@ -4,9 +4,9 @@ using System.Windows.Forms;
 
 namespace IE322_App_KAU
 {
-    public partial class Form7 : Form
+    public partial class frmTemplate : Form
     {
-        public Form7()
+        public frmTemplate()
         {
             InitializeComponent();
             //controls the clipping and positioning of the image in the display area.

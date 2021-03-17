@@ -24,8 +24,7 @@ namespace IE322_App_KAU
             {
                 Pgb1.Value = i;
                 lblVal1.Text = "Val:" + Pgb1.Value.ToString();
-                //Task.Delay(100).Wait();
-                //await System.Windows.Threading.Dispatcher.Yield();
+                
             }
         }
 
@@ -73,13 +72,13 @@ namespace IE322_App_KAU
             TrkMax.Maximum = TrkMin.Value + TrkMin.Maximum;
             TrkMax.Value = TrkMin.Value + 2000;
 
+            Pgb1.Minimum = TrkMin.Value;
+            Pgb1.Maximum = TrkMax.Value; 
             Pgb1.Step = 5;
 
             lblMin.Text = "Min:" + Pgb1.Minimum.ToString();
             lblMax.Text = "Max:" + Pgb1.Maximum.ToString();
             lblVal1.Text = "Val:" + Pgb1.Value.ToString();
-        }    
-
-
+        }
     }
 }

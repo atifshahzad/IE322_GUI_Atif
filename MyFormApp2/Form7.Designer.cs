@@ -1,6 +1,6 @@
 ﻿namespace IE322_App_KAU
 {
-    partial class Form7
+    partial class frmTemplate
     {
         /// <summary>
         /// Required designer variable.
@@ -62,7 +62,7 @@
             this.btnLoadImage.UseVisualStyleBackColor = true;
             this.btnLoadImage.Click += new System.EventHandler(this.btnLoadImage_Click);
             // 
-            // Form7
+            // frmTemplate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -70,7 +70,7 @@
             this.Controls.Add(this.btnLoadImage);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.picTry);
-            this.Name = "Form7";
+            this.Name = "frmTemplate";
             this.Text = "picFormTemplate1";
             this.Load += new System.EventHandler(this.Form7_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picTry)).EndInit();

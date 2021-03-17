@@ -69,7 +69,7 @@ namespace IE322_App_KAU
         private void frmPic01_Load(object sender, EventArgs e)
         {
             _assembly = Assembly.GetExecutingAssembly(); //set the assembly object
-            _imageStream = _assembly.GetManifestResourceStream("IE322_App_KAU.res.A.jpg");
+            _imageStream = _assembly.GetManifestResourceStream("IE322_App_KAU.res.B.jpg");
         }
 
         private void BtnImageFromRes_Click(object sender, EventArgs e)
@@ -80,8 +80,9 @@ namespace IE322_App_KAU
             }
             catch
             {
+
                 MessageBox.Show("Error creating image from resource!");
-            }
+            } 
         }
     }
 }

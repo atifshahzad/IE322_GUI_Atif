@@ -31,13 +31,13 @@
             this.btnReset = new System.Windows.Forms.Button();
             this.BtnBack = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.Problem1 = new System.Windows.Forms.Button();
+            this.BtnProblem1 = new System.Windows.Forms.Button();
             this.rdoGreater = new System.Windows.Forms.RadioButton();
             this.rdoLess = new System.Windows.Forms.RadioButton();
             this.BtnGenerate = new System.Windows.Forms.Button();
             this.cmbRandom = new System.Windows.Forms.ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.LblCount2 = new System.Windows.Forms.Label();
             this.rdoGreater2 = new System.Windows.Forms.RadioButton();
             this.rdoLess2 = new System.Windows.Forms.RadioButton();
             this.btnReset2 = new System.Windows.Forms.Button();
@@ -71,7 +71,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.Problem1);
+            this.groupBox1.Controls.Add(this.BtnProblem1);
             this.groupBox1.Controls.Add(this.rdoGreater);
             this.groupBox1.Controls.Add(this.rdoLess);
             this.groupBox1.Controls.Add(this.btnReset);
@@ -86,15 +86,15 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Quiz03_AAF19";
             // 
-            // Problem1
+            // BtnProblem1
             // 
-            this.Problem1.Location = new System.Drawing.Point(16, 103);
-            this.Problem1.Name = "Problem1";
-            this.Problem1.Size = new System.Drawing.Size(80, 60);
-            this.Problem1.TabIndex = 8;
-            this.Problem1.Text = "Problem Description";
-            this.Problem1.UseVisualStyleBackColor = true;
-            this.Problem1.Click += new System.EventHandler(this.Problem1_Click);
+            this.BtnProblem1.Location = new System.Drawing.Point(16, 103);
+            this.BtnProblem1.Name = "BtnProblem1";
+            this.BtnProblem1.Size = new System.Drawing.Size(80, 60);
+            this.BtnProblem1.TabIndex = 8;
+            this.BtnProblem1.Text = "Problem Description";
+            this.BtnProblem1.UseVisualStyleBackColor = true;
+            this.BtnProblem1.Click += new System.EventHandler(this.Problem1_Click);
             // 
             // rdoGreater
             // 
@@ -144,7 +144,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.label1);
+            this.groupBox2.Controls.Add(this.LblCount2);
             this.groupBox2.Controls.Add(this.rdoGreater2);
             this.groupBox2.Controls.Add(this.rdoLess2);
             this.groupBox2.Controls.Add(this.btnReset2);
@@ -159,15 +159,15 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Quiz03_EAF19";
             // 
-            // label1
+            // LblCount2
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(4, 68);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 13);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Count:";
+            this.LblCount2.AutoSize = true;
+            this.LblCount2.Location = new System.Drawing.Point(4, 68);
+            this.LblCount2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblCount2.Name = "LblCount2";
+            this.LblCount2.Size = new System.Drawing.Size(38, 13);
+            this.LblCount2.TabIndex = 8;
+            this.LblCount2.Text = "Count:";
             // 
             // rdoGreater2
             // 
@@ -235,7 +235,7 @@
             this.Controls.Add(this.BtnBack);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmRandomCombo";
-            this.Text = "frmRandomCombo";
+            this.Text = "RandomCombo";
             this.Load += new System.EventHandler(this.frmRandomCombo_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -249,18 +249,21 @@
 
         private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.Button BtnBack;
+
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RadioButton rdoGreater;
         private System.Windows.Forms.RadioButton rdoLess;
         private System.Windows.Forms.Button BtnGenerate;
         private System.Windows.Forms.ComboBox cmbRandom;
+        private System.Windows.Forms.Button BtnProblem1;
+
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.RadioButton rdoGreater2;
         private System.Windows.Forms.RadioButton rdoLess2;
         private System.Windows.Forms.Button btnReset2;
         private System.Windows.Forms.Button BtnGenerate2;
         private System.Windows.Forms.ComboBox cmbRandom2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button Problem1;
+        private System.Windows.Forms.Label LblCount2;
+       
     }
 }
