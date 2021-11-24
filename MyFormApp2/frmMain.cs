@@ -374,5 +374,11 @@ namespace IE322_App_KAU
         {
 
         }
+
+        private void BtnFSM_Click(object sender, EventArgs e)
+        {
+            frmFSM frm = new frmFSM();
+            frm.ShowDialog();
+        }
     }
 }

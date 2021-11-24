@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>IE322_App_KAU</RootNamespace>
     <AssemblyName>IE322_App_KAU</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <IsWebBootstrapper>false</IsWebBootstrapper>
@@ -28,6 +28,7 @@
     <BootstrapperEnabled>true</BootstrapperEnabled>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -161,6 +162,12 @@
     </Compile>
     <Compile Include="frmEvents.Designer.cs">
       <DependentUpon>frmEvents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFSM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFSM.Designer.cs">
+      <DependentUpon>frmFSM.cs</DependentUpon>
     </Compile>
     <Compile Include="frmJohari.cs">
       <SubType>Form</SubType>
@@ -300,6 +307,8 @@
     <Compile Include="frmTalk.Designer.cs">
       <DependentUpon>frmTalk.cs</DependentUpon>
     </Compile>
+    <Compile Include="FSM\FiniteStateMachine.cs" />
+    <Compile Include="FSM\Process.cs" />
     <Compile Include="lang\arab.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -344,6 +353,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmEvents.resx">
       <DependentUpon>frmEvents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFSM.resx">
+      <DependentUpon>frmFSM.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmJohari.resx">
       <DependentUpon>frmJohari.cs</DependentUpon>

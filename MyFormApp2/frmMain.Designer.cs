@@ -81,6 +81,7 @@
             this.StsMain = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.picLogo_IE = new System.Windows.Forms.PictureBox();
+            this.BtnFSM = new System.Windows.Forms.Button();
             this.grpLogin.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox9.SuspendLayout();
@@ -282,9 +283,9 @@
             // 
             this.groupBox1.Controls.Add(this.groupBox9);
             this.groupBox1.Controls.Add(this.groupBox8);
+            this.groupBox1.Controls.Add(this.groupBox7);
             this.groupBox1.Controls.Add(this.groupBox6);
             this.groupBox1.Controls.Add(this.groupBox10);
-            this.groupBox1.Controls.Add(this.groupBox7);
             this.groupBox1.Controls.Add(this.Exams);
             this.groupBox1.Controls.Add(this.groupBox5);
             this.groupBox1.Controls.Add(this.groupBox4);
@@ -332,9 +333,9 @@
             // 
             this.groupBox8.Controls.Add(this.BtnDecision);
             this.groupBox8.Controls.Add(this.BtnIteration);
-            this.groupBox8.Location = new System.Drawing.Point(492, 283);
+            this.groupBox8.Location = new System.Drawing.Point(491, 18);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(167, 110);
+            this.groupBox8.Size = new System.Drawing.Size(167, 73);
             this.groupBox8.TabIndex = 29;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Decision & Iteration";
@@ -351,7 +352,7 @@
             // 
             // BtnIteration
             // 
-            this.BtnIteration.Location = new System.Drawing.Point(6, 52);
+            this.BtnIteration.Location = new System.Drawing.Point(6, 43);
             this.BtnIteration.Name = "BtnIteration";
             this.BtnIteration.Size = new System.Drawing.Size(147, 23);
             this.BtnIteration.TabIndex = 0;
@@ -403,12 +404,13 @@
             // 
             // groupBox10
             // 
+            this.groupBox10.Controls.Add(this.BtnFSM);
             this.groupBox10.Controls.Add(this.BtnEvents);
             this.groupBox10.Controls.Add(this.BtnClasses);
             this.groupBox10.Controls.Add(this.BtnMethods);
             this.groupBox10.Location = new System.Drawing.Point(497, 177);
             this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(162, 100);
+            this.groupBox10.Size = new System.Drawing.Size(162, 129);
             this.groupBox10.TabIndex = 32;
             this.groupBox10.TabStop = false;
             this.groupBox10.Text = "Object Oriented";
@@ -447,7 +449,7 @@
             // 
             this.groupBox7.Controls.Add(this.btnArduino);
             this.groupBox7.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.groupBox7.Location = new System.Drawing.Point(492, 12);
+            this.groupBox7.Location = new System.Drawing.Point(497, 311);
             this.groupBox7.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Padding = new System.Windows.Forms.Padding(2);
@@ -686,6 +688,16 @@
             this.picLogo_IE.TabIndex = 17;
             this.picLogo_IE.TabStop = false;
             // 
+            // BtnFSM
+            // 
+            this.BtnFSM.Location = new System.Drawing.Point(7, 98);
+            this.BtnFSM.Name = "BtnFSM";
+            this.BtnFSM.Size = new System.Drawing.Size(146, 23);
+            this.BtnFSM.TabIndex = 35;
+            this.BtnFSM.Text = "FSM";
+            this.BtnFSM.UseVisualStyleBackColor = true;
+            this.BtnFSM.Click += new System.EventHandler(this.BtnFSM_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -775,5 +787,6 @@
         private System.Windows.Forms.Button BtnEvents;
         private System.Windows.Forms.Button BtnDataTypes;
         private System.Windows.Forms.GroupBox groupBox9;
+        private System.Windows.Forms.Button BtnFSM;
     }
 }
