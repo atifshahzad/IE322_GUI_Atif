@@ -163,6 +163,12 @@
     <Compile Include="frmEvents.Designer.cs">
       <DependentUpon>frmEvents.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmFSM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFSM.Designer.cs">
+      <DependentUpon>frmFSM.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmJohari.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -301,6 +307,8 @@
     <Compile Include="frmTalk.Designer.cs">
       <DependentUpon>frmTalk.cs</DependentUpon>
     </Compile>
+    <Compile Include="FSM\FiniteStateMachine.cs" />
+    <Compile Include="FSM\Process.cs" />
     <Compile Include="lang\arab.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -345,6 +353,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmEvents.resx">
       <DependentUpon>frmEvents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFSM.resx">
+      <DependentUpon>frmFSM.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmJohari.resx">
       <DependentUpon>frmJohari.cs</DependentUpon>
