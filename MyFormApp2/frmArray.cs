@@ -6,7 +6,9 @@ namespace IE322_App_KAU
 {
     public partial class frmArray : Form
     {
-
+        //Array to be filled with Random numbers
+        Random rnd = new Random();
+        int[] b = new int[500];
 
         //1D Arrays
 
@@ -27,10 +29,7 @@ namespace IE322_App_KAU
                                          { 5, 6 }
                                 }; //Declaration,Definition & Initialization of 2D array
 
-
-        //Array to be filled with Random numbers
-        Random rnd = new Random();
-        int[] b = new int[500];
+               
 
 
 
@@ -52,6 +51,7 @@ namespace IE322_App_KAU
                 lblDisplay.Text = lblDisplay.Text + "\n" + Convert.ToString(iArray3[i]);
 
             }
+            
         }
 
         private void BtnDisplay1DForEachLoop_Click(object sender, EventArgs e)
@@ -65,7 +65,7 @@ namespace IE322_App_KAU
             }
         }
 
-        private void BtnDisplay2DForEachLoop_Click(object sender, EventArgs e)
+        private void BtnDisplay2DForLoop_Click(object sender, EventArgs e)
         {
             lblDisplay.Text = "2D Array named iArray32 using nested for Loop";
             for (int i = 1; i < 4; i++)
@@ -105,7 +105,7 @@ namespace IE322_App_KAU
             for (int i = 0; i < b.Length; i++)
             {
 
-                b[i] = rnd.Next(1, 1000);
+                b[i] = rnd.Next(500, 1000);
                 LstRandom.Items.Add(b[i]);
             }
 
@@ -206,16 +206,15 @@ namespace IE322_App_KAU
             int[] b = new int[500];
 
 
-
-
         }
 
         private void BtnQuestion02_2D_Click(object sender, EventArgs e)
         {
             int[,] d = { { 1, 2, 1 }, { 1, 2, 1 }, { 2, 0, 1 } };
+            int total = 0;
             for (int j = 1; j < d.GetLength(1); j++)
             {
-                int total = 0;
+                
                 for (int i = j; i < d.GetLength(0); i++)
                 {
                     total = total + d[i, j];
