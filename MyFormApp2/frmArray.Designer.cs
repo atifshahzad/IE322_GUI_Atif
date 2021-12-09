@@ -31,7 +31,7 @@
             this.BtnDisplay1DForLoop = new System.Windows.Forms.Button();
             this.lblDisplay = new System.Windows.Forms.Label();
             this.BtnDisplay1DForEachLoop = new System.Windows.Forms.Button();
-            this.BtnDisplay2DForEachLoop = new System.Windows.Forms.Button();
+            this.BtnDisplay2DForLoop = new System.Windows.Forms.Button();
             this.BtnDisplayPropertiesMethods2D = new System.Windows.Forms.Button();
             this.BtnDisplayRandomList = new System.Windows.Forms.Button();
             this.LstRandom = new System.Windows.Forms.ListBox();
@@ -82,18 +82,18 @@
             this.BtnDisplay1DForEachLoop.UseVisualStyleBackColor = false;
             this.BtnDisplay1DForEachLoop.Click += new System.EventHandler(this.BtnDisplay1DForEachLoop_Click);
             // 
-            // BtnDisplay2DForEachLoop
+            // BtnDisplay2DForLoop
             // 
-            this.BtnDisplay2DForEachLoop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.BtnDisplay2DForEachLoop.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BtnDisplay2DForEachLoop.ForeColor = System.Drawing.Color.Red;
-            this.BtnDisplay2DForEachLoop.Location = new System.Drawing.Point(22, 244);
-            this.BtnDisplay2DForEachLoop.Name = "BtnDisplay2DForEachLoop";
-            this.BtnDisplay2DForEachLoop.Size = new System.Drawing.Size(92, 76);
-            this.BtnDisplay2DForEachLoop.TabIndex = 3;
-            this.BtnDisplay2DForEachLoop.Text = "Display 2D Array Using For Loop";
-            this.BtnDisplay2DForEachLoop.UseVisualStyleBackColor = false;
-            this.BtnDisplay2DForEachLoop.Click += new System.EventHandler(this.BtnDisplay2DForEachLoop_Click);
+            this.BtnDisplay2DForLoop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.BtnDisplay2DForLoop.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnDisplay2DForLoop.ForeColor = System.Drawing.Color.Red;
+            this.BtnDisplay2DForLoop.Location = new System.Drawing.Point(22, 244);
+            this.BtnDisplay2DForLoop.Name = "BtnDisplay2DForLoop";
+            this.BtnDisplay2DForLoop.Size = new System.Drawing.Size(92, 76);
+            this.BtnDisplay2DForLoop.TabIndex = 3;
+            this.BtnDisplay2DForLoop.Text = "Display 2D Array Using For Loop";
+            this.BtnDisplay2DForLoop.UseVisualStyleBackColor = false;
+            this.BtnDisplay2DForLoop.Click += new System.EventHandler(this.BtnDisplay2DForLoop_Click);
             // 
             // BtnDisplayPropertiesMethods2D
             // 
@@ -160,7 +160,7 @@
             this.BtnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.BtnExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BtnExit.ForeColor = System.Drawing.Color.Red;
-            this.BtnExit.Location = new System.Drawing.Point(689, 352);
+            this.BtnExit.Location = new System.Drawing.Point(703, 350);
             this.BtnExit.Name = "BtnExit";
             this.BtnExit.Size = new System.Drawing.Size(92, 76);
             this.BtnExit.TabIndex = 9;
@@ -173,7 +173,7 @@
             this.BtnReset.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.BtnReset.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BtnReset.ForeColor = System.Drawing.Color.Red;
-            this.BtnReset.Location = new System.Drawing.Point(591, 352);
+            this.BtnReset.Location = new System.Drawing.Point(605, 350);
             this.BtnReset.Name = "BtnReset";
             this.BtnReset.Size = new System.Drawing.Size(92, 76);
             this.BtnReset.TabIndex = 10;
@@ -249,7 +249,7 @@
             this.Controls.Add(this.BtnDoubleArrayFor);
             this.Controls.Add(this.BtnDisplayRandomList);
             this.Controls.Add(this.BtnDisplayPropertiesMethods2D);
-            this.Controls.Add(this.BtnDisplay2DForEachLoop);
+            this.Controls.Add(this.BtnDisplay2DForLoop);
             this.Controls.Add(this.BtnDisplay1DForEachLoop);
             this.Controls.Add(this.lblDisplay);
             this.Controls.Add(this.BtnDisplay1DForLoop);
@@ -264,12 +264,12 @@
         #endregion
 
         private System.Windows.Forms.Button BtnDisplay1DForLoop;
-        private System.Windows.Forms.Label lblDisplay;
+     private System.Windows.Forms.Label lblDisplay;
         private System.Windows.Forms.Button BtnDisplay1DForEachLoop;
-        private System.Windows.Forms.Button BtnDisplay2DForEachLoop;
+        private System.Windows.Forms.Button BtnDisplay2DForLoop;
         private System.Windows.Forms.Button BtnDisplayPropertiesMethods2D;
-        private System.Windows.Forms.Button BtnDisplayRandomList;
-        private System.Windows.Forms.ListBox LstRandom;
+     private System.Windows.Forms.Button BtnDisplayRandomList;
+     private System.Windows.Forms.ListBox LstRandom;
         private System.Windows.Forms.Button BtnModifyAnArray;
         private System.Windows.Forms.Button BtnModifyAnElement;
         private System.Windows.Forms.Button BtnExit;
