@@ -65,6 +65,22 @@ namespace IE322_App_KAU
             }
         }
 
+        private void BtnDoubleArrayFor_Click(object sender, EventArgs e)
+        {
+            lblDisplay.Text = "Double the elements of array using for loop";
+            
+            for (int i = 4; i >= 0; --i)
+            {
+                iArray3[i] *= 2;
+                lblDisplay.Text = lblDisplay.Text + "\n" + Convert.ToString(iArray3[i]);
+            }
+        }
+
+        private void BtnDoubleArrayForEach_Click(object sender, EventArgs e)
+        {
+// Not possible  
+        }
+
         private void BtnDisplay2DForEachLoop_Click(object sender, EventArgs e)
         {
             lblDisplay.Text = "2D Array named iArray32 using nested for Loop";
@@ -79,6 +95,9 @@ namespace IE322_App_KAU
                 }
             }
         }
+
+
+        
 
         private void BtnDisplayPropertiesMethods2D_Click(object sender, EventArgs e)
         {
@@ -239,5 +258,7 @@ namespace IE322_App_KAU
             lblDisplay.Text = lblDisplay.Text + "\n" + "Length of iArray5 is:" + iArray5.Length;// size           
 
         }
+
+       
     }// end frmArray
 }//end namespace

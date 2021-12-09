@@ -41,6 +41,8 @@
             this.BtnReset = new System.Windows.Forms.Button();
             this.BtnQuestion02_2D = new System.Windows.Forms.Button();
             this.BtnDisplayPropertiesMethods1D = new System.Windows.Forms.Button();
+            this.BtnDoubleArrayFor = new System.Windows.Forms.Button();
+            this.BtnDoubleArrayForEach = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // BtnDisplay1DForLoop
@@ -61,7 +63,7 @@
             this.lblDisplay.AutoSize = true;
             this.lblDisplay.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDisplay.ForeColor = System.Drawing.Color.Red;
-            this.lblDisplay.Location = new System.Drawing.Point(348, 21);
+            this.lblDisplay.Location = new System.Drawing.Point(342, 21);
             this.lblDisplay.Name = "lblDisplay";
             this.lblDisplay.Size = new System.Drawing.Size(71, 22);
             this.lblDisplay.TabIndex = 1;
@@ -111,7 +113,7 @@
             this.BtnDisplayRandomList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.BtnDisplayRandomList.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BtnDisplayRandomList.ForeColor = System.Drawing.Color.Red;
-            this.BtnDisplayRandomList.Location = new System.Drawing.Point(134, 21);
+            this.BtnDisplayRandomList.Location = new System.Drawing.Point(722, 202);
             this.BtnDisplayRandomList.Name = "BtnDisplayRandomList";
             this.BtnDisplayRandomList.Size = new System.Drawing.Size(92, 76);
             this.BtnDisplayRandomList.TabIndex = 5;
@@ -122,7 +124,7 @@
             // LstRandom
             // 
             this.LstRandom.FormattingEnabled = true;
-            this.LstRandom.Location = new System.Drawing.Point(250, 21);
+            this.LstRandom.Location = new System.Drawing.Point(722, 12);
             this.LstRandom.Name = "LstRandom";
             this.LstRandom.Size = new System.Drawing.Size(92, 173);
             this.LstRandom.TabIndex = 6;
@@ -184,7 +186,7 @@
             this.BtnQuestion02_2D.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.BtnQuestion02_2D.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BtnQuestion02_2D.ForeColor = System.Drawing.Color.Red;
-            this.BtnQuestion02_2D.Location = new System.Drawing.Point(250, 244);
+            this.BtnQuestion02_2D.Location = new System.Drawing.Point(244, 340);
             this.BtnQuestion02_2D.Name = "BtnQuestion02_2D";
             this.BtnQuestion02_2D.Size = new System.Drawing.Size(92, 76);
             this.BtnQuestion02_2D.TabIndex = 11;
@@ -197,13 +199,39 @@
             this.BtnDisplayPropertiesMethods1D.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.BtnDisplayPropertiesMethods1D.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BtnDisplayPropertiesMethods1D.ForeColor = System.Drawing.Color.Red;
-            this.BtnDisplayPropertiesMethods1D.Location = new System.Drawing.Point(134, 118);
+            this.BtnDisplayPropertiesMethods1D.Location = new System.Drawing.Point(244, 21);
             this.BtnDisplayPropertiesMethods1D.Name = "BtnDisplayPropertiesMethods1D";
             this.BtnDisplayPropertiesMethods1D.Size = new System.Drawing.Size(92, 76);
             this.BtnDisplayPropertiesMethods1D.TabIndex = 12;
             this.BtnDisplayPropertiesMethods1D.Text = "Display Properties and Methods of 1DArray";
             this.BtnDisplayPropertiesMethods1D.UseVisualStyleBackColor = false;
             this.BtnDisplayPropertiesMethods1D.Click += new System.EventHandler(this.BtnDisplayPropertiesMethods1D_Click);
+            // 
+            // BtnDoubleArrayFor
+            // 
+            this.BtnDoubleArrayFor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.BtnDoubleArrayFor.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnDoubleArrayFor.ForeColor = System.Drawing.Color.Red;
+            this.BtnDoubleArrayFor.Location = new System.Drawing.Point(134, 21);
+            this.BtnDoubleArrayFor.Name = "BtnDoubleArrayFor";
+            this.BtnDoubleArrayFor.Size = new System.Drawing.Size(92, 76);
+            this.BtnDoubleArrayFor.TabIndex = 5;
+            this.BtnDoubleArrayFor.Text = "Double the 1D Array using for loop";
+            this.BtnDoubleArrayFor.UseVisualStyleBackColor = false;
+            this.BtnDoubleArrayFor.Click += new System.EventHandler(this.BtnDoubleArrayFor_Click);
+            // 
+            // BtnDoubleArrayForEach
+            // 
+            this.BtnDoubleArrayForEach.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.BtnDoubleArrayForEach.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnDoubleArrayForEach.ForeColor = System.Drawing.Color.Red;
+            this.BtnDoubleArrayForEach.Location = new System.Drawing.Point(134, 118);
+            this.BtnDoubleArrayForEach.Name = "BtnDoubleArrayForEach";
+            this.BtnDoubleArrayForEach.Size = new System.Drawing.Size(92, 76);
+            this.BtnDoubleArrayForEach.TabIndex = 5;
+            this.BtnDoubleArrayForEach.Text = "Double the 1D Array usin for each loop";
+            this.BtnDoubleArrayForEach.UseVisualStyleBackColor = false;
+            this.BtnDoubleArrayForEach.Click += new System.EventHandler(this.BtnDoubleArrayForEach_Click);
             // 
             // frmArray
             // 
@@ -216,7 +244,9 @@
             this.Controls.Add(this.BtnExit);
             this.Controls.Add(this.BtnModifyAnElement);
             this.Controls.Add(this.BtnModifyAnArray);
+            this.Controls.Add(this.BtnDoubleArrayForEach);
             this.Controls.Add(this.LstRandom);
+            this.Controls.Add(this.BtnDoubleArrayFor);
             this.Controls.Add(this.BtnDisplayRandomList);
             this.Controls.Add(this.BtnDisplayPropertiesMethods2D);
             this.Controls.Add(this.BtnDisplay2DForEachLoop);
@@ -246,5 +276,7 @@
         private System.Windows.Forms.Button BtnReset;
         private System.Windows.Forms.Button BtnQuestion02_2D;
         private System.Windows.Forms.Button BtnDisplayPropertiesMethods1D;
+        private System.Windows.Forms.Button BtnDoubleArrayFor;
+        private System.Windows.Forms.Button BtnDoubleArrayForEach;
     }
 }
