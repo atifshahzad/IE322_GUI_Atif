@@ -218,7 +218,7 @@
             this.BtnDoubleArrayFor.TabIndex = 5;
             this.BtnDoubleArrayFor.Text = "Double the 1D Array using for loop";
             this.BtnDoubleArrayFor.UseVisualStyleBackColor = false;
-            this.BtnDoubleArrayFor.Click += new System.EventHandler(this.BtnDoubleArrayFor_Click);
+           // this.BtnDoubleArrayFor.Click += new System.EventHandler(this.BtnDoubleArrayFor_Click);
             // 
             // BtnDoubleArrayForEach
             // 
@@ -231,7 +231,7 @@
             this.BtnDoubleArrayForEach.TabIndex = 5;
             this.BtnDoubleArrayForEach.Text = "Double the 1D Array usin for each loop";
             this.BtnDoubleArrayForEach.UseVisualStyleBackColor = false;
-            this.BtnDoubleArrayForEach.Click += new System.EventHandler(this.BtnDoubleArrayForEach_Click);
+            //this.BtnDoubleArrayForEach.Click += new System.EventHandler(this.BtnDoubleArrayForEach_Click);
             // 
             // frmArray
             // 

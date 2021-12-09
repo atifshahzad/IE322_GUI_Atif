@@ -65,7 +65,7 @@ namespace IE322_App_KAU
             }
         }
 
-        private void BtnDisplay2DForEachLoop_Click(object sender, EventArgs e)
+        private void BtnDisplay2DForLoop_Click(object sender, EventArgs e)
         {
             lblDisplay.Text = "2D Array named iArray32 using nested for Loop";
             for (int i = 1; i < 4; i++)
