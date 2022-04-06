@@ -7,6 +7,7 @@ namespace IE322_App_KAU
     {
         double a, b, c, w, x, y, z;
         double res, res2;
+        
         bool ra;
 
         bool p, q, r, s;
@@ -78,6 +79,7 @@ namespace IE322_App_KAU
 
         private void BtnIncrement_Click(object sender, EventArgs e)
         {
+
             y = ++z + y++;
 
             txtY.Text = Convert.ToString(y);

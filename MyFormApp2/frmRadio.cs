@@ -41,7 +41,9 @@ namespace IE322_App_KAU
             rdoGreen.Checked = false;
             rdoBlue.Checked = false;
             rdoYellow.Checked = false;
+            
 
+            
             rdoRed.ForeColor = Color.FromName("black");
             rdoGreen.ForeColor = Color.FromName("black");
             rdoBlue.ForeColor = Color.FromName("black");

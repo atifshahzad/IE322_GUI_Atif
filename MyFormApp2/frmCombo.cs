@@ -62,11 +62,11 @@ namespace IE322_App_KAU
         {
             this.DialogResult = DialogResult.OK;
         }
-
-        private void Form4_Load(object sender, EventArgs e)
+        private void frmCombo_Load(object sender, EventArgs e)
         {
 
         }
+
 
         private void BtnRemoveLast_Click(object sender, EventArgs e)
         {
