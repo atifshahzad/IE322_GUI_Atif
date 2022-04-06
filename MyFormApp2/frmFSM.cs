@@ -43,7 +43,7 @@ namespace IE322_App_KAU
             //MessageBox.Show(fsm.State);
             fsm.ProcessEvent(FiniteStateMachine.Events.RemovePower);
            // Console.WriteLine(fsm.State);
-            Console.ReadKey();
+            //Console.ReadKey();
         }
     }
 }
