@@ -194,12 +194,15 @@
 
         #endregion
         private System.Windows.Forms.Button btnReset;
-        private System.Windows.Forms.RadioButton rdoRed;
         private System.Windows.Forms.Button btnBack;
+
+        private System.Windows.Forms.RadioButton rdoRed;        
         private System.Windows.Forms.RadioButton rdoGreen;
         private System.Windows.Forms.RadioButton rdoBlue;
         private System.Windows.Forms.RadioButton rdoYellow;
+
         private System.Windows.Forms.GroupBox groupBox1;
+
         private System.Windows.Forms.RadioButton RdoYellow2;
         private System.Windows.Forms.RadioButton RdoBlue2;
         private System.Windows.Forms.RadioButton RdoGreen2;
