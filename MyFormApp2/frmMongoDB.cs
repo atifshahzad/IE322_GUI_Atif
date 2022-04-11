@@ -19,6 +19,7 @@ namespace IE322_App_KAU
 
         private void BtnConnect_Click(object sender, EventArgs e)
         {
+
             MongoClient dbClient = new MongoClient("mongodb://127.0.0.1:27017");
 
             var dbList = dbClient.ListDatabases().ToList();

@@ -166,8 +166,9 @@ namespace IE322_App_KAU
 
                 y = Convert.ToDouble(txtY.Text);
 
+                z = Convert.ToDouble(txtZ.Text);
 
-                res = a * c % b + w / (x - y);
+                res = a * c % b + w / (x - y); //-3
 
                 LblRes.Text = "a * c % b + w / (x - y): " + Convert.ToString(res);
 
