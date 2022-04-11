@@ -43,8 +43,13 @@
             this.btnReset2 = new System.Windows.Forms.Button();
             this.BtnGenerate2 = new System.Windows.Forms.Button();
             this.cmbRandom2 = new System.Windows.Forms.ComboBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.BtnGenerateColor = new System.Windows.Forms.Button();
+            this.CmbColor = new System.Windows.Forms.ComboBox();
+            this.BtnReset3 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnReset
@@ -60,7 +65,7 @@
             // 
             // BtnBack
             // 
-            this.BtnBack.Location = new System.Drawing.Point(416, 307);
+            this.BtnBack.Location = new System.Drawing.Point(613, 286);
             this.BtnBack.Margin = new System.Windows.Forms.Padding(2);
             this.BtnBack.Name = "BtnBack";
             this.BtnBack.Size = new System.Drawing.Size(59, 22);
@@ -77,7 +82,8 @@
             this.groupBox1.Controls.Add(this.btnReset);
             this.groupBox1.Controls.Add(this.BtnGenerate);
             this.groupBox1.Controls.Add(this.cmbRandom);
-            this.groupBox1.Location = new System.Drawing.Point(22, 35);
+            this.groupBox1.Enabled = false;
+            this.groupBox1.Location = new System.Drawing.Point(11, 35);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
@@ -102,7 +108,7 @@
             this.rdoGreater.Location = new System.Drawing.Point(106, 102);
             this.rdoGreater.Margin = new System.Windows.Forms.Padding(2);
             this.rdoGreater.Name = "rdoGreater";
-            this.rdoGreater.Size = new System.Drawing.Size(105, 17);
+            this.rdoGreater.Size = new System.Drawing.Size(108, 17);
             this.rdoGreater.TabIndex = 7;
             this.rdoGreater.TabStop = true;
             this.rdoGreater.Text = "Greater than 500";
@@ -150,7 +156,8 @@
             this.groupBox2.Controls.Add(this.btnReset2);
             this.groupBox2.Controls.Add(this.BtnGenerate2);
             this.groupBox2.Controls.Add(this.cmbRandom2);
-            this.groupBox2.Location = new System.Drawing.Point(259, 35);
+            this.groupBox2.Enabled = false;
+            this.groupBox2.Location = new System.Drawing.Point(231, 35);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
@@ -165,7 +172,7 @@
             this.LblCount2.Location = new System.Drawing.Point(4, 68);
             this.LblCount2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblCount2.Name = "LblCount2";
-            this.LblCount2.Size = new System.Drawing.Size(38, 13);
+            this.LblCount2.Size = new System.Drawing.Size(40, 13);
             this.LblCount2.TabIndex = 8;
             this.LblCount2.Text = "Count:";
             // 
@@ -175,7 +182,7 @@
             this.rdoGreater2.Location = new System.Drawing.Point(106, 102);
             this.rdoGreater2.Margin = new System.Windows.Forms.Padding(2);
             this.rdoGreater2.Name = "rdoGreater2";
-            this.rdoGreater2.Size = new System.Drawing.Size(99, 17);
+            this.rdoGreater2.Size = new System.Drawing.Size(102, 17);
             this.rdoGreater2.TabIndex = 7;
             this.rdoGreater2.TabStop = true;
             this.rdoGreater2.Text = "Greater than 50";
@@ -225,11 +232,51 @@
             this.cmbRandom2.TabIndex = 4;
             this.cmbRandom2.SelectedIndexChanged += new System.EventHandler(this.cmbRandom2_SelectedIndexChanged);
             // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.BtnReset3);
+            this.groupBox3.Controls.Add(this.CmbColor);
+            this.groupBox3.Controls.Add(this.BtnGenerateColor);
+            this.groupBox3.Location = new System.Drawing.Point(452, 35);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(242, 197);
+            this.groupBox3.TabIndex = 9;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Quiz_BAS22";
+            // 
+            // BtnGenerateColor
+            // 
+            this.BtnGenerateColor.Location = new System.Drawing.Point(161, 77);
+            this.BtnGenerateColor.Name = "BtnGenerateColor";
+            this.BtnGenerateColor.Size = new System.Drawing.Size(75, 42);
+            this.BtnGenerateColor.TabIndex = 0;
+            this.BtnGenerateColor.Text = "Generate Color";
+            this.BtnGenerateColor.UseVisualStyleBackColor = true;
+            this.BtnGenerateColor.Click += new System.EventHandler(this.BtnGenerateColor_Click);
+            // 
+            // CmbColor
+            // 
+            this.CmbColor.FormattingEnabled = true;
+            this.CmbColor.Location = new System.Drawing.Point(14, 35);
+            this.CmbColor.Name = "CmbColor";
+            this.CmbColor.Size = new System.Drawing.Size(146, 21);
+            this.CmbColor.TabIndex = 1;
+            // 
+            // BtnReset3
+            // 
+            this.BtnReset3.Location = new System.Drawing.Point(161, 136);
+            this.BtnReset3.Name = "BtnReset3";
+            this.BtnReset3.Size = new System.Drawing.Size(75, 25);
+            this.BtnReset3.TabIndex = 2;
+            this.BtnReset3.Text = "Reset";
+            this.BtnReset3.UseVisualStyleBackColor = true;
+            // 
             // frmRandomCombo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(496, 366);
+            this.ClientSize = new System.Drawing.Size(733, 366);
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.BtnBack);
@@ -241,6 +288,7 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -264,6 +312,9 @@
         private System.Windows.Forms.Button BtnGenerate2;
         private System.Windows.Forms.ComboBox cmbRandom2;
         private System.Windows.Forms.Label LblCount2;
-       
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Button BtnReset3;
+        private System.Windows.Forms.ComboBox CmbColor;
+        private System.Windows.Forms.Button BtnGenerateColor;
     }
 }

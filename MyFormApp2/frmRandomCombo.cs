@@ -123,6 +123,11 @@ namespace IE322_App_KAU
                 rdoLess.Checked = true;
             }
         }
+
+        private void BtnGenerateColor_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
 

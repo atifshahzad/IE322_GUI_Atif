@@ -35,6 +35,7 @@
             this.ChkDrag = new System.Windows.Forms.CheckBox();
             this.BtnDrag = new System.Windows.Forms.Button();
             this.BtnReset = new System.Windows.Forms.Button();
+            this.BtnDo = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -80,7 +81,7 @@
             this.LblDrag.AutoSize = true;
             this.LblDrag.Location = new System.Drawing.Point(6, 213);
             this.LblDrag.Name = "LblDrag";
-            this.LblDrag.Size = new System.Drawing.Size(174, 13);
+            this.LblDrag.Size = new System.Drawing.Size(176, 13);
             this.LblDrag.TabIndex = 2;
             this.LblDrag.Text = "To make these controls draggable, ";
             // 
@@ -89,7 +90,7 @@
             this.ChkDrag.AutoSize = true;
             this.ChkDrag.Location = new System.Drawing.Point(153, 33);
             this.ChkDrag.Name = "ChkDrag";
-            this.ChkDrag.Size = new System.Drawing.Size(85, 17);
+            this.ChkDrag.Size = new System.Drawing.Size(84, 17);
             this.ChkDrag.TabIndex = 1;
             this.ChkDrag.Text = "Enable Drag";
             this.ChkDrag.UseVisualStyleBackColor = true;
@@ -114,11 +115,22 @@
             this.BtnReset.UseVisualStyleBackColor = true;
             this.BtnReset.Click += new System.EventHandler(this.BtnReset_Click);
             // 
+            // BtnDo
+            // 
+            this.BtnDo.Location = new System.Drawing.Point(453, 87);
+            this.BtnDo.Name = "BtnDo";
+            this.BtnDo.Size = new System.Drawing.Size(75, 23);
+            this.BtnDo.TabIndex = 4;
+            this.BtnDo.Text = "button1";
+            this.BtnDo.UseVisualStyleBackColor = true;
+            this.BtnDo.Click += new System.EventHandler(this.BtnToDo_Click);
+            // 
             // frmEvents
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.BtnDo);
             this.Controls.Add(this.BtnReset);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.BtnClickEvents);
@@ -141,5 +153,6 @@
         private System.Windows.Forms.Button BtnDrag;
         private System.Windows.Forms.Label LblDrag;
         private System.Windows.Forms.Button BtnReset;
+        private System.Windows.Forms.Button BtnDo;
     }
 }

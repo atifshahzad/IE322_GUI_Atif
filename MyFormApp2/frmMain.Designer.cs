@@ -52,16 +52,17 @@
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.BtnDecision = new System.Windows.Forms.Button();
             this.BtnIteration = new System.Windows.Forms.Button();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.btnArduino = new System.Windows.Forms.Button();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.BtnDataTypes = new System.Windows.Forms.Button();
             this.BtnStrings = new System.Windows.Forms.Button();
             this.BtnOperators = new System.Windows.Forms.Button();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.BtnFSM = new System.Windows.Forms.Button();
             this.BtnEvents = new System.Windows.Forms.Button();
             this.BtnClasses = new System.Windows.Forms.Button();
             this.BtnMethods = new System.Windows.Forms.Button();
-            this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.btnArduino = new System.Windows.Forms.Button();
             this.Exams = new System.Windows.Forms.GroupBox();
             this.BtnManufCell = new System.Windows.Forms.Button();
             this.BtnRoboticCell = new System.Windows.Forms.Button();
@@ -72,6 +73,7 @@
             this.BtnSystem = new System.Windows.Forms.Button();
             this.BtnTalk = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.BtnDate = new System.Windows.Forms.Button();
             this.btnRandom = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -81,14 +83,13 @@
             this.StsMain = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.picLogo_IE = new System.Windows.Forms.PictureBox();
-            this.BtnFSM = new System.Windows.Forms.Button();
             this.grpLogin.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox9.SuspendLayout();
             this.groupBox8.SuspendLayout();
+            this.groupBox7.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.groupBox10.SuspendLayout();
-            this.groupBox7.SuspendLayout();
             this.Exams.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -242,7 +243,7 @@
             this.LnkForgot.Location = new System.Drawing.Point(8, 124);
             this.LnkForgot.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LnkForgot.Name = "LnkForgot";
-            this.LnkForgot.Size = new System.Drawing.Size(91, 13);
+            this.LnkForgot.Size = new System.Drawing.Size(93, 13);
             this.LnkForgot.TabIndex = 11;
             this.LnkForgot.TabStop = true;
             this.LnkForgot.Text = "Forgot password?";
@@ -360,6 +361,29 @@
             this.BtnIteration.UseVisualStyleBackColor = true;
             this.BtnIteration.Click += new System.EventHandler(this.BtnIteration_Click);
             // 
+            // groupBox7
+            // 
+            this.groupBox7.Controls.Add(this.btnArduino);
+            this.groupBox7.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.groupBox7.Location = new System.Drawing.Point(497, 311);
+            this.groupBox7.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox7.Size = new System.Drawing.Size(167, 76);
+            this.groupBox7.TabIndex = 28;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "Micro Controller";
+            // 
+            // btnArduino
+            // 
+            this.btnArduino.Location = new System.Drawing.Point(6, 17);
+            this.btnArduino.Name = "btnArduino";
+            this.btnArduino.Size = new System.Drawing.Size(147, 23);
+            this.btnArduino.TabIndex = 19;
+            this.btnArduino.Text = "Arduino";
+            this.btnArduino.UseVisualStyleBackColor = true;
+            this.btnArduino.Click += new System.EventHandler(this.btnArduino_Click);
+            // 
             // groupBox6
             // 
             this.groupBox6.Controls.Add(this.BtnDataTypes);
@@ -415,6 +439,16 @@
             this.groupBox10.TabStop = false;
             this.groupBox10.Text = "Object Oriented";
             // 
+            // BtnFSM
+            // 
+            this.BtnFSM.Location = new System.Drawing.Point(7, 98);
+            this.BtnFSM.Name = "BtnFSM";
+            this.BtnFSM.Size = new System.Drawing.Size(146, 23);
+            this.BtnFSM.TabIndex = 35;
+            this.BtnFSM.Text = "FSM";
+            this.BtnFSM.UseVisualStyleBackColor = true;
+            this.BtnFSM.Click += new System.EventHandler(this.BtnFSM_Click);
+            // 
             // BtnEvents
             // 
             this.BtnEvents.Location = new System.Drawing.Point(6, 69);
@@ -444,29 +478,6 @@
             this.BtnMethods.Text = "Methods";
             this.BtnMethods.UseVisualStyleBackColor = true;
             this.BtnMethods.Click += new System.EventHandler(this.BtnMethods_Click);
-            // 
-            // groupBox7
-            // 
-            this.groupBox7.Controls.Add(this.btnArduino);
-            this.groupBox7.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.groupBox7.Location = new System.Drawing.Point(497, 311);
-            this.groupBox7.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox7.Size = new System.Drawing.Size(167, 76);
-            this.groupBox7.TabIndex = 28;
-            this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "Micro Controller";
-            // 
-            // btnArduino
-            // 
-            this.btnArduino.Location = new System.Drawing.Point(6, 17);
-            this.btnArduino.Name = "btnArduino";
-            this.btnArduino.Size = new System.Drawing.Size(147, 23);
-            this.btnArduino.TabIndex = 19;
-            this.btnArduino.Text = "Arduino";
-            this.btnArduino.UseVisualStyleBackColor = true;
-            this.btnArduino.Click += new System.EventHandler(this.btnArduino_Click);
             // 
             // Exams
             // 
@@ -572,19 +583,30 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.BtnDate);
             this.groupBox4.Controls.Add(this.btnProg);
             this.groupBox4.Controls.Add(this.btnTimer);
             this.groupBox4.Controls.Add(this.btnRandom);
             this.groupBox4.Controls.Add(this.button1);
             this.groupBox4.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.groupBox4.Location = new System.Drawing.Point(47, 207);
+            this.groupBox4.Location = new System.Drawing.Point(47, 178);
             this.groupBox4.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox4.Size = new System.Drawing.Size(202, 76);
+            this.groupBox4.Size = new System.Drawing.Size(202, 116);
             this.groupBox4.TabIndex = 25;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "More Controls";
+            // 
+            // BtnDate
+            // 
+            this.BtnDate.Location = new System.Drawing.Point(5, 78);
+            this.BtnDate.Name = "BtnDate";
+            this.BtnDate.Size = new System.Drawing.Size(90, 24);
+            this.BtnDate.TabIndex = 22;
+            this.BtnDate.Text = "Date Related";
+            this.BtnDate.UseVisualStyleBackColor = true;
+            this.BtnDate.Click += new System.EventHandler(this.BtnDate_Click);
             // 
             // btnRandom
             // 
@@ -615,7 +637,7 @@
             this.groupBox3.Controls.Add(this.btnSelfieApp);
             this.groupBox3.Controls.Add(this.btnGroupieApp);
             this.groupBox3.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.groupBox3.Location = new System.Drawing.Point(47, 112);
+            this.groupBox3.Location = new System.Drawing.Point(47, 98);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
@@ -688,16 +710,6 @@
             this.picLogo_IE.TabIndex = 17;
             this.picLogo_IE.TabStop = false;
             // 
-            // BtnFSM
-            // 
-            this.BtnFSM.Location = new System.Drawing.Point(7, 98);
-            this.BtnFSM.Name = "BtnFSM";
-            this.BtnFSM.Size = new System.Drawing.Size(146, 23);
-            this.BtnFSM.TabIndex = 35;
-            this.BtnFSM.Text = "FSM";
-            this.BtnFSM.UseVisualStyleBackColor = true;
-            this.BtnFSM.Click += new System.EventHandler(this.BtnFSM_Click);
-            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -716,9 +728,9 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox9.ResumeLayout(false);
             this.groupBox8.ResumeLayout(false);
+            this.groupBox7.ResumeLayout(false);
             this.groupBox6.ResumeLayout(false);
             this.groupBox10.ResumeLayout(false);
-            this.groupBox7.ResumeLayout(false);
             this.Exams.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
@@ -788,5 +800,6 @@
         private System.Windows.Forms.Button BtnDataTypes;
         private System.Windows.Forms.GroupBox groupBox9;
         private System.Windows.Forms.Button BtnFSM;
+        private System.Windows.Forms.Button BtnDate;
     }
 }

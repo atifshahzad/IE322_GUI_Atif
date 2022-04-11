@@ -37,7 +37,6 @@
             this.BtnRemoveLast = new System.Windows.Forms.Button();
             this.BtnRemove2ndLast = new System.Windows.Forms.Button();
             this.BtnShowSelected3 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // CmbDays
@@ -129,20 +128,11 @@
             this.BtnShowSelected3.UseVisualStyleBackColor = true;
             this.BtnShowSelected3.Click += new System.EventHandler(this.BtnShowSelected3_Click);
             // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(35, 35);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 10;
-            // 
             // frmCombo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(347, 259);
-            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.BtnRemove2ndLast);
             this.Controls.Add(this.BtnRemoveLast);
             this.Controls.Add(this.BtnRemoveByName);
@@ -170,6 +160,5 @@
         private System.Windows.Forms.Button BtnRemoveByName;
         private System.Windows.Forms.Button BtnRemoveLast;
         private System.Windows.Forms.Button BtnRemove2ndLast;
-        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

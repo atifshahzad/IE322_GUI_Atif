@@ -70,5 +70,10 @@ namespace IE322_App_KAU
         {
 
         }
+
+        private void chkCoffee_CheckedChanged(object sender, EventArgs e)
+        {
+            MessageBox.Show("I am changed");
+        }
     }
 }
