@@ -2,6 +2,8 @@
 using System.Drawing;
 using System.Windows.Forms;
 
+using System.Collections; // Required for Pronic
+
 namespace IE322_App_KAU
 {
     public partial class frmMethods : Form
@@ -201,9 +203,34 @@ namespace IE322_App_KAU
             
         }
 
+        private void BtnGeneratePronic_Click(object sender, EventArgs e)
+        {
+            ArrayList ListPronics=GeneratePrnicNumbers(50);
+
+            foreach (object item in ListPronics)
+            {
+                lstDisplay.Items.Add(item);
+            }
+
+            
+        }
+
         private void btnBack_Click(object sender, EventArgs e)
         {
             this.DialogResult = DialogResult.OK;
+        }
+
+        public ArrayList GeneratePrnicNumbers(int Count)
+        {
+
+            ArrayList myList = new ArrayList(Count);
+
+            for (int i = 0; i < Count; i++)
+            {
+                myList.Add( i* (i+1));
+
+            }
+            return myList;
         }
 
     }

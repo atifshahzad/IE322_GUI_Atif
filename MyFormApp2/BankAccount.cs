@@ -3,7 +3,6 @@
     class BankAccount
     {
         double Balance = 2000;
-
         public bool Deposit(double n)
         {
             if (n > 0)
