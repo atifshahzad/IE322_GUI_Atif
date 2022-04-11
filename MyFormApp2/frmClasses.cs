@@ -34,6 +34,7 @@ namespace IE322_App_KAU
         {
             MyCar.Accelerate(30);
             MessageBox.Show(Convert.ToString(MyCar.speed));
+        
         }
 
         private void BtnStopHisCar_Click(object sender, EventArgs e)

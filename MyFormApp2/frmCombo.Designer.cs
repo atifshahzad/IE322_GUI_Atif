@@ -42,19 +42,17 @@
             // CmbDays
             // 
             this.CmbDays.FormattingEnabled = true;
-            this.CmbDays.Location = new System.Drawing.Point(16, 93);
-            this.CmbDays.Margin = new System.Windows.Forms.Padding(4);
+            this.CmbDays.Location = new System.Drawing.Point(12, 76);
             this.CmbDays.Name = "CmbDays";
-            this.CmbDays.Size = new System.Drawing.Size(163, 24);
+            this.CmbDays.Size = new System.Drawing.Size(123, 21);
             this.CmbDays.TabIndex = 0;
             this.CmbDays.SelectedIndexChanged += new System.EventHandler(this.cmbDays_SelectedIndexChanged);
             // 
             // btnBack
             // 
-            this.btnBack.Location = new System.Drawing.Point(335, 276);
-            this.btnBack.Margin = new System.Windows.Forms.Padding(4);
+            this.btnBack.Location = new System.Drawing.Point(251, 224);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(100, 28);
+            this.btnBack.Size = new System.Drawing.Size(75, 23);
             this.btnBack.TabIndex = 4;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = true;
@@ -62,10 +60,9 @@
             // 
             // BtnShowSelected1
             // 
-            this.BtnShowSelected1.Location = new System.Drawing.Point(16, 15);
-            this.BtnShowSelected1.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnShowSelected1.Location = new System.Drawing.Point(12, 12);
             this.BtnShowSelected1.Name = "BtnShowSelected1";
-            this.BtnShowSelected1.Size = new System.Drawing.Size(127, 47);
+            this.BtnShowSelected1.Size = new System.Drawing.Size(95, 38);
             this.BtnShowSelected1.TabIndex = 3;
             this.BtnShowSelected1.Text = "Show Selected Method1";
             this.BtnShowSelected1.UseVisualStyleBackColor = true;
@@ -73,10 +70,9 @@
             // 
             // BtnShowSelected2
             // 
-            this.BtnShowSelected2.Location = new System.Drawing.Point(137, 15);
-            this.BtnShowSelected2.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnShowSelected2.Location = new System.Drawing.Point(103, 12);
             this.BtnShowSelected2.Name = "BtnShowSelected2";
-            this.BtnShowSelected2.Size = new System.Drawing.Size(119, 47);
+            this.BtnShowSelected2.Size = new System.Drawing.Size(89, 38);
             this.BtnShowSelected2.TabIndex = 5;
             this.BtnShowSelected2.Text = "Show Selected Method2";
             this.BtnShowSelected2.UseVisualStyleBackColor = true;
@@ -84,10 +80,9 @@
             // 
             // BtnRemoveByIndex
             // 
-            this.BtnRemoveByIndex.Location = new System.Drawing.Point(16, 206);
-            this.BtnRemoveByIndex.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnRemoveByIndex.Location = new System.Drawing.Point(12, 167);
             this.BtnRemoveByIndex.Name = "BtnRemoveByIndex";
-            this.BtnRemoveByIndex.Size = new System.Drawing.Size(100, 49);
+            this.BtnRemoveByIndex.Size = new System.Drawing.Size(75, 40);
             this.BtnRemoveByIndex.TabIndex = 6;
             this.BtnRemoveByIndex.Text = "Remove by Index";
             this.BtnRemoveByIndex.UseVisualStyleBackColor = true;
@@ -95,10 +90,9 @@
             // 
             // BtnRemoveByName
             // 
-            this.BtnRemoveByName.Location = new System.Drawing.Point(137, 206);
-            this.BtnRemoveByName.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnRemoveByName.Location = new System.Drawing.Point(103, 167);
             this.BtnRemoveByName.Name = "BtnRemoveByName";
-            this.BtnRemoveByName.Size = new System.Drawing.Size(100, 49);
+            this.BtnRemoveByName.Size = new System.Drawing.Size(75, 40);
             this.BtnRemoveByName.TabIndex = 7;
             this.BtnRemoveByName.Text = "Remove by Name";
             this.BtnRemoveByName.UseVisualStyleBackColor = true;
@@ -106,10 +100,9 @@
             // 
             // BtnRemoveLast
             // 
-            this.BtnRemoveLast.Location = new System.Drawing.Point(349, 73);
-            this.BtnRemoveLast.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnRemoveLast.Location = new System.Drawing.Point(262, 59);
             this.BtnRemoveLast.Name = "BtnRemoveLast";
-            this.BtnRemoveLast.Size = new System.Drawing.Size(103, 80);
+            this.BtnRemoveLast.Size = new System.Drawing.Size(77, 65);
             this.BtnRemoveLast.TabIndex = 8;
             this.BtnRemoveLast.Text = "Remove last item";
             this.BtnRemoveLast.UseVisualStyleBackColor = true;
@@ -117,10 +110,9 @@
             // 
             // BtnRemove2ndLast
             // 
-            this.BtnRemove2ndLast.Location = new System.Drawing.Point(349, 161);
-            this.BtnRemove2ndLast.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnRemove2ndLast.Location = new System.Drawing.Point(262, 131);
             this.BtnRemove2ndLast.Name = "BtnRemove2ndLast";
-            this.BtnRemove2ndLast.Size = new System.Drawing.Size(103, 80);
+            this.BtnRemove2ndLast.Size = new System.Drawing.Size(77, 65);
             this.BtnRemove2ndLast.TabIndex = 9;
             this.BtnRemove2ndLast.Text = "Remove 2nd last item";
             this.BtnRemove2ndLast.UseVisualStyleBackColor = true;
@@ -128,10 +120,9 @@
             // 
             // BtnShowSelected3
             // 
-            this.BtnShowSelected3.Location = new System.Drawing.Point(255, 15);
-            this.BtnShowSelected3.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnShowSelected3.Location = new System.Drawing.Point(191, 12);
             this.BtnShowSelected3.Name = "BtnShowSelected3";
-            this.BtnShowSelected3.Size = new System.Drawing.Size(119, 47);
+            this.BtnShowSelected3.Size = new System.Drawing.Size(89, 38);
             this.BtnShowSelected3.TabIndex = 5;
             this.BtnShowSelected3.Text = "Show Selected Method3";
             this.BtnShowSelected3.UseVisualStyleBackColor = true;
@@ -139,9 +130,9 @@
             // 
             // frmCombo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(463, 319);
+            this.ClientSize = new System.Drawing.Size(347, 259);
             this.Controls.Add(this.BtnRemove2ndLast);
             this.Controls.Add(this.BtnRemoveLast);
             this.Controls.Add(this.BtnRemoveByName);
@@ -151,10 +142,9 @@
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.BtnShowSelected1);
             this.Controls.Add(this.CmbDays);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmCombo";
             this.Text = "Combo";
-            this.Load += new System.EventHandler(this.Form4_Load);
+            this.Load += new System.EventHandler(this.frmCombo_Load);
             this.ResumeLayout(false);
 
         }
@@ -170,6 +160,5 @@
         private System.Windows.Forms.Button BtnRemoveByName;
         private System.Windows.Forms.Button BtnRemoveLast;
         private System.Windows.Forms.Button BtnRemove2ndLast;
-        
     }
 }

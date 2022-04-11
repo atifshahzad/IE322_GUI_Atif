@@ -2,7 +2,28 @@
 {
     class BankAccount
     {
-        double Balance = 2000;
+        double Balance = 0;
+
+        //Default Constructor
+        public BankAccount()
+        { 
+            Balance += 100; 
+        }
+
+        //An Overloaded Constructor
+        public BankAccount(string ID)
+        {
+            Balance += 200;
+        }
+
+        //Another Overloaded Constructor
+        public BankAccount(int CouponCode)
+        {
+            if (CouponCode == 1234)    
+                Balance += 150;
+        }
+
+
         public bool Deposit(double n)
         {
             if (n > 0)

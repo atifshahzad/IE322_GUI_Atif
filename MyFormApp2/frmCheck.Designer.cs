@@ -96,10 +96,11 @@ namespace IE322_App_KAU
             this.chkCoffee.AutoSize = true;
             this.chkCoffee.Location = new System.Drawing.Point(11, 11);
             this.chkCoffee.Name = "chkCoffee";
-            this.chkCoffee.Size = new System.Drawing.Size(57, 17);
+            this.chkCoffee.Size = new System.Drawing.Size(59, 17);
             this.chkCoffee.TabIndex = 5;
             this.chkCoffee.Text = "Coffee";
             this.chkCoffee.UseVisualStyleBackColor = true;
+            this.chkCoffee.CheckedChanged += new System.EventHandler(this.chkCoffee_CheckedChanged);
             // 
             // frmCheck
             // 

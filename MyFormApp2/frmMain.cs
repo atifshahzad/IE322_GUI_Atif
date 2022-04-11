@@ -380,5 +380,13 @@ namespace IE322_App_KAU
             frmFSM frm = new frmFSM();
             frm.ShowDialog();
         }
+
+        private void BtnDate_Click(object sender, EventArgs e)
+        {
+            frmDate frm = new frmDate();
+            frm.ShowDialog();
+            //to close the form
+            this.DialogResult = DialogResult.OK;
+        }
     }
 }

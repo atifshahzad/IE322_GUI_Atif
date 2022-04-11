@@ -151,6 +151,12 @@
     <Compile Include="frmCombo.Designer.cs">
       <DependentUpon>frmCombo.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDate.Designer.cs">
+      <DependentUpon>frmDate.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDecision.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -348,6 +354,9 @@
     <EmbeddedResource Include="frmCombo.resx">
       <DependentUpon>frmCombo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmDate.resx">
+      <DependentUpon>frmDate.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDecision.resx">
       <DependentUpon>frmDecision.cs</DependentUpon>
     </EmbeddedResource>
@@ -444,6 +453,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include=".editorconfig" />
     <None Include="cld_IE322.cd" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
