@@ -41,8 +41,8 @@
             this.BtnReset = new System.Windows.Forms.Button();
             this.BtnQuestion02_2D = new System.Windows.Forms.Button();
             this.BtnDisplayPropertiesMethods1D = new System.Windows.Forms.Button();
-            this.BtnDoubleArrayFor = new System.Windows.Forms.Button();
-            this.BtnDoubleArrayForEach = new System.Windows.Forms.Button();
+            this.BtnVariableValues = new System.Windows.Forms.Button();
+            this.BtnDoubleArrayForLoop = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // BtnDisplay1DForLoop
@@ -199,7 +199,7 @@
             this.BtnDisplayPropertiesMethods1D.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.BtnDisplayPropertiesMethods1D.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BtnDisplayPropertiesMethods1D.ForeColor = System.Drawing.Color.Red;
-            this.BtnDisplayPropertiesMethods1D.Location = new System.Drawing.Point(244, 21);
+            this.BtnDisplayPropertiesMethods1D.Location = new System.Drawing.Point(244, 118);
             this.BtnDisplayPropertiesMethods1D.Name = "BtnDisplayPropertiesMethods1D";
             this.BtnDisplayPropertiesMethods1D.Size = new System.Drawing.Size(92, 76);
             this.BtnDisplayPropertiesMethods1D.TabIndex = 12;
@@ -207,31 +207,31 @@
             this.BtnDisplayPropertiesMethods1D.UseVisualStyleBackColor = false;
             this.BtnDisplayPropertiesMethods1D.Click += new System.EventHandler(this.BtnDisplayPropertiesMethods1D_Click);
             // 
-            // BtnDoubleArrayFor
+            // BtnVariableValues
             // 
-            this.BtnDoubleArrayFor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.BtnDoubleArrayFor.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BtnDoubleArrayFor.ForeColor = System.Drawing.Color.Red;
-            this.BtnDoubleArrayFor.Location = new System.Drawing.Point(134, 21);
-            this.BtnDoubleArrayFor.Name = "BtnDoubleArrayFor";
-            this.BtnDoubleArrayFor.Size = new System.Drawing.Size(92, 76);
-            this.BtnDoubleArrayFor.TabIndex = 5;
-            this.BtnDoubleArrayFor.Text = "Double the 1D Array using for loop";
-            this.BtnDoubleArrayFor.UseVisualStyleBackColor = false;
-           // this.BtnDoubleArrayFor.Click += new System.EventHandler(this.BtnDoubleArrayFor_Click);
+            this.BtnVariableValues.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.BtnVariableValues.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnVariableValues.ForeColor = System.Drawing.Color.Red;
+            this.BtnVariableValues.Location = new System.Drawing.Point(244, 21);
+            this.BtnVariableValues.Name = "BtnVariableValues";
+            this.BtnVariableValues.Size = new System.Drawing.Size(92, 76);
+            this.BtnVariableValues.TabIndex = 5;
+            this.BtnVariableValues.Text = "Vriable Values In Array";
+            this.BtnVariableValues.UseVisualStyleBackColor = false;
+            this.BtnVariableValues.Click += new System.EventHandler(this.BtnVariablesInArray_Click);
             // 
-            // BtnDoubleArrayForEach
+            // BtnDoubleArrayForLoop
             // 
-            this.BtnDoubleArrayForEach.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.BtnDoubleArrayForEach.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BtnDoubleArrayForEach.ForeColor = System.Drawing.Color.Red;
-            this.BtnDoubleArrayForEach.Location = new System.Drawing.Point(134, 118);
-            this.BtnDoubleArrayForEach.Name = "BtnDoubleArrayForEach";
-            this.BtnDoubleArrayForEach.Size = new System.Drawing.Size(92, 76);
-            this.BtnDoubleArrayForEach.TabIndex = 5;
-            this.BtnDoubleArrayForEach.Text = "Double the 1D Array usin for each loop";
-            this.BtnDoubleArrayForEach.UseVisualStyleBackColor = false;
-            //this.BtnDoubleArrayForEach.Click += new System.EventHandler(this.BtnDoubleArrayForEach_Click);
+            this.BtnDoubleArrayForLoop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.BtnDoubleArrayForLoop.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnDoubleArrayForLoop.ForeColor = System.Drawing.Color.Red;
+            this.BtnDoubleArrayForLoop.Location = new System.Drawing.Point(134, 21);
+            this.BtnDoubleArrayForLoop.Name = "BtnDoubleArrayForLoop";
+            this.BtnDoubleArrayForLoop.Size = new System.Drawing.Size(92, 76);
+            this.BtnDoubleArrayForLoop.TabIndex = 5;
+            this.BtnDoubleArrayForLoop.Text = "Double the 1D Array using for  loop";
+            this.BtnDoubleArrayForLoop.UseVisualStyleBackColor = false;
+            this.BtnDoubleArrayForLoop.Click += new System.EventHandler(this.BtnDoubleArrayForEach_Click);
             // 
             // frmArray
             // 
@@ -244,9 +244,9 @@
             this.Controls.Add(this.BtnExit);
             this.Controls.Add(this.BtnModifyAnElement);
             this.Controls.Add(this.BtnModifyAnArray);
-            this.Controls.Add(this.BtnDoubleArrayForEach);
+            this.Controls.Add(this.BtnDoubleArrayForLoop);
             this.Controls.Add(this.LstRandom);
-            this.Controls.Add(this.BtnDoubleArrayFor);
+            this.Controls.Add(this.BtnVariableValues);
             this.Controls.Add(this.BtnDisplayRandomList);
             this.Controls.Add(this.BtnDisplayPropertiesMethods2D);
             this.Controls.Add(this.BtnDisplay2DForLoop);
@@ -276,7 +276,7 @@
         private System.Windows.Forms.Button BtnReset;
         private System.Windows.Forms.Button BtnQuestion02_2D;
         private System.Windows.Forms.Button BtnDisplayPropertiesMethods1D;
-        private System.Windows.Forms.Button BtnDoubleArrayFor;
-        private System.Windows.Forms.Button BtnDoubleArrayForEach;
+        private System.Windows.Forms.Button BtnVariableValues;
+        private System.Windows.Forms.Button BtnDoubleArrayForLoop;
     }
 }

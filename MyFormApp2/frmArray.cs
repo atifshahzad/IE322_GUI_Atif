@@ -60,6 +60,7 @@ namespace IE322_App_KAU
 
             foreach (Int32 j in iArray5)
             {
+               
                 lblDisplay.Text = lblDisplay.Text + "\n" + Convert.ToString(j);
 
             }
@@ -242,6 +243,29 @@ namespace IE322_App_KAU
 
         }
 
-       
+        private void BtnVariablesInArray_Click(object sender, EventArgs e)
+        {
+            lblDisplay.Text = "1D Array named iArray3 using for Loop"; 
+            
+            int i = 1;
+            int [] a=new int[3] { i,i+1,i*7};
+
+            for (int j = 0; j < a.Length; j++)
+            {
+                lblDisplay.Text = lblDisplay.Text + "\n" + Convert.ToString(a[j]);
+            }
+
+            
+        }
+
+        private void BtnDoubleArrayForEach_Click(object sender, EventArgs e)
+        {
+            lblDisplay.Text = "1D Array named iArray3 using for Loop";
+            for (Int32 i = 0; i < 5; i++)
+            {
+                lblDisplay.Text = lblDisplay.Text + "\n" + Convert.ToString(iArray3[i]*2);
+
+            }
+        }
     }// end frmArray
 }//end namespace

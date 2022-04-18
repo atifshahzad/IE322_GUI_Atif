@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace IE322_App_KAU
@@ -126,7 +127,30 @@ namespace IE322_App_KAU
 
         private void BtnGenerateColor_Click(object sender, EventArgs e)
         {
+            Random y=new Random();
+            int r = y.Next(0, 255);
+            int g = y.Next(0, 255);
+            int b = y.Next(0, 255);
+
             
+            BtnGenerateColor.BackColor = Color.FromArgb(r, g, b);
+            
+           string s = Convert.ToString(r) + "-" + Convert.ToString(g) + "-" + Convert.ToString(b);
+            CmbColor.Items.Add(s);  
+        }
+
+        private void BtnReset3_Click(object sender, EventArgs e)
+        {
+            CmbColor.ResetText();
+            CmbColor.Items.Clear();
+            BtnGenerateColor.BackColor = Color.Beige;
+        }
+
+        private void CmbColor_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string s=CmbColor.GetItemText(CmbColor.SelectedItem);
+            string[] c=s.Split('-');             
+            BtnGenerateColor.BackColor = Color.FromArgb(Convert.ToInt32(c[0]), Convert.ToInt32(c[1]), Convert.ToInt32(c[2]));
         }
     }
 }

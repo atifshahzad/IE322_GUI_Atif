@@ -44,9 +44,9 @@
             this.BtnGenerate2 = new System.Windows.Forms.Button();
             this.cmbRandom2 = new System.Windows.Forms.ComboBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.BtnGenerateColor = new System.Windows.Forms.Button();
-            this.CmbColor = new System.Windows.Forms.ComboBox();
             this.BtnReset3 = new System.Windows.Forms.Button();
+            this.CmbColor = new System.Windows.Forms.ComboBox();
+            this.BtnGenerateColor = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -244,6 +244,25 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Quiz_BAS22";
             // 
+            // BtnReset3
+            // 
+            this.BtnReset3.Location = new System.Drawing.Point(161, 136);
+            this.BtnReset3.Name = "BtnReset3";
+            this.BtnReset3.Size = new System.Drawing.Size(75, 25);
+            this.BtnReset3.TabIndex = 2;
+            this.BtnReset3.Text = "Reset";
+            this.BtnReset3.UseVisualStyleBackColor = true;
+            this.BtnReset3.Click += new System.EventHandler(this.BtnReset3_Click);
+            // 
+            // CmbColor
+            // 
+            this.CmbColor.FormattingEnabled = true;
+            this.CmbColor.Location = new System.Drawing.Point(14, 35);
+            this.CmbColor.Name = "CmbColor";
+            this.CmbColor.Size = new System.Drawing.Size(146, 21);
+            this.CmbColor.TabIndex = 1;
+            this.CmbColor.SelectedIndexChanged += new System.EventHandler(this.CmbColor_SelectedIndexChanged);
+            // 
             // BtnGenerateColor
             // 
             this.BtnGenerateColor.Location = new System.Drawing.Point(161, 77);
@@ -253,23 +272,6 @@
             this.BtnGenerateColor.Text = "Generate Color";
             this.BtnGenerateColor.UseVisualStyleBackColor = true;
             this.BtnGenerateColor.Click += new System.EventHandler(this.BtnGenerateColor_Click);
-            // 
-            // CmbColor
-            // 
-            this.CmbColor.FormattingEnabled = true;
-            this.CmbColor.Location = new System.Drawing.Point(14, 35);
-            this.CmbColor.Name = "CmbColor";
-            this.CmbColor.Size = new System.Drawing.Size(146, 21);
-            this.CmbColor.TabIndex = 1;
-            // 
-            // BtnReset3
-            // 
-            this.BtnReset3.Location = new System.Drawing.Point(161, 136);
-            this.BtnReset3.Name = "BtnReset3";
-            this.BtnReset3.Size = new System.Drawing.Size(75, 25);
-            this.BtnReset3.TabIndex = 2;
-            this.BtnReset3.Text = "Reset";
-            this.BtnReset3.UseVisualStyleBackColor = true;
             // 
             // frmRandomCombo
             // 
