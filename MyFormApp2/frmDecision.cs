@@ -123,6 +123,7 @@ namespace IE322_App_KAU
             switch (animal)
             {
                 case "dog":
+                case "cat":
                     MessageBox.Show("MAMMAL");
                     break;
                 case "crocodile":
@@ -133,6 +134,10 @@ namespace IE322_App_KAU
                 default:
                     MessageBox.Show("There is no such animal!");
                     break;
+
+                    string MyName="Ali";
+                    string MyNaMe="Ali";
+
             }
         }
 

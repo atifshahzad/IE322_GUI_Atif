@@ -48,9 +48,13 @@
             this.TxtNumber = new System.Windows.Forms.TextBox();
             this.BtnPrintMax = new System.Windows.Forms.Button();
             this.BtnAdd54 = new System.Windows.Forms.Button();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.BtnGeneratePronic = new System.Windows.Forms.Button();
+            this.lstDisplay = new System.Windows.Forms.ListBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // BtnCalculate
@@ -245,11 +249,41 @@
             this.BtnAdd54.UseVisualStyleBackColor = true;
             this.BtnAdd54.Click += new System.EventHandler(this.BtnAdd54_Click);
             // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.lstDisplay);
+            this.groupBox4.Controls.Add(this.BtnGeneratePronic);
+            this.groupBox4.Location = new System.Drawing.Point(234, 263);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(319, 175);
+            this.groupBox4.TabIndex = 5;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Pronic Numbers";
+            // 
+            // BtnGeneratePronic
+            // 
+            this.BtnGeneratePronic.Location = new System.Drawing.Point(6, 19);
+            this.BtnGeneratePronic.Name = "BtnGeneratePronic";
+            this.BtnGeneratePronic.Size = new System.Drawing.Size(113, 23);
+            this.BtnGeneratePronic.TabIndex = 0;
+            this.BtnGeneratePronic.Text = "Generate Pronic";
+            this.BtnGeneratePronic.UseVisualStyleBackColor = true;
+            this.BtnGeneratePronic.Click += new System.EventHandler(this.BtnGeneratePronic_Click);
+            // 
+            // lstDisplay
+            // 
+            this.lstDisplay.FormattingEnabled = true;
+            this.lstDisplay.Location = new System.Drawing.Point(219, 16);
+            this.lstDisplay.Name = "lstDisplay";
+            this.lstDisplay.Size = new System.Drawing.Size(87, 147);
+            this.lstDisplay.TabIndex = 6;
+            // 
             // frmMethods
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.BtnAdd54);
             this.Controls.Add(this.BtnPrintMax);
             this.Controls.Add(this.groupBox3);
@@ -265,6 +299,7 @@
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -291,5 +326,8 @@
         private System.Windows.Forms.TextBox TxtBalance;
         private System.Windows.Forms.TextBox TxtAmount;
         private System.Windows.Forms.Button BtnAdd54;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Button BtnGeneratePronic;
+        private System.Windows.Forms.ListBox lstDisplay;
     }
 }

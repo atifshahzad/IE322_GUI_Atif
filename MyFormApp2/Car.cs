@@ -34,8 +34,6 @@ namespace IE322_App_KAU
             MessageBox.Show("Car has been accelerated by " + decrease);
 
         }
-
-
     } // end class Car
 
 }
