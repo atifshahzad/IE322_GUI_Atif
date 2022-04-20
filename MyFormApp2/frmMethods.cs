@@ -220,6 +220,59 @@ namespace IE322_App_KAU
             this.DialogResult = DialogResult.OK;
         }
 
+        private void BtnArgByRef_Click(object sender, EventArgs e)
+        {
+            int y = 5;
+            SquareRef(ref y); //must use ref keyword to call this method
+            MessageBox.Show(y.ToString());
+        }
+
+
+        private void BtnArgByVal_Click(object sender, EventArgs e)
+        {
+            int y = 5;
+            SquareVal(y); //must use ref keyword to call this method
+            MessageBox.Show(y.ToString());
+
+        }
+
+        void SquareVal(int x)
+        {
+            x = x * x;// squares the caller variable
+        }
+        void SquareRef(ref int x)
+        {
+            x = x * x;// squares the caller variable
+        }
+
+        private void PassArg_out_Click(object sender, EventArgs e)
+        {
+            int y ;    //no need of initialization
+            SquareOut(out y);
+            MessageBox.Show(y.ToString());
+        }
+        void SquareOut(out int x)
+        {
+            x = 6;    //assign value to caller variable
+            x = x * x;// squares the caller variable
+        }
+
+        private void BtnMultOutput_Click(object sender, EventArgs e)
+        {
+            int s, c, y;
+            y = 4;
+            SquareCubeOut(out s, out c, y);
+            MessageBox.Show("Square is:"+s.ToString() + " and cube is:"+ c.ToString());
+        }
+
+        void SquareCubeOut(out int sq,out int cu, int x)
+        {
+            cu = x * x* x;
+
+            sq = x * x;// squares the caller variable   
+        }
+
+
         public ArrayList GeneratePrnicNumbers(int Count)
         {
 

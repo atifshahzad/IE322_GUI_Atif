@@ -49,8 +49,12 @@
             this.BtnPrintMax = new System.Windows.Forms.Button();
             this.BtnAdd54 = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.BtnGeneratePronic = new System.Windows.Forms.Button();
             this.lstDisplay = new System.Windows.Forms.ListBox();
+            this.BtnGeneratePronic = new System.Windows.Forms.Button();
+            this.BtnArgByRef = new System.Windows.Forms.Button();
+            this.BtnArgByVal = new System.Windows.Forms.Button();
+            this.PassArg_out = new System.Windows.Forms.Button();
+            this.BtnMultOutput = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -74,7 +78,7 @@
             this.groupBox1.Controls.Add(this.TxtB);
             this.groupBox1.Controls.Add(this.BtnCalculate);
             this.groupBox1.Controls.Add(this.TxtA);
-            this.groupBox1.Location = new System.Drawing.Point(41, 26);
+            this.groupBox1.Location = new System.Drawing.Point(22, 209);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(186, 185);
             this.groupBox1.TabIndex = 1;
@@ -121,9 +125,9 @@
             this.groupBox2.Controls.Add(this.BtnCheckBalance);
             this.groupBox2.Controls.Add(this.BtnWithdraw);
             this.groupBox2.Controls.Add(this.BtnDeposit);
-            this.groupBox2.Location = new System.Drawing.Point(302, 26);
+            this.groupBox2.Location = new System.Drawing.Point(225, 12);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(238, 231);
+            this.groupBox2.Size = new System.Drawing.Size(234, 183);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "IE Bank";
@@ -133,7 +137,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(6, 22);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(86, 13);
+            this.label3.Size = new System.Drawing.Size(88, 13);
             this.label3.TabIndex = 2;
             this.label3.Text = "Current Balance:";
             // 
@@ -196,9 +200,9 @@
             this.groupBox3.Controls.Add(this.label4);
             this.groupBox3.Controls.Add(this.BtnPrintSign);
             this.groupBox3.Controls.Add(this.TxtNumber);
-            this.groupBox3.Location = new System.Drawing.Point(12, 279);
+            this.groupBox3.Location = new System.Drawing.Point(22, 92);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(159, 96);
+            this.groupBox3.Size = new System.Drawing.Size(186, 96);
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Print Sign Method";
@@ -231,9 +235,9 @@
             // 
             // BtnPrintMax
             // 
-            this.BtnPrintMax.Location = new System.Drawing.Point(98, 176);
+            this.BtnPrintMax.Location = new System.Drawing.Point(22, 48);
             this.BtnPrintMax.Name = "BtnPrintMax";
-            this.BtnPrintMax.Size = new System.Drawing.Size(95, 29);
+            this.BtnPrintMax.Size = new System.Drawing.Size(75, 26);
             this.BtnPrintMax.TabIndex = 2;
             this.BtnPrintMax.Text = "PrintMax Method";
             this.BtnPrintMax.UseVisualStyleBackColor = true;
@@ -241,7 +245,7 @@
             // 
             // BtnAdd54
             // 
-            this.BtnAdd54.Location = new System.Drawing.Point(234, 223);
+            this.BtnAdd54.Location = new System.Drawing.Point(22, 12);
             this.BtnAdd54.Name = "BtnAdd54";
             this.BtnAdd54.Size = new System.Drawing.Size(75, 23);
             this.BtnAdd54.TabIndex = 4;
@@ -253,12 +257,20 @@
             // 
             this.groupBox4.Controls.Add(this.lstDisplay);
             this.groupBox4.Controls.Add(this.BtnGeneratePronic);
-            this.groupBox4.Location = new System.Drawing.Point(234, 263);
+            this.groupBox4.Location = new System.Drawing.Point(225, 209);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(319, 175);
+            this.groupBox4.Size = new System.Drawing.Size(234, 175);
             this.groupBox4.TabIndex = 5;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Pronic Numbers";
+            // 
+            // lstDisplay
+            // 
+            this.lstDisplay.FormattingEnabled = true;
+            this.lstDisplay.Location = new System.Drawing.Point(125, 12);
+            this.lstDisplay.Name = "lstDisplay";
+            this.lstDisplay.Size = new System.Drawing.Size(87, 147);
+            this.lstDisplay.TabIndex = 6;
             // 
             // BtnGeneratePronic
             // 
@@ -270,19 +282,67 @@
             this.BtnGeneratePronic.UseVisualStyleBackColor = true;
             this.BtnGeneratePronic.Click += new System.EventHandler(this.BtnGeneratePronic_Click);
             // 
-            // lstDisplay
+            // BtnArgByRef
             // 
-            this.lstDisplay.FormattingEnabled = true;
-            this.lstDisplay.Location = new System.Drawing.Point(219, 16);
-            this.lstDisplay.Name = "lstDisplay";
-            this.lstDisplay.Size = new System.Drawing.Size(87, 147);
-            this.lstDisplay.TabIndex = 6;
+            this.BtnArgByRef.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.BtnArgByRef.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnArgByRef.ForeColor = System.Drawing.Color.Red;
+            this.BtnArgByRef.Location = new System.Drawing.Point(479, 72);
+            this.BtnArgByRef.Name = "BtnArgByRef";
+            this.BtnArgByRef.Size = new System.Drawing.Size(115, 34);
+            this.BtnArgByRef.TabIndex = 15;
+            this.BtnArgByRef.Text = "Passing argument by ref";
+            this.BtnArgByRef.UseVisualStyleBackColor = false;
+            this.BtnArgByRef.Click += new System.EventHandler(this.BtnArgByRef_Click);
+            // 
+            // BtnArgByVal
+            // 
+            this.BtnArgByVal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.BtnArgByVal.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnArgByVal.ForeColor = System.Drawing.Color.Red;
+            this.BtnArgByVal.Location = new System.Drawing.Point(479, 31);
+            this.BtnArgByVal.Name = "BtnArgByVal";
+            this.BtnArgByVal.Size = new System.Drawing.Size(115, 34);
+            this.BtnArgByVal.TabIndex = 16;
+            this.BtnArgByVal.Text = "Passing argument by val";
+            this.BtnArgByVal.UseVisualStyleBackColor = false;
+            this.BtnArgByVal.Click += new System.EventHandler(this.BtnArgByVal_Click);
+            // 
+            // PassArg_out
+            // 
+            this.PassArg_out.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.PassArg_out.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.PassArg_out.ForeColor = System.Drawing.Color.Red;
+            this.PassArg_out.Location = new System.Drawing.Point(479, 140);
+            this.PassArg_out.Name = "PassArg_out";
+            this.PassArg_out.Size = new System.Drawing.Size(115, 34);
+            this.PassArg_out.TabIndex = 17;
+            this.PassArg_out.Text = "Passing argument as output parameter";
+            this.PassArg_out.UseVisualStyleBackColor = false;
+            this.PassArg_out.Click += new System.EventHandler(this.PassArg_out_Click);
+            // 
+            // BtnMultOutput
+            // 
+            this.BtnMultOutput.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.BtnMultOutput.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnMultOutput.ForeColor = System.Drawing.Color.Red;
+            this.BtnMultOutput.Location = new System.Drawing.Point(479, 180);
+            this.BtnMultOutput.Name = "BtnMultOutput";
+            this.BtnMultOutput.Size = new System.Drawing.Size(115, 34);
+            this.BtnMultOutput.TabIndex = 18;
+            this.BtnMultOutput.Text = "Multiple outputs";
+            this.BtnMultOutput.UseVisualStyleBackColor = false;
+            this.BtnMultOutput.Click += new System.EventHandler(this.BtnMultOutput_Click);
             // 
             // frmMethods
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.BtnMultOutput);
+            this.Controls.Add(this.PassArg_out);
+            this.Controls.Add(this.BtnArgByVal);
+            this.Controls.Add(this.BtnArgByRef);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.BtnAdd54);
             this.Controls.Add(this.BtnPrintMax);
@@ -329,5 +389,9 @@
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Button BtnGeneratePronic;
         private System.Windows.Forms.ListBox lstDisplay;
+        private System.Windows.Forms.Button BtnArgByRef;
+        private System.Windows.Forms.Button BtnArgByVal;
+        private System.Windows.Forms.Button PassArg_out;
+        private System.Windows.Forms.Button BtnMultOutput;
     }
 }

@@ -43,6 +43,8 @@
             this.BtnDisplayPropertiesMethods1D = new System.Windows.Forms.Button();
             this.BtnVariableValues = new System.Windows.Forms.Button();
             this.BtnDoubleArrayForLoop = new System.Windows.Forms.Button();
+            this.BtnQuestion1 = new System.Windows.Forms.Button();
+            this.BtnModifyAnElementByRef = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // BtnDisplay1DForLoop
@@ -67,7 +69,7 @@
             this.lblDisplay.Name = "lblDisplay";
             this.lblDisplay.Size = new System.Drawing.Size(71, 22);
             this.lblDisplay.TabIndex = 1;
-            this.lblDisplay.Text = "Dispaly:";
+            this.lblDisplay.Text = "Display:";
             // 
             // BtnDisplay1DForEachLoop
             // 
@@ -113,7 +115,7 @@
             this.BtnDisplayRandomList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.BtnDisplayRandomList.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BtnDisplayRandomList.ForeColor = System.Drawing.Color.Red;
-            this.BtnDisplayRandomList.Location = new System.Drawing.Point(722, 202);
+            this.BtnDisplayRandomList.Location = new System.Drawing.Point(788, 202);
             this.BtnDisplayRandomList.Name = "BtnDisplayRandomList";
             this.BtnDisplayRandomList.Size = new System.Drawing.Size(92, 76);
             this.BtnDisplayRandomList.TabIndex = 5;
@@ -124,7 +126,7 @@
             // LstRandom
             // 
             this.LstRandom.FormattingEnabled = true;
-            this.LstRandom.Location = new System.Drawing.Point(722, 12);
+            this.LstRandom.Location = new System.Drawing.Point(788, 12);
             this.LstRandom.Name = "LstRandom";
             this.LstRandom.Size = new System.Drawing.Size(92, 173);
             this.LstRandom.TabIndex = 6;
@@ -134,9 +136,9 @@
             this.BtnModifyAnArray.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.BtnModifyAnArray.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BtnModifyAnArray.ForeColor = System.Drawing.Color.Red;
-            this.BtnModifyAnArray.Location = new System.Drawing.Point(134, 244);
+            this.BtnModifyAnArray.Location = new System.Drawing.Point(244, 325);
             this.BtnModifyAnArray.Name = "BtnModifyAnArray";
-            this.BtnModifyAnArray.Size = new System.Drawing.Size(92, 76);
+            this.BtnModifyAnArray.Size = new System.Drawing.Size(92, 34);
             this.BtnModifyAnArray.TabIndex = 7;
             this.BtnModifyAnArray.Text = "Modify An Array";
             this.BtnModifyAnArray.UseVisualStyleBackColor = false;
@@ -147,9 +149,9 @@
             this.BtnModifyAnElement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.BtnModifyAnElement.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BtnModifyAnElement.ForeColor = System.Drawing.Color.Red;
-            this.BtnModifyAnElement.Location = new System.Drawing.Point(134, 340);
+            this.BtnModifyAnElement.Location = new System.Drawing.Point(244, 244);
             this.BtnModifyAnElement.Name = "BtnModifyAnElement";
-            this.BtnModifyAnElement.Size = new System.Drawing.Size(92, 76);
+            this.BtnModifyAnElement.Size = new System.Drawing.Size(92, 34);
             this.BtnModifyAnElement.TabIndex = 8;
             this.BtnModifyAnElement.Text = "Modify An Element";
             this.BtnModifyAnElement.UseVisualStyleBackColor = false;
@@ -160,7 +162,7 @@
             this.BtnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.BtnExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BtnExit.ForeColor = System.Drawing.Color.Red;
-            this.BtnExit.Location = new System.Drawing.Point(703, 350);
+            this.BtnExit.Location = new System.Drawing.Point(788, 340);
             this.BtnExit.Name = "BtnExit";
             this.BtnExit.Size = new System.Drawing.Size(92, 76);
             this.BtnExit.TabIndex = 9;
@@ -173,7 +175,7 @@
             this.BtnReset.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.BtnReset.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BtnReset.ForeColor = System.Drawing.Color.Red;
-            this.BtnReset.Location = new System.Drawing.Point(605, 350);
+            this.BtnReset.Location = new System.Drawing.Point(690, 340);
             this.BtnReset.Name = "BtnReset";
             this.BtnReset.Size = new System.Drawing.Size(92, 76);
             this.BtnReset.TabIndex = 10;
@@ -186,7 +188,7 @@
             this.BtnQuestion02_2D.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.BtnQuestion02_2D.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BtnQuestion02_2D.ForeColor = System.Drawing.Color.Red;
-            this.BtnQuestion02_2D.Location = new System.Drawing.Point(244, 340);
+            this.BtnQuestion02_2D.Location = new System.Drawing.Point(134, 340);
             this.BtnQuestion02_2D.Name = "BtnQuestion02_2D";
             this.BtnQuestion02_2D.Size = new System.Drawing.Size(92, 76);
             this.BtnQuestion02_2D.TabIndex = 11;
@@ -199,7 +201,7 @@
             this.BtnDisplayPropertiesMethods1D.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.BtnDisplayPropertiesMethods1D.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BtnDisplayPropertiesMethods1D.ForeColor = System.Drawing.Color.Red;
-            this.BtnDisplayPropertiesMethods1D.Location = new System.Drawing.Point(244, 118);
+            this.BtnDisplayPropertiesMethods1D.Location = new System.Drawing.Point(134, 118);
             this.BtnDisplayPropertiesMethods1D.Name = "BtnDisplayPropertiesMethods1D";
             this.BtnDisplayPropertiesMethods1D.Size = new System.Drawing.Size(92, 76);
             this.BtnDisplayPropertiesMethods1D.TabIndex = 12;
@@ -233,11 +235,39 @@
             this.BtnDoubleArrayForLoop.UseVisualStyleBackColor = false;
             this.BtnDoubleArrayForLoop.Click += new System.EventHandler(this.BtnDoubleArrayForEach_Click);
             // 
+            // BtnQuestion1
+            // 
+            this.BtnQuestion1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.BtnQuestion1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnQuestion1.ForeColor = System.Drawing.Color.Red;
+            this.BtnQuestion1.Location = new System.Drawing.Point(244, 118);
+            this.BtnQuestion1.Name = "BtnQuestion1";
+            this.BtnQuestion1.Size = new System.Drawing.Size(92, 76);
+            this.BtnQuestion1.TabIndex = 13;
+            this.BtnQuestion1.Text = "Question_1";
+            this.BtnQuestion1.UseVisualStyleBackColor = false;
+            this.BtnQuestion1.Click += new System.EventHandler(this.BtnQuestion1_Click);
+            // 
+            // BtnModifyAnElementByRef
+            // 
+            this.BtnModifyAnElementByRef.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.BtnModifyAnElementByRef.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnModifyAnElementByRef.ForeColor = System.Drawing.Color.Red;
+            this.BtnModifyAnElementByRef.Location = new System.Drawing.Point(244, 286);
+            this.BtnModifyAnElementByRef.Name = "BtnModifyAnElementByRef";
+            this.BtnModifyAnElementByRef.Size = new System.Drawing.Size(92, 34);
+            this.BtnModifyAnElementByRef.TabIndex = 14;
+            this.BtnModifyAnElementByRef.Text = "Modify An Element by ref";
+            this.BtnModifyAnElementByRef.UseVisualStyleBackColor = false;
+            this.BtnModifyAnElementByRef.Click += new System.EventHandler(this.BtnModifyAnElementByRef_Click);
+            // 
             // frmArray
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(839, 438);
+            this.ClientSize = new System.Drawing.Size(892, 438);
+            this.Controls.Add(this.BtnModifyAnElementByRef);
+            this.Controls.Add(this.BtnQuestion1);
             this.Controls.Add(this.BtnDisplayPropertiesMethods1D);
             this.Controls.Add(this.BtnQuestion02_2D);
             this.Controls.Add(this.BtnReset);
@@ -278,5 +308,7 @@
         private System.Windows.Forms.Button BtnDisplayPropertiesMethods1D;
         private System.Windows.Forms.Button BtnVariableValues;
         private System.Windows.Forms.Button BtnDoubleArrayForLoop;
+        private System.Windows.Forms.Button BtnQuestion1;
+        private System.Windows.Forms.Button BtnModifyAnElementByRef;
     }
 }
