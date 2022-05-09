@@ -15,12 +15,21 @@ namespace IE322_App_KAU
         public frmDate()
         {
             InitializeComponent();
+         
         }
 
         private void BtnAddAppointment_Click(object sender, EventArgs e)
         {
-           // string Appt = DteAppointment.Value;
-           // CmbAppointments.Items.Add();
+            if (TxtName.Text != "")
+            {
+                DateTime DteAppt = DteAppointment.Value;
+                CmbAppointments.Items.Add(DteAppt + " by " + TxtName.Text);
+             //CldBirth.
+            }
+            else
+            { 
+            
+            }
         }
     }
 }
