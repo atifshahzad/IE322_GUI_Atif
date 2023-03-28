@@ -135,8 +135,7 @@ namespace IE322_App_KAU
                     MessageBox.Show("There is no such animal!");
                     break;
 
-                    string MyName="Ali";
-                    string MyNaMe="Ali";
+                    
 
             }
         }

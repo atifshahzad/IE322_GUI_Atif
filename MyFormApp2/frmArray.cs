@@ -22,6 +22,8 @@ namespace IE322_App_KAU
         int[,] iArray55 = new int[5, 5]; //Declaration and Definition of 2D array 
         int[,,] iArray345 = new int[3, 4, 5]; //Declaration and Definition of 3D array
 
+       
+
         int[,] iArray32 = new int[3, 2]
                                 {
                                          { 1, 2 },
@@ -41,6 +43,7 @@ namespace IE322_App_KAU
         private void frmArray_Load(object sender, EventArgs e)
         {
             this.CenterToScreen();
+           
         }
 
         private void BtnDisplay1DForLoop_Click(object sender, EventArgs e)
@@ -48,7 +51,8 @@ namespace IE322_App_KAU
             lblDisplay.Text = "1D Array named iArray3 using for Loop";
             for (Int32 i = 0; i < 5; i++)
             {
-                lblDisplay.Text = lblDisplay.Text + "\n" + Convert.ToString(iArray3[i]);
+                lblDisplay.Text = lblDisplay.Text + "\n" + 
+                    Convert.ToString(iArray3[i]);
 
             }
             
@@ -303,10 +307,12 @@ namespace IE322_App_KAU
 
         private void BtnDoubleArrayForEach_Click(object sender, EventArgs e)
         {
+
             lblDisplay.Text = "1D Array named iArray3 using for Loop";
             for (Int32 i = 0; i < 5; i++)
             {
-                lblDisplay.Text = lblDisplay.Text + "\n" + Convert.ToString(iArray3[i]*2);
+                iArray3[i] = iArray3[i] * 2;
+                lblDisplay.Text = lblDisplay.Text + "\n" + Convert.ToString(iArray3[i]);
 
             }
         }

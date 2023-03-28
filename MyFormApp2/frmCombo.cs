@@ -40,9 +40,9 @@ namespace IE322_App_KAU
         {
             //Method3
 
-            var item = CmbDays.SelectedItem;
-            if (item != null)
-                MessageBox.Show(item.ToString()); // if item is Null, an error will occour 
+            var Myitem = CmbDays.SelectedItem;
+            if (Myitem != null)
+                MessageBox.Show(Myitem.ToString()); // if item is Null, an error will occour 
         }
 
         private void btnRemoveByIndex_Click(object sender, EventArgs e)
@@ -78,6 +78,7 @@ namespace IE322_App_KAU
             {
                 MessageBox.Show("Can't remove last item");
             }
+            
         }
 
         private void cmbDays_SelectedIndexChanged(object sender, EventArgs e)

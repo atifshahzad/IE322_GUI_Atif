@@ -55,7 +55,8 @@ namespace IE322_App_KAU
 
         private double Add(double a, double b)
         {                 // body of the method Add starts here
-            return a + b;
+           return a + b;
+
         }                 //body of the method Add ends here
 
         private double Subtract(double a, double b)
@@ -102,7 +103,7 @@ namespace IE322_App_KAU
             {
                 MessageBox.Show("Enter valid amount, please");
                 return;
-            }
+           }
             TxtBalance.Text = Balance.ToString();
         }
 
@@ -199,9 +200,23 @@ namespace IE322_App_KAU
 
         private void BtnAdd54_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(Add(5, 4).ToString());
+
             
+            
+            MessageBox.Show(Add(5, 4).ToString());
+
         }
+
+
+
+
+
+
+
+
+
+
+
 
         private void BtnGeneratePronic_Click(object sender, EventArgs e)
         {

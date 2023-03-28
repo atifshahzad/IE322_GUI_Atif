@@ -293,22 +293,32 @@
 
         #endregion
 
-        private System.Windows.Forms.Button BtnDisplay1DForLoop;
-     private System.Windows.Forms.Label lblDisplay;
-        private System.Windows.Forms.Button BtnDisplay1DForEachLoop;
-        private System.Windows.Forms.Button BtnDisplay2DForLoop;
-        private System.Windows.Forms.Button BtnDisplayPropertiesMethods2D;
-     private System.Windows.Forms.Button BtnDisplayRandomList;
-     private System.Windows.Forms.ListBox LstRandom;
-        private System.Windows.Forms.Button BtnModifyAnArray;
-        private System.Windows.Forms.Button BtnModifyAnElement;
-        private System.Windows.Forms.Button BtnExit;
-        private System.Windows.Forms.Button BtnReset;
-        private System.Windows.Forms.Button BtnQuestion02_2D;
-        private System.Windows.Forms.Button BtnDisplayPropertiesMethods1D;
+        private System.Windows.Forms.Button BtnDisplay1DForLoop;    
+        private System.Windows.Forms.Button BtnDisplay1DForEachLoop;        
         private System.Windows.Forms.Button BtnVariableValues;
         private System.Windows.Forms.Button BtnDoubleArrayForLoop;
         private System.Windows.Forms.Button BtnQuestion1;
+        private System.Windows.Forms.Button BtnDisplayPropertiesMethods1D;
+
+        private System.Windows.Forms.Label lblDisplay;
+
+        private System.Windows.Forms.Button BtnDisplay2DForLoop;
+        private System.Windows.Forms.Button BtnDisplayPropertiesMethods2D;
+     private System.Windows.Forms.Button BtnDisplayRandomList;
+        private System.Windows.Forms.Button BtnQuestion02_2D;
+
+        private System.Windows.Forms.Button BtnModifyAnArray;
+        private System.Windows.Forms.Button BtnModifyAnElement;
+
+        private System.Windows.Forms.Button BtnExit;
+        private System.Windows.Forms.Button BtnReset;
+       
+
+        private System.Windows.Forms.ListBox LstRandom;
+
+
+
+
         private System.Windows.Forms.Button BtnModifyAnElementByRef;
     }
 }

@@ -23,8 +23,9 @@ namespace IE322_App_KAU
         }
         private void btnLogin_Click(object sender, EventArgs e)
         {
+
             if (!loggedIn)
-            {
+            { 
                 while (ThisAttempt <= MaxAttempts)
                 {
                     if (txtUser.Text != username)
@@ -49,7 +50,7 @@ namespace IE322_App_KAU
                             //Both are correct
                             ThisAttempt = 1; // reset the number of attempts
                             loggedIn = true;
-                            // MessageBox.Show("Hi " + username + ", your login successful", "Welcome!!");                          
+                             MessageBox.Show("Hi " + username + ", your login successful", "Welcome!!");                          
 
 
                             foreach (var grp in groupBox1.Controls.OfType<GroupBox>())
@@ -387,6 +388,11 @@ namespace IE322_App_KAU
             frm.ShowDialog();
             //to close the form
             this.DialogResult = DialogResult.OK;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("hi");
         }
     }
 }
