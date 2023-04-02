@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtP = new System.Windows.Forms.TextBox();
-            this.txtQ = new System.Windows.Forms.TextBox();
-            this.txtR = new System.Windows.Forms.TextBox();
+            this.txtA = new System.Windows.Forms.TextBox();
+            this.txtB = new System.Windows.Forms.TextBox();
+            this.txtC = new System.Windows.Forms.TextBox();
             this.txtW = new System.Windows.Forms.TextBox();
             this.txtX = new System.Windows.Forms.TextBox();
             this.txtY = new System.Windows.Forms.TextBox();
@@ -55,37 +55,37 @@
             this.BtnLogical = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.chkP = new System.Windows.Forms.CheckBox();
-            this.chkQ = new System.Windows.Forms.CheckBox();
-            this.chkR = new System.Windows.Forms.CheckBox();
             this.chkS = new System.Windows.Forms.CheckBox();
+            this.chkR = new System.Windows.Forms.CheckBox();
+            this.chkQ = new System.Windows.Forms.CheckBox();
+            this.chkP = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // txtP
+            // txtA
             // 
-            this.txtP.Location = new System.Drawing.Point(44, 19);
-            this.txtP.Name = "txtP";
-            this.txtP.Size = new System.Drawing.Size(100, 20);
-            this.txtP.TabIndex = 0;
-            this.txtP.Text = "1";
+            this.txtA.Location = new System.Drawing.Point(44, 19);
+            this.txtA.Name = "txtA";
+            this.txtA.Size = new System.Drawing.Size(100, 20);
+            this.txtA.TabIndex = 0;
+            this.txtA.Text = "1";
             // 
-            // txtQ
+            // txtB
             // 
-            this.txtQ.Location = new System.Drawing.Point(44, 46);
-            this.txtQ.Name = "txtQ";
-            this.txtQ.Size = new System.Drawing.Size(100, 20);
-            this.txtQ.TabIndex = 0;
-            this.txtQ.Text = "2";
+            this.txtB.Location = new System.Drawing.Point(44, 46);
+            this.txtB.Name = "txtB";
+            this.txtB.Size = new System.Drawing.Size(100, 20);
+            this.txtB.TabIndex = 0;
+            this.txtB.Text = "6";
             // 
-            // txtR
+            // txtC
             // 
-            this.txtR.Location = new System.Drawing.Point(44, 73);
-            this.txtR.Name = "txtR";
-            this.txtR.Size = new System.Drawing.Size(100, 20);
-            this.txtR.TabIndex = 0;
-            this.txtR.Text = "3";
+            this.txtC.Location = new System.Drawing.Point(44, 73);
+            this.txtC.Name = "txtC";
+            this.txtC.Size = new System.Drawing.Size(100, 20);
+            this.txtC.TabIndex = 0;
+            this.txtC.Text = "3";
             // 
             // txtW
             // 
@@ -129,11 +129,11 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.Label1);
-            this.groupBox1.Controls.Add(this.txtP);
+            this.groupBox1.Controls.Add(this.txtA);
             this.groupBox1.Controls.Add(this.txtZ);
-            this.groupBox1.Controls.Add(this.txtQ);
+            this.groupBox1.Controls.Add(this.txtB);
             this.groupBox1.Controls.Add(this.txtY);
-            this.groupBox1.Controls.Add(this.txtR);
+            this.groupBox1.Controls.Add(this.txtC);
             this.groupBox1.Controls.Add(this.txtX);
             this.groupBox1.Controls.Add(this.txtW);
             this.groupBox1.Location = new System.Drawing.Point(12, 32);
@@ -157,7 +157,7 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(6, 154);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(12, 13);
+            this.label7.Size = new System.Drawing.Size(13, 13);
             this.label7.TabIndex = 2;
             this.label7.Text = "y";
             // 
@@ -166,7 +166,7 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(6, 127);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(12, 13);
+            this.label6.Size = new System.Drawing.Size(13, 13);
             this.label6.TabIndex = 2;
             this.label6.Text = "x";
             // 
@@ -184,9 +184,9 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(6, 73);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(10, 13);
+            this.label4.Size = new System.Drawing.Size(12, 13);
             this.label4.TabIndex = 2;
-            this.label4.Text = "r";
+            this.label4.Text = "c";
             // 
             // label3
             // 
@@ -195,7 +195,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(13, 13);
             this.label3.TabIndex = 2;
-            this.label3.Text = "q";
+            this.label3.Text = "b";
             // 
             // label2
             // 
@@ -213,14 +213,14 @@
             this.Label1.Name = "Label1";
             this.Label1.Size = new System.Drawing.Size(13, 13);
             this.Label1.TabIndex = 2;
-            this.Label1.Text = "p";
+            this.Label1.Text = "a";
             // 
             // LblRes
             // 
             this.LblRes.AutoSize = true;
             this.LblRes.Location = new System.Drawing.Point(385, 9);
             this.LblRes.Name = "LblRes";
-            this.LblRes.Size = new System.Drawing.Size(53, 13);
+            this.LblRes.Size = new System.Drawing.Size(54, 13);
             this.LblRes.TabIndex = 3;
             this.LblRes.Text = "Result is: ";
             // 
@@ -230,7 +230,7 @@
             this.BtnSolve.Name = "BtnSolve";
             this.BtnSolve.Size = new System.Drawing.Size(130, 25);
             this.BtnSolve.TabIndex = 4;
-            this.BtnSolve.Text = "Solve";
+            this.BtnSolve.Text = "Solve Arithmetic";
             this.BtnSolve.UseVisualStyleBackColor = true;
             this.BtnSolve.Click += new System.EventHandler(this.BtnSolve_Click);
             // 
@@ -246,7 +246,7 @@
             // 
             // BtnPostfix
             // 
-            this.BtnPostfix.Location = new System.Drawing.Point(12, 395);
+            this.BtnPostfix.Location = new System.Drawing.Point(14, 334);
             this.BtnPostfix.Name = "BtnPostfix";
             this.BtnPostfix.Size = new System.Drawing.Size(189, 25);
             this.BtnPostfix.TabIndex = 5;
@@ -258,9 +258,9 @@
             // 
             this.BtnSolveQuad.Location = new System.Drawing.Point(148, 256);
             this.BtnSolveQuad.Name = "BtnSolveQuad";
-            this.BtnSolveQuad.Size = new System.Drawing.Size(130, 23);
+            this.BtnSolveQuad.Size = new System.Drawing.Size(161, 23);
             this.BtnSolveQuad.TabIndex = 6;
-            this.BtnSolveQuad.Text = "Solve Quadratic on p,q,r";
+            this.BtnSolveQuad.Text = "Solve Quadratic Eqn";
             this.BtnSolveQuad.UseVisualStyleBackColor = true;
             this.BtnSolveQuad.Click += new System.EventHandler(this.BtnSolveQuad_Click);
             // 
@@ -276,19 +276,19 @@
             // 
             // BtnIncrement
             // 
-            this.BtnIncrement.Location = new System.Drawing.Point(12, 334);
+            this.BtnIncrement.Location = new System.Drawing.Point(14, 365);
             this.BtnIncrement.Name = "BtnIncrement";
-            this.BtnIncrement.Size = new System.Drawing.Size(191, 25);
+            this.BtnIncrement.Size = new System.Drawing.Size(189, 25);
             this.BtnIncrement.TabIndex = 4;
-            this.BtnIncrement.Text = "j = ++k + j++;";
+            this.BtnIncrement.Text = "y = ++z + y++";
             this.BtnIncrement.UseVisualStyleBackColor = true;
             this.BtnIncrement.Click += new System.EventHandler(this.BtnIncrement_Click);
             // 
             // BtnCompoundAssignment
             // 
-            this.BtnCompoundAssignment.Location = new System.Drawing.Point(10, 364);
+            this.BtnCompoundAssignment.Location = new System.Drawing.Point(14, 396);
             this.BtnCompoundAssignment.Name = "BtnCompoundAssignment";
-            this.BtnCompoundAssignment.Size = new System.Drawing.Size(191, 25);
+            this.BtnCompoundAssignment.Size = new System.Drawing.Size(189, 25);
             this.BtnCompoundAssignment.TabIndex = 5;
             this.BtnCompoundAssignment.Text = "CompoundAssignment z = y += 2;";
             this.BtnCompoundAssignment.UseVisualStyleBackColor = true;
@@ -328,15 +328,25 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Logical";
             // 
-            // chkP
+            // chkS
             // 
-            this.chkP.AutoSize = true;
-            this.chkP.Location = new System.Drawing.Point(18, 19);
-            this.chkP.Name = "chkP";
-            this.chkP.Size = new System.Drawing.Size(32, 17);
-            this.chkP.TabIndex = 0;
-            this.chkP.Text = "p";
-            this.chkP.UseVisualStyleBackColor = true;
+            this.chkS.AutoSize = true;
+            this.chkS.Location = new System.Drawing.Point(87, 64);
+            this.chkS.Name = "chkS";
+            this.chkS.Size = new System.Drawing.Size(31, 17);
+            this.chkS.TabIndex = 3;
+            this.chkS.Text = "s";
+            this.chkS.UseVisualStyleBackColor = true;
+            // 
+            // chkR
+            // 
+            this.chkR.AutoSize = true;
+            this.chkR.Location = new System.Drawing.Point(18, 64);
+            this.chkR.Name = "chkR";
+            this.chkR.Size = new System.Drawing.Size(30, 17);
+            this.chkR.TabIndex = 2;
+            this.chkR.Text = "r";
+            this.chkR.UseVisualStyleBackColor = true;
             // 
             // chkQ
             // 
@@ -348,25 +358,15 @@
             this.chkQ.Text = "q";
             this.chkQ.UseVisualStyleBackColor = true;
             // 
-            // chkR
+            // chkP
             // 
-            this.chkR.AutoSize = true;
-            this.chkR.Location = new System.Drawing.Point(18, 64);
-            this.chkR.Name = "chkR";
-            this.chkR.Size = new System.Drawing.Size(29, 17);
-            this.chkR.TabIndex = 2;
-            this.chkR.Text = "r";
-            this.chkR.UseVisualStyleBackColor = true;
-            // 
-            // chkS
-            // 
-            this.chkS.AutoSize = true;
-            this.chkS.Location = new System.Drawing.Point(87, 64);
-            this.chkS.Name = "chkS";
-            this.chkS.Size = new System.Drawing.Size(31, 17);
-            this.chkS.TabIndex = 3;
-            this.chkS.Text = "s";
-            this.chkS.UseVisualStyleBackColor = true;
+            this.chkP.AutoSize = true;
+            this.chkP.Location = new System.Drawing.Point(18, 19);
+            this.chkP.Name = "chkP";
+            this.chkP.Size = new System.Drawing.Size(32, 17);
+            this.chkP.TabIndex = 0;
+            this.chkP.Text = "p";
+            this.chkP.UseVisualStyleBackColor = true;
             // 
             // frmOperators
             // 
@@ -398,9 +398,9 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtP;
-        private System.Windows.Forms.TextBox txtQ;
-        private System.Windows.Forms.TextBox txtR;
+        private System.Windows.Forms.TextBox txtA;
+        private System.Windows.Forms.TextBox txtB;
+        private System.Windows.Forms.TextBox txtC;
         private System.Windows.Forms.TextBox txtW;
         private System.Windows.Forms.TextBox txtX;
         private System.Windows.Forms.TextBox txtY;

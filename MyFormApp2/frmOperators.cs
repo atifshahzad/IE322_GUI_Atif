@@ -109,11 +109,11 @@ namespace IE322_App_KAU
         private void BtnSolveQuad_Click(object sender, EventArgs e)
         {
 
-            a = Convert.ToDouble(txtP.Text);
+            a = Convert.ToDouble(txtA.Text);
 
-            b = Convert.ToDouble(txtQ.Text);
+            b = Convert.ToDouble(txtB.Text);
 
-            c = Convert.ToDouble(txtR.Text);
+            c = Convert.ToDouble(txtC.Text);
 
 
             double Disc = Math.Pow(b, 2) - 4 * a * c;
@@ -154,11 +154,11 @@ namespace IE322_App_KAU
 
             try
             {
-                a = Convert.ToDouble(txtP.Text);
+                a = Convert.ToDouble(txtA.Text);
 
-                b = Convert.ToDouble(txtQ.Text);
+                b = Convert.ToDouble(txtB.Text);
 
-                c = Convert.ToDouble(txtR.Text);
+                c = Convert.ToDouble(txtC.Text);
 
                 w = Convert.ToDouble(txtW.Text);
 
@@ -169,7 +169,6 @@ namespace IE322_App_KAU
                 z = Convert.ToDouble(txtZ.Text);
 
                 res = a * c % b + w / (x - y); //-3
-
                 LblRes.Text = "a * c % b + w / (x - y): " + Convert.ToString(res);
 
 
@@ -209,11 +208,11 @@ namespace IE322_App_KAU
         private void frmOperators_Load(object sender, EventArgs e)
         {
 
-            a = Convert.ToDouble(txtP.Text);
+            a = Convert.ToDouble(txtA.Text);
 
-            b = Convert.ToDouble(txtQ.Text);
+            b = Convert.ToDouble(txtB.Text);
 
-            c = Convert.ToDouble(txtR.Text);
+            c = Convert.ToDouble(txtC.Text);
 
             w = Convert.ToDouble(txtW.Text);
 
