@@ -199,8 +199,8 @@ namespace IE322_App_KAU
         }
 
         private void BtnAdd54_Click(object sender, EventArgs e)
-        {            
-            
+        {
+
             MessageBox.Show(Add(5, 4).ToString());
 
         }
