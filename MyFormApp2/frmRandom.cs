@@ -21,6 +21,9 @@ namespace IE322_App_KAU
             int b = y.Next(0, 255);
 
             LblRGB.ForeColor = Color.FromArgb(r, g, b);
+
+
+
             btnGenerateRandom.BackColor = Color.FromArgb(r, g, b);
             btnGenerateRandom.ForeColor = Color.FromArgb(255 - r, 255 - g, 255 - b);
             this.BackColor = Color.FromArgb(255 - r, 255 - g, 255 - b);
@@ -41,9 +44,7 @@ namespace IE322_App_KAU
 
         private void BtnRandomNum_Click(object sender, EventArgs e)
         {
-
-            BtnRandomNum.Text = Convert.ToString(y.Next(1, 10));
-
+           BtnRandomNum.Text = Convert.ToString(y.Next(1, 10));
         }
     }
 }

@@ -132,7 +132,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(347, 259);
+            this.ClientSize = new System.Drawing.Size(363, 256);
             this.Controls.Add(this.BtnRemove2ndLast);
             this.Controls.Add(this.BtnRemoveLast);
             this.Controls.Add(this.BtnRemoveByName);
