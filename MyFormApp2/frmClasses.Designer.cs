@@ -38,6 +38,7 @@
             this.BtnStartHisCar = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.BtnTransferToMaria = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.TxtBalance = new System.Windows.Forms.TextBox();
             this.TxtAmount = new System.Windows.Forms.TextBox();
@@ -45,14 +46,13 @@
             this.BtnWithdraw = new System.Windows.Forms.Button();
             this.BtnDeposit = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.BtnTransferToAli = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.TxtBalanceMaria = new System.Windows.Forms.TextBox();
             this.TxtAmountMaria = new System.Windows.Forms.TextBox();
             this.BtnCheckBalanceMaria = new System.Windows.Forms.Button();
             this.BtnWithdrawMaria = new System.Windows.Forms.Button();
             this.BtnDepositMaria = new System.Windows.Forms.Button();
-            this.BtnTransferToMaria = new System.Windows.Forms.Button();
-            this.BtnTransferToAli = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -69,7 +69,7 @@
             this.groupBox1.Controls.Add(this.BtnStartHisCar);
             this.groupBox1.Location = new System.Drawing.Point(35, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(482, 202);
+            this.groupBox1.Size = new System.Drawing.Size(495, 202);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Classes";
@@ -170,12 +170,22 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Ali\'s Account";
             // 
+            // BtnTransferToMaria
+            // 
+            this.BtnTransferToMaria.Location = new System.Drawing.Point(120, 144);
+            this.BtnTransferToMaria.Name = "BtnTransferToMaria";
+            this.BtnTransferToMaria.Size = new System.Drawing.Size(100, 23);
+            this.BtnTransferToMaria.TabIndex = 3;
+            this.BtnTransferToMaria.Text = "Transfer To Maria";
+            this.BtnTransferToMaria.UseVisualStyleBackColor = true;
+            this.BtnTransferToMaria.Click += new System.EventHandler(this.BtnTransferToMaria_Click);
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(6, 22);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(86, 13);
+            this.label3.Size = new System.Drawing.Size(88, 13);
             this.label3.TabIndex = 2;
             this.label3.Text = "Current Balance:";
             // 
@@ -240,12 +250,22 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Maria\'s Account";
             // 
+            // BtnTransferToAli
+            // 
+            this.BtnTransferToAli.Location = new System.Drawing.Point(120, 144);
+            this.BtnTransferToAli.Name = "BtnTransferToAli";
+            this.BtnTransferToAli.Size = new System.Drawing.Size(100, 23);
+            this.BtnTransferToAli.TabIndex = 3;
+            this.BtnTransferToAli.Text = "Transfer To Ali";
+            this.BtnTransferToAli.UseVisualStyleBackColor = true;
+            this.BtnTransferToAli.Click += new System.EventHandler(this.BtnTransferToAli_Click);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(6, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 13);
+            this.label1.Size = new System.Drawing.Size(88, 13);
             this.label1.TabIndex = 2;
             this.label1.Text = "Current Balance:";
             // 
@@ -293,26 +313,6 @@
             this.BtnDepositMaria.Text = "Deposit";
             this.BtnDepositMaria.UseVisualStyleBackColor = true;
             this.BtnDepositMaria.Click += new System.EventHandler(this.BtnDepositMaria_Click);
-            // 
-            // BtnTransferToMaria
-            // 
-            this.BtnTransferToMaria.Location = new System.Drawing.Point(120, 144);
-            this.BtnTransferToMaria.Name = "BtnTransferToMaria";
-            this.BtnTransferToMaria.Size = new System.Drawing.Size(100, 23);
-            this.BtnTransferToMaria.TabIndex = 3;
-            this.BtnTransferToMaria.Text = "Transfer To Maria";
-            this.BtnTransferToMaria.UseVisualStyleBackColor = true;
-            this.BtnTransferToMaria.Click += new System.EventHandler(this.BtnTransferToMaria_Click);
-            // 
-            // BtnTransferToAli
-            // 
-            this.BtnTransferToAli.Location = new System.Drawing.Point(120, 144);
-            this.BtnTransferToAli.Name = "BtnTransferToAli";
-            this.BtnTransferToAli.Size = new System.Drawing.Size(100, 23);
-            this.BtnTransferToAli.TabIndex = 3;
-            this.BtnTransferToAli.Text = "Transfer To Ali";
-            this.BtnTransferToAli.UseVisualStyleBackColor = true;
-            this.BtnTransferToAli.Click += new System.EventHandler(this.BtnTransferToAli_Click);
             // 
             // frmClasses
             // 

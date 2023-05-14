@@ -25,7 +25,6 @@ namespace IE322_App_KAU
         {
             speed = speed + increase;
             MessageBox.Show("Car has been accelerated by " + increase);
-
         }
 
         public void Deccelerate(int decrease)

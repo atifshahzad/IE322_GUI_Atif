@@ -27,7 +27,9 @@ namespace IE322_App_KAU
 
         private void BtnStartHisCar_Click(object sender, EventArgs e)
         {
-            HisCar.Start();
+            HisCar.Accelerate(30);
+            MessageBox.Show(Convert.ToString(HisCar.speed));
+
         }
 
         private void BtnAccMyCar_Click(object sender, EventArgs e)
