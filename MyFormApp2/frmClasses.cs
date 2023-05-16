@@ -61,7 +61,7 @@ namespace IE322_App_KAU
 
         private void frmClasses_Load(object sender, EventArgs e)
         {
-            TxtBalance.Text = AliAccount.CheckBalance().ToString();
+            TxtBalanceAli.Text = AliAccount.CheckBalance().ToString();
             TxtBalanceMaria.Text = MariaAccount.CheckBalance().ToString();
         }
 
@@ -69,28 +69,28 @@ namespace IE322_App_KAU
         {
             try
             {
-                AliAccount.Deposit(Convert.ToDouble(TxtAmount.Text));// Now deposit some amount                
+                AliAccount.Deposit(Convert.ToDouble(TxtAmountAli.Text));// Now deposit some amount                
             }
             catch (Exception)
             {
                 MessageBox.Show("Enter valid amount, please");
                 return;
             }
-            TxtBalance.Text = AliAccount.CheckBalance().ToString();
+            TxtBalanceAli.Text = AliAccount.CheckBalance().ToString();
         }
 
         private void BtnWithdraw_Click_1(object sender, EventArgs e)
         {
             try
             {
-                AliAccount.Withdraw(Convert.ToDouble(TxtAmount.Text));// Now deposit some amount                
+                AliAccount.Withdraw(Convert.ToDouble(TxtAmountAli.Text));// Now deposit some amount                
             }
             catch (Exception)
             {
                 MessageBox.Show("Enter valid amount, please");
                 return;
             }
-            TxtBalance.Text = AliAccount.CheckBalance().ToString();
+            TxtBalanceAli.Text = AliAccount.CheckBalance().ToString();
         }
 
         private void BtnCheckBalance_Click(object sender, EventArgs e)
@@ -135,9 +135,9 @@ namespace IE322_App_KAU
         {
             try
             {
-                if (AliAccount.Transfer(MariaAccount, Convert.ToDouble(TxtAmount.Text)))
+                if (AliAccount.Transfer(MariaAccount, Convert.ToDouble(TxtAmountAli.Text)))
                 {
-                    TxtBalance.Text = AliAccount.CheckBalance().ToString();
+                    TxtBalanceAli.Text = AliAccount.CheckBalance().ToString();
                     TxtBalanceMaria.Text = MariaAccount.CheckBalance().ToString();
                 }
                 else
@@ -159,7 +159,7 @@ namespace IE322_App_KAU
             {
                 if (MariaAccount.Transfer(AliAccount, Convert.ToDouble(TxtAmountMaria.Text)))
                 {
-                    TxtBalance.Text = AliAccount.CheckBalance().ToString();
+                    TxtBalanceAli.Text = AliAccount.CheckBalance().ToString();
                     TxtBalanceMaria.Text = MariaAccount.CheckBalance().ToString();
                 }
                 else

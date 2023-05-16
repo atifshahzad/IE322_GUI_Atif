@@ -40,8 +40,8 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.BtnTransferToMaria = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.TxtBalance = new System.Windows.Forms.TextBox();
-            this.TxtAmount = new System.Windows.Forms.TextBox();
+            this.TxtBalanceAli = new System.Windows.Forms.TextBox();
+            this.TxtAmountAli = new System.Windows.Forms.TextBox();
             this.BtnCheckBalance = new System.Windows.Forms.Button();
             this.BtnWithdraw = new System.Windows.Forms.Button();
             this.BtnDeposit = new System.Windows.Forms.Button();
@@ -158,8 +158,8 @@
             // 
             this.groupBox3.Controls.Add(this.BtnTransferToMaria);
             this.groupBox3.Controls.Add(this.label3);
-            this.groupBox3.Controls.Add(this.TxtBalance);
-            this.groupBox3.Controls.Add(this.TxtAmount);
+            this.groupBox3.Controls.Add(this.TxtBalanceAli);
+            this.groupBox3.Controls.Add(this.TxtAmountAli);
             this.groupBox3.Controls.Add(this.BtnCheckBalance);
             this.groupBox3.Controls.Add(this.BtnWithdraw);
             this.groupBox3.Controls.Add(this.BtnDeposit);
@@ -189,20 +189,20 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "Current Balance:";
             // 
-            // TxtBalance
+            // TxtBalanceAli
             // 
-            this.TxtBalance.Location = new System.Drawing.Point(120, 19);
-            this.TxtBalance.Name = "TxtBalance";
-            this.TxtBalance.ReadOnly = true;
-            this.TxtBalance.Size = new System.Drawing.Size(100, 20);
-            this.TxtBalance.TabIndex = 2;
+            this.TxtBalanceAli.Location = new System.Drawing.Point(120, 19);
+            this.TxtBalanceAli.Name = "TxtBalanceAli";
+            this.TxtBalanceAli.ReadOnly = true;
+            this.TxtBalanceAli.Size = new System.Drawing.Size(100, 20);
+            this.TxtBalanceAli.TabIndex = 2;
             // 
-            // TxtAmount
+            // TxtAmountAli
             // 
-            this.TxtAmount.Location = new System.Drawing.Point(9, 118);
-            this.TxtAmount.Name = "TxtAmount";
-            this.TxtAmount.Size = new System.Drawing.Size(100, 20);
-            this.TxtAmount.TabIndex = 2;
+            this.TxtAmountAli.Location = new System.Drawing.Point(9, 118);
+            this.TxtAmountAli.Name = "TxtAmountAli";
+            this.TxtAmountAli.Size = new System.Drawing.Size(100, 20);
+            this.TxtAmountAli.TabIndex = 2;
             // 
             // BtnCheckBalance
             // 
@@ -348,8 +348,8 @@
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox TxtBalance;
-        private System.Windows.Forms.TextBox TxtAmount;
+        private System.Windows.Forms.TextBox TxtBalanceAli;
+        private System.Windows.Forms.TextBox TxtAmountAli;
         private System.Windows.Forms.Button BtnCheckBalance;
         private System.Windows.Forms.Button BtnWithdraw;
         private System.Windows.Forms.Button BtnDeposit;
