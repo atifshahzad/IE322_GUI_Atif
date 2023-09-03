@@ -147,6 +147,7 @@ namespace IE322_App_KAU
             for (int x = 0; x < 5; x++)
             {
                 LblDisplay.Text = LblDisplay.Text + "    " + Convert.ToString(x);
+               
             }
 
         }

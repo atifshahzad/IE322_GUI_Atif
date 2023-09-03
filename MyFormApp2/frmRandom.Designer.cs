@@ -32,6 +32,10 @@
             this.btnGenerateRandom = new System.Windows.Forms.Button();
             this.LblRGB = new System.Windows.Forms.Label();
             this.BtnRandomNum = new System.Windows.Forms.Button();
+            this.btnGenerateRandomIneger = new System.Windows.Forms.Button();
+            this.btnSeed = new System.Windows.Forms.Button();
+            this.cmbRnd1 = new System.Windows.Forms.ComboBox();
+            this.cmbRnd2 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // btnBack
@@ -66,7 +70,7 @@
             // BtnRandomNum
             // 
             this.BtnRandomNum.Location = new System.Drawing.Point(16, 170);
-            this.BtnRandomNum.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnRandomNum.Margin = new System.Windows.Forms.Padding(2);
             this.BtnRandomNum.Name = "BtnRandomNum";
             this.BtnRandomNum.Size = new System.Drawing.Size(112, 33);
             this.BtnRandomNum.TabIndex = 9;
@@ -74,11 +78,51 @@
             this.BtnRandomNum.UseVisualStyleBackColor = true;
             this.BtnRandomNum.Click += new System.EventHandler(this.BtnRandomNum_Click);
             // 
+            // btnGenerateRandomIneger
+            // 
+            this.btnGenerateRandomIneger.Location = new System.Drawing.Point(328, 44);
+            this.btnGenerateRandomIneger.Name = "btnGenerateRandomIneger";
+            this.btnGenerateRandomIneger.Size = new System.Drawing.Size(113, 34);
+            this.btnGenerateRandomIneger.TabIndex = 10;
+            this.btnGenerateRandomIneger.Text = "button1";
+            this.btnGenerateRandomIneger.UseVisualStyleBackColor = true;
+            this.btnGenerateRandomIneger.Click += new System.EventHandler(this.btnGenerateRandomIneger_Click);
+            // 
+            // btnSeed
+            // 
+            this.btnSeed.Location = new System.Drawing.Point(328, 151);
+            this.btnSeed.Name = "btnSeed";
+            this.btnSeed.Size = new System.Drawing.Size(113, 34);
+            this.btnSeed.TabIndex = 11;
+            this.btnSeed.Text = "seed";
+            this.btnSeed.UseVisualStyleBackColor = true;
+            this.btnSeed.Click += new System.EventHandler(this.btnSeed_Click);
+            // 
+            // cmbRnd1
+            // 
+            this.cmbRnd1.FormattingEnabled = true;
+            this.cmbRnd1.Location = new System.Drawing.Point(457, 159);
+            this.cmbRnd1.Name = "cmbRnd1";
+            this.cmbRnd1.Size = new System.Drawing.Size(104, 21);
+            this.cmbRnd1.TabIndex = 12;
+            // 
+            // cmbRnd2
+            // 
+            this.cmbRnd2.FormattingEnabled = true;
+            this.cmbRnd2.Location = new System.Drawing.Point(584, 159);
+            this.cmbRnd2.Name = "cmbRnd2";
+            this.cmbRnd2.Size = new System.Drawing.Size(104, 21);
+            this.cmbRnd2.TabIndex = 13;
+            // 
             // frmRandom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(295, 263);
+            this.ClientSize = new System.Drawing.Size(713, 272);
+            this.Controls.Add(this.cmbRnd2);
+            this.Controls.Add(this.cmbRnd1);
+            this.Controls.Add(this.btnSeed);
+            this.Controls.Add(this.btnGenerateRandomIneger);
             this.Controls.Add(this.BtnRandomNum);
             this.Controls.Add(this.LblRGB);
             this.Controls.Add(this.btnGenerateRandom);
@@ -96,5 +140,9 @@
         private System.Windows.Forms.Button btnGenerateRandom;
         private System.Windows.Forms.Label LblRGB;
         private System.Windows.Forms.Button BtnRandomNum;
+        private System.Windows.Forms.Button btnGenerateRandomIneger;
+        private System.Windows.Forms.Button btnSeed;
+        private System.Windows.Forms.ComboBox cmbRnd1;
+        private System.Windows.Forms.ComboBox cmbRnd2;
     }
 }
