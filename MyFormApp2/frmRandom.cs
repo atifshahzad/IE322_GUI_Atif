@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
+using MongoDB.Driver.Core.Misc;
 
 namespace IE322_App_KAU
 {
@@ -45,6 +46,45 @@ namespace IE322_App_KAU
         private void BtnRandomNum_Click(object sender, EventArgs e)
         {
            BtnRandomNum.Text = Convert.ToString(y.Next(1, 10));
+        }
+
+        private void btnGenerateRandomIneger_Click(object sender, EventArgs e)
+        {
+             Random rnd = new Random();
+            int num = rnd.Next(); // Returns a positive random integer within the default range - 2,147,483,648 to 2,147,483, 647.
+
+
+            num = rnd.Next(97); // Returns a positive random integer that is less than the specified maximum value.
+
+            num = rnd.Next(71,97);  //Returns a positive random integer within the specified minimum and maximum range(includes min and excludes max).
+
+            
+            
+           double  num2 = rnd.NextDouble(); //Generates random floating-point number that is greater than or equal to 0.0 and less than 1.0.
+
+
+
+        }
+
+        private void btnSeed_Click(object sender, EventArgs e)
+        {
+
+            
+            // Two different instances of the Random class having the same seed value will generate the same random numbers
+            // By default, the seed value is time-dependent.
+
+            Random rnd1 = new Random(10); //seed value 10
+            for (int j = 0; j < 4; j++)
+            {
+                cmbRnd1.Items.Add(rnd1.Next());
+            }
+                       
+
+            Random rnd2 = new Random(10);//seed value 10
+            for (int j = 0; j < 4; j++)
+            {
+                cmbRnd2.Items.Add(rnd2.Next());
+            }
         }
     }
 }

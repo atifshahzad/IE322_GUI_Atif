@@ -205,17 +205,6 @@ namespace IE322_App_KAU
 
         }
 
-
-
-
-
-
-
-
-
-
-
-
         private void BtnGeneratePronic_Click(object sender, EventArgs e)
         {
             ArrayList ListPronics=GeneratePrnicNumbers(50);
