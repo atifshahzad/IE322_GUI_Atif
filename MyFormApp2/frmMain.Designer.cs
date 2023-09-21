@@ -721,7 +721,7 @@
             this.Controls.Add(this.grpLogin);
             this.Controls.Add(this.btnEXIT);
             this.Name = "frmMain";
-            this.Text = "IE322_F20_KAU";
+            this.Text = "IE322_Dr. Atif Shahzad";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.grpLogin.ResumeLayout(false);
             this.grpLogin.PerformLayout();
