@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IE322_App_KAU", "MyFormApp2\IE322_App_KAU.csproj", "{E781C8EC-FE75-48F5-824E-040CA71EE0FC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IE322_App_KAU", "IE322_DrAtif_KAU\IE322_App_KAU.csproj", "{E781C8EC-FE75-48F5-824E-040CA71EE0FC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
