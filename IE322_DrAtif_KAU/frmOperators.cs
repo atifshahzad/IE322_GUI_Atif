@@ -140,10 +140,12 @@ namespace IE322_App_KAU
         private void BtnPrefix_Click(object sender, EventArgs e)
         {
             //prefix
-            y = ++x;
+            //y = ++x;
             txtX.Text = Convert.ToString(x);
             txtY.Text = Convert.ToString(y);
 
+
+            y = ++x + x++;
 
         }
 
