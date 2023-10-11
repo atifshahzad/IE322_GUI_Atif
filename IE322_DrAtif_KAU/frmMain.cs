@@ -10,6 +10,7 @@ namespace IE322_App_KAU
     {
         string username = "";      //"Atif"; //username
         string myPassword = "";    //"1234"; //password
+        string msg = "";
 
         bool loggedIn = false;
 
@@ -31,9 +32,9 @@ namespace IE322_App_KAU
                     if (txtUser.Text != username)
                     {
                         // username is incorrect
-                        MessageBox.Show("Invalid username, " + (MaxAttempts - ThisAttempt) + " attempts remaining");
+                        msg= "Invalid username, " + (MaxAttempts - ThisAttempt) + " attempts remaining";                        
                         ThisAttempt++; //
-                        return;
+                        break;
                     }
                     else
                     {   // username is correct
@@ -41,16 +42,16 @@ namespace IE322_App_KAU
                         if (txtPassword.Text != myPassword)
                         {
                             // Incorrect password                            
-                            MessageBox.Show("Incorrect password," + (MaxAttempts - ThisAttempt) + " attempts remaining");
+                            msg= "Incorrect password," + (MaxAttempts - ThisAttempt) + " attempts remaining";                            
                             ThisAttempt++;
-                            return;
+                            break;
                         }
                         else
                         {
                             //Both are correct
                             ThisAttempt = 1; // reset the number of attempts
                             loggedIn = true;
-                             MessageBox.Show("Hi " + username + ", your login successful", "Welcome!!");                          
+                             msg= "Hi " + username + ", your login successful";                                            
 
 
                             foreach (var grp in groupBox1.Controls.OfType<GroupBox>())
@@ -68,8 +69,15 @@ namespace IE322_App_KAU
                             break; // come out of while loop
                         }//endif
 
-                    }//endif
+                    }//endif                    
                 }//end while
+                MessageBox.Show(msg);
+                if (ThisAttempt > MaxAttempts)
+                {
+                    MessageBox.Show("Contact admin, closing app...");
+                    Close();
+                }   
+                msg="";//reset msg 
             }
             else
             {
@@ -88,6 +96,7 @@ namespace IE322_App_KAU
                     }
                 }
             }
+
         } //end login Button
 
 
