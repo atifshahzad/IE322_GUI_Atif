@@ -699,8 +699,8 @@
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(118, 17);
-            this.toolStripStatusLabel1.Text = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(166, 17);
+            this.toolStripStatusLabel1.Text = "Computer Applications in IE-1";
             // 
             // picLogo_IE
             // 

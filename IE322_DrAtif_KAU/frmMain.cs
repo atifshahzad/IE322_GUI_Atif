@@ -21,11 +21,12 @@ namespace IE322_App_KAU
         public frmMain()
         {
             InitializeComponent();
+
         }
         private void btnLogin_Click(object sender, EventArgs e)
         {
 
-            if (!loggedIn)
+            if (!loggedIn)   
             { 
                 while (ThisAttempt <= MaxAttempts)
                 {
@@ -226,8 +227,7 @@ namespace IE322_App_KAU
         {
             frmCheck frm = new frmCheck();
             frm.ShowDialog();
-            //to close the form
-            this.DialogResult = DialogResult.OK;
+            
         }
 
         private void BtnRoboticCell_Click(object sender, EventArgs e)
