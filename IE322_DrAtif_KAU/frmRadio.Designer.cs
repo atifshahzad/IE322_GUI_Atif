@@ -57,7 +57,7 @@
             this.rdoRed.AutoSize = true;
             this.rdoRed.Location = new System.Drawing.Point(30, 90);
             this.rdoRed.Name = "rdoRed";
-            this.rdoRed.Size = new System.Drawing.Size(45, 17);
+            this.rdoRed.Size = new System.Drawing.Size(44, 17);
             this.rdoRed.TabIndex = 2;
             this.rdoRed.TabStop = true;
             this.rdoRed.Text = "Red";
@@ -91,7 +91,7 @@
             this.rdoBlue.AutoSize = true;
             this.rdoBlue.Location = new System.Drawing.Point(30, 136);
             this.rdoBlue.Name = "rdoBlue";
-            this.rdoBlue.Size = new System.Drawing.Size(46, 17);
+            this.rdoBlue.Size = new System.Drawing.Size(45, 17);
             this.rdoBlue.TabIndex = 4;
             this.rdoBlue.TabStop = true;
             this.rdoBlue.Text = "Blue";
@@ -103,7 +103,7 @@
             this.rdoYellow.AutoSize = true;
             this.rdoYellow.Location = new System.Drawing.Point(30, 159);
             this.rdoYellow.Name = "rdoYellow";
-            this.rdoYellow.Size = new System.Drawing.Size(56, 17);
+            this.rdoYellow.Size = new System.Drawing.Size(55, 17);
             this.rdoYellow.TabIndex = 5;
             this.rdoYellow.Text = "Yellow";
             this.rdoYellow.UseVisualStyleBackColor = true;
@@ -115,6 +115,7 @@
             this.groupBox1.Controls.Add(this.RdoBlue2);
             this.groupBox1.Controls.Add(this.RdoGreen2);
             this.groupBox1.Controls.Add(this.RdoRed2);
+            this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.groupBox1.Location = new System.Drawing.Point(103, 71);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(152, 124);
@@ -128,7 +129,7 @@
             this.RdoYellow2.AutoSize = true;
             this.RdoYellow2.Location = new System.Drawing.Point(47, 88);
             this.RdoYellow2.Name = "RdoYellow2";
-            this.RdoYellow2.Size = new System.Drawing.Size(56, 17);
+            this.RdoYellow2.Size = new System.Drawing.Size(55, 17);
             this.RdoYellow2.TabIndex = 9;
             this.RdoYellow2.Text = "Yellow";
             this.RdoYellow2.UseVisualStyleBackColor = true;
@@ -139,7 +140,7 @@
             this.RdoBlue2.AutoSize = true;
             this.RdoBlue2.Location = new System.Drawing.Point(47, 65);
             this.RdoBlue2.Name = "RdoBlue2";
-            this.RdoBlue2.Size = new System.Drawing.Size(46, 17);
+            this.RdoBlue2.Size = new System.Drawing.Size(45, 17);
             this.RdoBlue2.TabIndex = 8;
             this.RdoBlue2.TabStop = true;
             this.RdoBlue2.Text = "Blue";
@@ -163,7 +164,7 @@
             this.RdoRed2.AutoSize = true;
             this.RdoRed2.Location = new System.Drawing.Point(47, 19);
             this.RdoRed2.Name = "RdoRed2";
-            this.RdoRed2.Size = new System.Drawing.Size(45, 17);
+            this.RdoRed2.Size = new System.Drawing.Size(44, 17);
             this.RdoRed2.TabIndex = 6;
             this.RdoRed2.TabStop = true;
             this.RdoRed2.Text = "Red";

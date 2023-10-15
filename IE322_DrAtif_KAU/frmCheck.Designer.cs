@@ -80,6 +80,7 @@ namespace IE322_App_KAU
             this.chkBrownie.TabIndex = 7;
             this.chkBrownie.Text = "Brownie";
             this.chkBrownie.UseVisualStyleBackColor = true;
+            this.chkBrownie.CheckedChanged += new System.EventHandler(this.chkBrownie_CheckedChanged);
             // 
             // chkDonut
             // 
@@ -90,6 +91,7 @@ namespace IE322_App_KAU
             this.chkDonut.TabIndex = 6;
             this.chkDonut.Text = "Donut";
             this.chkDonut.UseVisualStyleBackColor = true;
+            this.chkDonut.CheckedChanged += new System.EventHandler(this.chkDonut_CheckedChanged);
             // 
             // chkCoffee
             // 

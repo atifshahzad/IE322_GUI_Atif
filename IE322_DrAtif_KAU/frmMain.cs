@@ -123,7 +123,7 @@ namespace IE322_App_KAU
             frmCombo frm = new frmCombo();
             frm.ShowDialog();
             //to close the form
-            this.DialogResult = DialogResult.OK;
+           // this.DialogResult = DialogResult.OK;
         }
 
         private void txtUser_TextChanged(object sender, EventArgs e)

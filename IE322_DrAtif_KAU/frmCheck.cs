@@ -1,5 +1,5 @@
 ﻿using System;
-
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace IE322_App_KAU
@@ -73,7 +73,27 @@ namespace IE322_App_KAU
 
         private void chkCoffee_CheckedChanged(object sender, EventArgs e)
         {
-           
+            if (chkCoffee.Checked == true)
+                chkCoffee.ForeColor = Color.Blue;
+            else
+                chkCoffee.ForeColor = Color.Black;
+        }
+
+        private void chkDonut_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkDonut.Checked == true)
+                chkDonut.ForeColor = Color.Blue;
+            else
+                chkDonut.ForeColor = Color.Black;
+        }
+
+        private void chkBrownie_CheckedChanged(object sender, EventArgs e)
+        {
+
+            if (chkBrownie.Checked == true)
+                chkBrownie.ForeColor = Color.Blue;
+            else
+                chkBrownie.ForeColor = Color.Black;
         }
     }
 }
