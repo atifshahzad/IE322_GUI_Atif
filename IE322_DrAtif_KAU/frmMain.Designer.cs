@@ -83,6 +83,7 @@
             this.StsMain = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.picLogo_IE = new System.Windows.Forms.PictureBox();
+            this.BtnTree = new System.Windows.Forms.Button();
             this.grpLogin.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox9.SuspendLayout();
@@ -243,7 +244,7 @@
             this.LnkForgot.Location = new System.Drawing.Point(8, 124);
             this.LnkForgot.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LnkForgot.Name = "LnkForgot";
-            this.LnkForgot.Size = new System.Drawing.Size(93, 13);
+            this.LnkForgot.Size = new System.Drawing.Size(91, 13);
             this.LnkForgot.TabIndex = 11;
             this.LnkForgot.TabStop = true;
             this.LnkForgot.Text = "Forgot password?";
@@ -583,6 +584,7 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.BtnTree);
             this.groupBox4.Controls.Add(this.BtnDate);
             this.groupBox4.Controls.Add(this.btnProg);
             this.groupBox4.Controls.Add(this.btnTimer);
@@ -710,6 +712,15 @@
             this.picLogo_IE.TabIndex = 17;
             this.picLogo_IE.TabStop = false;
             // 
+            // BtnTree
+            // 
+            this.BtnTree.Location = new System.Drawing.Point(107, 78);
+            this.BtnTree.Name = "BtnTree";
+            this.BtnTree.Size = new System.Drawing.Size(90, 24);
+            this.BtnTree.TabIndex = 23;
+            this.BtnTree.Text = "TreeView";
+            this.BtnTree.UseVisualStyleBackColor = true;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -801,5 +812,6 @@
         private System.Windows.Forms.GroupBox groupBox9;
         private System.Windows.Forms.Button BtnFSM;
         private System.Windows.Forms.Button BtnDate;
+        private System.Windows.Forms.Button BtnTree;
     }
 }

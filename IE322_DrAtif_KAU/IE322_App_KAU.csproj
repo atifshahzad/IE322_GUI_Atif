@@ -397,6 +397,12 @@
     <Compile Include="frmTalk.Designer.cs">
       <DependentUpon>frmTalk.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmTree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTree.Designer.cs">
+      <DependentUpon>frmTree.cs</DependentUpon>
+    </Compile>
     <Compile Include="FSM\FiniteStateMachine.cs" />
     <Compile Include="FSM\Process.cs" />
     <Compile Include="lang\arab.Designer.cs">
@@ -518,6 +524,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmTalk.resx">
       <DependentUpon>frmTalk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTree.resx">
+      <DependentUpon>frmTree.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="lang\arab.resx">
       <Generator>ResXFileCodeGenerator</Generator>
