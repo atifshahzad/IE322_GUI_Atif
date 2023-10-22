@@ -403,5 +403,12 @@ namespace IE322_App_KAU
         {
             MessageBox.Show("hi");
         }
+
+        private void BtnCheckList_Click(object sender, EventArgs e)
+        {
+
+            FrmCheckedList frm = new FrmCheckedList();
+            frm.ShowDialog();
+        }
     }
 }

@@ -217,6 +217,12 @@
     <Compile Include="frmArray.designer.cs">
       <DependentUpon>frmArray.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCheckedList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCheckedList.Designer.cs">
+      <DependentUpon>frmCheckedList.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmClasses.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -434,6 +440,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmArray.resx">
       <DependentUpon>frmArray.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCheckedList.resx">
+      <DependentUpon>frmCheckedList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmClasses.resx">
       <DependentUpon>frmClasses.cs</DependentUpon>

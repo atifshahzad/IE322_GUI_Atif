@@ -73,6 +73,7 @@
             this.BtnSystem = new System.Windows.Forms.Button();
             this.BtnTalk = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.BtnTree = new System.Windows.Forms.Button();
             this.BtnDate = new System.Windows.Forms.Button();
             this.btnRandom = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -83,7 +84,7 @@
             this.StsMain = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.picLogo_IE = new System.Windows.Forms.PictureBox();
-            this.BtnTree = new System.Windows.Forms.Button();
+            this.BtnCheckList = new System.Windows.Forms.Button();
             this.grpLogin.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox9.SuspendLayout();
@@ -144,7 +145,7 @@
             // 
             this.btnCheck.Location = new System.Drawing.Point(90, 18);
             this.btnCheck.Name = "btnCheck";
-            this.btnCheck.Size = new System.Drawing.Size(75, 23);
+            this.btnCheck.Size = new System.Drawing.Size(83, 23);
             this.btnCheck.TabIndex = 4;
             this.btnCheck.Text = "CheckBox";
             this.btnCheck.UseVisualStyleBackColor = true;
@@ -152,7 +153,7 @@
             // 
             // btnCombo
             // 
-            this.btnCombo.Location = new System.Drawing.Point(54, 50);
+            this.btnCombo.Location = new System.Drawing.Point(9, 47);
             this.btnCombo.Name = "btnCombo";
             this.btnCombo.Size = new System.Drawing.Size(75, 23);
             this.btnCombo.TabIndex = 5;
@@ -600,6 +601,15 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "More Controls";
             // 
+            // BtnTree
+            // 
+            this.BtnTree.Location = new System.Drawing.Point(107, 78);
+            this.BtnTree.Name = "BtnTree";
+            this.BtnTree.Size = new System.Drawing.Size(90, 24);
+            this.BtnTree.TabIndex = 23;
+            this.BtnTree.Text = "TreeView";
+            this.BtnTree.UseVisualStyleBackColor = true;
+            // 
             // BtnDate
             // 
             this.BtnDate.Location = new System.Drawing.Point(5, 78);
@@ -670,6 +680,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.BtnCheckList);
             this.groupBox2.Controls.Add(this.btnRadio);
             this.groupBox2.Controls.Add(this.btnCheck);
             this.groupBox2.Controls.Add(this.btnCombo);
@@ -712,14 +723,15 @@
             this.picLogo_IE.TabIndex = 17;
             this.picLogo_IE.TabStop = false;
             // 
-            // BtnTree
+            // BtnCheckList
             // 
-            this.BtnTree.Location = new System.Drawing.Point(107, 78);
-            this.BtnTree.Name = "BtnTree";
-            this.BtnTree.Size = new System.Drawing.Size(90, 24);
-            this.BtnTree.TabIndex = 23;
-            this.BtnTree.Text = "TreeView";
-            this.BtnTree.UseVisualStyleBackColor = true;
+            this.BtnCheckList.Location = new System.Drawing.Point(90, 47);
+            this.BtnCheckList.Name = "BtnCheckList";
+            this.BtnCheckList.Size = new System.Drawing.Size(83, 23);
+            this.BtnCheckList.TabIndex = 6;
+            this.BtnCheckList.Text = "Checked List";
+            this.BtnCheckList.UseVisualStyleBackColor = true;
+            this.BtnCheckList.Click += new System.EventHandler(this.BtnCheckList_Click);
             // 
             // frmMain
             // 
@@ -813,5 +825,6 @@
         private System.Windows.Forms.Button BtnFSM;
         private System.Windows.Forms.Button BtnDate;
         private System.Windows.Forms.Button BtnTree;
+        private System.Windows.Forms.Button BtnCheckList;
     }
 }
