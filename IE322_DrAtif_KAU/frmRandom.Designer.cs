@@ -78,7 +78,7 @@
             // 
             // BtnRandomNum
             // 
-            this.BtnRandomNum.Location = new System.Drawing.Point(27, 38);
+            this.BtnRandomNum.Location = new System.Drawing.Point(170, 21);
             this.BtnRandomNum.Margin = new System.Windows.Forms.Padding(2);
             this.BtnRandomNum.Name = "BtnRandomNum";
             this.BtnRandomNum.Size = new System.Drawing.Size(112, 33);
@@ -89,9 +89,9 @@
             // 
             // BtnRandomIneger
             // 
-            this.BtnRandomIneger.Location = new System.Drawing.Point(27, 77);
+            this.BtnRandomIneger.Location = new System.Drawing.Point(8, 3);
             this.BtnRandomIneger.Name = "BtnRandomIneger";
-            this.BtnRandomIneger.Size = new System.Drawing.Size(112, 33);
+            this.BtnRandomIneger.Size = new System.Drawing.Size(131, 43);
             this.BtnRandomIneger.TabIndex = 10;
             this.BtnRandomIneger.Text = "Random Ineger";
             this.BtnRandomIneger.UseVisualStyleBackColor = true;
@@ -129,7 +129,7 @@
             this.LblDisplay.AutoSize = true;
             this.LblDisplay.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblDisplay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.LblDisplay.Location = new System.Drawing.Point(3, 6);
+            this.LblDisplay.Location = new System.Drawing.Point(3, 196);
             this.LblDisplay.Name = "LblDisplay";
             this.LblDisplay.Size = new System.Drawing.Size(136, 26);
             this.LblDisplay.TabIndex = 14;
@@ -138,9 +138,9 @@
             // 
             // BtnRandomInegerDefault
             // 
-            this.BtnRandomInegerDefault.Location = new System.Drawing.Point(27, 117);
+            this.BtnRandomInegerDefault.Location = new System.Drawing.Point(8, 52);
             this.BtnRandomInegerDefault.Name = "BtnRandomInegerDefault";
-            this.BtnRandomInegerDefault.Size = new System.Drawing.Size(112, 33);
+            this.BtnRandomInegerDefault.Size = new System.Drawing.Size(131, 43);
             this.BtnRandomInegerDefault.TabIndex = 15;
             this.BtnRandomInegerDefault.Text = "Random Ineger Default Range";
             this.BtnRandomInegerDefault.UseVisualStyleBackColor = true;
@@ -148,9 +148,9 @@
             // 
             // BtnRandomInegerMax
             // 
-            this.BtnRandomInegerMax.Location = new System.Drawing.Point(27, 153);
+            this.BtnRandomInegerMax.Location = new System.Drawing.Point(8, 101);
             this.BtnRandomInegerMax.Name = "BtnRandomInegerMax";
-            this.BtnRandomInegerMax.Size = new System.Drawing.Size(112, 33);
+            this.BtnRandomInegerMax.Size = new System.Drawing.Size(131, 43);
             this.BtnRandomInegerMax.TabIndex = 16;
             this.BtnRandomInegerMax.Text = "Random Ineger Max";
             this.BtnRandomInegerMax.UseVisualStyleBackColor = true;
@@ -158,9 +158,9 @@
             // 
             // BtnRandomDouble
             // 
-            this.BtnRandomDouble.Location = new System.Drawing.Point(27, 195);
+            this.BtnRandomDouble.Location = new System.Drawing.Point(8, 150);
             this.BtnRandomDouble.Name = "BtnRandomDouble";
-            this.BtnRandomDouble.Size = new System.Drawing.Size(112, 33);
+            this.BtnRandomDouble.Size = new System.Drawing.Size(131, 43);
             this.BtnRandomDouble.TabIndex = 18;
             this.BtnRandomDouble.Text = "Random Double";
             this.BtnRandomDouble.UseVisualStyleBackColor = true;
@@ -171,7 +171,6 @@
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panel1.Controls.Add(this.LblDisplay);
             this.panel1.Controls.Add(this.BtnRandomDouble);
-            this.panel1.Controls.Add(this.BtnRandomNum);
             this.panel1.Controls.Add(this.BtnRandomInegerMax);
             this.panel1.Controls.Add(this.BtnRandomIneger);
             this.panel1.Controls.Add(this.BtnRandomInegerDefault);
@@ -197,6 +196,7 @@
             this.ClientSize = new System.Drawing.Size(713, 365);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.BtnRandomNum);
             this.Controls.Add(this.LblRGB);
             this.Controls.Add(this.btnGenerateRandom);
             this.Controls.Add(this.btnBack);
