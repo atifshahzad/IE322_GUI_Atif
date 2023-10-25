@@ -33,6 +33,39 @@ namespace IE322_App_KAU
             frmQ06 frm = new frmQ06();
             frm.ShowDialog();
         }
+
+        private void BtnMongoDB_Click(object sender, EventArgs e)
+        {
+            
+                frmMongoDB frm = new frmMongoDB();
+                frm.Show();
+           
+        }
+
+        private void btnJohari_Click(object sender, EventArgs e)
+        {
+            frmJohari frm = new frmJohari();
+            frm.ShowDialog();
+        }
+
+        private void BtnManufCell_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                frmManufSys frm = new frmManufSys();
+                frm.ShowDialog();
+                //to close the form
+                this.DialogResult = DialogResult.OK;
+            }
+            catch
+            {
+            }
+        }
+
+        private void BtnABC_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
