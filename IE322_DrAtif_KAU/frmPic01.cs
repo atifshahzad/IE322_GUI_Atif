@@ -39,7 +39,7 @@ namespace IE322_App_KAU
                 // picTry.Image = Image.FromFile("C: \\Users\\Public\\Pictures\\Sample Pictures\\Koala.jpg"); // This may not work if you change the computer, Then you have to change this line
                 // picTry.Image = Image.FromFile("G:\\IE322_ALL\\_IE322_S20\\20180404\\tiny_cc_jaixjz.png"); //absolute path
 
-                picTry.Image = Image.FromFile("..\\..\\tiny_cc_jaixjz.png"); // relative path
+                picTry.Image = Image.FromFile("..\\..\\tiny_cc_jaixjz.png"); // relative path from the debug folder to two levels up
             }
             catch
             {
@@ -83,6 +83,52 @@ namespace IE322_App_KAU
 
                 MessageBox.Show("Error creating image from resource!");
             } 
+        }
+
+        private void RdoNormal_CheckedChanged(object sender, EventArgs e)
+        {
+            if (RdoNormal.Checked)
+            {
+                picTry.SizeMode = PictureBoxSizeMode.Normal;
+                picTry2.SizeMode = PictureBoxSizeMode.Normal;
+            }
+
+        }
+
+        private void RdoStretch_CheckedChanged(object sender, EventArgs e)
+        {
+            if (RdoStretch.Checked)
+            { 
+            picTry.SizeMode = PictureBoxSizeMode.StretchImage;
+            picTry2.SizeMode = PictureBoxSizeMode.StretchImage;
+            }
+        }
+
+        private void RdoAuto_CheckedChanged(object sender, EventArgs e)
+        {
+            if (RdoAuto.Checked)
+            {
+                picTry.SizeMode = PictureBoxSizeMode.AutoSize;
+                picTry2.SizeMode = PictureBoxSizeMode.AutoSize;
+            }
+        }
+
+        private void RdoCentre_CheckedChanged(object sender, EventArgs e)
+        {
+            if (RdoCentre.Checked)
+            {
+                picTry.SizeMode = PictureBoxSizeMode.CenterImage;
+                picTry2.SizeMode = PictureBoxSizeMode.CenterImage;
+            }
+        }
+
+        private void RdoZoom_CheckedChanged(object sender, EventArgs e)
+        {
+            if (RdoZoom.Checked)
+            {
+                picTry.SizeMode = PictureBoxSizeMode.Zoom;
+                picTry2.SizeMode = PictureBoxSizeMode.Zoom;
+            }
         }
     }
 }
