@@ -410,5 +410,11 @@ namespace IE322_App_KAU
             FrmCheckedList frm = new FrmCheckedList();
             frm.ShowDialog();
         }
+
+        private void BtnExams_Click(object sender, EventArgs e)
+        {
+             FrmExamQuestions frm = new FrmExamQuestions(); 
+            frm.ShowDialog();
+        }
     }
 }

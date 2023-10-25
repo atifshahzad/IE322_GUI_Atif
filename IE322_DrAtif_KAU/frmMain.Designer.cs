@@ -64,6 +64,7 @@
             this.BtnClasses = new System.Windows.Forms.Button();
             this.BtnMethods = new System.Windows.Forms.Button();
             this.Exams = new System.Windows.Forms.GroupBox();
+            this.BtnExams = new System.Windows.Forms.Button();
             this.BtnManufCell = new System.Windows.Forms.Button();
             this.BtnRoboticCell = new System.Windows.Forms.Button();
             this.BtnABC = new System.Windows.Forms.Button();
@@ -81,10 +82,10 @@
             this.btnSelfieApp = new System.Windows.Forms.Button();
             this.btnGroupieApp = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.BtnCheckList = new System.Windows.Forms.Button();
             this.StsMain = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.picLogo_IE = new System.Windows.Forms.PictureBox();
-            this.BtnCheckList = new System.Windows.Forms.Button();
             this.grpLogin.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox9.SuspendLayout();
@@ -483,6 +484,7 @@
             // 
             // Exams
             // 
+            this.Exams.Controls.Add(this.BtnExams);
             this.Exams.Controls.Add(this.BtnManufCell);
             this.Exams.Controls.Add(this.BtnRoboticCell);
             this.Exams.Controls.Add(this.BtnABC);
@@ -498,11 +500,22 @@
             this.Exams.TabStop = false;
             this.Exams.Text = "Exam Apps";
             // 
+            // BtnExams
+            // 
+            this.BtnExams.Location = new System.Drawing.Point(9, 212);
+            this.BtnExams.Name = "BtnExams";
+            this.BtnExams.Size = new System.Drawing.Size(149, 26);
+            this.BtnExams.TabIndex = 31;
+            this.BtnExams.Tag = "";
+            this.BtnExams.Text = "Exam Questions";
+            this.BtnExams.UseVisualStyleBackColor = true;
+            this.BtnExams.Click += new System.EventHandler(this.BtnExams_Click);
+            // 
             // BtnManufCell
             // 
             this.BtnManufCell.Location = new System.Drawing.Point(5, 18);
             this.BtnManufCell.Name = "BtnManufCell";
-            this.BtnManufCell.Size = new System.Drawing.Size(149, 37);
+            this.BtnManufCell.Size = new System.Drawing.Size(149, 29);
             this.BtnManufCell.TabIndex = 18;
             this.BtnManufCell.Text = "Manufacturing Cell";
             this.BtnManufCell.UseVisualStyleBackColor = true;
@@ -510,9 +523,9 @@
             // 
             // BtnRoboticCell
             // 
-            this.BtnRoboticCell.Location = new System.Drawing.Point(5, 63);
+            this.BtnRoboticCell.Location = new System.Drawing.Point(0, 52);
             this.BtnRoboticCell.Name = "BtnRoboticCell";
-            this.BtnRoboticCell.Size = new System.Drawing.Size(149, 37);
+            this.BtnRoboticCell.Size = new System.Drawing.Size(149, 26);
             this.BtnRoboticCell.TabIndex = 19;
             this.BtnRoboticCell.Text = "Robotic Cell";
             this.BtnRoboticCell.UseVisualStyleBackColor = true;
@@ -520,7 +533,7 @@
             // 
             // BtnABC
             // 
-            this.BtnABC.Location = new System.Drawing.Point(5, 109);
+            this.BtnABC.Location = new System.Drawing.Point(5, 79);
             this.BtnABC.Name = "BtnABC";
             this.BtnABC.Size = new System.Drawing.Size(149, 37);
             this.BtnABC.TabIndex = 20;
@@ -530,7 +543,7 @@
             // 
             // BtnMongoDB
             // 
-            this.BtnMongoDB.Location = new System.Drawing.Point(5, 204);
+            this.BtnMongoDB.Location = new System.Drawing.Point(9, 164);
             this.BtnMongoDB.Name = "BtnMongoDB";
             this.BtnMongoDB.Size = new System.Drawing.Size(149, 38);
             this.BtnMongoDB.TabIndex = 30;
@@ -540,7 +553,7 @@
             // 
             // btnJohari
             // 
-            this.btnJohari.Location = new System.Drawing.Point(5, 154);
+            this.btnJohari.Location = new System.Drawing.Point(5, 121);
             this.btnJohari.Name = "btnJohari";
             this.btnJohari.Size = new System.Drawing.Size(149, 37);
             this.btnJohari.TabIndex = 20;
@@ -695,6 +708,16 @@
             this.groupBox2.Text = "Basic Controls";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
+            // BtnCheckList
+            // 
+            this.BtnCheckList.Location = new System.Drawing.Point(90, 47);
+            this.BtnCheckList.Name = "BtnCheckList";
+            this.BtnCheckList.Size = new System.Drawing.Size(83, 23);
+            this.BtnCheckList.TabIndex = 6;
+            this.BtnCheckList.Text = "Checked List";
+            this.BtnCheckList.UseVisualStyleBackColor = true;
+            this.BtnCheckList.Click += new System.EventHandler(this.BtnCheckList_Click);
+            // 
             // StsMain
             // 
             this.StsMain.ImageScalingSize = new System.Drawing.Size(20, 20);
@@ -722,16 +745,6 @@
             this.picLogo_IE.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picLogo_IE.TabIndex = 17;
             this.picLogo_IE.TabStop = false;
-            // 
-            // BtnCheckList
-            // 
-            this.BtnCheckList.Location = new System.Drawing.Point(90, 47);
-            this.BtnCheckList.Name = "BtnCheckList";
-            this.BtnCheckList.Size = new System.Drawing.Size(83, 23);
-            this.BtnCheckList.TabIndex = 6;
-            this.BtnCheckList.Text = "Checked List";
-            this.BtnCheckList.UseVisualStyleBackColor = true;
-            this.BtnCheckList.Click += new System.EventHandler(this.BtnCheckList_Click);
             // 
             // frmMain
             // 
@@ -826,5 +839,6 @@
         private System.Windows.Forms.Button BtnDate;
         private System.Windows.Forms.Button BtnTree;
         private System.Windows.Forms.Button BtnCheckList;
+        private System.Windows.Forms.Button BtnExams;
     }
 }
