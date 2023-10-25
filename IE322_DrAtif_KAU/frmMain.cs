@@ -209,19 +209,7 @@ namespace IE322_App_KAU
             frm.ShowDialog();
         }
 
-        private void BtnManufCell_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                frmManufSys frm = new frmManufSys();
-                frm.ShowDialog();
-                //to close the form
-                this.DialogResult = DialogResult.OK;
-            }
-            catch
-            {
-            }
-        }
+        
 
         private void btnCheck_Click(object sender, EventArgs e)
         {
@@ -230,10 +218,7 @@ namespace IE322_App_KAU
             
         }
 
-        private void BtnRoboticCell_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void btnArduino_Click(object sender, EventArgs e)
         {
@@ -241,11 +226,7 @@ namespace IE322_App_KAU
             frm.ShowDialog();
         }
 
-        private void btnJohari_Click(object sender, EventArgs e)
-        {
-            frmJohari frm = new frmJohari();
-            frm.ShowDialog();
-        }
+       
 
         private void BtnRandomCombo_Click(object sender, EventArgs e)
         {
@@ -339,11 +320,7 @@ namespace IE322_App_KAU
             frm.Show();
         }
 
-        private void BtnMongoDB_Click(object sender, EventArgs e)
-        {
-            frmMongoDB frm = new frmMongoDB();
-            frm.Show();
-        }
+        
 
         private void BtnStrings_Click(object sender, EventArgs e)
         {
@@ -402,6 +379,20 @@ namespace IE322_App_KAU
         private void button2_Click(object sender, EventArgs e)
         {
             MessageBox.Show("hi");
+        }
+
+        private void BtnCheckList_Click(object sender, EventArgs e)
+        {
+
+            FrmCheckedList frm = new FrmCheckedList();
+            frm.ShowDialog();
+        }
+
+        
+        private void BtnExams_Click(object sender, EventArgs e)
+        {
+            FrmExamQuestions frm = new FrmExamQuestions();
+            frm.ShowDialog();
         }
     }
 }

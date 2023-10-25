@@ -117,10 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="notifyIcon1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>52</value>
-  </metadata>
+  <data name="RtbQ01.Text" xml:space="preserve">
+    <value>Create a Windows Forms application in Visual Studio that generates a set of random numbers and allows users to perform statistical calculations on the data. The program should have the following features:
+
+1. Generate a set of 20 random numbers between 1 and 100 when the form loads.
+2. Display these numbers in a combo box.
+3. Provide buttons for users to perform the following statistical calculations:
+   - Calculate and display the sum of all numbers.
+   - Calculate and display the average of all numbers.
+   - Calculate and display the highest number.
+   - Calculate and display the lowest number.
+   - Calculate and display the number of even numbers in the set.</value>
+  </data>
 </root>

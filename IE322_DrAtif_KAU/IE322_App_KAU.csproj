@@ -217,6 +217,12 @@
     <Compile Include="frmArray.designer.cs">
       <DependentUpon>frmArray.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCheckedList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCheckedList.Designer.cs">
+      <DependentUpon>frmCheckedList.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmClasses.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -252,6 +258,12 @@
     </Compile>
     <Compile Include="frmEvents.Designer.cs">
       <DependentUpon>frmEvents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmExamQuestions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmExamQuestions.Designer.cs">
+      <DependentUpon>FrmExamQuestions.cs</DependentUpon>
     </Compile>
     <Compile Include="frmFSM.cs">
       <SubType>Form</SubType>
@@ -300,6 +312,18 @@
     </Compile>
     <Compile Include="frmOperators.Designer.cs">
       <DependentUpon>frmOperators.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQ05.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQ05.Designer.cs">
+      <DependentUpon>frmQ05.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQ06.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQ06.Designer.cs">
+      <DependentUpon>frmQ06.cs</DependentUpon>
     </Compile>
     <Compile Include="frmRandom.cs">
       <SubType>Form</SubType>
@@ -435,6 +459,9 @@
     <EmbeddedResource Include="frmArray.resx">
       <DependentUpon>frmArray.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmCheckedList.resx">
+      <DependentUpon>frmCheckedList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmClasses.resx">
       <DependentUpon>frmClasses.cs</DependentUpon>
     </EmbeddedResource>
@@ -452,6 +479,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmEvents.resx">
       <DependentUpon>frmEvents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmExamQuestions.resx">
+      <DependentUpon>FrmExamQuestions.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmFSM.resx">
       <DependentUpon>frmFSM.cs</DependentUpon>
@@ -476,6 +506,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmOperators.resx">
       <DependentUpon>frmOperators.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQ05.resx">
+      <DependentUpon>frmQ05.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQ06.resx">
+      <DependentUpon>frmQ06.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmRandom.resx">
       <DependentUpon>frmRandom.cs</DependentUpon>

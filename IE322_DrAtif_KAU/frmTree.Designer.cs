@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("Team00");
             System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("Node3");
             System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("Node4");
@@ -46,6 +47,8 @@
             treeNode18,
             treeNode19});
             this.TrvTeams = new System.Windows.Forms.TreeView();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.SuspendLayout();
             // 
             // TrvTeams
@@ -79,11 +82,24 @@
             this.TrvTeams.Size = new System.Drawing.Size(260, 426);
             this.TrvTeams.TabIndex = 0;
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(278, 12);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(486, 426);
+            this.flowLayoutPanel1.TabIndex = 1;
+            // 
+            // notifyIcon1
+            // 
+            this.notifyIcon1.Text = "notifyIcon1";
+            this.notifyIcon1.Visible = true;
+            // 
             // frmTree
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.TrvTeams);
             this.Name = "frmTree";
             this.Text = "TreeView";
@@ -94,5 +110,7 @@
         #endregion
 
         private System.Windows.Forms.TreeView TrvTeams;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.NotifyIcon notifyIcon1;
     }
 }
