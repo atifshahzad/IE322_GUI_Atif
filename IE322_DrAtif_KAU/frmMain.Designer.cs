@@ -46,6 +46,7 @@
             this.btnTimer = new System.Windows.Forms.Button();
             this.btnDraw = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.BtnExams = new System.Windows.Forms.Button();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.BtnArray = new System.Windows.Forms.Button();
             this.BtnCollections = new System.Windows.Forms.Button();
@@ -79,7 +80,6 @@
             this.StsMain = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.picLogo_IE = new System.Windows.Forms.PictureBox();
-            this.BtnExams = new System.Windows.Forms.Button();
             this.grpLogin.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox9.SuspendLayout();
@@ -294,6 +294,17 @@
             this.groupBox1.TabIndex = 15;
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // BtnExams
+            // 
+            this.BtnExams.Location = new System.Drawing.Point(293, 37);
+            this.BtnExams.Name = "BtnExams";
+            this.BtnExams.Size = new System.Drawing.Size(149, 223);
+            this.BtnExams.TabIndex = 35;
+            this.BtnExams.Tag = "";
+            this.BtnExams.Text = "Exam Questions";
+            this.BtnExams.UseVisualStyleBackColor = true;
+            this.BtnExams.Click += new System.EventHandler(this.BtnExams_Click);
             // 
             // groupBox9
             // 
@@ -659,17 +670,6 @@
             this.picLogo_IE.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picLogo_IE.TabIndex = 17;
             this.picLogo_IE.TabStop = false;
-            // 
-            // BtnExams
-            // 
-            this.BtnExams.Location = new System.Drawing.Point(293, 37);
-            this.BtnExams.Name = "BtnExams";
-            this.BtnExams.Size = new System.Drawing.Size(149, 213);
-            this.BtnExams.TabIndex = 35;
-            this.BtnExams.Tag = "";
-            this.BtnExams.Text = "Exam Questions";
-            this.BtnExams.UseVisualStyleBackColor = true;
-            this.BtnExams.Click += new System.EventHandler(this.BtnExams_Click);
             // 
             // frmMain
             // 
