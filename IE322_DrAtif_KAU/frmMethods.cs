@@ -20,6 +20,8 @@ namespace IE322_App_KAU
 
         private void frmMethods_Load(object sender, EventArgs e)
         {
+            
+            
             TxtBalance.BackColor = Color.Yellow;
             TxtBalance.Text = Balance.ToString();
         }
