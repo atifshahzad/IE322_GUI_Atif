@@ -278,7 +278,7 @@
             this.lstDisplay.ForeColor = System.Drawing.Color.Firebrick;
             this.lstDisplay.FormattingEnabled = true;
             this.lstDisplay.ItemHeight = 16;
-            this.lstDisplay.Location = new System.Drawing.Point(125, 12);
+            this.lstDisplay.Location = new System.Drawing.Point(125, 19);
             this.lstDisplay.Name = "lstDisplay";
             this.lstDisplay.Size = new System.Drawing.Size(87, 132);
             this.lstDisplay.TabIndex = 6;

@@ -60,6 +60,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.SandyBrown;
             this.groupBox1.Controls.Add(this.BtnStopMyCar);
             this.groupBox1.Controls.Add(this.BtnAccMyCar);
             this.groupBox1.Controls.Add(this.BtnStartMyCar);
@@ -67,9 +68,10 @@
             this.groupBox1.Controls.Add(this.BtnStopHisCar);
             this.groupBox1.Controls.Add(this.BtnAccHisCar);
             this.groupBox1.Controls.Add(this.BtnStartHisCar);
+            this.groupBox1.ForeColor = System.Drawing.SystemColors.Highlight;
             this.groupBox1.Location = new System.Drawing.Point(35, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(495, 202);
+            this.groupBox1.Size = new System.Drawing.Size(482, 202);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Classes";
@@ -156,6 +158,7 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.groupBox3.Controls.Add(this.BtnTransferToMaria);
             this.groupBox3.Controls.Add(this.label3);
             this.groupBox3.Controls.Add(this.TxtBalanceAli);
@@ -236,6 +239,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.groupBox2.Controls.Add(this.BtnTransferToAli);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.TxtBalanceMaria);

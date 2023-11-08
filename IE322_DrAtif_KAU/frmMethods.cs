@@ -93,6 +93,10 @@ namespace IE322_App_KAU
                 Balance -= n;
             }
         }
+        private double CheckBalance()
+        {
+            return (Balance);
+        }
 
         private void BtnDeposit_Click(object sender, EventArgs e)
         {
@@ -133,10 +137,6 @@ namespace IE322_App_KAU
             MessageBox.Show("Your current Balance is: " + CheckBalance());
         }
 
-        private double CheckBalance()
-        {
-            return (Balance);
-        }
 
         //******************************************************************
         //**********************************************************************
