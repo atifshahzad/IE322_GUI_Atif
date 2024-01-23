@@ -20,6 +20,8 @@ namespace IE322_App_KAU
 
         private void frmMethods_Load(object sender, EventArgs e)
         {
+            
+            
             TxtBalance.BackColor = Color.Yellow;
             TxtBalance.Text = Balance.ToString();
         }
@@ -91,6 +93,10 @@ namespace IE322_App_KAU
                 Balance -= n;
             }
         }
+        private double CheckBalance()
+        {
+            return (Balance);
+        }
 
         private void BtnDeposit_Click(object sender, EventArgs e)
         {
@@ -131,10 +137,6 @@ namespace IE322_App_KAU
             MessageBox.Show("Your current Balance is: " + CheckBalance());
         }
 
-        private double CheckBalance()
-        {
-            return (Balance);
-        }
 
         //******************************************************************
         //**********************************************************************

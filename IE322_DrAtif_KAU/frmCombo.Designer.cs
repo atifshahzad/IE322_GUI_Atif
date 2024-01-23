@@ -39,13 +39,13 @@
             this.BtnShowSelected3 = new System.Windows.Forms.Button();
             this.BtnRemoveSelectedItem = new System.Windows.Forms.Button();
             this.GrpComboExp1 = new System.Windows.Forms.GroupBox();
-            this.GrpComboExp2 = new System.Windows.Forms.GroupBox();
-            this.CmbColors = new System.Windows.Forms.ComboBox();
-            this.BtnDraw = new System.Windows.Forms.Button();
-            this.PicDraw = new System.Windows.Forms.PictureBox();
-            this.BtnClear = new System.Windows.Forms.Button();
-            this.LblCount = new System.Windows.Forms.Label();
             this.LblSelected = new System.Windows.Forms.Label();
+            this.LblCount = new System.Windows.Forms.Label();
+            this.GrpComboExp2 = new System.Windows.Forms.GroupBox();
+            this.BtnClear = new System.Windows.Forms.Button();
+            this.PicDraw = new System.Windows.Forms.PictureBox();
+            this.BtnDraw = new System.Windows.Forms.Button();
+            this.CmbColors = new System.Windows.Forms.ComboBox();
             this.GrpComboExp1.SuspendLayout();
             this.GrpComboExp2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicDraw)).BeginInit();
@@ -114,7 +114,7 @@
             // 
             this.BtnRemoveLast.Location = new System.Drawing.Point(0, 112);
             this.BtnRemoveLast.Name = "BtnRemoveLast";
-            this.BtnRemoveLast.Size = new System.Drawing.Size(109, 53);
+            this.BtnRemoveLast.Size = new System.Drawing.Size(132, 53);
             this.BtnRemoveLast.TabIndex = 8;
             this.BtnRemoveLast.Text = "Remove last item";
             this.BtnRemoveLast.UseVisualStyleBackColor = true;
@@ -122,9 +122,9 @@
             // 
             // BtnRemove2ndLast
             // 
-            this.BtnRemove2ndLast.Location = new System.Drawing.Point(179, 112);
+            this.BtnRemove2ndLast.Location = new System.Drawing.Point(160, 112);
             this.BtnRemove2ndLast.Name = "BtnRemove2ndLast";
-            this.BtnRemove2ndLast.Size = new System.Drawing.Size(112, 53);
+            this.BtnRemove2ndLast.Size = new System.Drawing.Size(131, 53);
             this.BtnRemove2ndLast.TabIndex = 9;
             this.BtnRemove2ndLast.Text = "Remove 2nd last item";
             this.BtnRemove2ndLast.UseVisualStyleBackColor = true;
@@ -171,6 +171,24 @@
             this.GrpComboExp1.TabStop = false;
             this.GrpComboExp1.Text = "Example1:";
             // 
+            // LblSelected
+            // 
+            this.LblSelected.AutoSize = true;
+            this.LblSelected.Location = new System.Drawing.Point(6, 168);
+            this.LblSelected.Name = "LblSelected";
+            this.LblSelected.Size = new System.Drawing.Size(100, 13);
+            this.LblSelected.TabIndex = 12;
+            this.LblSelected.Text = "Currently Selected:";
+            // 
+            // LblCount
+            // 
+            this.LblCount.AutoSize = true;
+            this.LblCount.Location = new System.Drawing.Point(157, 168);
+            this.LblCount.Name = "LblCount";
+            this.LblCount.Size = new System.Drawing.Size(131, 13);
+            this.LblCount.TabIndex = 11;
+            this.LblCount.Text = "Current Number of Items:";
+            // 
             // GrpComboExp2
             // 
             this.GrpComboExp2.Controls.Add(this.BtnClear);
@@ -185,13 +203,23 @@
             this.GrpComboExp2.TabStop = false;
             this.GrpComboExp2.Text = "Eample 2:";
             // 
-            // CmbColors
+            // BtnClear
             // 
-            this.CmbColors.FormattingEnabled = true;
-            this.CmbColors.Location = new System.Drawing.Point(101, 200);
-            this.CmbColors.Name = "CmbColors";
-            this.CmbColors.Size = new System.Drawing.Size(166, 21);
-            this.CmbColors.TabIndex = 0;
+            this.BtnClear.Location = new System.Drawing.Point(216, 19);
+            this.BtnClear.Name = "BtnClear";
+            this.BtnClear.Size = new System.Drawing.Size(51, 22);
+            this.BtnClear.TabIndex = 3;
+            this.BtnClear.Text = "Clear";
+            this.BtnClear.UseVisualStyleBackColor = true;
+            this.BtnClear.Click += new System.EventHandler(this.BtnClear_Click);
+            // 
+            // PicDraw
+            // 
+            this.PicDraw.Location = new System.Drawing.Point(6, 47);
+            this.PicDraw.Name = "PicDraw";
+            this.PicDraw.Size = new System.Drawing.Size(261, 134);
+            this.PicDraw.TabIndex = 2;
+            this.PicDraw.TabStop = false;
             // 
             // BtnDraw
             // 
@@ -203,41 +231,13 @@
             this.BtnDraw.UseVisualStyleBackColor = true;
             this.BtnDraw.Click += new System.EventHandler(this.BtnDraw_Click);
             // 
-            // PicDraw
+            // CmbColors
             // 
-            this.PicDraw.Location = new System.Drawing.Point(6, 47);
-            this.PicDraw.Name = "PicDraw";
-            this.PicDraw.Size = new System.Drawing.Size(261, 134);
-            this.PicDraw.TabIndex = 2;
-            this.PicDraw.TabStop = false;
-            // 
-            // BtnClear
-            // 
-            this.BtnClear.Location = new System.Drawing.Point(216, 19);
-            this.BtnClear.Name = "BtnClear";
-            this.BtnClear.Size = new System.Drawing.Size(51, 22);
-            this.BtnClear.TabIndex = 3;
-            this.BtnClear.Text = "Clear";
-            this.BtnClear.UseVisualStyleBackColor = true;
-            this.BtnClear.Click += new System.EventHandler(this.BtnClear_Click);
-            // 
-            // LblCount
-            // 
-            this.LblCount.AutoSize = true;
-            this.LblCount.Location = new System.Drawing.Point(157, 168);
-            this.LblCount.Name = "LblCount";
-            this.LblCount.Size = new System.Drawing.Size(124, 13);
-            this.LblCount.TabIndex = 11;
-            this.LblCount.Text = "Current Number of Items:";
-            // 
-            // LblSelected
-            // 
-            this.LblSelected.AutoSize = true;
-            this.LblSelected.Location = new System.Drawing.Point(6, 168);
-            this.LblSelected.Name = "LblSelected";
-            this.LblSelected.Size = new System.Drawing.Size(96, 13);
-            this.LblSelected.TabIndex = 12;
-            this.LblSelected.Text = "Currently Selected:";
+            this.CmbColors.FormattingEnabled = true;
+            this.CmbColors.Location = new System.Drawing.Point(101, 200);
+            this.CmbColors.Name = "CmbColors";
+            this.CmbColors.Size = new System.Drawing.Size(166, 21);
+            this.CmbColors.TabIndex = 0;
             // 
             // frmCombo
             // 

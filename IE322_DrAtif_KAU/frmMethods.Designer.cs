@@ -73,6 +73,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.TxtB);
@@ -119,12 +120,15 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.TxtBalance);
             this.groupBox2.Controls.Add(this.TxtAmount);
             this.groupBox2.Controls.Add(this.BtnCheckBalance);
             this.groupBox2.Controls.Add(this.BtnWithdraw);
             this.groupBox2.Controls.Add(this.BtnDeposit);
+            this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.groupBox2.ForeColor = System.Drawing.Color.Tomato;
             this.groupBox2.Location = new System.Drawing.Point(225, 12);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(234, 183);
@@ -197,6 +201,7 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.groupBox3.Controls.Add(this.label4);
             this.groupBox3.Controls.Add(this.BtnPrintSign);
             this.groupBox3.Controls.Add(this.TxtNumber);
@@ -255,8 +260,10 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.groupBox4.Controls.Add(this.lstDisplay);
             this.groupBox4.Controls.Add(this.BtnGeneratePronic);
+            this.groupBox4.ForeColor = System.Drawing.SystemColors.Highlight;
             this.groupBox4.Location = new System.Drawing.Point(225, 209);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(234, 175);
@@ -266,10 +273,14 @@
             // 
             // lstDisplay
             // 
+            this.lstDisplay.BackColor = System.Drawing.Color.BurlyWood;
+            this.lstDisplay.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lstDisplay.ForeColor = System.Drawing.Color.Firebrick;
             this.lstDisplay.FormattingEnabled = true;
-            this.lstDisplay.Location = new System.Drawing.Point(125, 12);
+            this.lstDisplay.ItemHeight = 16;
+            this.lstDisplay.Location = new System.Drawing.Point(125, 19);
             this.lstDisplay.Name = "lstDisplay";
-            this.lstDisplay.Size = new System.Drawing.Size(87, 147);
+            this.lstDisplay.Size = new System.Drawing.Size(87, 132);
             this.lstDisplay.TabIndex = 6;
             // 
             // BtnGeneratePronic

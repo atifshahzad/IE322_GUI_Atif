@@ -10,6 +10,7 @@ namespace IE322_ConsoleApp_KAU_DrAtif
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Welcome");
         }
     }
 }
