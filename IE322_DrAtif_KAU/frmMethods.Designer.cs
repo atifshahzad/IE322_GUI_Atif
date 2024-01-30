@@ -55,6 +55,7 @@
             this.BtnArgByVal = new System.Windows.Forms.Button();
             this.PassArg_out = new System.Windows.Forms.Button();
             this.BtnMultOutput = new System.Windows.Forms.Button();
+            this.BtnMultOutputTuple = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -141,7 +142,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(6, 22);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(88, 13);
+            this.label3.Size = new System.Drawing.Size(86, 13);
             this.label3.TabIndex = 2;
             this.label3.Text = "Current Balance:";
             // 
@@ -345,11 +346,25 @@
             this.BtnMultOutput.UseVisualStyleBackColor = false;
             this.BtnMultOutput.Click += new System.EventHandler(this.BtnMultOutput_Click);
             // 
+            // BtnMultOutputTuple
+            // 
+            this.BtnMultOutputTuple.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.BtnMultOutputTuple.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnMultOutputTuple.ForeColor = System.Drawing.Color.Red;
+            this.BtnMultOutputTuple.Location = new System.Drawing.Point(479, 220);
+            this.BtnMultOutputTuple.Name = "BtnMultOutputTuple";
+            this.BtnMultOutputTuple.Size = new System.Drawing.Size(115, 34);
+            this.BtnMultOutputTuple.TabIndex = 19;
+            this.BtnMultOutputTuple.Text = "Multiple outputs using tuples";
+            this.BtnMultOutputTuple.UseVisualStyleBackColor = false;
+            this.BtnMultOutputTuple.Click += new System.EventHandler(this.BtnMultOutputTuple_Click);
+            // 
             // frmMethods
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.BtnMultOutputTuple);
             this.Controls.Add(this.BtnMultOutput);
             this.Controls.Add(this.PassArg_out);
             this.Controls.Add(this.BtnArgByVal);
@@ -404,5 +419,6 @@
         private System.Windows.Forms.Button BtnArgByVal;
         private System.Windows.Forms.Button PassArg_out;
         private System.Windows.Forms.Button BtnMultOutput;
+        private System.Windows.Forms.Button BtnMultOutputTuple;
     }
 }

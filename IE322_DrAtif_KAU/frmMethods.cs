@@ -272,9 +272,25 @@ namespace IE322_App_KAU
         void SquareCubeOut(out int sq,out int cu, int x)
         {
             cu = x * x* x;
-
             sq = x * x;// squares the caller variable   
         }
+
+        private void BtnMultOutputTuple_Click(object sender, EventArgs e)
+        {
+            int square, cube;
+            (square, cube)= SqCuOut(10);
+            MessageBox.Show("Square is:" + square.ToString() + " and cube is:" + cube.ToString());
+
+        }
+
+        (int, int) SqCuOut(int x)
+        {
+            int sq = x * x;     // squares the caller variable
+            int cu = x * x * x;
+            
+            return (sq, cu);
+        }
+
 
 
         public ArrayList GeneratePrnicNumbers(int Count)
