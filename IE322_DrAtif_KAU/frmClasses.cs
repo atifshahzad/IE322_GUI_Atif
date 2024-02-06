@@ -76,7 +76,8 @@ namespace IE322_App_KAU
                 MessageBox.Show("Enter valid amount, please");
                 return;
             }
-            TxtBalanceAli.Text = AliAccount.CheckBalance().ToString();
+            
+            TxtBalanceAli.Text=$"{AliAccount.CheckBalance():C}";
         }
 
         private void BtnWithdraw_Click_1(object sender, EventArgs e)
