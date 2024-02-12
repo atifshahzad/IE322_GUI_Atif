@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using System.Xml;
 
 namespace IE322_App_KAU
 {
@@ -10,6 +11,11 @@ namespace IE322_App_KAU
 
         Truck MyTruck = new Truck();
 
+
+
+
+
+
         BankAccount AliAccount = new BankAccount();
         BankAccount MariaAccount = new BankAccount();
 
@@ -18,35 +24,50 @@ namespace IE322_App_KAU
         public frmClasses()
         {
             InitializeComponent();
+            PgbMyCar.Minimum = 0;
+            PgbMyCar.Maximum = 260;
+
+            PgbHisCar.Minimum = 0;
+            PgbHisCar.Maximum = 220;
         }
 
         private void BtnStartMyCar_Click(object sender, EventArgs e)
         {
             MyCar.Start(); // calling the start method for MyCar
+            PgbMyCar.Value = MyCar.speed;
+            this.BtnStartMyCar.Enabled = false;
+            
         }
 
         private void BtnStartHisCar_Click(object sender, EventArgs e)
         {
-            HisCar.Accelerate(30);
-            MessageBox.Show(Convert.ToString(HisCar.speed));
+            HisCar.Start();
+            PgbHisCar.Value = HisCar.speed;
+            this.BtnStartHisCar.Enabled = false;
 
         }
 
         private void BtnAccMyCar_Click(object sender, EventArgs e)
         {
             MyCar.Accelerate(30);
-            MessageBox.Show(Convert.ToString(MyCar.speed));
+            PgbMyCar.Value = MyCar.speed;
+            //MessageBox.Show(Convert.ToString(MyCar.speed));
         
         }
 
         private void BtnStopHisCar_Click(object sender, EventArgs e)
         {
             HisCar.Stop();
+            PgbHisCar.Value = HisCar.speed;
+            this.BtnStartHisCar.Enabled = true;
+
         }
 
         private void BtnStopMyCar_Click(object sender, EventArgs e)
         {
             MyCar.Stop();
+            PgbMyCar.Value = MyCar.speed;
+            this.BtnStartMyCar.Enabled = true;
         }
 
         private void BtnStartMyTruck_Click(object sender, EventArgs e)
@@ -174,6 +195,11 @@ namespace IE322_App_KAU
             }        
 
 
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
 
         }
     }

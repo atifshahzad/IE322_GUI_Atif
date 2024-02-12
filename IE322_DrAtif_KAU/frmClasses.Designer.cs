@@ -53,6 +53,10 @@
             this.BtnCheckBalanceMaria = new System.Windows.Forms.Button();
             this.BtnWithdrawMaria = new System.Windows.Forms.Button();
             this.BtnDepositMaria = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.PgbHisCar = new System.Windows.Forms.ProgressBar();
+            this.PgbMyCar = new System.Windows.Forms.ProgressBar();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -61,6 +65,8 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.SandyBrown;
+            this.groupBox1.Controls.Add(this.PgbMyCar);
+            this.groupBox1.Controls.Add(this.PgbHisCar);
             this.groupBox1.Controls.Add(this.BtnStopMyCar);
             this.groupBox1.Controls.Add(this.BtnAccMyCar);
             this.groupBox1.Controls.Add(this.BtnStartMyCar);
@@ -68,13 +74,14 @@
             this.groupBox1.Controls.Add(this.BtnStopHisCar);
             this.groupBox1.Controls.Add(this.BtnAccHisCar);
             this.groupBox1.Controls.Add(this.BtnStartHisCar);
-            this.groupBox1.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.groupBox1.Location = new System.Drawing.Point(35, 12);
+            this.groupBox1.ForeColor = System.Drawing.Color.Red;
+            this.groupBox1.Location = new System.Drawing.Point(17, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(482, 202);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Classes";
+            this.groupBox1.Text = "Car & Truck Class";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // BtnStopMyCar
             // 
@@ -108,9 +115,9 @@
             // 
             // BtnStartMyTruck
             // 
-            this.BtnStartMyTruck.Location = new System.Drawing.Point(19, 149);
+            this.BtnStartMyTruck.Location = new System.Drawing.Point(410, 102);
             this.BtnStartMyTruck.Name = "BtnStartMyTruck";
-            this.BtnStartMyTruck.Size = new System.Drawing.Size(119, 34);
+            this.BtnStartMyTruck.Size = new System.Drawing.Size(66, 34);
             this.BtnStartMyTruck.TabIndex = 0;
             this.BtnStartMyTruck.Text = "Start My Truck";
             this.BtnStartMyTruck.UseVisualStyleBackColor = true;
@@ -118,7 +125,7 @@
             // 
             // BtnStopHisCar
             // 
-            this.BtnStopHisCar.Location = new System.Drawing.Point(269, 70);
+            this.BtnStopHisCar.Location = new System.Drawing.Point(269, 121);
             this.BtnStopHisCar.Name = "BtnStopHisCar";
             this.BtnStopHisCar.Size = new System.Drawing.Size(119, 34);
             this.BtnStopHisCar.TabIndex = 0;
@@ -128,7 +135,7 @@
             // 
             // BtnAccHisCar
             // 
-            this.BtnAccHisCar.Location = new System.Drawing.Point(144, 70);
+            this.BtnAccHisCar.Location = new System.Drawing.Point(144, 121);
             this.BtnAccHisCar.Name = "BtnAccHisCar";
             this.BtnAccHisCar.Size = new System.Drawing.Size(119, 34);
             this.BtnAccHisCar.TabIndex = 0;
@@ -138,7 +145,7 @@
             // 
             // BtnStartHisCar
             // 
-            this.BtnStartHisCar.Location = new System.Drawing.Point(19, 70);
+            this.BtnStartHisCar.Location = new System.Drawing.Point(19, 121);
             this.BtnStartHisCar.Name = "BtnStartHisCar";
             this.BtnStartHisCar.Size = new System.Drawing.Size(119, 34);
             this.BtnStartHisCar.TabIndex = 0;
@@ -148,7 +155,7 @@
             // 
             // btnBack
             // 
-            this.btnBack.Location = new System.Drawing.Point(787, 483);
+            this.btnBack.Location = new System.Drawing.Point(787, 421);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(75, 23);
             this.btnBack.TabIndex = 3;
@@ -159,6 +166,7 @@
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.groupBox3.Controls.Add(this.label2);
             this.groupBox3.Controls.Add(this.BtnTransferToMaria);
             this.groupBox3.Controls.Add(this.label3);
             this.groupBox3.Controls.Add(this.TxtBalanceAli);
@@ -166,7 +174,7 @@
             this.groupBox3.Controls.Add(this.BtnCheckBalance);
             this.groupBox3.Controls.Add(this.BtnWithdraw);
             this.groupBox3.Controls.Add(this.BtnDeposit);
-            this.groupBox3.Location = new System.Drawing.Point(35, 232);
+            this.groupBox3.Location = new System.Drawing.Point(17, 232);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(238, 212);
             this.groupBox3.TabIndex = 6;
@@ -240,6 +248,7 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.BtnTransferToAli);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.TxtBalanceMaria);
@@ -247,7 +256,7 @@
             this.groupBox2.Controls.Add(this.BtnCheckBalanceMaria);
             this.groupBox2.Controls.Add(this.BtnWithdrawMaria);
             this.groupBox2.Controls.Add(this.BtnDepositMaria);
-            this.groupBox2.Location = new System.Drawing.Point(279, 232);
+            this.groupBox2.Location = new System.Drawing.Point(261, 232);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(238, 212);
             this.groupBox2.TabIndex = 7;
@@ -318,11 +327,43 @@
             this.BtnDepositMaria.UseVisualStyleBackColor = true;
             this.BtnDepositMaria.Click += new System.EventHandler(this.BtnDepositMaria_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(6, 102);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(48, 13);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Amount:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(6, 102);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(48, 13);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Amount:";
+            // 
+            // PgbHisCar
+            // 
+            this.PgbHisCar.Location = new System.Drawing.Point(19, 161);
+            this.PgbHisCar.Name = "PgbHisCar";
+            this.PgbHisCar.Size = new System.Drawing.Size(369, 26);
+            this.PgbHisCar.TabIndex = 1;
+            // 
+            // PgbMyCar
+            // 
+            this.PgbMyCar.Location = new System.Drawing.Point(19, 72);
+            this.PgbMyCar.Name = "PgbMyCar";
+            this.PgbMyCar.Size = new System.Drawing.Size(369, 26);
+            this.PgbMyCar.TabIndex = 2;
+            // 
             // frmClasses
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(874, 518);
+            this.ClientSize = new System.Drawing.Size(874, 456);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.btnBack);
@@ -366,5 +407,9 @@
         private System.Windows.Forms.Button BtnDepositMaria;
         private System.Windows.Forms.Button BtnTransferToMaria;
         private System.Windows.Forms.Button BtnTransferToAli;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ProgressBar PgbMyCar;
+        private System.Windows.Forms.ProgressBar PgbHisCar;
     }
 }

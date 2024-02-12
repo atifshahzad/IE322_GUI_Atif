@@ -23,7 +23,6 @@
                 Balance += 150;
         }
 
-
         public bool Deposit(double n)
         {
             if (n > 0)
@@ -58,8 +57,7 @@
         {
             if (this.Withdraw(Amount))
             {
-                ToAccount.Deposit(Amount);
-                return true;
+                return(ToAccount.Deposit(Amount));                
             }
             else
             {

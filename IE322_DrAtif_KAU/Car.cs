@@ -6,31 +6,33 @@ namespace IE322_App_KAU
     class Car
     {
         public int speed = 0;
-        public String Color = "Red";
+        private String Color = "Red";
 
-        public void Start()
+        public bool Start()
         {
-            MessageBox.Show("Car has been started");
+            //MessageBox.Show("Car has been started");
             speed = speed + 5;
+            return true;
 
         }
-        public void Stop()
+        public bool Stop()
         {
             speed = 0;
-            MessageBox.Show("Car has been stopped");
+            //MessageBox.Show("Car has been stopped");
+            return true;
 
         }
 
         public void Accelerate(int increase)
         {
             speed = speed + increase;
-            MessageBox.Show("Car has been accelerated by " + increase +" to reach at " + speed + " km/h");
+            //MessageBox.Show("Car has been accelerated by " + increase +" to reach at " + speed + " km/h");
         }
 
         public void Deccelerate(int decrease)
         {
             speed = speed - decrease;
-            MessageBox.Show("Car has been deccelerated by " + decrease);
+            //MessageBox.Show("Car has been deccelerated by " + decrease);
 
         }
     } // end class Car
