@@ -623,6 +623,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include=".editorconfig" />
+    <None Include="ClassDiagram_Car.cd" />
     <None Include="cld_IE322.cd" />
     <None Include="libmongocrypt.dylib" />
     <None Include="libmongocrypt.so" />

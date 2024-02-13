@@ -23,6 +23,13 @@
   <ItemGroup>
     <Compile Include="IE322_PythonApp_DrAtif.py" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IE322_DrAtif_KAU\IE322_App_KAU.csproj">
+      <Name>IE322_App_KAU</Name>
+      <Project>{e781c8ec-fe75-48f5-824e-040ca71ee0fc}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
        Visual Studio and specify your pre- and post-build commands in

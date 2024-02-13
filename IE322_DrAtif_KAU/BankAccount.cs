@@ -1,8 +1,9 @@
 ﻿namespace IE322_App_KAU
 {
-    class BankAccount
+    public class BankAccount
     {
         double Balance = 0;
+        string CustomerID="";
 
         //Default Constructor
         public BankAccount()
@@ -13,7 +14,7 @@
         //An Overloaded Constructor
         public BankAccount(string ID)
         {
-            Balance += 200;
+            CustomerID = ID;
         }
 
         //Another Overloaded Constructor
@@ -54,6 +55,7 @@
         {
             return (Balance);
         }
+
         public bool Transfer(BankAccount ToAccount, double Amount)
         {
             if (this.Withdraw(Amount))

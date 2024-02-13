@@ -11,7 +11,7 @@ namespace IE322_App_KAU
         Truck MyTruck = new Truck();
 
         BankAccount AliAccount = new BankAccount();
-        BankAccount MariaAccount = new BankAccount();
+        BankAccount MariaAccount = new BankAccount(1234);// Coupon code constructor is called
 
 
 
@@ -125,6 +125,7 @@ namespace IE322_App_KAU
                 return;
             }
             TxtBalanceMaria.Text = MariaAccount.CheckBalance().ToString();
+           
         }
 
         private void BtnCheckBalanceMaria_Click(object sender, EventArgs e)
