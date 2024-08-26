@@ -17,12 +17,12 @@ namespace IE322_ConsoleApp_KAU_DrAtif
 
             
           BankAccount myAccount = new BankAccount();
-            BankAccount yourAccount = new BankAccount("123456789");
-           BankAccount hisAccount = new BankAccount(1234);
+          BankAccount yourAccount = new BankAccount("123456789");
+          BankAccount hisAccount = new BankAccount(1234);
 
             //Calling the methods of the class BankAccount
-            myAccount.Deposit(100);
-            yourAccount.Deposit(200);
+           myAccount.Deposit(100);
+           yourAccount.Deposit(200);
            hisAccount.Deposit(300);
            hisAccount.Deposit(100);
 

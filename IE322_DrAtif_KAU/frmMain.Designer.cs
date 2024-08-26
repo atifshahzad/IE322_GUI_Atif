@@ -46,6 +46,8 @@
             this.btnTimer = new System.Windows.Forms.Button();
             this.btnDraw = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.grpBlockChain = new System.Windows.Forms.GroupBox();
+            this.BtnBlockChain = new System.Windows.Forms.Button();
             this.BtnExams = new System.Windows.Forms.Button();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.BtnArray = new System.Windows.Forms.Button();
@@ -82,6 +84,7 @@
             this.picLogo_IE = new System.Windows.Forms.PictureBox();
             this.grpLogin.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.grpBlockChain.SuspendLayout();
             this.groupBox9.SuspendLayout();
             this.groupBox8.SuspendLayout();
             this.groupBox7.SuspendLayout();
@@ -278,6 +281,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.grpBlockChain);
             this.groupBox1.Controls.Add(this.BtnExams);
             this.groupBox1.Controls.Add(this.groupBox9);
             this.groupBox1.Controls.Add(this.groupBox8);
@@ -295,11 +299,34 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+            // grpBlockChain
+            // 
+            this.grpBlockChain.Controls.Add(this.BtnBlockChain);
+            this.grpBlockChain.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.grpBlockChain.Location = new System.Drawing.Point(287, 202);
+            this.grpBlockChain.Margin = new System.Windows.Forms.Padding(2);
+            this.grpBlockChain.Name = "grpBlockChain";
+            this.grpBlockChain.Padding = new System.Windows.Forms.Padding(2);
+            this.grpBlockChain.Size = new System.Drawing.Size(177, 48);
+            this.grpBlockChain.TabIndex = 29;
+            this.grpBlockChain.TabStop = false;
+            this.grpBlockChain.Text = "BlockChain";
+            // 
+            // BtnBlockChain
+            // 
+            this.BtnBlockChain.Location = new System.Drawing.Point(6, 17);
+            this.BtnBlockChain.Name = "BtnBlockChain";
+            this.BtnBlockChain.Size = new System.Drawing.Size(147, 23);
+            this.BtnBlockChain.TabIndex = 19;
+            this.BtnBlockChain.Text = "Block Chain";
+            this.BtnBlockChain.UseVisualStyleBackColor = true;
+            this.BtnBlockChain.Click += new System.EventHandler(this.BtnBlockChain_Click);
+            // 
             // BtnExams
             // 
-            this.BtnExams.Location = new System.Drawing.Point(293, 37);
+            this.BtnExams.Location = new System.Drawing.Point(293, 23);
             this.BtnExams.Name = "BtnExams";
-            this.BtnExams.Size = new System.Drawing.Size(149, 223);
+            this.BtnExams.Size = new System.Drawing.Size(149, 163);
             this.BtnExams.TabIndex = 35;
             this.BtnExams.Tag = "";
             this.BtnExams.Text = "Exam Questions";
@@ -687,6 +714,7 @@
             this.grpLogin.ResumeLayout(false);
             this.grpLogin.PerformLayout();
             this.groupBox1.ResumeLayout(false);
+            this.grpBlockChain.ResumeLayout(false);
             this.groupBox9.ResumeLayout(false);
             this.groupBox8.ResumeLayout(false);
             this.groupBox7.ResumeLayout(false);
@@ -758,5 +786,7 @@
         private System.Windows.Forms.Button BtnTree;
         private System.Windows.Forms.Button BtnCheckList;
         private System.Windows.Forms.Button BtnExams;
+        private System.Windows.Forms.GroupBox grpBlockChain;
+        private System.Windows.Forms.Button BtnBlockChain;
     }
 }

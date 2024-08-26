@@ -394,5 +394,11 @@ namespace IE322_App_KAU
             FrmExamQuestions frm = new FrmExamQuestions();
             frm.ShowDialog();
         }
+
+        private void BtnBlockChain_Click(object sender, EventArgs e)
+        {
+            frmBlockChain frm = new frmBlockChain();
+            frm.ShowDialog();
+        }
     }
 }

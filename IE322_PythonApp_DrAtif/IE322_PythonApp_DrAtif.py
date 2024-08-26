@@ -1,4 +1,7 @@
 
+
+# 
+# 
 # Python
 my_int = 10
 my_float = 3.14
@@ -43,3 +46,50 @@ numbers = [1, 2, 3, 4, 5]
 
 for num in numbers:
     print(num)
+
+
+    # Python    
+    
+    x, y, z = "Orange", "Banana", "Cherry"
+print(x)
+print(y)
+print(z)
+
+
+x = y = z = "Orange"
+print(x)
+print(y)
+print(z)
+
+fruits = ["apple", "banana", "cherry"]
+x, y, z = fruits
+print(x)
+print(y)
+print(z)
+
+x = "Python"
+y = "is"
+z = "awesome"
+print(x, y, z)
+
+
+
+
+xx = "awesome"
+
+def myfunc():
+    print("Python is " + xx)
+
+myfunc()
+
+
+
+x = "awesome"
+
+def myfunc2():
+    x = "fantastic"
+    print("Python is " + x)
+
+myfunc2()
+
+print("Python is " + x)
