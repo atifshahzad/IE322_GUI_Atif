@@ -50,8 +50,7 @@ namespace IE322_App_KAU
             {
                 MessageBox.Show("Nothing selected");
             }
-
-        }
+          }
 
 
 
@@ -108,6 +107,11 @@ namespace IE322_App_KAU
             }
 
             MessageBox.Show(result, "Your Selection");
+
+        }
+
+        private void ChkCsharp_CheckedChanged(object sender, EventArgs e)
+        {
 
         }
     }

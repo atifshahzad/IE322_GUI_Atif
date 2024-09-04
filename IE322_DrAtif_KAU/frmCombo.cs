@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 using static MongoDB.Bson.Serialization.Serializers.SerializerHelper;
@@ -13,6 +14,11 @@ namespace IE322_App_KAU
         public frmCombo()
         {
             InitializeComponent();
+            List<string> list = new List<string>();
+            list.Add("1");            
+            list.Add("2");
+
+            CmbDays.Items.AddRange(list.ToArray());  
 
             // Adding items to the Combobox for Example 1
             CmbDays.Items.Add("Sunday");
@@ -32,9 +38,7 @@ namespace IE322_App_KAU
             CmbColors.Items.Add("Blue");
 
             // Set the default selected color
-            CmbColors.SelectedIndex = 0;
-
-            
+            CmbColors.SelectedIndex = 0;            
         }
 
         private void BtnShowSelected1_Click(object sender, EventArgs e)
@@ -77,7 +81,8 @@ namespace IE322_App_KAU
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            this.DialogResult = DialogResult.OK;
+           //this.DialogResult = DialogResult.OK;
+            this.Close();
         }
         private void frmCombo_Load(object sender, EventArgs e)
         {

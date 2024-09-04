@@ -137,7 +137,7 @@
             // 
             // btnCheck
             // 
-            this.btnCheck.Location = new System.Drawing.Point(90, 18);
+            this.btnCheck.Location = new System.Drawing.Point(90, 19);
             this.btnCheck.Name = "btnCheck";
             this.btnCheck.Size = new System.Drawing.Size(83, 23);
             this.btnCheck.TabIndex = 4;
@@ -239,7 +239,7 @@
             this.LnkForgot.Location = new System.Drawing.Point(8, 124);
             this.LnkForgot.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LnkForgot.Name = "LnkForgot";
-            this.LnkForgot.Size = new System.Drawing.Size(91, 13);
+            this.LnkForgot.Size = new System.Drawing.Size(93, 13);
             this.LnkForgot.TabIndex = 11;
             this.LnkForgot.TabStop = true;
             this.LnkForgot.Text = "Forgot password?";

@@ -104,7 +104,7 @@ namespace IE322_App_KAU
             this.chkCoffee.AutoSize = true;
             this.chkCoffee.Location = new System.Drawing.Point(11, 11);
             this.chkCoffee.Name = "chkCoffee";
-            this.chkCoffee.Size = new System.Drawing.Size(57, 17);
+            this.chkCoffee.Size = new System.Drawing.Size(59, 17);
             this.chkCoffee.TabIndex = 5;
             this.chkCoffee.Text = "Coffee";
             this.chkCoffee.UseVisualStyleBackColor = true;
@@ -143,7 +143,7 @@ namespace IE322_App_KAU
             this.LblQuestion.AutoSize = true;
             this.LblQuestion.Location = new System.Drawing.Point(11, 16);
             this.LblQuestion.Name = "LblQuestion";
-            this.LblQuestion.Size = new System.Drawing.Size(329, 13);
+            this.LblQuestion.Size = new System.Drawing.Size(333, 13);
             this.LblQuestion.TabIndex = 4;
             this.LblQuestion.Text = "In which programming languages, you can solve any given problem?";
             this.LblQuestion.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -153,7 +153,7 @@ namespace IE322_App_KAU
             this.ChkJavascript.AutoSize = true;
             this.ChkJavascript.Location = new System.Drawing.Point(6, 122);
             this.ChkJavascript.Name = "ChkJavascript";
-            this.ChkJavascript.Size = new System.Drawing.Size(74, 17);
+            this.ChkJavascript.Size = new System.Drawing.Size(75, 17);
             this.ChkJavascript.TabIndex = 3;
             this.ChkJavascript.Text = "Javascript";
             this.ChkJavascript.UseVisualStyleBackColor = true;
@@ -173,7 +173,7 @@ namespace IE322_App_KAU
             this.ChkPython.AutoSize = true;
             this.ChkPython.Location = new System.Drawing.Point(6, 75);
             this.ChkPython.Name = "ChkPython";
-            this.ChkPython.Size = new System.Drawing.Size(59, 17);
+            this.ChkPython.Size = new System.Drawing.Size(60, 17);
             this.ChkPython.TabIndex = 1;
             this.ChkPython.Text = "Python";
             this.ChkPython.UseVisualStyleBackColor = true;
@@ -183,10 +183,11 @@ namespace IE322_App_KAU
             this.ChkCsharp.AutoSize = true;
             this.ChkCsharp.Location = new System.Drawing.Point(6, 52);
             this.ChkCsharp.Name = "ChkCsharp";
-            this.ChkCsharp.Size = new System.Drawing.Size(40, 17);
+            this.ChkCsharp.Size = new System.Drawing.Size(41, 17);
             this.ChkCsharp.TabIndex = 0;
             this.ChkCsharp.Text = "C#";
             this.ChkCsharp.UseVisualStyleBackColor = true;
+            this.ChkCsharp.CheckedChanged += new System.EventHandler(this.ChkCsharp_CheckedChanged);
             // 
             // frmCheck
             // 
