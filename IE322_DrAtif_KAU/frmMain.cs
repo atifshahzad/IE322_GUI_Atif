@@ -26,7 +26,7 @@ namespace IE322_App_KAU
         private void btnLogin_Click(object sender, EventArgs e)
         {
 
-            if (!loggedIn)   
+            if (!loggedIn)
             { 
                 while (ThisAttempt <= MaxAttempts)
                 {
