@@ -2,19 +2,31 @@
 {
     public class BankAccount
     {
-        double Balance = 0;
-        string CustomerID="";
+        // Properties
+        public string AccountHolder { get; set; }
+        public double Balance { get; private set; }
+        public int AccountNumber { get; private set; }
+
+        // Static field to track total accounts created
+        private static int totalAccounts = 0;
+        private static int accountNumberCounter = 1;
+                       
 
         //Default Constructor
         public BankAccount()
         { 
-            Balance += 100; 
+            Balance += 100;
+            AccountNumber = accountNumberCounter++;  // Unique account number
+            totalAccounts++;
         }
 
         //An Overloaded Constructor
-        public BankAccount(string ID)
+        public BankAccount(string accountHolder)
         {
-            CustomerID = ID;
+            AccountHolder = accountHolder;
+            Balance = 0;
+            AccountNumber = accountNumberCounter++;  // Unique account number
+            totalAccounts++;
         }
 
         //Another Overloaded Constructor
@@ -68,5 +80,12 @@
                 return false;
             }
         }
+
+        // Static method to get total accounts created
+        public static int GetTotalAccounts()
+        {
+            return totalAccounts;
+        }
+
     }
 }

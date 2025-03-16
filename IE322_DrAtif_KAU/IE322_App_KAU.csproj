@@ -477,6 +477,7 @@
     </Compile>
     <Compile Include="FSM\FiniteStateMachine.cs" />
     <Compile Include="FSM\Process.cs" />
+    <Compile Include="House.cs" />
     <Compile Include="lang\arab.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -495,6 +496,8 @@
       <DependentUpon>JohariAttributes.resx</DependentUpon>
     </Compile>
     <Compile Include="Truck.cs" />
+    <Compile Include="UniversityStudentClasses\Student.cs" />
+    <Compile Include="UniversityStudentClasses\University.cs" />
     <EmbeddedResource Include="frmAbout.resx">
       <DependentUpon>frmAbout.cs</DependentUpon>
     </EmbeddedResource>
