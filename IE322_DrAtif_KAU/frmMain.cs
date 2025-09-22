@@ -10,6 +10,7 @@ namespace IE322_App_KAU
     {
         string username = "";      //"Atif"; //username
         string myPassword = "";    //"1234"; //password
+        string msg = "";
 
         bool loggedIn = false;
 
@@ -23,7 +24,6 @@ namespace IE322_App_KAU
         }
         private void btnLogin_Click(object sender, EventArgs e)
         {
-
             if (!loggedIn)
             { 
                 while (ThisAttempt <= MaxAttempts)
@@ -31,9 +31,9 @@ namespace IE322_App_KAU
                     if (txtUser.Text != username)
                     {
                         // username is incorrect
-                        MessageBox.Show("Invalid username, " + (MaxAttempts - ThisAttempt) + " attempts remaining");
+                        msg= "Invalid username, " + (MaxAttempts - ThisAttempt) + " attempts remaining";                        
                         ThisAttempt++; //
-                        return;
+                        break;
                     }
                     else
                     {   // username is correct
@@ -41,16 +41,16 @@ namespace IE322_App_KAU
                         if (txtPassword.Text != myPassword)
                         {
                             // Incorrect password                            
-                            MessageBox.Show("Incorrect password," + (MaxAttempts - ThisAttempt) + " attempts remaining");
+                            msg= "Incorrect password," + (MaxAttempts - ThisAttempt) + " attempts remaining";                            
                             ThisAttempt++;
-                            return;
+                            break;
                         }
                         else
                         {
                             //Both are correct
                             ThisAttempt = 1; // reset the number of attempts
                             loggedIn = true;
-                             MessageBox.Show("Hi " + username + ", your login successful", "Welcome!!");                          
+                             msg= "Hi " + username + ", your login successful";                                            
 
 
                             foreach (var grp in groupBox1.Controls.OfType<GroupBox>())
@@ -68,8 +68,15 @@ namespace IE322_App_KAU
                             break; // come out of while loop
                         }//endif
 
-                    }//endif
+                    }//endif                    
                 }//end while
+                MessageBox.Show(msg);
+                if (ThisAttempt > MaxAttempts)
+                {
+                    MessageBox.Show("Contact admin, closing app...");
+                    Close();
+                }   
+                msg="";//reset msg 
             }
             else
             {
@@ -88,6 +95,7 @@ namespace IE322_App_KAU
                     }
                 }
             }
+
         } //end login Button
 
 
@@ -199,19 +207,7 @@ namespace IE322_App_KAU
             frm.ShowDialog();
         }
 
-        private void BtnManufCell_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                frmManufSys frm = new frmManufSys();
-                frm.ShowDialog();
-                //to close the form
-                this.DialogResult = DialogResult.OK;
-            }
-            catch
-            {
-            }
-        }
+        
 
         private void btnCheck_Click(object sender, EventArgs e)
         {
@@ -221,10 +217,7 @@ namespace IE322_App_KAU
             this.DialogResult = DialogResult.OK;
         }
 
-        private void BtnRoboticCell_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void btnArduino_Click(object sender, EventArgs e)
         {
@@ -232,11 +225,7 @@ namespace IE322_App_KAU
             frm.ShowDialog();
         }
 
-        private void btnJohari_Click(object sender, EventArgs e)
-        {
-            frmJohari frm = new frmJohari();
-            frm.ShowDialog();
-        }
+       
 
         private void BtnRandomCombo_Click(object sender, EventArgs e)
         {
@@ -330,11 +319,7 @@ namespace IE322_App_KAU
             frm.Show();
         }
 
-        private void BtnMongoDB_Click(object sender, EventArgs e)
-        {
-            frmMongoDB frm = new frmMongoDB();
-            frm.Show();
-        }
+        
 
         private void BtnStrings_Click(object sender, EventArgs e)
         {
@@ -393,6 +378,20 @@ namespace IE322_App_KAU
         private void button2_Click(object sender, EventArgs e)
         {
             MessageBox.Show("hi");
+        }
+
+        private void BtnCheckList_Click(object sender, EventArgs e)
+        {
+
+            FrmCheckedList frm = new FrmCheckedList();
+            frm.ShowDialog();
+        }
+
+        
+        private void BtnExams_Click(object sender, EventArgs e)
+        {
+            FrmExamQuestions frm = new FrmExamQuestions();
+            frm.ShowDialog();
         }
     }
 }

@@ -63,16 +63,11 @@
             this.BtnEvents = new System.Windows.Forms.Button();
             this.BtnClasses = new System.Windows.Forms.Button();
             this.BtnMethods = new System.Windows.Forms.Button();
-            this.Exams = new System.Windows.Forms.GroupBox();
-            this.BtnManufCell = new System.Windows.Forms.Button();
-            this.BtnRoboticCell = new System.Windows.Forms.Button();
-            this.BtnABC = new System.Windows.Forms.Button();
-            this.BtnMongoDB = new System.Windows.Forms.Button();
-            this.btnJohari = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.BtnSystem = new System.Windows.Forms.Button();
             this.BtnTalk = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.BtnTree = new System.Windows.Forms.Button();
             this.BtnDate = new System.Windows.Forms.Button();
             this.btnRandom = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -80,9 +75,11 @@
             this.btnSelfieApp = new System.Windows.Forms.Button();
             this.btnGroupieApp = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.BtnCheckList = new System.Windows.Forms.Button();
             this.StsMain = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.picLogo_IE = new System.Windows.Forms.PictureBox();
+            this.BtnExams = new System.Windows.Forms.Button();
             this.grpLogin.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox9.SuspendLayout();
@@ -90,7 +87,6 @@
             this.groupBox7.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.groupBox10.SuspendLayout();
-            this.Exams.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -143,7 +139,7 @@
             // 
             this.btnCheck.Location = new System.Drawing.Point(90, 18);
             this.btnCheck.Name = "btnCheck";
-            this.btnCheck.Size = new System.Drawing.Size(75, 23);
+            this.btnCheck.Size = new System.Drawing.Size(83, 23);
             this.btnCheck.TabIndex = 4;
             this.btnCheck.Text = "CheckBox";
             this.btnCheck.UseVisualStyleBackColor = true;
@@ -151,7 +147,7 @@
             // 
             // btnCombo
             // 
-            this.btnCombo.Location = new System.Drawing.Point(54, 50);
+            this.btnCombo.Location = new System.Drawing.Point(9, 47);
             this.btnCombo.Name = "btnCombo";
             this.btnCombo.Size = new System.Drawing.Size(75, 23);
             this.btnCombo.TabIndex = 5;
@@ -243,7 +239,7 @@
             this.LnkForgot.Location = new System.Drawing.Point(8, 124);
             this.LnkForgot.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LnkForgot.Name = "LnkForgot";
-            this.LnkForgot.Size = new System.Drawing.Size(93, 13);
+            this.LnkForgot.Size = new System.Drawing.Size(91, 13);
             this.LnkForgot.TabIndex = 11;
             this.LnkForgot.TabStop = true;
             this.LnkForgot.Text = "Forgot password?";
@@ -282,12 +278,12 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.BtnExams);
             this.groupBox1.Controls.Add(this.groupBox9);
             this.groupBox1.Controls.Add(this.groupBox8);
             this.groupBox1.Controls.Add(this.groupBox7);
             this.groupBox1.Controls.Add(this.groupBox6);
             this.groupBox1.Controls.Add(this.groupBox10);
-            this.groupBox1.Controls.Add(this.Exams);
             this.groupBox1.Controls.Add(this.groupBox5);
             this.groupBox1.Controls.Add(this.groupBox4);
             this.groupBox1.Controls.Add(this.groupBox3);
@@ -479,73 +475,6 @@
             this.BtnMethods.UseVisualStyleBackColor = true;
             this.BtnMethods.Click += new System.EventHandler(this.BtnMethods_Click);
             // 
-            // Exams
-            // 
-            this.Exams.Controls.Add(this.BtnManufCell);
-            this.Exams.Controls.Add(this.BtnRoboticCell);
-            this.Exams.Controls.Add(this.BtnABC);
-            this.Exams.Controls.Add(this.BtnMongoDB);
-            this.Exams.Controls.Add(this.btnJohari);
-            this.Exams.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.Exams.Location = new System.Drawing.Point(288, 12);
-            this.Exams.Margin = new System.Windows.Forms.Padding(2);
-            this.Exams.Name = "Exams";
-            this.Exams.Padding = new System.Windows.Forms.Padding(2);
-            this.Exams.Size = new System.Drawing.Size(176, 259);
-            this.Exams.TabIndex = 27;
-            this.Exams.TabStop = false;
-            this.Exams.Text = "Exam Apps";
-            // 
-            // BtnManufCell
-            // 
-            this.BtnManufCell.Location = new System.Drawing.Point(5, 18);
-            this.BtnManufCell.Name = "BtnManufCell";
-            this.BtnManufCell.Size = new System.Drawing.Size(149, 37);
-            this.BtnManufCell.TabIndex = 18;
-            this.BtnManufCell.Text = "Manufacturing Cell";
-            this.BtnManufCell.UseVisualStyleBackColor = true;
-            this.BtnManufCell.Click += new System.EventHandler(this.BtnManufCell_Click);
-            // 
-            // BtnRoboticCell
-            // 
-            this.BtnRoboticCell.Location = new System.Drawing.Point(5, 63);
-            this.BtnRoboticCell.Name = "BtnRoboticCell";
-            this.BtnRoboticCell.Size = new System.Drawing.Size(149, 37);
-            this.BtnRoboticCell.TabIndex = 19;
-            this.BtnRoboticCell.Text = "Robotic Cell";
-            this.BtnRoboticCell.UseVisualStyleBackColor = true;
-            this.BtnRoboticCell.Click += new System.EventHandler(this.BtnRoboticCell_Click);
-            // 
-            // BtnABC
-            // 
-            this.BtnABC.Location = new System.Drawing.Point(5, 109);
-            this.BtnABC.Name = "BtnABC";
-            this.BtnABC.Size = new System.Drawing.Size(149, 37);
-            this.BtnABC.TabIndex = 20;
-            this.BtnABC.Text = "ABC Analysis";
-            this.BtnABC.UseVisualStyleBackColor = true;
-            this.BtnABC.Click += new System.EventHandler(this.btnJohari_Click);
-            // 
-            // BtnMongoDB
-            // 
-            this.BtnMongoDB.Location = new System.Drawing.Point(5, 204);
-            this.BtnMongoDB.Name = "BtnMongoDB";
-            this.BtnMongoDB.Size = new System.Drawing.Size(149, 38);
-            this.BtnMongoDB.TabIndex = 30;
-            this.BtnMongoDB.Text = "MongoDB";
-            this.BtnMongoDB.UseVisualStyleBackColor = true;
-            this.BtnMongoDB.Click += new System.EventHandler(this.BtnMongoDB_Click);
-            // 
-            // btnJohari
-            // 
-            this.btnJohari.Location = new System.Drawing.Point(5, 154);
-            this.btnJohari.Name = "btnJohari";
-            this.btnJohari.Size = new System.Drawing.Size(149, 37);
-            this.btnJohari.TabIndex = 20;
-            this.btnJohari.Text = "Johari";
-            this.btnJohari.UseVisualStyleBackColor = true;
-            this.btnJohari.Click += new System.EventHandler(this.btnJohari_Click);
-            // 
             // groupBox5
             // 
             this.groupBox5.Controls.Add(this.BtnSystem);
@@ -583,6 +512,7 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.BtnTree);
             this.groupBox4.Controls.Add(this.BtnDate);
             this.groupBox4.Controls.Add(this.btnProg);
             this.groupBox4.Controls.Add(this.btnTimer);
@@ -597,6 +527,15 @@
             this.groupBox4.TabIndex = 25;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "More Controls";
+            // 
+            // BtnTree
+            // 
+            this.BtnTree.Location = new System.Drawing.Point(107, 78);
+            this.BtnTree.Name = "BtnTree";
+            this.BtnTree.Size = new System.Drawing.Size(90, 24);
+            this.BtnTree.TabIndex = 23;
+            this.BtnTree.Text = "TreeView";
+            this.BtnTree.UseVisualStyleBackColor = true;
             // 
             // BtnDate
             // 
@@ -668,6 +607,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.BtnCheckList);
             this.groupBox2.Controls.Add(this.btnRadio);
             this.groupBox2.Controls.Add(this.btnCheck);
             this.groupBox2.Controls.Add(this.btnCombo);
@@ -681,6 +621,16 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Basic Controls";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
+            // 
+            // BtnCheckList
+            // 
+            this.BtnCheckList.Location = new System.Drawing.Point(90, 47);
+            this.BtnCheckList.Name = "BtnCheckList";
+            this.BtnCheckList.Size = new System.Drawing.Size(83, 23);
+            this.BtnCheckList.TabIndex = 6;
+            this.BtnCheckList.Text = "Checked List";
+            this.BtnCheckList.UseVisualStyleBackColor = true;
+            this.BtnCheckList.Click += new System.EventHandler(this.BtnCheckList_Click);
             // 
             // StsMain
             // 
@@ -710,6 +660,17 @@
             this.picLogo_IE.TabIndex = 17;
             this.picLogo_IE.TabStop = false;
             // 
+            // BtnExams
+            // 
+            this.BtnExams.Location = new System.Drawing.Point(293, 37);
+            this.BtnExams.Name = "BtnExams";
+            this.BtnExams.Size = new System.Drawing.Size(149, 213);
+            this.BtnExams.TabIndex = 35;
+            this.BtnExams.Tag = "";
+            this.BtnExams.Text = "Exam Questions";
+            this.BtnExams.UseVisualStyleBackColor = true;
+            this.BtnExams.Click += new System.EventHandler(this.BtnExams_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -731,7 +692,6 @@
             this.groupBox7.ResumeLayout(false);
             this.groupBox6.ResumeLayout(false);
             this.groupBox10.ResumeLayout(false);
-            this.Exams.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
@@ -765,15 +725,10 @@
         private System.Windows.Forms.Button btnRandom;
         private System.Windows.Forms.Button btnSelfieApp;
         private System.Windows.Forms.Button btnGroupieApp;
-        private System.Windows.Forms.Button BtnRoboticCell;
-        private System.Windows.Forms.Button BtnManufCell;
         private System.Windows.Forms.Button btnArduino;
-        private System.Windows.Forms.Button btnJohari;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button BtnABC;
         private System.Windows.Forms.Button BtnTalk;
         private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.GroupBox Exams;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.GroupBox groupBox3;
@@ -790,7 +745,6 @@
         private System.Windows.Forms.Button BtnMethods;
         private System.Windows.Forms.Button BtnClasses;
         private System.Windows.Forms.Button BtnArray;
-        private System.Windows.Forms.Button BtnMongoDB;
         private System.Windows.Forms.GroupBox groupBox10;
         private System.Windows.Forms.Button BtnStrings;
         private System.Windows.Forms.PictureBox picLogo_IE;
@@ -801,5 +755,8 @@
         private System.Windows.Forms.GroupBox groupBox9;
         private System.Windows.Forms.Button BtnFSM;
         private System.Windows.Forms.Button BtnDate;
+        private System.Windows.Forms.Button BtnTree;
+        private System.Windows.Forms.Button BtnCheckList;
+        private System.Windows.Forms.Button BtnExams;
     }
 }
