@@ -40,8 +40,6 @@ namespace IE322_App_KAU
                 msg = msg + " " + chkBrownie.Text;
             }
 
-
-
             if (msg.Length > 0)
             {
                 MessageBox.Show(msg + " selected ");

@@ -7,8 +7,8 @@ namespace IE322_App_KAU
 {
     public partial class frmRandom : Form
     {
-        Random y = new Random();
-
+        Random y = new Random(15);
+        Random rnd = new Random();
         public frmRandom()
         {
             InitializeComponent();

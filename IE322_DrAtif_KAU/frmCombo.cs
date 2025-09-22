@@ -9,7 +9,13 @@ namespace IE322_App_KAU
         {
             InitializeComponent();
 
-            // Adding items to the Combobox
+            List<string> DayList = new List<string>();
+            DayList.Add("Birthday");            
+            DayList.Add("FathersDay");
+
+            CmbDays.Items.AddRange(DayList.ToArray());  
+
+            // Adding items to the Combobox for Example 1
             CmbDays.Items.Add("Sunday");
             CmbDays.Items.Add("Monday");
             CmbDays.Items.Add("Tuesday");

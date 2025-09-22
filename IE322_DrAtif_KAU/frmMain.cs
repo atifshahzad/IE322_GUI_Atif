@@ -178,7 +178,7 @@ namespace IE322_App_KAU
         {
             frmRandom frm = new frmRandom();
             frm.ShowDialog();
-            //to close the form
+            //to close the Main form
             this.DialogResult = DialogResult.OK;
         }
 

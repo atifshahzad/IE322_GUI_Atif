@@ -17,6 +17,8 @@ namespace IE322_App_KAU
 
         public frmClasses()
         {
+            
+
             InitializeComponent();
         }
 
@@ -52,6 +54,7 @@ namespace IE322_App_KAU
         private void BtnStartMyTruck_Click(object sender, EventArgs e)
         {
             //  BtnStartMyTruck.Start();
+            
         }
 
         private void btnBack_Click(object sender, EventArgs e)
