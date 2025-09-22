@@ -20,6 +20,11 @@ namespace IE322_App_KAU
             
 
             InitializeComponent();
+            PgbMyCar.Minimum = 0;
+            PgbMyCar.Maximum = 260;
+
+            PgbHisCar.Minimum = 0;
+            PgbHisCar.Maximum = 220;
         }
 
         private void BtnStartMyCar_Click(object sender, EventArgs e)
