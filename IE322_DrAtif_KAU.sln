@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IE322_App_KAU", "IE322_DrAt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IE322_ConsoleApp_KAU_DrAtif", "IE322_ConsoleApp_KAU_DrAtif\IE322_ConsoleApp_KAU_DrAtif.csproj", "{EC186EEC-1301-459F-AFE0-E27C4C5BD929}"
 EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "IE322_PythonApp_DrAtif", "IE322_PythonApp_DrAtif\IE322_PythonApp_DrAtif.pyproj", "{A3B8C599-9C36-49D5-89CB-15601C0A58CA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,8 @@ Global
 		{EC186EEC-1301-459F-AFE0-E27C4C5BD929}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC186EEC-1301-459F-AFE0-E27C4C5BD929}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC186EEC-1301-459F-AFE0-E27C4C5BD929}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3B8C599-9C36-49D5-89CB-15601C0A58CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3B8C599-9C36-49D5-89CB-15601C0A58CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

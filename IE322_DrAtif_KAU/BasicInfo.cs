@@ -16,6 +16,7 @@ namespace IE322_App_KAU
         public override string ToString()
         {
             StringBuilder output = new StringBuilder();
+
             output.AppendFormat("Windows version: {0}\n", OsVersion);
             output.AppendFormat("64 Bit operating system? : {0}\n",
                Os64 ? "Yes" : "No");

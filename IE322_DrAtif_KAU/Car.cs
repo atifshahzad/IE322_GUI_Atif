@@ -6,16 +6,16 @@ namespace IE322_App_KAU
     class Car
     {
         public int speed = 0;
-        private String Color = "Red";
+        public String Color = "Red";
 
-        public bool Start()
+        public void Start()
         {
             //MessageBox.Show("Car has been started");
             speed = speed + 5;
             return true;
 
         }
-        public bool Stop()
+        public void Stop()
         {
             speed = 0;
             //MessageBox.Show("Car has been stopped");
@@ -23,13 +23,13 @@ namespace IE322_App_KAU
 
         }
 
-        public void Accelerate(int increase)
+        public void Accelerate(int increase)// A method with input parameter
         {
             speed = speed + increase;
             //MessageBox.Show("Car has been accelerated by " + increase +" to reach at " + speed + " km/h");
         }
 
-        public void Deccelerate(int decrease)
+        public void Deccelerate(int decrease)// A method with input parameter
         {
             speed = speed - decrease;
             //MessageBox.Show("Car has been deccelerated by " + decrease);

@@ -17,7 +17,7 @@ namespace IE322_App_KAU
 
 
         BankAccount AliAccount = new BankAccount();
-        BankAccount MariaAccount = new BankAccount();
+        BankAccount MariaAccount = new BankAccount(1234);// Coupon code constructor is called
 
 
 
@@ -97,7 +97,8 @@ namespace IE322_App_KAU
                 MessageBox.Show("Enter valid amount, please");
                 return;
             }
-            TxtBalanceAli.Text = AliAccount.CheckBalance().ToString();
+            
+            TxtBalanceAli.Text=$"{AliAccount.CheckBalance():C}";
         }
 
         private void BtnWithdraw_Click_1(object sender, EventArgs e)
@@ -145,6 +146,7 @@ namespace IE322_App_KAU
                 return;
             }
             TxtBalanceMaria.Text = MariaAccount.CheckBalance().ToString();
+           
         }
 
         private void BtnCheckBalanceMaria_Click(object sender, EventArgs e)
