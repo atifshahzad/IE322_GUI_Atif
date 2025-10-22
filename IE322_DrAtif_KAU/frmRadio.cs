@@ -82,7 +82,7 @@ namespace IE322_App_KAU
         private void rdoBlue_CheckedChanged(object sender, EventArgs e)
         {
             if (rdoBlue.Checked == true)
-                rdoBlue.ForeColor = Color.FromName("blue");
+                rdoBlue.ForeColor = Color.Blue;
             else
                 rdoBlue.ForeColor = Color.FromArgb(0, 0, 0);
         }

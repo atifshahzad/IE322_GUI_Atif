@@ -6,7 +6,7 @@ namespace IE322_App_KAU
 {
     public partial class frmRandom : Form
     {
-        Random y = new Random();
+        Random y = new Random(45);
         Random rnd = new Random();
         public frmRandom()
         {
@@ -73,7 +73,7 @@ namespace IE322_App_KAU
             }
                        
 
-            Random rnd2 = new Random(10);//seed value 10
+            Random rnd2 = new Random(768);//seed value 10
             for (int j = 0; j < 5; j++)
             {
                 cmbRnd2.Items.Add(rnd2.Next());

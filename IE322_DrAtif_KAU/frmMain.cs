@@ -120,7 +120,7 @@ namespace IE322_App_KAU
         {
             frmRadio frm = new frmRadio();
             frm.ShowDialog();
-
+            
         }
 
         private void BtnEXIT_Click(object sender, EventArgs e)
