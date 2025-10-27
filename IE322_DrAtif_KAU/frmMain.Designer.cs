@@ -82,6 +82,7 @@
             this.StsMain = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.picLogo_IE = new System.Windows.Forms.PictureBox();
+            this.BtnStopwatch = new System.Windows.Forms.Button();
             this.grpLogin.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.grpBlockChain.SuspendLayout();
@@ -515,6 +516,7 @@
             // 
             // groupBox5
             // 
+            this.groupBox5.Controls.Add(this.BtnStopwatch);
             this.groupBox5.Controls.Add(this.BtnSystem);
             this.groupBox5.Controls.Add(this.btnDraw);
             this.groupBox5.Controls.Add(this.BtnTalk);
@@ -530,7 +532,7 @@
             // 
             // BtnSystem
             // 
-            this.BtnSystem.Location = new System.Drawing.Point(54, 48);
+            this.BtnSystem.Location = new System.Drawing.Point(9, 45);
             this.BtnSystem.Name = "BtnSystem";
             this.BtnSystem.Size = new System.Drawing.Size(75, 23);
             this.BtnSystem.TabIndex = 23;
@@ -698,6 +700,16 @@
             this.picLogo_IE.TabIndex = 17;
             this.picLogo_IE.TabStop = false;
             // 
+            // BtnStopwatch
+            // 
+            this.BtnStopwatch.Location = new System.Drawing.Point(98, 49);
+            this.BtnStopwatch.Name = "BtnStopwatch";
+            this.BtnStopwatch.Size = new System.Drawing.Size(75, 23);
+            this.BtnStopwatch.TabIndex = 24;
+            this.BtnStopwatch.Text = "Stopwatch";
+            this.BtnStopwatch.UseVisualStyleBackColor = true;
+            this.BtnStopwatch.Click += new System.EventHandler(this.BtnStopwatch_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -788,5 +800,6 @@
         private System.Windows.Forms.Button BtnExams;
         private System.Windows.Forms.GroupBox grpBlockChain;
         private System.Windows.Forms.Button BtnBlockChain;
+        private System.Windows.Forms.Button BtnStopwatch;
     }
 }

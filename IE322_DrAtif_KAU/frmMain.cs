@@ -400,5 +400,12 @@ namespace IE322_App_KAU
             frmBlockChain frm = new frmBlockChain();
             frm.ShowDialog();
         }
+
+        private void BtnStopwatch_Click(object sender, EventArgs e)
+        {
+            frmStopWatch frm = new frmStopWatch();
+            frm.ShowDialog();
+
+        }
     }
 }

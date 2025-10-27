@@ -8,14 +8,14 @@ namespace IE322_App_KAU
         public int speed = 0;
         public String Color = "Red";
 
-        public void Start()
+        public bool Start()
         {
             //MessageBox.Show("Car has been started");
             speed = speed + 5;
             return true;
 
         }
-        public void Stop()
+        public bool Stop()
         {
             speed = 0;
             //MessageBox.Show("Car has been stopped");
