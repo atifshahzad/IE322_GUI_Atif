@@ -41,7 +41,7 @@
             this.BtnDigitsAfterDecimal = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.BtnClear = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnBack
@@ -171,14 +171,16 @@
             this.button5.Text = "button1";
             this.button5.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // BtnClear
             // 
-            this.button6.Location = new System.Drawing.Point(586, 317);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(113, 44);
-            this.button6.TabIndex = 8;
-            this.button6.Text = "button1";
-            this.button6.UseVisualStyleBackColor = true;
+            this.BtnClear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.BtnClear.Location = new System.Drawing.Point(586, 317);
+            this.BtnClear.Name = "BtnClear";
+            this.BtnClear.Size = new System.Drawing.Size(113, 44);
+            this.BtnClear.TabIndex = 8;
+            this.BtnClear.Text = "Clear";
+            this.BtnClear.UseVisualStyleBackColor = true;
+            this.BtnClear.Click += new System.EventHandler(this.BtnClear_Click);
             // 
             // frmStrings
             // 
@@ -191,7 +193,7 @@
             this.Controls.Add(this.BtnFormattedStrings2);
             this.Controls.Add(this.BtnFormattedString);
             this.Controls.Add(this.BtnStringSpacing);
-            this.Controls.Add(this.button6);
+            this.Controls.Add(this.BtnClear);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.BtnDigitsAfterDecimal);
@@ -220,6 +222,6 @@
         private System.Windows.Forms.Button BtnDigitsAfterDecimal;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button BtnClear;
     }
 }

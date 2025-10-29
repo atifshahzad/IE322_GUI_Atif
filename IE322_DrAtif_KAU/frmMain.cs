@@ -72,7 +72,7 @@ namespace IE322_App_KAU
 
                     }//endif                    
                 }//end while
-                MessageBox.Show(msg);
+                // MessageBox.Show(msg);
                 if (ThisAttempt > MaxAttempts)
                 {
                     MessageBox.Show("Contact admin, closing app...");
