@@ -19,11 +19,10 @@ namespace IE322_App_KAU
 
         private void BtnConnect_Click(object sender, EventArgs e)
         {
-
             MongoClient dbClient = new MongoClient("mongodb://127.0.0.1:27017");
 
-            var dbList = dbClient.ListDatabases().ToList();
-
+            // Pass default CancellationToken to ListDatabases as required by the method signature
+            var dbList = dbClient.ListDatabases(System.Threading.CancellationToken.None).ToList();
 
             LblDispaly.Text = "The list of databases on this server is: ";
             foreach (var db in dbList)

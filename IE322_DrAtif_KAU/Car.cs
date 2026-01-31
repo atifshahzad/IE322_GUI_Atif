@@ -12,14 +12,14 @@ namespace IE322_App_KAU
         {
             //MessageBox.Show("Car has been started");
             speed = speed + 5;
-            return true;
+            
 
         }
         public void Stop()
         {
             speed = 0;
             //MessageBox.Show("Car has been stopped");
-            return true;
+            
 
         }
 

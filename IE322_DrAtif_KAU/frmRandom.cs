@@ -101,6 +101,8 @@ namespace IE322_App_KAU
 
             double num2 = rnd.NextDouble(); //Generates random floating-point number that is greater than or equal to 0.0 and less than 1.0.
             LblDisplay.Text = Convert.ToString(num2);
+            
+            
         }
     }
 }
