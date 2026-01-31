@@ -159,5 +159,10 @@ namespace IE322_App_KAU
         {
 
         }
+
+        private void BtnClear_Click(object sender, EventArgs e)
+        {
+            RtbStrings.Text = "";
+        }
     }
 }

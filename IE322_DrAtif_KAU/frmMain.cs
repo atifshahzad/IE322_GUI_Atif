@@ -72,7 +72,7 @@ namespace IE322_App_KAU
 
                     }//endif                    
                 }//end while
-                MessageBox.Show(msg);
+                // MessageBox.Show(msg);
                 if (ThisAttempt > MaxAttempts)
                 {
                     MessageBox.Show("Contact admin, closing app...");
@@ -399,6 +399,13 @@ namespace IE322_App_KAU
         {
             frmBlockChain frm = new frmBlockChain();
             frm.ShowDialog();
+        }
+
+        private void BtnStopwatch_Click(object sender, EventArgs e)
+        {
+            frmStopWatch frm = new frmStopWatch();
+            frm.ShowDialog();
+
         }
     }
 }
