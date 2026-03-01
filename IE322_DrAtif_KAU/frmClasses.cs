@@ -45,6 +45,8 @@ namespace IE322_App_KAU
             PgbHisCar.Value = HisCar.speed;
             this.BtnStartHisCar.Enabled = false;
 
+            
+
         }
 
         private void BtnAccMyCar_Click(object sender, EventArgs e)

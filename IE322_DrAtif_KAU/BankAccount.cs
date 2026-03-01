@@ -20,7 +20,7 @@
             totalAccounts++;
         }
 
-        //An Overloaded Constructor
+        //An Overloaded Constructor 
         public BankAccount(string accountHolder)
         {
             AccountHolder = accountHolder;
@@ -34,6 +34,9 @@
         {
             if (CouponCode == 1234)    
                 Balance += 150;
+            AccountNumber = accountNumberCounter++;  // Unique account number
+            totalAccounts++;
+
         }
 
         public bool Deposit(double n)
