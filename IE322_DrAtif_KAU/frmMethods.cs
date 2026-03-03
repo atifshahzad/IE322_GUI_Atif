@@ -235,7 +235,7 @@ namespace IE322_App_KAU
         private void BtnArgByVal_Click(object sender, EventArgs e)
         {
             int y = 5;
-            SquareVal(y); //must use ref keyword to call this method
+            SquareVal(y); //passing argument by value
             MessageBox.Show(y.ToString());
 
         }
@@ -264,7 +264,7 @@ namespace IE322_App_KAU
         private void BtnMultOutput_Click(object sender, EventArgs e)
         {
             int s, c, y;
-            y = 4;
+            y = 5;
             SquareCubeOut(out s, out c, y);
             MessageBox.Show("Square is:"+s.ToString() + " and cube is:"+ c.ToString());
         }
@@ -278,7 +278,7 @@ namespace IE322_App_KAU
         private void BtnMultOutputTuple_Click(object sender, EventArgs e)
         {
             int square, cube;
-            (square, cube)= SqCuOut(10);
+            (square, cube) = SqCuOut(10);
             MessageBox.Show("Square is:" + square.ToString() + " and cube is:" + cube.ToString());
 
         }

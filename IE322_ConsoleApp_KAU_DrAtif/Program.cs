@@ -42,7 +42,7 @@ namespace IE322_ConsoleApp_KAU_DrAtif
 
             Random rnd = new Random();
 
-
+            
             Console.WriteLine(rnd.Next(1,10));//Returns a positive random integer within the specified minimum and maximum range(includes min and excludes max).
 
             Console.WriteLine($"{rnd.Next(60,100):C}");
@@ -54,10 +54,13 @@ namespace IE322_ConsoleApp_KAU_DrAtif
             Console.WriteLine(rnd.NextDouble());
 
             Console.WriteLine("Generating another set of random numbers");
+            
+            Random rnd2 = new Random();
 
-            Random rnd2 = new Random(78);
-
-            Console.WriteLine(rnd2.Next(30, 90)); Console.WriteLine(rnd2.Next(30, 90)); Console.WriteLine(rnd2.Next(30, 90)); Console.WriteLine(rnd2.Next(30, 90));
+            Console.WriteLine(rnd2.Next(30, 90));
+            Console.WriteLine(rnd2.Next(30, 90)); 
+            Console.WriteLine(rnd2.Next(30, 90));
+            Console.WriteLine(rnd2.Next(30, 90));
 
 
 
