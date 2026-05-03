@@ -82,7 +82,6 @@
             this.groupBox1.Controls.Add(this.btnReset);
             this.groupBox1.Controls.Add(this.BtnGenerate);
             this.groupBox1.Controls.Add(this.cmbRandom);
-            this.groupBox1.Enabled = false;
             this.groupBox1.Location = new System.Drawing.Point(11, 35);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
@@ -94,6 +93,7 @@
             // 
             // BtnProblem1
             // 
+            this.BtnProblem1.Enabled = false;
             this.BtnProblem1.Location = new System.Drawing.Point(16, 103);
             this.BtnProblem1.Name = "BtnProblem1";
             this.BtnProblem1.Size = new System.Drawing.Size(80, 60);
@@ -108,7 +108,7 @@
             this.rdoGreater.Location = new System.Drawing.Point(106, 102);
             this.rdoGreater.Margin = new System.Windows.Forms.Padding(2);
             this.rdoGreater.Name = "rdoGreater";
-            this.rdoGreater.Size = new System.Drawing.Size(108, 17);
+            this.rdoGreater.Size = new System.Drawing.Size(105, 17);
             this.rdoGreater.TabIndex = 7;
             this.rdoGreater.TabStop = true;
             this.rdoGreater.Text = "Greater than 500";
@@ -156,7 +156,6 @@
             this.groupBox2.Controls.Add(this.btnReset2);
             this.groupBox2.Controls.Add(this.BtnGenerate2);
             this.groupBox2.Controls.Add(this.cmbRandom2);
-            this.groupBox2.Enabled = false;
             this.groupBox2.Location = new System.Drawing.Point(231, 35);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
@@ -172,7 +171,7 @@
             this.LblCount2.Location = new System.Drawing.Point(4, 68);
             this.LblCount2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblCount2.Name = "LblCount2";
-            this.LblCount2.Size = new System.Drawing.Size(40, 13);
+            this.LblCount2.Size = new System.Drawing.Size(38, 13);
             this.LblCount2.TabIndex = 8;
             this.LblCount2.Text = "Count:";
             // 
@@ -182,7 +181,7 @@
             this.rdoGreater2.Location = new System.Drawing.Point(106, 102);
             this.rdoGreater2.Margin = new System.Windows.Forms.Padding(2);
             this.rdoGreater2.Name = "rdoGreater2";
-            this.rdoGreater2.Size = new System.Drawing.Size(102, 17);
+            this.rdoGreater2.Size = new System.Drawing.Size(99, 17);
             this.rdoGreater2.TabIndex = 7;
             this.rdoGreater2.TabStop = true;
             this.rdoGreater2.Text = "Greater than 50";

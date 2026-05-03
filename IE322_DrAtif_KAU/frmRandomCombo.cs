@@ -105,7 +105,7 @@ namespace IE322_App_KAU
             try
             {
                 string path = @"D:\IE322_ALL\_IE322_S20\20180404\MyFormApp2\MyFormApp2\Resources\S2018_QUIZ03--EA.pdf";
-                System.Diagnostics.Process.Start("IExplore.exe", path);
+               System.Diagnostics.Process.Start("IExplore.exe", path);
             }
             catch
             {
