@@ -6,8 +6,9 @@ clone this repository to learn about the stuff covered about **C#** during *IE32
 Following topics are covered.
 <!--Ordered List -->
 
-1. first item
-2. second item
+1. OOPS
+2. Classes
+3. Methods
 
 
 ### CS code block
